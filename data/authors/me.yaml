@@ -42,8 +42,12 @@ interests:
 education:
   - degree: PhD Economics
     institution: Gujarat Institute of Development Research (GIDR)
+    start: 2009-01-01
+    end: 2019-12-31
   - degree: MA Economics
     institution: Gujarat Institute of Development Research (GIDR)
+    start: 2006-01-01
+    end: 2008-12-31
 
 experience:
   - role: Assistant Professor of Economics
