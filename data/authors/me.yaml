@@ -22,7 +22,7 @@ bio: |
 
 affiliations:
   - name: FLAME University
-    url: https://www.flame.edu.in
+    url: https://www.flame.edu.in/faculty/ravikiran-naik
 
 links:
   - icon: at-symbol
@@ -104,4 +104,4 @@ languages:
     label: Fluent
   - name: Russian
     level: 1
-    label: Basic
+    label: Intermediate
