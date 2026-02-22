@@ -33,26 +33,69 @@ links:
     label: GitHub
 
 interests:
-  - Labour Economics
-  - Platform/Gig Work
+  - Applied Labour Economics
+  - Platforms/Gig Work
   - Intergenerational Inequality
-  - AI & Employment
-  - Gender Economics
+  - Informal Employment & Entrepreneurship
+  - Skill Mismatch
+  - AI & Future of Work
 
 education:
-  - degree: PhD Economics
-    institution: Gujarat Institute of Development Research (GIDR)
-    start: 2009-01-01
-    end: 2019-12-31
+  - degree: PhD in Economics
+    institution: Jawaharlal Nehru University (JNU), New Delhi
+    start: 2014-01-01
+    end: 2020-12-31
+    summary: |
+      Thesis: *Intergenerational Economic Mobility in India: During 1945--1990*
+      Supervisor: Prof. Praveen Jha
   - degree: MA Economics
-    institution: Gujarat Institute of Development Research (GIDR)
-    start: 2006-01-01
+    institution: Gokhale Institute of Economics & Politics (GIPE), Pune
+    start: 2005-01-01
     end: 2008-12-31
+  - degree: BA Economics
+    institution: Rajaram College, Shivaji University, Kolhapur
+    start: 2004-01-01
+    end: 2009-12-31
 
 experience:
-  - role: Assistant Professor of Economics
-    org: FLAME University
-    start: 2020-01-01
+  - role: Assistant Professor
+    org: FLAME University, Pune
+    start: 2022-01-01
     summary: |
-      Teaching Labour Economics, Macroeconomics, Public Economics, and Gender Economics.
-      Research on platform workers, intergenerational mobility, and AI exposure.
+      Teaching: Labor Economics, Macroeconomics, Public Economics, Gender Economics.
+      Research: Platform workers, inequality, informal employment and entrepreneurship.
+  - role: Assistant Professor
+    org: Christ University-Lavasa
+    start: 2020-01-01
+    end: 2022-12-31
+    summary: |
+      Teaching: Labor Economics (Graduate), Econometrics, Microeconomics, Law and Economics, Public Economics.
+  - role: Senior Consultant (Post Doc)
+    org: Indian Institute for Human Settlements (IIHS), Bangalore
+    start: 2018-01-01
+    end: 2020-12-31
+    summary: |
+      Focus: Urban labor markets, industrial transformation, platform economy.
+  - role: Research Associate
+    org: Institute of Rural Management Anand (IRMA)
+    start: 2009-01-01
+    end: 2014-12-31
+    summary: |
+      Focus: Informality, women entrepreneurship.
+  - role: Research Assistant
+    org: CUTS International, Jaipur
+    start: 2008-01-01
+    end: 2009-12-31
+    summary: |
+      Focus: State-business relations, economic policy analysis of international trade using SAM.
+
+languages:
+  - name: Hindi
+    level: 5
+    label: Native
+  - name: English
+    level: 5
+    label: Fluent
+  - name: Russian
+    level: 1
+    label: Basic
