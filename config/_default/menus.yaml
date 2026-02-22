@@ -1,0 +1,16 @@
+main:
+  - name: Bio
+    url: /
+    weight: 10
+  - name: Papers
+    url: /#papers
+    weight: 11
+  - name: Books
+    url: /#books
+    weight: 12
+  - name: Courses
+    url: courses/
+    weight: 30
+  - name: Research
+    url: projects/
+    weight: 40

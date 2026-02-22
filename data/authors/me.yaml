@@ -1,0 +1,54 @@
+schema: hugoblox/author/v1
+slug: ravikiran-naik
+is_owner: true
+
+name:
+  display: Dr. Ravikiran Naik
+  given: Ravikiran
+  family: Naik
+
+role: Assistant Professor of Economics
+
+bio: |
+  Ravikiran Naik is an Assistant Professor of Economics at FLAME University,
+  Pune, India. His research focuses on applied labour economics, platform/gig
+  work, intergenerational inequality, and the impact of AI on employment.
+
+affiliations:
+  - name: FLAME University
+    url: https://www.flame.edu.in
+
+links:
+  - icon: at-symbol
+    url: mailto:ravikiran.naik@flame.edu.in
+    label: Email
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=nkOOeKoAAAAJ
+    label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-0146-3918
+    label: ORCID
+  - icon: brands/github
+    url: https://github.com/ravikirannaik
+    label: GitHub
+
+interests:
+  - Labour Economics
+  - Platform/Gig Work
+  - Intergenerational Inequality
+  - AI & Employment
+  - Gender Economics
+
+education:
+  - degree: PhD Economics
+    institution: Gujarat Institute of Development Research (GIDR)
+  - degree: MA Economics
+    institution: Gujarat Institute of Development Research (GIDR)
+
+experience:
+  - role: Assistant Professor of Economics
+    org: FLAME University
+    start: 2020-01-01
+    summary: |
+      Teaching Labour Economics, Macroeconomics, Public Economics, and Gender Economics.
+      Research on platform workers, intergenerational mobility, and AI exposure.
