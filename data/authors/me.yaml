@@ -29,6 +29,9 @@ links:
   - icon: at-symbol
     url: mailto:ravikiran.naik@flame.edu.in
     label: Email
+  - icon: link
+    url: https://ravikirannaik.github.io
+    label: Website
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=nkOOeKoAAAAJ
     label: Google Scholar
