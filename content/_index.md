@@ -63,4 +63,16 @@ sections:
         exclude_featured: false
     design:
       view: citation
+
+  - block: collection
+    id: research
+    content:
+      title: Research Projects
+      text: ''
+      filters:
+        folders:
+          - data
+    design:
+      view: article-grid
+      columns: 2
 ---
