@@ -1,10 +1,10 @@
 ---
-title: "Economic Complexity of Indian Cities: Industry Space, Multi-City Comparison, and Informality"
+title: "Economic Complexity: Indian Cities & the IPL Player Space"
 date: 2026-02-28
-tags: ["economic complexity","industry space","informality","India","Bangalore","Mumbai","Hyderabad","Chennai","Pune","Delhi","PLFS","urban economics","formalization"]
+tags: ["economic complexity","industry space","informality","India","Bangalore","Mumbai","Hyderabad","Chennai","Pune","Delhi","PLFS","urban economics","formalization","IPL","cricket","network analysis"]
 author: ["Ravikiran Naik"]
-description: "Applying economic complexity methods to Indian cities using PLFS 2024: industry space mapping for five major cities (Bangalore, Mumbai, Hyderabad, Chennai, Pune), cross-city SWOT comparison, and a novel dual formal-informal complexity framework for Delhi."
-summary: "Novel application of economic complexity methods to Indian cities. Maps industry spaces for Bangalore, Mumbai, Hyderabad, Chennai, and Pune; compares diversification patterns across cities; and builds a dual formal-informal complexity framework for Delhi identifying formalization pathways. All using PLFS 2024 data."
+description: "Applying economic complexity methods to Indian cities (PLFS 2024) and the Indian Premier League (IPL 2008–2024): industry space mapping, cross-city SWOT comparison, dual formal-informal complexity for Delhi, and a Player Space network mapping franchise connectivity across 17 cricket seasons."
+summary: "Economic complexity methods applied to Indian cities and IPL cricket. Parts 1–3 map industry spaces for five cities and build a dual formal-informal framework for Delhi (PLFS 2024). Part 4 constructs the IPL Player Space — a network of 724 players across 15 franchises and 17 seasons, revealing franchise similarity, player mobility, and loyalty profiles."
 cover:
     image: "rca_heatmap.png"
     alt: "Cross-city RCA heatmap comparing specializations of five Indian cities"
@@ -230,6 +230,48 @@ The top formalization pathways are:
 
 ---
 
+## Part 4: IPL Player Space --- Complexity Meets Cricket
+
+Can the economic complexity framework map a cricket league? This extension applies the same co-location and relatedness methods to the **Indian Premier League (IPL)**, treating franchises as "countries" and players as "products." A bipartite Teams $\times$ Players network built from ball-by-ball data across 17 seasons (2008--2024) reveals how 724 players connect 15 franchises through shared rosters, team-switching, and co-occurrence. The resulting **Player Space** --- where edges link players who have been teammates, weighted by shared seasons --- surfaces clusters of franchise loyalty, player mobility ecosystems, and recruitment signatures distinct to each team.
+
+### The Player Space Network
+
+The hero visualisation: 149 of the most active IPL players, connected by co-occurrence on the same team. Node colour marks each player's primary franchise; node size reflects career length. The dense core shows high-mobility veterans who have represented multiple teams, while the periphery reveals franchise-loyal clusters --- the CSK (yellow) and MI (blue) groupings are particularly tight-knit.
+
+![IPL Player Space Network](ipl_player_space.png)
+
+### Franchise Similarity Network
+
+Which franchises share the most players? Edge width is proportional to the number of players who have represented both teams. **RCB and DC share the most players (44)**, followed by DC--KKR (39). The defunct franchises (DCH, PW, KTK) sit at the periphery, while the eight core teams form a densely interconnected core --- evidence of a highly fluid player market.
+
+![IPL Franchise Similarity Network](ipl_franchise_network.png)
+
+### Player Journeys
+
+A dot-strip chart tracking the top 20 most experienced IPL players across seasons. Each dot is coloured by team and labelled with the franchise abbreviation. Some players are strikingly loyal --- **MS Dhoni** (CSK, 16 seasons), **Virat Kohli** (RCB, 16 seasons), **Rohit Sharma** (MI, 16 seasons) --- while others like **Ajinkya Rahane** (6 franchises) and **Dinesh Karthik** (6 franchises) are quintessential journeymen whose mobility stitches the league together.
+
+![Player Journeys Across IPL Franchises](ipl_player_journeys.png)
+
+### Most Connected Players
+
+Who has the most co-occurrence links? **David Warner** leads with 31 unique teammates in the network and the highest weighted co-occurrence strength, a product of long stints at both DC and SRH. Rohit Sharma, Ambati Rayudu, and MS Dhoni follow --- their long careers and franchise stability generate deep connectivity.
+
+![Most Connected IPL Players](ipl_top_connected.png)
+
+### Squad Utilisation Heatmap
+
+Each cell shows the number of unique players a franchise fielded in a given season. The early years (2009 especially) saw larger squads --- RR used 36 players in 2009. Over time, squad utilisation has converged to 17--22 players per season. CSK and MI stand out for consistently lower numbers, suggesting greater roster stability.
+
+![IPL Squad Utilisation Heatmap](ipl_roster_heatmap.png)
+
+### Franchise Loyalty Profile
+
+For each core franchise, how many of their all-time players were **one-club players** (played for that franchise only), **two-franchise** players, or **three-plus franchise journeymen**? CSK has the smallest total roster (103 players) --- consistent with their reputation for squad stability. RCB and DC have the highest total (158 and 158), reflecting greater churn. Across all franchises, roughly a third of players are one-club, a third have played for two, and a third are journeymen.
+
+![Franchise Loyalty Profile](ipl_franchise_loyalty.png)
+
+---
+
 ## Code & Replication
 
-The analysis pipelines and all visualizations are implemented in Python, using PLFS unit-level data. The code computes RCA, co-location proximity, density, and SWOT classification from the raw microdata. Interactive HTML versions of the network and scatter plots (with hover details) are available upon request.
+The urban economic complexity analysis is implemented in Python using PLFS 2024 unit-level data. The IPL Player Space analysis uses ball-by-ball data from Kaggle (IPL 2008--2024, ODbL licence) covering 724 players across 15 franchises and 17 seasons. All code computes RCA, co-location proximity, density, and SWOT classification (Parts 1--3) or player co-occurrence networks and franchise connectivity (Part 4) from raw microdata. Interactive HTML versions are available upon request.
