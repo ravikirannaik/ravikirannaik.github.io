@@ -49,13 +49,13 @@ Industries are then classified into a **SWOT framework** based on RCA (above/bel
 
 The nodes represent 2-digit NIC industries; edges connect industries with co-location proximity $$\varphi > 0.25$$. Node size is proportional to RCA; colour indicates SWOT category.
 
-{% include figure.liquid path="assets/img/economic-complexity/bangalore_network.png" alt="Bangalore Industry Space Network" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/bangalore_network.png" alt="Bangalore Industry Space Network" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom" %}
 
 ### SWOT: RCA vs. Density
 
 Each dot is an industry. The four quadrants represent Strengths (high RCA, high density), Weaknesses (high RCA, low density), Opportunities (low RCA, high density), and Threats (low RCA, low density).
 
-{% include figure.liquid path="assets/img/economic-complexity/bangalore_swot.png" alt="Bangalore RCA vs Density SWOT Scatter" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/bangalore_swot.png" alt="Bangalore RCA vs Density SWOT Scatter" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 
 ### Key Findings
 
@@ -102,19 +102,19 @@ The SWOT breakdown reveals distinct industrial characters. Mumbai has the broade
 
 The heatmap shows which industries each city specializes in (RCA > 1, darker = stronger). **11 industries are shared across all five cities**, including computer programming, financial services, real estate, warehousing, and electrical equipment manufacturing --- revealing the common capabilities of India's major urban centres.
 
-{% include figure.liquid path="assets/img/economic-complexity/rca_heatmap.png" alt="Cross-City RCA Heatmap" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/rca_heatmap.png" alt="Cross-City RCA Heatmap" class="img-fluid rounded z-depth-1" zoomable=true width="55%" caption="Click to zoom" %}
 
 ### SWOT Comparison: Five Panels
 
 Each panel shows one city's RCA-vs-density scatter. The quadrant structure identifies Strengths (top-right), Opportunities (bottom-right), Weaknesses (top-left), and Threats (bottom-left).
 
-{% include figure.liquid path="assets/img/economic-complexity/five_swot_scatter.png" alt="Five-Panel SWOT Scatter" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/five_swot_scatter.png" alt="Five-Panel SWOT Scatter" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom for detail" %}
 
 ### Industry Space Networks
 
 The same force-directed layout is used across all five cities, enabling direct visual comparison of which parts of the industry space each city has activated.
 
-{% include figure.liquid path="assets/img/economic-complexity/five_networks.png" alt="Five-Panel Industry Networks" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/five_networks.png" alt="Five-Panel Industry Networks" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom for detail" %}
 
 ### Key Patterns
 
@@ -139,7 +139,7 @@ The same force-directed layout is used across all five cities, enabling direct v
 
 The opportunity comparison highlights each city's highest-density industries where RCA is currently below 1 --- the most promising targets for industrial diversification.
 
-{% include figure.liquid path="assets/img/economic-complexity/opportunity_comparison.png" alt="Development Opportunities by City" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/opportunity_comparison.png" alt="Development Opportunities by City" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom for detail" %}
 
 ---
 
@@ -172,13 +172,13 @@ Two parallel industry spaces, using a shared network layout for visual compariso
 
 The central visualization: each industry plotted by its informal RCA (x-axis) vs. formal RCA (y-axis). The diagonal represents equal specialization. Industries above the diagonal are formal-dominant; below are informal-dominant.
 
-{% include figure.liquid path="assets/img/economic-complexity/delhi_rca_comparison.png" alt="Delhi Formal vs Informal RCA Comparison" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/delhi_rca_comparison.png" alt="Delhi Formal vs Informal RCA Comparison" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
 
 ### Dual Classification
 
 Industries fall into four categories based on where RCA exceeds 1:
 
-{% include figure.liquid path="assets/img/economic-complexity/delhi_dual_bars.png" alt="Delhi Dual Classification" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/delhi_dual_bars.png" alt="Delhi Dual Classification" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
 
 | Category | Count | Examples |
 |---|---|---|
@@ -191,7 +191,7 @@ Industries fall into four categories based on where RCA exceeds 1:
 
 The most policy-relevant output: among Delhi's informal specializations, which have the highest **formal density** --- i.e., the strongest surrounding formal capabilities that could support a transition?
 
-{% include figure.liquid path="assets/img/economic-complexity/delhi_pathways.png" alt="Delhi Formalization Pathways" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/delhi_pathways.png" alt="Delhi Formalization Pathways" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
 
 The top formalization pathways are:
 
@@ -211,13 +211,13 @@ Can the economic complexity framework map a cricket league? This extension appli
 
 The hero visualisation: 149 of the most active IPL players, connected by co-occurrence on the same team. Node colour marks each player's primary franchise; node size reflects career length. The dense core shows high-mobility veterans who have represented multiple teams, while the periphery reveals franchise-loyal clusters --- the CSK (yellow) and MI (blue) groupings are particularly tight-knit.
 
-{% include figure.liquid path="assets/img/economic-complexity/ipl_player_space.png" alt="IPL Player Space Network" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/ipl_player_space.png" alt="IPL Player Space Network" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom" %}
 
 ### Franchise Similarity Network
 
 Which franchises share the most players? Edge width is proportional to the number of players who have represented both teams. **RCB and DC share the most players (44)**, followed by DC--KKR (39). The defunct franchises (DCH, PW, KTK) sit at the periphery, while the eight core teams form a densely interconnected core --- evidence of a highly fluid player market.
 
-{% include figure.liquid path="assets/img/economic-complexity/ipl_franchise_network.png" alt="IPL Franchise Similarity Network" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/ipl_franchise_network.png" alt="IPL Franchise Similarity Network" class="img-fluid rounded z-depth-1" zoomable=true width="75%" caption="Click to zoom" %}
 
 ### Player Journeys
 
@@ -229,7 +229,7 @@ A dot-strip chart tracking the top 20 most experienced IPL players across season
 
 Who has the most co-occurrence links? **David Warner** leads with 31 unique teammates in the network and the highest weighted co-occurrence strength, a product of long stints at both DC and SRH. Rohit Sharma, Ambati Rayudu, and MS Dhoni follow --- their long careers and franchise stability generate deep connectivity.
 
-{% include figure.liquid path="assets/img/economic-complexity/ipl_top_connected.png" alt="Most Connected IPL Players" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/ipl_top_connected.png" alt="Most Connected IPL Players" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
 
 ### Squad Utilisation Heatmap
 
