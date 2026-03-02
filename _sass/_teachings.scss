@@ -75,3 +75,61 @@
   padding-left: 18px;
   margin-bottom: 0;
 }
+
+// PDF embed with download restriction
+.pdf-embed-container {
+  margin: 1rem 0 1.5rem;
+  -webkit-user-select: none;
+  user-select: none;
+
+  iframe {
+    display: block;
+    pointer-events: auto;
+  }
+}
+
+// Resource cards for teaching materials
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.resource-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: var(--global-bg-color);
+
+  h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .resource-type {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+
+    &.slides {
+      background: #e3f2fd;
+      color: #1565c0;
+    }
+
+    &.notes {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    &.problems {
+      background: #fff3e0;
+      color: #e65100;
+    }
+  }
+}

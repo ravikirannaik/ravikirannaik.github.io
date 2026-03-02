@@ -1,0 +1,13 @@
+<div class="pdf-embed-container" oncontextmenu="return false;">
+  <iframe
+    src="{{ include.path | relative_url }}#toolbar=0&navpanes=0&scrollbar=1&view=FitH"
+    width="{{ include.width | default: '100%' }}"
+    height="{{ include.height | default: '500px' }}"
+    style="border: 1px solid #dee2e6; border-radius: 0.375rem;"
+    loading="lazy"
+    {% if include.title %}title="{{ include.title }}"{% endif %}
+  ></iframe>
+  {% if include.caption %}
+    <p class="text-muted small mt-1">{{ include.caption }}</p>
+  {% endif %}
+</div>
