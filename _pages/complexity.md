@@ -51,11 +51,18 @@ The nodes represent 2-digit NIC industries; edges connect industries with co-loc
 
 {% include figure.liquid path="assets/img/economic-complexity/bangalore_network.png" alt="Bangalore Industry Space Network" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom" %}
 
-### SWOT: RCA vs. Density
+### SWOT Classification & Development Opportunities
 
-Each dot is an industry. The four quadrants represent Strengths (high RCA, high density), Weaknesses (high RCA, low density), Opportunities (low RCA, high density), and Threats (low RCA, low density).
+Each dot is an industry. The four quadrants represent Strengths (high RCA, high density), Weaknesses (high RCA, low density), Opportunities (low RCA, high density), and Threats (low RCA, low density). The bar chart ranks the top development opportunities by density.
 
-{% include figure.liquid path="assets/img/economic-complexity/bangalore_swot.png" alt="Bangalore RCA vs Density SWOT Scatter" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
+<div class="row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/bangalore_swot.png" alt="Bangalore RCA vs Density SWOT Scatter" class="img-fluid rounded z-depth-1" zoomable=true caption="RCA vs. Density SWOT" %}
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/bangalore_opportunities.png" alt="Bangalore Development Opportunities" class="img-fluid rounded z-depth-1" zoomable=true caption="Top Development Opportunities" %}
+  </div>
+</div>
 
 ### Key Findings
 
@@ -69,10 +76,6 @@ Each dot is an industry. The four quadrants represent Strengths (high RCA, high 
 | Information service activities | 7.3 |
 | Real estate activities | 6.4 |
 | Machinery & equipment manufacturing | 3.8 |
-
-**Top Development Opportunities** (RCA < 1 but highest density):
-
-{% include figure.liquid path="assets/img/economic-complexity/bangalore_opportunities.png" alt="Bangalore Development Opportunities" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 **Electronics & optical products** emerges as the top opportunity --- Bangalore has RCA = 0.81 (nearly a specialization) with the highest density (0.635) of any industry, indicating strong capability readiness. Pharmaceuticals and financial services follow.
 
@@ -92,17 +95,18 @@ The economic complexity framework is extended to five major Indian cities, all c
 | Chennai | Tamil Nadu | 02 | 48 |
 | Pune | Maharashtra | 25 | 36 |
 
-### City Complexity Profiles
+### City Complexity Profiles & Cross-City RCA
 
-The SWOT breakdown reveals distinct industrial characters. Mumbai has the broadest base (57 specializations, 32 strengths) while Pune and Bangalore have the most untapped opportunities (17 and 19, respectively), suggesting greater diversification potential.
+The SWOT breakdown (left) reveals distinct industrial characters. Mumbai has the broadest base (57 specializations, 32 strengths) while Pune and Bangalore have the most untapped opportunities. The heatmap (right) shows which industries each city specializes in --- **11 industries are shared across all five cities**.
 
-{% include figure.liquid path="assets/img/economic-complexity/city_profiles.png" alt="City Complexity Profiles" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-### Cross-City RCA Heatmap
-
-The heatmap shows which industries each city specializes in (RCA > 1, darker = stronger). **11 industries are shared across all five cities**, including computer programming, financial services, real estate, warehousing, and electrical equipment manufacturing --- revealing the common capabilities of India's major urban centres.
-
-{% include figure.liquid path="assets/img/economic-complexity/rca_heatmap.png" alt="Cross-City RCA Heatmap" class="img-fluid rounded z-depth-1" zoomable=true width="55%" caption="Click to zoom" %}
+<div class="row mt-3">
+  <div class="col-sm-7">
+    {% include figure.liquid path="assets/img/economic-complexity/city_profiles.png" alt="City Complexity Profiles" class="img-fluid rounded z-depth-1" zoomable=true caption="SWOT breakdown by city" %}
+  </div>
+  <div class="col-sm-5">
+    {% include figure.liquid path="assets/img/economic-complexity/rca_heatmap.png" alt="Cross-City RCA Heatmap" class="img-fluid rounded z-depth-1" zoomable=true caption="RCA heatmap (click to zoom)" %}
+  </div>
+</div>
 
 ### SWOT Comparison: Five Panels
 
@@ -168,17 +172,18 @@ Two parallel industry spaces, using a shared network layout for visual compariso
 
 {% include figure.liquid path="assets/img/economic-complexity/delhi_dual_network.png" alt="Delhi Dual Industry Space" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-### Formal vs. Informal RCA Comparison
+### Formal vs. Informal RCA & Dual Classification
 
-The central visualization: each industry plotted by its informal RCA (x-axis) vs. formal RCA (y-axis). The diagonal represents equal specialization. Industries above the diagonal are formal-dominant; below are informal-dominant.
+The scatter (left) plots each industry by informal RCA (x-axis) vs. formal RCA (y-axis) --- the diagonal represents equal specialization. The bar chart (right) shows the four-way classification based on where RCA exceeds 1.
 
-{% include figure.liquid path="assets/img/economic-complexity/delhi_rca_comparison.png" alt="Delhi Formal vs Informal RCA Comparison" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
-
-### Dual Classification
-
-Industries fall into four categories based on where RCA exceeds 1:
-
-{% include figure.liquid path="assets/img/economic-complexity/delhi_dual_bars.png" alt="Delhi Dual Classification" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
+<div class="row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/delhi_rca_comparison.png" alt="Delhi Formal vs Informal RCA Comparison" class="img-fluid rounded z-depth-1" zoomable=true caption="Formal vs. Informal RCA" %}
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/delhi_dual_bars.png" alt="Delhi Dual Classification" class="img-fluid rounded z-depth-1" zoomable=true caption="Dual classification" %}
+  </div>
+</div>
 
 | Category | Count | Examples |
 |---|---|---|
@@ -213,35 +218,37 @@ The hero visualisation: 149 of the most active IPL players, connected by co-occu
 
 {% include figure.liquid path="assets/img/economic-complexity/ipl_player_space.png" alt="IPL Player Space Network" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom" %}
 
-### Franchise Similarity Network
+### Franchise Similarity & Loyalty
 
-Which franchises share the most players? Edge width is proportional to the number of players who have represented both teams. **RCB and DC share the most players (44)**, followed by DC--KKR (39). The defunct franchises (DCH, PW, KTK) sit at the periphery, while the eight core teams form a densely interconnected core --- evidence of a highly fluid player market.
+Which franchises share the most players? **RCB and DC share the most (44)**, followed by DC--KKR (39). The loyalty profile shows how many players were one-club vs. journeymen --- CSK has the smallest roster (103), consistent with their reputation for stability.
 
-{% include figure.liquid path="assets/img/economic-complexity/ipl_franchise_network.png" alt="IPL Franchise Similarity Network" class="img-fluid rounded z-depth-1" zoomable=true width="75%" caption="Click to zoom" %}
+<div class="row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/ipl_franchise_network.png" alt="IPL Franchise Similarity Network" class="img-fluid rounded z-depth-1" zoomable=true caption="Franchise similarity network" %}
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/ipl_franchise_loyalty.png" alt="Franchise Loyalty Profile" class="img-fluid rounded z-depth-1" zoomable=true caption="Franchise loyalty profile" %}
+  </div>
+</div>
 
 ### Player Journeys
 
-A dot-strip chart tracking the top 20 most experienced IPL players across seasons. Each dot is coloured by team and labelled with the franchise abbreviation. Some players are strikingly loyal --- **MS Dhoni** (CSK, 16 seasons), **Virat Kohli** (RCB, 16 seasons), **Rohit Sharma** (MI, 16 seasons) --- while others like **Ajinkya Rahane** (6 franchises) and **Dinesh Karthik** (6 franchises) are quintessential journeymen whose mobility stitches the league together.
+A dot-strip chart tracking the top 20 most experienced IPL players across seasons. Some players are strikingly loyal --- **MS Dhoni** (CSK, 16 seasons), **Virat Kohli** (RCB, 16 seasons), **Rohit Sharma** (MI, 16 seasons) --- while others like **Ajinkya Rahane** (6 franchises) and **Dinesh Karthik** (6 franchises) are quintessential journeymen whose mobility stitches the league together.
 
-{% include figure.liquid path="assets/img/economic-complexity/ipl_player_journeys.png" alt="Player Journeys Across IPL Franchises" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/economic-complexity/ipl_player_journeys.png" alt="Player Journeys Across IPL Franchises" class="img-fluid rounded z-depth-1" zoomable=true caption="Click to zoom for detail" %}
 
-### Most Connected Players
+### Most Connected Players & Squad Utilisation
 
-Who has the most co-occurrence links? **David Warner** leads with 31 unique teammates in the network and the highest weighted co-occurrence strength, a product of long stints at both DC and SRH. Rohit Sharma, Ambati Rayudu, and MS Dhoni follow --- their long careers and franchise stability generate deep connectivity.
+**David Warner** leads with 31 unique teammates and the highest weighted co-occurrence strength. The heatmap shows squad sizes per season --- early years saw larger squads (RR: 36 in 2009), converging to 17--22 by recent seasons.
 
-{% include figure.liquid path="assets/img/economic-complexity/ipl_top_connected.png" alt="Most Connected IPL Players" class="img-fluid rounded z-depth-1" zoomable=true width="75%" %}
-
-### Squad Utilisation Heatmap
-
-Each cell shows the number of unique players a franchise fielded in a given season. The early years (2009 especially) saw larger squads --- RR used 36 players in 2009. Over time, squad utilisation has converged to 17--22 players per season. CSK and MI stand out for consistently lower numbers, suggesting greater roster stability.
-
-{% include figure.liquid path="assets/img/economic-complexity/ipl_roster_heatmap.png" alt="IPL Squad Utilisation Heatmap" class="img-fluid rounded z-depth-1" zoomable=true %}
-
-### Franchise Loyalty Profile
-
-For each core franchise, how many of their all-time players were **one-club players** (played for that franchise only), **two-franchise** players, or **three-plus franchise journeymen**? CSK has the smallest total roster (103 players) --- consistent with their reputation for squad stability. RCB and DC have the highest total (158 and 158), reflecting greater churn. Across all franchises, roughly a third of players are one-club, a third have played for two, and a third are journeymen.
-
-{% include figure.liquid path="assets/img/economic-complexity/ipl_franchise_loyalty.png" alt="Franchise Loyalty Profile" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div class="row mt-3">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/ipl_top_connected.png" alt="Most Connected IPL Players" class="img-fluid rounded z-depth-1" zoomable=true caption="Most connected players" %}
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/economic-complexity/ipl_roster_heatmap.png" alt="IPL Squad Utilisation Heatmap" class="img-fluid rounded z-depth-1" zoomable=true caption="Squad utilisation heatmap" %}
+  </div>
+</div>
 
 ---
 
