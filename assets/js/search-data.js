@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-complexity",
+          title: "complexity",
+          description: "Economic complexity analysis of Indian cities and the IPL Player Space.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/complexity/";
+          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Course materials and descriptions for classes taught at FLAME University.",
@@ -60,7 +67,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-economic-complexity-indian-cities-amp-the-ipl-player-space",
           title: 'Economic Complexity: Indian Cities &amp;amp; the IPL Player Space',
-          description: "Applying economic complexity methods to Indian cities (PLFS 2024) and the Indian Premier League (IPL 2008-2024): industry space mapping, cross-city SWOT comparison, dual formal-informal complexity for Delhi, and a Player Space network.",
+          description: "Applying economic complexity methods to Indian cities (PLFS 2024) and the Indian Premier League (IPL 2008-2024).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/economic-complexity/";
             },},{id: "projects-platform-workers-in-india-wages-skills-and-working-conditions",
