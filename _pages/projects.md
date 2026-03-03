@@ -6,7 +6,7 @@ description: Current research projects and data analyses.
 nav: true
 nav_order: 3
 display_categories: [research]
-horizontal: false
+horizontal: true
 ---
 
 <div class="projects">
