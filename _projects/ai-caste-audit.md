@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Algorithmic Untouchability? Testing Caste Discrimination in AI Hiring Tools"
-description: "A correspondence study adapting Thorat & Atwell (2007) to test whether LLM-based resume screeners discriminate based on caste-signaling Indian surnames."
+title: "Does AI Inherit Caste? An Audit Study of LLM-Based Resume Screening in India"
+description: "A correspondence study adapting Thorat & Atwell (2007) to test whether AI resume screeners respond to caste-signaling surnames."
 img:
 importance: 3
 category: research
