@@ -65,7 +65,12 @@ ninja.data = [{
       },{id: "news-selected-to-participate-in-the-csh-winter-school-2026-on-rethinking-human-capital-the-past-and-future-of-work-in-vienna-austria-april-13-17-2026",
           title: 'Selected to participate in the CSH Winter School 2026 on “Rethinking Human Capital:...',
           description: "",
-          section: "News",},{id: "projects-economic-complexity-indian-cities-amp-the-ipl-player-space",
+          section: "News",},{id: "projects-algorithmic-untouchability-testing-caste-discrimination-in-ai-hiring-tools",
+          title: 'Algorithmic Untouchability? Testing Caste Discrimination in AI Hiring Tools',
+          description: "A correspondence study adapting Thorat &amp; Atwell (2007) to test whether LLM-based resume screeners discriminate based on caste-signaling Indian surnames.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ai-caste-audit/";
+            },},{id: "projects-economic-complexity-indian-cities-amp-the-ipl-player-space",
           title: 'Economic Complexity: Indian Cities &amp;amp; the IPL Player Space',
           description: "Applying economic complexity methods to Indian cities (PLFS 2024) and the Indian Premier League (IPL 2008-2024).",
           section: "Projects",handler: () => {
