@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "From Human Prejudice to Machine Bias: Testing Caste Discrimination in AI Recruitment"
-description: "A correspondence study adapting Thorat & Atwell (2007) to test whether AI resume screeners respond to caste-signaling surnames."
+description: "To test whether AI resume screeners respond to caste-signaling surnames."
 img:
 importance: 3
 category: research
