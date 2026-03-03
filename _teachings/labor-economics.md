@@ -49,8 +49,7 @@ The firm's hiring decision, marginal productivity, and labor demand under perfec
 + Elasticity of labor demand (Marshall's rules)
 + Monopsony and wage-setting power
 
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (PDF)</a> &nbsp;|&nbsp;
-<a href="{{ '/assets/html/teaching/labor-economics/ch3-demand-handout.html' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Slides (HTML)</a>
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (PDF)</a>
 
 ---
 
@@ -64,8 +63,6 @@ Competitive equilibrium, the cobweb model, efficiency wages, and compensating di
 + Compensating wage differentials
 + Efficiency wages
 
-<a href="{{ '/assets/html/teaching/labor-economics/ch4-equilibrium-handout.html' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.4 Slides (HTML)</a>
-
 ---
 
 ## Chapter 5: Compensating Wage Differentials
@@ -77,8 +74,6 @@ Theory and evidence on compensating differentials, hedonic wage models, and the 
 + Hedonic wage functions
 + Value of a statistical life
 + Empirical evidence
-
-<a href="{{ '/assets/html/teaching/labor-economics/ch5-cwd-handout.html' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.5 Slides (HTML)</a>
 
 ---
 
