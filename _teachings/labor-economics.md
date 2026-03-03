@@ -20,7 +20,7 @@ This undergraduate course provides a comprehensive introduction to labor economi
 
 Overview of the labor market, key facts, and the economist's approach to understanding labor market outcomes.
 
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch1-slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.1 Slides (view only)</a>
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch1-slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.1 Slides (PDF)</a>
 
 ---
 
@@ -34,9 +34,8 @@ The income-leisure tradeoff, reservation wages, labour force participation, and 
 + Labour force participation decisions
 + Empirical evidence on labour supply elasticities
 
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-intro-slides-pi.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Introduction Slides (view only)</a>
-
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-supply-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Supply Handouts (view only)</a>
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-intro-slides-pi.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Introduction Slides (PDF)</a> &nbsp;|&nbsp;
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-supply-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Supply Handouts (PDF)</a>
 
 ---
 
@@ -50,7 +49,8 @@ The firm's hiring decision, marginal productivity, and labor demand under perfec
 + Elasticity of labor demand (Marshall's rules)
 + Monopsony and wage-setting power
 
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (view only)</a>
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (PDF)</a> &nbsp;|&nbsp;
+<a href="{{ '/assets/html/teaching/labor-economics/ch3-demand-handout.html' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Slides (HTML)</a>
 
 ---
 
@@ -64,9 +64,25 @@ Competitive equilibrium, the cobweb model, efficiency wages, and compensating di
 + Compensating wage differentials
 + Efficiency wages
 
+<a href="{{ '/assets/html/teaching/labor-economics/ch4-equilibrium-handout.html' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.4 Slides (HTML)</a>
+
 ---
 
-## Chapter 5: Human Capital
+## Chapter 5: Compensating Wage Differentials
+
+Theory and evidence on compensating differentials, hedonic wage models, and the value of non-wage job attributes.
+
+##### Key Topics
++ The theory of compensating differentials
++ Hedonic wage functions
++ Value of a statistical life
++ Empirical evidence
+
+<a href="{{ '/assets/html/teaching/labor-economics/ch5-cwd-handout.html' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.5 Slides (HTML)</a>
+
+---
+
+## Chapter 6: Human Capital
 
 Schooling decisions, returns to education, the Mincer equation, on-the-job training, and signalling.
 
@@ -78,7 +94,7 @@ Schooling decisions, returns to education, the Mincer equation, on-the-job train
 
 ---
 
-## Chapter 6: Wage Inequality and Discrimination
+## Chapter 7: Wage Inequality and Discrimination
 
 The wage structure, skill premium, discrimination models (Becker, statistical), and decomposition methods.
 
@@ -90,7 +106,7 @@ The wage structure, skill premium, discrimination models (Becker, statistical), 
 
 ---
 
-## Chapter 7: Labor Market Institutions
+## Chapter 8: Labor Market Institutions
 
 Unions, minimum wages, labor regulations, and their effects on employment and wages.
 
@@ -102,7 +118,7 @@ Unions, minimum wages, labor regulations, and their effects on employment and wa
 
 ---
 
-## Chapter 8: Informality, Platform Work, and the Future of Work
+## Chapter 9: Informality, Platform Work, and the Future of Work
 
 Informal employment in developing economies, gig/platform work, AI and automation, and the future of labor markets.
 
