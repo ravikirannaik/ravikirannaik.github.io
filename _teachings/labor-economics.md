@@ -1,7 +1,7 @@
 ---
 title: Labor Economics
 description: Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.
-term: 2024--present
+term: 2024--present (ongoing)
 category: Undergraduate
 importance: 1
 toc:
@@ -22,12 +22,6 @@ Overview of the labor market, key facts, and the economist's approach to underst
 
 {% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch1-slides.pdf" title="Ch.1 Slides" height="500px" caption="Lecture slides — view only" %}
 
-<!-- Uncomment as you add PDFs:
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch1-notes.pdf" title="Ch.1 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch1-problems.pdf" title="Ch.1 Problems" height="400px" caption="Problem set — view only" %}
--->
-
 ---
 
 ## Chapter 2: Labor Supply
@@ -40,13 +34,9 @@ The income-leisure tradeoff, reservation wages, labour force participation, and 
 + Labour force participation decisions
 + Empirical evidence on labour supply elasticities
 
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-slides.pdf" title="Ch.2 Slides" height="500px" caption="Lecture slides — view only" %}
+{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-intro-slides-pi.pdf" title="Ch.2 Introduction Slides" height="500px" caption="Lecture slides — view only" %}
 
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-notes.pdf" title="Ch.2 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-problems.pdf" title="Ch.2 Problems" height="400px" caption="Problem set — view only" %}
--->
+{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-supply-3-1-handouts.pdf" title="Ch.2 Supply Handouts" height="500px" caption="Lecture handouts — view only" %}
 
 ---
 
@@ -60,13 +50,7 @@ The firm's hiring decision, marginal productivity, and labor demand under perfec
 + Elasticity of labor demand (Marshall's rules)
 + Monopsony and wage-setting power
 
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch3-slides.pdf" title="Ch.3 Slides" height="500px" caption="Lecture slides — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch3-notes.pdf" title="Ch.3 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch3-problems.pdf" title="Ch.3 Problems" height="400px" caption="Problem set — view only" %}
--->
+{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf" title="Ch.3 Demand Handouts" height="500px" caption="Lecture handouts — view only" %}
 
 ---
 
@@ -80,14 +64,6 @@ Competitive equilibrium, the cobweb model, efficiency wages, and compensating di
 + Compensating wage differentials
 + Efficiency wages
 
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch4-slides.pdf" title="Ch.4 Slides" height="500px" caption="Lecture slides — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch4-notes.pdf" title="Ch.4 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch4-problems.pdf" title="Ch.4 Problems" height="400px" caption="Problem set — view only" %}
--->
-
 ---
 
 ## Chapter 5: Human Capital
@@ -99,14 +75,6 @@ Schooling decisions, returns to education, the Mincer equation, on-the-job train
 + Returns to education: Mincer equation
 + On-the-job training: general vs. specific
 + Signalling and screening
-
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch5-slides.pdf" title="Ch.5 Slides" height="500px" caption="Lecture slides — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch5-notes.pdf" title="Ch.5 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch5-problems.pdf" title="Ch.5 Problems" height="400px" caption="Problem set — view only" %}
--->
 
 ---
 
@@ -120,14 +88,6 @@ The wage structure, skill premium, discrimination models (Becker, statistical), 
 + Taste-based and statistical discrimination
 + Oaxaca-Blinder decomposition
 
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch6-slides.pdf" title="Ch.6 Slides" height="500px" caption="Lecture slides — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch6-notes.pdf" title="Ch.6 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch6-problems.pdf" title="Ch.6 Problems" height="400px" caption="Problem set — view only" %}
--->
-
 ---
 
 ## Chapter 7: Labor Market Institutions
@@ -140,14 +100,6 @@ Unions, minimum wages, labor regulations, and their effects on employment and wa
 + Employment protection legislation
 + Labour market institutions in India
 
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch7-slides.pdf" title="Ch.7 Slides" height="500px" caption="Lecture slides — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch7-notes.pdf" title="Ch.7 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch7-problems.pdf" title="Ch.7 Problems" height="400px" caption="Problem set — view only" %}
--->
-
 ---
 
 ## Chapter 8: Informality, Platform Work, and the Future of Work
@@ -159,14 +111,6 @@ Informal employment in developing economies, gig/platform work, AI and automatio
 + Dual labor markets
 + Platform/gig economy
 + AI, automation, and task displacement
-
-<!--
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch8-slides.pdf" title="Ch.8 Slides" height="500px" caption="Lecture slides — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch8-notes.pdf" title="Ch.8 Notes" height="500px" caption="Lecture notes — view only" %}
-
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch8-problems.pdf" title="Ch.8 Problems" height="400px" caption="Problem set — view only" %}
--->
 
 ---
 
