@@ -20,7 +20,7 @@ This undergraduate course provides a comprehensive introduction to labor economi
 
 Overview of the labor market, key facts, and the economist's approach to understanding labor market outcomes.
 
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch1-slides.pdf" title="Ch.1 Slides" height="500px" caption="Lecture slides — view only" %}
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch1-slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.1 Slides (view only)</a>
 
 ---
 
@@ -34,9 +34,9 @@ The income-leisure tradeoff, reservation wages, labour force participation, and 
 + Labour force participation decisions
 + Empirical evidence on labour supply elasticities
 
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-intro-slides-pi.pdf" title="Ch.2 Introduction Slides" height="500px" caption="Lecture slides — view only" %}
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-intro-slides-pi.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Introduction Slides (view only)</a>
 
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch2-supply-3-1-handouts.pdf" title="Ch.2 Supply Handouts" height="500px" caption="Lecture handouts — view only" %}
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-supply-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Supply Handouts (view only)</a>
 
 ---
 
@@ -50,7 +50,7 @@ The firm's hiring decision, marginal productivity, and labor demand under perfec
 + Elasticity of labor demand (Marshall's rules)
 + Monopsony and wage-setting power
 
-{% include pdf_embed.liquid path="assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf" title="Ch.3 Demand Handouts" height="500px" caption="Lecture handouts — view only" %}
+<a href="{{ '/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (view only)</a>
 
 ---
 
@@ -111,19 +111,3 @@ Informal employment in developing economies, gig/platform work, AI and automatio
 + Dual labor markets
 + Platform/gig economy
 + AI, automation, and task displacement
-
----
-
-## How to Use These Resources
-
-All materials are embedded for **viewing only**. The PDF toolbar is disabled to discourage downloading. To view in detail, scroll within the embedded viewer.
-
-<script>
-// Disable keyboard shortcuts for saving/printing on this page
-document.addEventListener('keydown', function(e) {
-  if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'p')) {
-    e.preventDefault();
-    return false;
-  }
-});
-</script>
