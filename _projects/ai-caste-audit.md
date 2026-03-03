@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Does AI Inherit Caste? An Audit Study of LLM-Based Resume Screening in India"
+title: "From Human Prejudice to Machine Bias: Testing Caste Discrimination in AI Recruitment"
 description: "A correspondence study adapting Thorat & Atwell (2007) to test whether AI resume screeners respond to caste-signaling surnames."
 img:
 importance: 3
