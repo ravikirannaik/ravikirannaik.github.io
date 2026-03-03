@@ -7,7 +7,8 @@ importance: 3
 category: research
 ---
 
-**Ravikiran Naik** (FLAME University, [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in)) and **Arshiya Gupta** (Economics Honours, 4th Year, FLAME University, [arshiya.gupta@flame.edu.in](mailto:arshiya.gupta@flame.edu.in))
+**Ravikiran Naik** (Asst. Prof, FLAME University, [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in)) 
+**Arshiya Gupta** (Student, Economics Honours, 4th Year, FLAME University, [arshiya.gupta@flame.edu.in](mailto:arshiya.gupta@flame.edu.in))
 
 <span style="background-color: rgb(240,25,40); color: white; padding: 3px 10px; border-radius: 4px; font-weight: bold;">Work in Progress</span>
 
