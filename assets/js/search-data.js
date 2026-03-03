@@ -67,7 +67,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-from-human-prejudice-to-machine-bias-testing-caste-discrimination-in-ai-recruitment",
           title: 'From Human Prejudice to Machine Bias: Testing Caste Discrimination in AI Recruitment',
-          description: "A correspondence study adapting Thorat &amp; Atwell (2007) to test whether AI resume screeners respond to caste-signaling surnames.",
+          description: "To test whether AI resume screeners respond to caste-signaling surnames.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ai-caste-audit/";
             },},{id: "projects-economic-complexity-indian-cities-amp-the-ipl-player-space",
