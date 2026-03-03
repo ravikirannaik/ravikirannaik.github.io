@@ -9,6 +9,8 @@ category: research
 
 <span class="badge badge-warning">Work in Progress</span>
 
+**Ravikiran Naik** (FLAME University, [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in)) and **Arshiya Gupta** (Economics Honours, 4th Year, FLAME University, [arshiya.gupta@flame.edu.in](mailto:arshiya.gupta@flame.edu.in))
+
 ## Overview
 
 Do AI resume-screening tools reproduce the caste discrimination that Thorat & Atwell (2007) documented among human employers? This project adapts the classic correspondence study methodology --- sending matched CVs that differ *only* in surname --- to audit leading Large Language Models (GPT-4o, Claude, Gemini, Llama, Mistral) used as hiring screeners.
