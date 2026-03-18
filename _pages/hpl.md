@@ -26,29 +26,29 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 ## Teams & Squads
 
-### Crimson Titans
+### CS-MI
 
 | Player | Role | Batting Style | Bowling Style |
 |--------|------|--------------|---------------|
-| Arjun Mehta | Batsman | Right-hand | -- |
-| Priya Sharma | All-rounder | Left-hand | Right-arm medium |
-| Rohan Desai | Bowler | Right-hand | Left-arm spin |
+| Rayah R | Batsman | Right-hand | -- |
+| Rayah L | All-rounder | Left-hand | Right-arm medium |
+| Rayah C | Bowler | Right-hand | Left-arm spin |
 
 ### Azure Strikers
 
 | Player | Role | Batting Style | Bowling Style |
 |--------|------|--------------|---------------|
-| Sneha Patel | Batsman | Right-hand | -- |
-| Vikram Singh | All-rounder | Left-hand | Right-arm fast |
-| Ananya Reddy | Bowler | Right-hand | Right-arm off-spin |
+| Pappa R | Batsman | Right-hand | -- |
+| Pappa L | All-rounder | Left-hand | Right-arm fast |
+| Pappa C | Bowler | Right-hand | Right-arm off-spin |
 
 ### Golden Hawks
 
 | Player | Role | Batting Style | Bowling Style |
 |--------|------|--------------|---------------|
-| Kabir Nair | Batsman | Left-hand | -- |
-| Meera Joshi | All-rounder | Right-hand | Left-arm spin |
-| Dev Kulkarni | Bowler | Right-hand | Right-arm medium |
+| Mumma R | Batsman | Left-hand | -- |
+| Mumma L | All-rounder | Right-hand | Left-arm spin |
+| Mumma C| Bowler | Right-hand | Right-arm medium |
 
 ---
 
