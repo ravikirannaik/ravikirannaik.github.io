@@ -34,7 +34,7 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 | Rayah L | All-rounder | Left-hand | Right-arm medium |
 | Rayah C | Bowler | Right-hand | Left-arm spin |
 
-### Azure Strikers
+### Son-Raiser
 
 | Player | Role | Batting Style | Bowling Style |
 |--------|------|--------------|---------------|
@@ -42,7 +42,7 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 | Pappa L | All-rounder | Left-hand | Right-arm fast |
 | Pappa C | Bowler | Right-hand | Right-arm off-spin |
 
-### Golden Hawks
+### Kolhapur Naik Riders
 
 | Player | Role | Batting Style | Bowling Style |
 |--------|------|--------------|---------------|
