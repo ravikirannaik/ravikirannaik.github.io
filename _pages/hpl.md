@@ -1,19 +1,12 @@
 ---
-title: "HPL — House Premier League"
-date: 2026-03-18
-tags: ["cricket", "T5", "HPL", "house premier league", "data"]
-author: ["Ravikiran Naik"]
-description: "House Premier League: A 5-over, 3-team, 3-players-per-side cricket tournament with full player and team statistics."
-summary: "HPL Season 1 — a fast-format cricket league with 3 teams, 3 players each, 5 overs per innings. Complete match results, player stats, and data visualisations."
-cover:
-    image: "points_table.png"
-    alt: "HPL Season 1 Points Table"
-    relative: true
-editPost:
-    URL: ""
-    Text: "HPL Season 1 · 2026"
-showToc: true
-disableAnchoredHeadings: false
+layout: page
+title: HPL
+permalink: /hpl/
+description: House Premier League — a 5-over, 3-team, 3-players-per-side cricket tournament with full stats and visualisations.
+nav: true
+nav_order: 5
+toc:
+  sidebar: left
 ---
 
 ## The Format
@@ -61,7 +54,7 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 ## Points Table
 
-![HPL Season 1 Points Table](points_table.png)
+{% include figure.liquid loading="eager" path="assets/img/hpl/points_table.png" class="img-fluid rounded z-depth-1" %}
 
 | Team | P | W | L | NRR | Pts |
 |------|---|---|---|-----|-----|
@@ -77,13 +70,13 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | # | Match | Score | Result | MOTM |
 |---|-------|-------|--------|------|
-| 1 | CT vs AS | 58/2 — 54/3 | Crimson Titans won by 4 runs | Arjun Mehta (38 off 22) |
-| 2 | AS vs GH | 62/1 — 59/3 | Azure Strikers won by 3 runs | Sneha Patel (42 off 26) |
-| 3 | GH vs CT | 55/2 — 48/3 | Golden Hawks won by 7 runs | Meera Joshi (33* off 20) |
-| 4 | AS vs CT | 49/3 — 51/1 | Crimson Titans won by 2 wkts | Rohan Desai (3/8) |
-| 5 | GH vs AS | 61/2 — 63/1 | Azure Strikers won by 2 wkts | Ananya Reddy (3/11) |
-| 6 | CT vs GH | 67/1 — 58/3 | Crimson Titans won by 9 runs | Arjun Mehta (48 off 28) |
-| **F** | **CT vs AS** | **72/1 — 68/2** | **Crimson Titans won by 4 runs** | **Priya Sharma (34 off 19, 2/12)** |
+| 1 | CT vs AS | 58/2 --- 54/3 | Crimson Titans won by 4 runs | Arjun Mehta (38 off 22) |
+| 2 | AS vs GH | 62/1 --- 59/3 | Azure Strikers won by 3 runs | Sneha Patel (42 off 26) |
+| 3 | GH vs CT | 55/2 --- 48/3 | Golden Hawks won by 7 runs | Meera Joshi (33* off 20) |
+| 4 | AS vs CT | 49/3 --- 51/1 | Crimson Titans won by 2 wkts | Rohan Desai (3/8) |
+| 5 | GH vs AS | 61/2 --- 63/1 | Azure Strikers won by 2 wkts | Ananya Reddy (3/11) |
+| 6 | CT vs GH | 67/1 --- 58/3 | Crimson Titans won by 9 runs | Arjun Mehta (48 off 28) |
+| **F** | **CT vs AS** | **72/1 --- 68/2** | **Crimson Titans won by 4 runs** | **Priya Sharma (34 off 19, 2/12)** |
 
 **Champions: Crimson Titans**
 
@@ -91,7 +84,7 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 ## Batting Stats
 
-![Top Run Scorers](top_runs.png)
+{% include figure.liquid loading="eager" path="assets/img/hpl/top_runs.png" class="img-fluid rounded z-depth-1" %}
 
 | Player | Team | Runs | Balls | SR | HS | Avg | 4s | 6s |
 |--------|------|------|-------|------|-----|------|----|----|
@@ -107,13 +100,13 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 **Orange Cap: Sneha Patel (201 runs, SR 148.9)**
 
-![Runs vs Strike Rate](runs_vs_sr.png)
+{% include figure.liquid loading="eager" path="assets/img/hpl/runs_vs_sr.png" class="img-fluid rounded z-depth-1" %}
 
 ---
 
 ## Bowling Stats
 
-![Top Wicket Takers](top_wickets.png)
+{% include figure.liquid loading="eager" path="assets/img/hpl/top_wickets.png" class="img-fluid rounded z-depth-1" %}
 
 | Player | Team | Wkts | Econ | Best |
 |--------|------|------|------|------|
@@ -126,13 +119,13 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 **Purple Cap: Ananya Reddy (11 wickets, Econ 5.9)**
 
-![Wickets vs Economy Rate](wickets_vs_econ.png)
+{% include figure.liquid loading="eager" path="assets/img/hpl/wickets_vs_econ.png" class="img-fluid rounded z-depth-1" %}
 
 ---
 
 ## Team Comparison
 
-![Team Runs and Wickets](team_comparison.png)
+{% include figure.liquid loading="eager" path="assets/img/hpl/team_comparison.png" class="img-fluid rounded z-depth-1" %}
 
 | Team | Total Runs | Total Wickets | Avg SR | Avg Econ |
 |------|-----------|---------------|--------|----------|
