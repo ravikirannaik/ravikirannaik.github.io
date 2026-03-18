@@ -42,7 +42,7 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 | Pappa L | All-rounder | Left-hand | Right-arm fast |
 | Pappa C | Bowler | Right-hand | Right-arm off-spin |
 
-### Kolhapur Naik Riders
+### KKR
 
 | Player | Role | Batting Style | Bowling Style |
 |--------|------|--------------|---------------|
