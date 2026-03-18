@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/complexity/";
           },
+        },{id: "nav-hpl",
+          title: "HPL",
+          description: "House Premier League — a 5-over, 3-team, 3-players-per-side cricket tournament with full stats and visualisations.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/hpl/";
+          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Course materials and descriptions for classes taught at FLAME University.",
