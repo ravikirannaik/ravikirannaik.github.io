@@ -58,11 +58,11 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | Team | P | W | L | NRR | Pts |
 |------|---|---|---|-----|-----|
-| **Crimson Titans** | 4 | 3 | 1 | +0.84 | **6** |
-| Azure Strikers | 4 | 2 | 2 | +0.21 | 4 |
-| Golden Hawks | 4 | 1 | 3 | -1.05 | 2 |
+| **CS-MI** | 4 | 3 | 1 | +0.84 | **6** |
+| SRH | 4 | 2 | 2 | +0.21 | 4 |
+| KKR | 4 | 1 | 3 | -1.05 | 2 |
 
-**Crimson Titans** and **Azure Strikers** qualified for the Final.
+**CS-MI** and **SRH** qualified for the Final.
 
 ---
 
@@ -70,15 +70,15 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | # | Match | Score | Result | MOTM |
 |---|-------|-------|--------|------|
-| 1 | CT vs AS | 58/2 --- 54/3 | Crimson Titans won by 4 runs | Arjun Mehta (38 off 22) |
-| 2 | AS vs GH | 62/1 --- 59/3 | Azure Strikers won by 3 runs | Sneha Patel (42 off 26) |
-| 3 | GH vs CT | 55/2 --- 48/3 | Golden Hawks won by 7 runs | Meera Joshi (33* off 20) |
-| 4 | AS vs CT | 49/3 --- 51/1 | Crimson Titans won by 2 wkts | Rohan Desai (3/8) |
-| 5 | GH vs AS | 61/2 --- 63/1 | Azure Strikers won by 2 wkts | Ananya Reddy (3/11) |
-| 6 | CT vs GH | 67/1 --- 58/3 | Crimson Titans won by 9 runs | Arjun Mehta (48 off 28) |
-| **F** | **CT vs AS** | **72/1 --- 68/2** | **Crimson Titans won by 4 runs** | **Priya Sharma (34 off 19, 2/12)** |
+| 1 | CT vs AS | 58/2 --- 54/3 | CS-MI won by 4 runs | Arjun Mehta (38 off 22) |
+| 2 | AS vs GH | 62/1 --- 59/3 | SRH won by 3 runs | Sneha Patel (42 off 26) |
+| 3 | GH vs CT | 55/2 --- 48/3 | KKR won by 7 runs | Meera Joshi (33* off 20) |
+| 4 | AS vs CT | 49/3 --- 51/1 | CS-MI won by 2 wkts | Rohan Desai (3/8) |
+| 5 | GH vs AS | 61/2 --- 63/1 | SRH won by 2 wkts | Ananya Reddy (3/11) |
+| 6 | CT vs GH | 67/1 --- 58/3 | CS-MI won by 9 runs | Arjun Mehta (48 off 28) |
+| **F** | **CT vs AS** | **72/1 --- 68/2** | **CS-MI won by 4 runs** | **Priya Sharma (34 off 19, 2/12)** |
 
-**Champions: Crimson Titans**
+**Champions: CS-MI**
 
 ---
 
@@ -88,15 +88,15 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | Player | Team | Runs | Balls | SR | HS | Avg | 4s | 6s |
 |--------|------|------|-------|------|-----|------|----|----|
-| Sneha Patel | Azure Strikers | 201 | 135 | 148.9 | 52 | 40.2 | 22 | 10 |
-| Arjun Mehta | Crimson Titans | 186 | 128 | 145.3 | 48 | 37.2 | 18 | 9 |
-| Kabir Nair | Golden Hawks | 172 | 122 | 141.0 | 45 | 34.4 | 16 | 8 |
-| Meera Joshi | Golden Hawks | 128 | 95 | 134.7 | 41 | 25.6 | 12 | 6 |
-| Priya Sharma | Crimson Titans | 112 | 89 | 125.8 | 34 | 22.4 | 10 | 4 |
-| Vikram Singh | Azure Strikers | 97 | 78 | 124.4 | 29 | 19.4 | 8 | 3 |
-| Rohan Desai | Crimson Titans | 38 | 31 | 122.6 | 18 | 12.7 | 3 | 2 |
-| Dev Kulkarni | Golden Hawks | 31 | 28 | 110.7 | 15 | 10.3 | 2 | 1 |
-| Ananya Reddy | Azure Strikers | 24 | 22 | 109.1 | 12 | 8.0 | 2 | 1 |
+| Sneha Patel | SRH | 201 | 135 | 148.9 | 52 | 40.2 | 22 | 10 |
+| Arjun Mehta | CS-MI | 186 | 128 | 145.3 | 48 | 37.2 | 18 | 9 |
+| Kabir Nair | KKR | 172 | 122 | 141.0 | 45 | 34.4 | 16 | 8 |
+| Meera Joshi | KKR | 128 | 95 | 134.7 | 41 | 25.6 | 12 | 6 |
+| Priya Sharma | CS-MI | 112 | 89 | 125.8 | 34 | 22.4 | 10 | 4 |
+| Vikram Singh | SRH | 97 | 78 | 124.4 | 29 | 19.4 | 8 | 3 |
+| Rohan Desai | CS-MI | 38 | 31 | 122.6 | 18 | 12.7 | 3 | 2 |
+| Dev Kulkarni | KKR | 31 | 28 | 110.7 | 15 | 10.3 | 2 | 1 |
+| Ananya Reddy | SRH | 24 | 22 | 109.1 | 12 | 8.0 | 2 | 1 |
 
 **Orange Cap: Sneha Patel (201 runs, SR 148.9)**
 
@@ -110,12 +110,12 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | Player | Team | Wkts | Econ | Best |
 |--------|------|------|------|------|
-| Ananya Reddy | Azure Strikers | 11 | 5.9 | 3/11 |
-| Rohan Desai | Crimson Titans | 9 | 6.8 | 3/8 |
-| Dev Kulkarni | Golden Hawks | 8 | 6.4 | 2/9 |
-| Vikram Singh | Azure Strikers | 7 | 7.8 | 2/14 |
-| Priya Sharma | Crimson Titans | 6 | 7.2 | 2/12 |
-| Meera Joshi | Golden Hawks | 5 | 7.5 | 2/10 |
+| Ananya Reddy | SRH | 11 | 5.9 | 3/11 |
+| Rohan Desai | CS-MI | 9 | 6.8 | 3/8 |
+| Dev Kulkarni | KKR | 8 | 6.4 | 2/9 |
+| Vikram Singh | SRH | 7 | 7.8 | 2/14 |
+| Priya Sharma | CS-MI | 6 | 7.2 | 2/12 |
+| Meera Joshi | KKR | 5 | 7.5 | 2/10 |
 
 **Purple Cap: Ananya Reddy (11 wickets, Econ 5.9)**
 
@@ -129,9 +129,9 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | Team | Total Runs | Total Wickets | Avg SR | Avg Econ |
 |------|-----------|---------------|--------|----------|
-| Crimson Titans | 336 | 15 | 131.2 | 7.0 |
-| Azure Strikers | 322 | 18 | 127.5 | 6.9 |
-| Golden Hawks | 331 | 13 | 128.8 | 7.0 |
+| CS-MI | 336 | 15 | 131.2 | 7.0 |
+| SRH | 322 | 18 | 127.5 | 6.9 |
+| KKR | 331 | 13 | 128.8 | 7.0 |
 
 ---
 
@@ -139,12 +139,12 @@ The **House Premier League (HPL)** is a fast-format cricket tournament: **5 over
 
 | Award | Player | Team |
 |-------|--------|------|
-| Orange Cap (Most Runs) | Sneha Patel (201) | Azure Strikers |
-| Purple Cap (Most Wickets) | Ananya Reddy (11) | Azure Strikers |
-| Player of the Tournament | Arjun Mehta | Crimson Titans |
-| Best All-rounder | Meera Joshi | Golden Hawks |
-| Best Catch | Vikram Singh | Azure Strikers |
-| Finals MVP | Priya Sharma | Crimson Titans |
+| Orange Cap (Most Runs) | Sneha Patel (201) | SRH |
+| Purple Cap (Most Wickets) | Ananya Reddy (11) | SRH |
+| Player of the Tournament | Arjun Mehta | CS-MI |
+| Best All-rounder | Meera Joshi | KKR |
+| Best Catch | Vikram Singh | SRH |
+| Finals MVP | Priya Sharma | CS-MI |
 
 ---
 
