@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/hpl/";
           },
+        },{id: "nav-iv-meta-analysis",
+          title: "iv meta-analysis",
+          description: "The Identification Zoo — mapping the supply, demand, and quality of causal identification in economics.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/iv-meta/";
+          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Course materials and descriptions for classes taught at FLAME University.",
