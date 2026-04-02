@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Economic Complexity: Indian Cities & the IPL Player Space"
-description: "Applying economic complexity methods to Indian cities (PLFS 2024) and the Indian Premier League (IPL 2008-2024)."
+title: "Economic Complexity: Indian Cities, Districts & the IPL Player Space"
+description: "Applying economic complexity methods to Indian cities (PLFS 2024), district-level growth and caste stratification (SHRUG 1990-2013), and the Indian Premier League (IPL 2008-2024)."
 img:
 importance: 2
 category: research
