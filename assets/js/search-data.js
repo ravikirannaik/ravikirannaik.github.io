@@ -58,13 +58,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-job-jungle",
-          title: "Job Jungle",
-          description: "An interactive labour market simulation game for ECON207 Labour Economics.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/job-jungle/";
-          },
         },{id: "nav-blog",
           title: "blog",
           description: "",
