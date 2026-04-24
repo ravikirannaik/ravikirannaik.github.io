@@ -34,8 +34,7 @@ The income-leisure tradeoff, reservation wages, labour force participation, and 
 + Labour force participation decisions
 + Empirical evidence on labour supply elasticities
 
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-intro-slides-pi.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Introduction Slides (PDF)</a> &nbsp;|&nbsp;
-<a href="{{ '/assets/pdf/teaching/labor-economics/ch2-supply-3-1-handouts.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ch.2 Supply Handouts (PDF)</a>
+<embed src="{{ '/assets/pdf/teaching/labor-economics/ch2-supply-v1-4up.pdf' | relative_url }}" type="application/pdf" width="100%" height="600px" />
 
 ---
 
@@ -75,6 +74,8 @@ Theory and evidence on compensating differentials, hedonic wage models, and the 
 + Value of a statistical life
 + Empirical evidence
 
+<embed src="{{ '/assets/pdf/teaching/labor-economics/ch5-cwd-v8-4up.pdf' | relative_url }}" type="application/pdf" width="100%" height="600px" />
+
 ---
 
 ## Chapter 6: Human Capital
@@ -87,6 +88,8 @@ Schooling decisions, returns to education, the Mincer equation, on-the-job train
 + On-the-job training: general vs. specific
 + Signalling and screening
 
+<embed src="{{ '/assets/pdf/teaching/labor-economics/ch6-education-v1-4up.pdf' | relative_url }}" type="application/pdf" width="100%" height="600px" />
+
 ---
 
 ## Chapter 7: Wage Inequality and Discrimination
@@ -98,6 +101,8 @@ The wage structure, skill premium, discrimination models (Becker, statistical), 
 + College wage premium
 + Taste-based and statistical discrimination
 + Oaxaca-Blinder decomposition
+
+<embed src="{{ '/assets/pdf/teaching/labor-economics/ch9-discrimination-v1-4up.pdf' | relative_url }}" type="application/pdf" width="100%" height="600px" />
 
 ---
 
@@ -122,6 +127,20 @@ Informal employment in developing economies, gig/platform work, AI and automatio
 + Dual labor markets
 + Platform/gig economy
 + AI, automation, and task displacement
+
+---
+
+## Chapter 10: Unemployment
+
+Types of unemployment, search and matching models, unemployment duration, and policy responses.
+
+##### Key Topics
++ Frictional, structural, and cyclical unemployment
++ Job search models and reservation wages
++ Unemployment insurance and moral hazard
++ The Phillips curve and the natural rate
+
+<embed src="{{ '/assets/pdf/teaching/labor-economics/ch12-unemployment-v1-short-4up.pdf' | relative_url }}" type="application/pdf" width="100%" height="600px" />
 
 ---
 
