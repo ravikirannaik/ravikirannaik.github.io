@@ -53,6 +53,12 @@ Upon completion of the course students should be able to:
 4. Analyze and illustrate the concepts related to assets, money, and prices.
 5. Evaluate economic conditions using the IS-LM / AS-AD general framework for macroeconomic analysis.
 
+## Lectures and Workload
+
+**Lectures.** Slides are shared on MOODLE immediately after a module/topic is completed. Slides do **not** cover the complete course material — they indicate what is broadly intended to be covered; you are expected to **attend the lectures and build your understanding by writing your own notes**, then review the chapter-end questions and problems.
+
+**Workload.** You are **responsible for all assigned content in the textbook(s), even if we do not cover it explicitly in class**. Classes will follow this outline, though I may occasionally deviate within a broader topic where I sense it would help you. There are no optional or supplementary readings for this course.
+
 ## Topics Covered
 
 ### Module 1: Introduction to Macroeconomics (8 hours)
@@ -132,6 +138,10 @@ Grades are awarded on the basis of the given rubric and not on other factors suc
 
 **Email.** Email is the best way to reach me; I aim to **reply within 24 hours**. Please include "ECON202/Section ?" in the subject line. For non-urgent questions useful to everyone, I periodically respond to the whole class as (anonymous) FAQs, and I encourage using the MOODLE forum.
 
+**Class participation.** Speak up — to ask a question or make a comment. I will often ask questions and call on people, but **the goal is to think out loud, not to "test" you**; it is completely fine not to know an answer, and this form of participation does not affect your grade. **Engagement and active participation are critical** to a deeper understanding of the material and will have a positive impact on your final grade. When I or a classmate has the floor, please be attentive and keep any class-related side questions to a whisper, and be kind and respectful when addressing others.
+
+**Classroom etiquette.** **Please keep phones silenced and out of sight during class** — divided attention measurably lowers comprehension, for you and for those around you, so this is about protecting everyone's focus rather than policing behaviour. Laptops and tablets are used only when a specific task calls for them (see the electronics policy above). Arrive on time and engage respectfully; persistent disruption after a reminder may carry a small grade penalty, but the aim is simply a class where everyone can concentrate.
+
 **Electronics: no laptops or tablets during class.** Devices are **prohibited during class sessions**. Handwritten note-takers significantly outperform laptop users on conceptual comprehension ([Mueller & Oppenheimer, 2014](https://journals.sagepub.com/doi/abs/10.1177/0956797614524581)); a randomized trial in an introductory economics class found lower final-exam scores in laptop-permitted sections ([Carter et al., 2017](https://www.sciencedirect.com/science/article/abs/pii/S0272775716303454)); in-class non-academic browsing predicts lower exam scores ([Ravizza et al., 2017](https://journals.sagepub.com/doi/10.1177/0956797616677314)), and media multitasking is consistently linked to weaker recall and grades ([Beland & Murphy, 2016](https://www.sciencedirect.com/science/article/abs/pii/S0927537116300136); [May & Elder, 2018](https://link.springer.com/article/10.1186/s41239-018-0096-z)). Students with documented disabilities or legitimate academic needs may request accommodations during office hours.
 
 **Accessibility & accommodations.** I am committed to an inclusive classroom. Students with a disability or any condition affecting participation or assessment are entitled to **reasonable accommodations** — please contact the relevant FLAME University support office, and me in confidence, as early as possible. All requests are treated confidentially.
@@ -144,3 +154,6 @@ Classroom conduct and disciplinary procedures are governed by the [FLAME Univers
 
 > *"The difficulty lies, not in the new ideas, but in escaping from the old ones."*
 > — John Maynard Keynes, *The General Theory of Employment, Interest and Money*
+
+> *"Economic knowledge is historically determined … what we know today about the economic system is not something we discovered this morning but is the sum of all our insights, discoveries and false starts in the past. Without Pigou there would be no Keynes; without Keynes no Friedman; without Friedman no Lucas; without Lucas no …"*
+> — Mark Blaug, epigraph to Snowdon & Vane, *Modern Macroeconomics*
