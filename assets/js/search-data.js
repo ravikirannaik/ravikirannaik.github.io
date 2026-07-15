@@ -9,40 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
-          description: "Publications by categories in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-research",
+  },{id: "nav-research",
           title: "research",
           description: "Current research projects and data analyses.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-complexity",
-          title: "complexity",
-          description: "Economic complexity analysis of Indian cities, district-level growth and caste stratification, and the IPL Player Space.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/complexity/";
-          },
-        },{id: "nav-hpl",
-          title: "HPL",
-          description: "House Premier League — a 5-over, 3-team, 3-players-per-side cricket tournament with full stats and visualisations.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/hpl/";
-          },
-        },{id: "nav-iv-meta-analysis",
-          title: "iv meta-analysis",
-          description: "The Identification Zoo — mapping the supply, demand, and quality of causal identification in economics.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/iv-meta/";
           },
         },{id: "nav-teaching",
           title: "teaching",
@@ -51,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-ravinomics",
+          title: "Ravinomics",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "Academic curriculum vitae of Dr. Ravikiran Naik.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
           },
         },{id: "post-selected-for-csh-winter-school-2026-rethinking-human-capital",
         
