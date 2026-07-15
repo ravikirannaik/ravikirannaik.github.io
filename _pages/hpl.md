@@ -3,7 +3,7 @@ layout: page
 title: HPL
 permalink: /hpl/
 description: House Premier League — a 5-over, 3-team, 3-players-per-side cricket tournament with full stats and visualisations.
-nav: true
+nav: false
 nav_order: 5
 toc:
   sidebar: left

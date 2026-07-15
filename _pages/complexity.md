@@ -3,7 +3,7 @@ layout: page
 title: complexity
 permalink: /complexity/
 description: Economic complexity analysis of Indian cities, district-level growth and caste stratification, and the IPL Player Space.
-nav: true
+nav: false
 nav_order: 4
 toc:
   sidebar: left

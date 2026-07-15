@@ -3,7 +3,7 @@ layout: page
 title: iv meta-analysis
 permalink: /iv-meta/
 description: The Identification Zoo — mapping the supply, demand, and quality of causal identification in economics.
-nav: true
+nav: false
 nav_order: 5
 toc:
   sidebar: left
