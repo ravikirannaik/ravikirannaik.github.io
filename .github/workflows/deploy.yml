@@ -6,6 +6,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,3 +25,8 @@ jobs:
           accountId: d947c8c77413286e0d0cf994fe4e569a
           projectName: ravikirannaik
           directory: _site
+      - name: Deploy to gh-pages (GitHub Pages)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site
