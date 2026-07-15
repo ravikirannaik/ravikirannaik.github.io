@@ -4,7 +4,7 @@ title: research
 permalink: /projects/
 description: Current research projects and data analyses.
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [research]
 horizontal: true
 ---
