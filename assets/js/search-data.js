@@ -76,6 +76,11 @@ ninja.data = [{
           description: "Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/labor-economics/";
+            },},{id: "teachings-macroeconomics-i",
+          title: 'Macroeconomics-I',
+          description: "Undergraduate Macroeconomics-I at FLAME University (2026-27) — national income accounting, aggregate demand, money, and short-run fluctuations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/macroeconomics-i/";
             },},{id: "teachings-macroeconomics",
           title: 'Macroeconomics',
           description: "Undergraduate macroeconomics course at FLAME University covering national income, growth, business cycles, and policy.",
