@@ -9,6 +9,9 @@ layout: default
 {% endif %}
 
 <div class="post">
+  {% if page.collection == "teachings" %}
+    <a class="back-link" href="{{ '/teaching/' | relative_url }}">← Back to Teaching</a>
+  {% endif %}
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>

@@ -123,6 +123,21 @@ hr { opacity: 0.55; }
   background: color-mix(in srgb, var(--global-theme-color) 22%, transparent);
 }
 
+/* --- Breadcrumb "back" link (teaching pages) -------------------------- */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  transition: color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.back-link:hover {
+  color: var(--global-theme-color);
+  transform: translateX(-3px);
+  text-decoration: none;
+}
+
 /* --- Respect users who prefer reduced motion -------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
