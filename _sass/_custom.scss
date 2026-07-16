@@ -1,0 +1,136 @@
+/*******************************************************************************
+ * Custom refinements — modern typographic & interaction polish.
+ * Layered last in main.scss so it enhances (never forks) the al-folio base.
+ * Uses the theme's global CSS variables, so it adapts to light/dark automatically.
+ ******************************************************************************/
+
+:root {
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --elevate: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Rendering & rhythm ------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-feature-settings: "kern", "liga", "calt";
+  letter-spacing: -0.006em;
+  line-height: 1.65;
+}
+
+/* --- Headings: tighter tracking, balanced wrapping, confident weight ---- */
+h1, h2, h3, h4, h5, h6,
+.post-title, .card-title {
+  letter-spacing: -0.021em;
+  text-wrap: balance;
+  line-height: 1.25;
+}
+h1 { font-weight: 700; }
+h2, h3 { font-weight: 600; }
+
+/* --- Links: refined underline offset + smooth colour ------------------- */
+a {
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s var(--ease), opacity 0.2s var(--ease);
+}
+
+/* --- Cards: soft edge, rounded, gentle lift on hover ------------------- */
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--elevate);
+}
+
+/* --- Media: subtle depth ---------------------------------------------- */
+figure img,
+.projects img,
+.publications img,
+img.rounded,
+img.img-fluid {
+  border-radius: 10px;
+}
+
+/* --- Sticky navbar: frosted glass + hairline divider ------------------ */
+#navbar.fixed-top,
+#navbar.sticky-top {
+  background-color: color-mix(in srgb, var(--global-bg-color) 82%, transparent);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* Nav links: animated underline that grows from the left */
+#navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+  transition: color 0.2s var(--ease);
+}
+#navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15rem;
+  height: 2px;
+  width: 0;
+  background: var(--global-theme-color);
+  border-radius: 2px;
+  transition: width 0.25s var(--ease);
+}
+#navbar .navbar-nav .nav-item .nav-link:hover::after,
+#navbar .navbar-nav .nav-item.active > .nav-link::after {
+  width: 100%;
+}
+
+/* --- Buttons: rounded with a touch of motion -------------------------- */
+.btn {
+  border-radius: 8px;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease),
+    background-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* --- Accessible focus ring -------------------------------------------- */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* --- Details/accordion: smoother open marker -------------------------- */
+details > summary { transition: color 0.2s var(--ease); }
+details[open] > summary { color: var(--global-theme-color); }
+
+/* --- Details of polish ------------------------------------------------- */
+hr { opacity: 0.55; }
+
+::selection {
+  background: color-mix(in srgb, var(--global-theme-color) 22%, transparent);
+}
+
+/* --- Respect users who prefer reduced motion -------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
