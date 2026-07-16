@@ -28,19 +28,23 @@ importance: 1
   margin-top: 1rem;
   padding: 0.5rem 0;
 }
-.macro-outline #macro-flip-wrap { max-width: 720px; margin: 1rem auto 0; }
-.macro-outline #macro-flip-controls {
+.macro-outline #macro-pdf-wrap { max-width: 720px; margin: 1rem auto 0; }
+.macro-outline #macro-pdf-controls {
   display: flex; align-items: center; justify-content: center;
   gap: 1rem; margin-bottom: 0.75rem;
 }
-.macro-outline #macro-flip-controls button {
+.macro-outline #macro-pdf-controls button {
   cursor: pointer; border: 1px solid var(--global-divider-color);
   background: var(--global-bg-color); color: var(--global-theme-color);
   border-radius: 4px; padding: 0.1rem 0.75rem; font-size: 1.3rem; line-height: 1.6;
 }
-.macro-outline #macro-flip-status { min-width: 6rem; text-align: center; color: var(--global-text-color); }
-.macro-outline #macro-flipbook { margin: 0 auto; }
-.macro-outline #macro-flipbook img { width: 100%; height: 100%; }
+.macro-outline #macro-pdf-status { min-width: 6rem; text-align: center; color: var(--global-text-color); }
+.macro-outline #macro-pdf-page {
+  display: block; width: 100%; height: auto; cursor: pointer;
+  border: 1px solid var(--global-divider-color); border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  transition: opacity 0.15s ease;
+}
 </style>
 
 <div class="macro-outline" markdown="1">
@@ -183,53 +187,54 @@ Classroom conduct and disciplinary procedures are governed by the [FLAME Univers
 
 ## Course Outline (PDF)
 
-<div id="macro-flip-wrap" oncontextmenu="return false;">
-  <div id="macro-flip-controls">
-    <button type="button" id="macro-flip-prev" aria-label="Previous page">‹</button>
-    <span id="macro-flip-status">Loading…</span>
-    <button type="button" id="macro-flip-next" aria-label="Next page">›</button>
+<div id="macro-pdf-wrap" oncontextmenu="return false;">
+  <div id="macro-pdf-controls">
+    <button type="button" id="macro-pdf-prev" aria-label="Previous page">‹</button>
+    <span id="macro-pdf-status">Loading…</span>
+    <button type="button" id="macro-pdf-next" aria-label="Next page">›</button>
   </div>
-  <div id="macro-flipbook"></div>
+  <img id="macro-pdf-page" alt="Course outline page" draggable="false" />
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="https://unpkg.com/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
 <script>
 (function () {
   var PDF_URL = "{{ '/assets/pdf/teaching/course-outline-macro-ulab.pdf' | relative_url }}";
+  var pages = [], cur = 0;
+  var img, statusEl;
+  function show(i) {
+    if (!pages.length) return;
+    cur = (i + pages.length) % pages.length;
+    img.style.opacity = "0";
+    setTimeout(function () { img.src = pages[cur]; img.style.opacity = "1"; }, 120);
+    statusEl.textContent = "Page " + (cur + 1) + " / " + pages.length;
+  }
   function renderPage(pdf, num) {
     return pdf.getPage(num).then(function (page) {
       var vp = page.getViewport({ scale: 2 });
       var canvas = document.createElement("canvas");
       canvas.width = vp.width; canvas.height = vp.height;
       return page.render({ canvasContext: canvas.getContext("2d"), viewport: vp }).promise
-        .then(function () { return { img: canvas.toDataURL("image/png"), w: vp.width, h: vp.height }; });
+        .then(function () { return canvas.toDataURL("image/png"); });
     });
   }
   function init() {
-    if (!window.pdfjsLib || !window.St || !St.PageFlip) { return setTimeout(init, 150); }
-    var statusEl = document.getElementById("macro-flip-status");
+    if (!window.pdfjsLib) { return setTimeout(init, 150); }
+    img = document.getElementById("macro-pdf-page");
+    statusEl = document.getElementById("macro-pdf-status");
     pdfjsLib.GlobalWorkerOptions.workerSrc =
       "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
     pdfjsLib.getDocument(PDF_URL).promise.then(function (pdf) {
       var tasks = [];
       for (var i = 1; i <= pdf.numPages; i++) tasks.push(renderPage(pdf, i));
       return Promise.all(tasks);
-    }).then(function (pages) {
-      var el = document.getElementById("macro-flipbook");
-      var flip = new St.PageFlip(el, {
-        width: pages[0].w, height: pages[0].h,
-        size: "stretch", minWidth: 260, maxWidth: 720, minHeight: 340, maxHeight: 980,
-        maxShadowOpacity: 0.5, showCover: false, usePortrait: true,
-        mobileScrollSupport: true, drawShadow: true
-      });
-      flip.loadFromImages(pages.map(function (p) { return p.img; }));
-      var total = flip.getPageCount();
-      function setStatus() { statusEl.textContent = "Page " + (flip.getCurrentPageIndex() + 1) + " / " + total; }
-      setStatus();
-      flip.on("flip", setStatus);
-      document.getElementById("macro-flip-prev").addEventListener("click", function () { flip.flipPrev(); });
-      document.getElementById("macro-flip-next").addEventListener("click", function () { flip.flipNext(); });
+    }).then(function (imgs) {
+      pages = imgs;
+      img.src = pages[0]; img.style.opacity = "1";
+      statusEl.textContent = "Page 1 / " + pages.length;
+      img.addEventListener("click", function () { show(cur + 1); });
+      document.getElementById("macro-pdf-prev").addEventListener("click", function () { show(cur - 1); });
+      document.getElementById("macro-pdf-next").addEventListener("click", function () { show(cur + 1); });
     }).catch(function () { statusEl.textContent = "Could not load the outline."; });
   }
   if (document.readyState !== "loading") init();
