@@ -24,19 +24,19 @@
   margin-top: 1rem;
   padding: 0.5rem 0;
 }
-.macro-outline .pdf-embed {
-  position: relative;
-  width: 100%;
-  height: 900px;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 4px;
-  overflow: hidden;
+.macro-outline #macro-flip-wrap { max-width: 720px; margin: 1rem auto 0; }
+.macro-outline #macro-flip-controls {
+  display: flex; align-items: center; justify-content: center;
+  gap: 1rem; margin-bottom: 0.75rem;
 }
-.macro-outline .pdf-embed iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
+.macro-outline #macro-flip-controls button {
+  cursor: pointer; border: 1px solid var(--global-divider-color);
+  background: var(--global-bg-color); color: var(--global-theme-color);
+  border-radius: 4px; padding: 0.1rem 0.75rem; font-size: 1.3rem; line-height: 1.6;
 }
+.macro-outline #macro-flip-status { min-width: 6rem; text-align: center; color: var(--global-text-color); }
+.macro-outline #macro-flipbook { margin: 0 auto; }
+.macro-outline #macro-flipbook img { width: 100%; height: 100%; }
 </style>
 
 </head>
@@ -246,9 +246,61 @@
 
   <h2 id="course-outline-pdf">Course Outline (PDF)</h2>
 
-  <div class="pdf-embed" oncontextmenu="return false;">
-  <iframe src="/assets/pdf/teaching/course-outline-macro-ulab.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH" title="Macroeconomics-I (ECON 202) — Course Outline" loading="lazy"></iframe>
+  <div id="macro-flip-wrap" oncontextmenu="return false;">
+  <div id="macro-flip-controls">
+    <button type="button" id="macro-flip-prev" aria-label="Previous page">‹</button>
+    <span id="macro-flip-status">Loading…</span>
+    <button type="button" id="macro-flip-next" aria-label="Next page">›</button>
+  </div>
+  <div id="macro-flipbook"></div>
 </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <script src="https://unpkg.com/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+
+  <script>
+(function () {
+  var PDF_URL = "/assets/pdf/teaching/course-outline-macro-ulab.pdf";
+  function renderPage(pdf, num) {
+    return pdf.getPage(num).then(function (page) {
+      var vp = page.getViewport({ scale: 2 });
+      var canvas = document.createElement("canvas");
+      canvas.width = vp.width; canvas.height = vp.height;
+      return page.render({ canvasContext: canvas.getContext("2d"), viewport: vp }).promise
+        .then(function () { return { img: canvas.toDataURL("image/png"), w: vp.width, h: vp.height }; });
+    });
+  }
+  function init() {
+    if (!window.pdfjsLib || !window.St || !St.PageFlip) { return setTimeout(init, 150); }
+    var statusEl = document.getElementById("macro-flip-status");
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    pdfjsLib.getDocument(PDF_URL).promise.then(function (pdf) {
+      var tasks = [];
+      for (var i = 1; i <= pdf.numPages; i++) tasks.push(renderPage(pdf, i));
+      return Promise.all(tasks);
+    }).then(function (pages) {
+      var el = document.getElementById("macro-flipbook");
+      var flip = new St.PageFlip(el, {
+        width: pages[0].w, height: pages[0].h,
+        size: "stretch", minWidth: 260, maxWidth: 720, minHeight: 340, maxHeight: 980,
+        maxShadowOpacity: 0.5, showCover: false, usePortrait: true,
+        mobileScrollSupport: true, drawShadow: true
+      });
+      flip.loadFromImages(pages.map(function (p) { return p.img; }));
+      var total = flip.getPageCount();
+      function setStatus() { statusEl.textContent = "Page " + (flip.getCurrentPageIndex() + 1) + " / " + total; }
+      setStatus();
+      flip.on("flip", setStatus);
+      document.getElementById("macro-flip-prev").addEventListener("click", function () { flip.flipPrev(); });
+      document.getElementById("macro-flip-next").addEventListener("click", function () { flip.flipNext(); });
+    }).catch(function () { statusEl.textContent = "Could not load the outline."; });
+  }
+  if (document.readyState !== "loading") init();
+  else document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
 
 </div>
 </body>
