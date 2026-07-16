@@ -6,10 +6,41 @@ category: Undergraduate
 importance: 1
 ---
 
+<style>
+.macro-outline,
+.macro-outline p,
+.macro-outline li,
+.macro-outline h1,
+.macro-outline h2,
+.macro-outline h3,
+.macro-outline small,
+.macro-outline blockquote,
+.macro-outline summary { text-align: center; }
+.macro-outline table { margin-left: auto; margin-right: auto; }
+.macro-outline ul,
+.macro-outline ol { list-style-position: inside; padding-left: 0; }
+.macro-outline blockquote { border-left: 0; }
+.macro-outline details > summary {
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 0.6rem 0;
+  color: var(--global-theme-color);
+}
+.macro-outline details {
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+</style>
+
+<div class="macro-outline" markdown="1">
+
 ## Basic Information
 
 | | |
-| :-- | :-- |
+| :-: | :-: |
 | **Semester** | Monsoon/Fall 2026 |
 | **Course Title** | Macroeconomics-I |
 | **Course Code** | ECON 202 |
@@ -26,6 +57,9 @@ importance: 1
 | **Class Schedule** | Tue & Wed: 3:30–4:30 PM, and by appointment |
 
 <small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full; ignorance of its contents will not be accepted as justification after the first week of the semester.*</small>
+
+<details markdown="1">
+<summary>📄 Full Course Outline — click to expand</summary>
 
 ## Description
 
@@ -93,7 +127,7 @@ Labour-market equilibrium; goods-market equilibrium; asset-market equilibrium; g
 This is a demanding course, and the grading rewards genuine understanding rather than rote effort. To keep standards comparable across sections, I reserve the right to adjust marks **upwards** to standardize the median score; marks are never adjusted down for this procedure.
 
 | Component | Weight |
-| :-- | :-- |
+| :-: | :-: |
 | End Term Exam | 40% |
 | Mid Term Exam | 20% |
 | Problem Set (Group) | 20% |
@@ -115,7 +149,7 @@ Grades are awarded on the basis of the given rubric and not on other factors suc
 ## Sessions
 
 | Week (Date) | Module | Assessment |
-| :-- | :-- | :-- |
+| :-: | :-: | :-: |
 | Wk 1 (Aug 17) – Wk 3 (Aug 31) | Introduction to Macroeconomics | |
 | Wk 4 (Sep 7) – Wk 6 (Sep 21) | Productivity, Employment and Output | Individual Assignment (Wk 6) |
 | Wk 7 (Sep 28) – Wk 9 (Oct 12) | Consumption, Saving and Investment | Midterm Exam (Wk 9) |
@@ -157,3 +191,7 @@ Classroom conduct and disciplinary procedures are governed by the [FLAME Univers
 
 > *"Economic knowledge is historically determined … what we know today about the economic system is not something we discovered this morning but is the sum of all our insights, discoveries and false starts in the past. Without Pigou there would be no Keynes; without Keynes no Friedman; without Friedman no Lucas; without Lucas no …"*
 > — Mark Blaug, epigraph to Snowdon & Vane, *Modern Macroeconomics*
+
+</details>
+
+</div>
