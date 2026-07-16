@@ -39,11 +39,22 @@ importance: 1
   border-radius: 4px; padding: 0.1rem 0.75rem; font-size: 1.3rem; line-height: 1.6;
 }
 .macro-outline #macro-pdf-status { min-width: 6rem; text-align: center; color: var(--global-text-color); }
-.macro-outline #macro-pdf-page {
-  display: block; width: 100%; height: auto; cursor: pointer;
-  border: 1px solid var(--global-divider-color); border-radius: 4px;
+.macro-outline #macro-pdf-pages { font-size: 0; text-align: center; }
+.macro-outline #macro-pdf-pages img {
+  display: inline-block; vertical-align: top; width: 100%; height: auto;
+  cursor: pointer; border: 1px solid var(--global-divider-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
   transition: opacity 0.15s ease;
+}
+.macro-outline #macro-pdf-right { display: none; }
+/* Two-page spread on wide screens; the viewer breaks out of the 720px column. */
+@media (min-width: 992px) {
+  .macro-outline #macro-pdf-wrap.spread {
+    width: 90vw; max-width: 1080px;
+    position: relative; left: 50%; transform: translateX(-50%);
+  }
+  .macro-outline #macro-pdf-wrap.spread #macro-pdf-pages img { width: 50%; }
+  .macro-outline #macro-pdf-wrap.spread #macro-pdf-right { display: inline-block; }
 }
 </style>
 
@@ -81,7 +92,10 @@ importance: 1
     <span id="macro-pdf-status">Loading…</span>
     <button type="button" id="macro-pdf-next" aria-label="Next page">›</button>
   </div>
-  <img id="macro-pdf-page" alt="Course outline page" draggable="false" />
+  <div id="macro-pdf-pages">
+    <img id="macro-pdf-left" alt="Course outline (left page)" draggable="false" />
+    <img id="macro-pdf-right" alt="Course outline (right page)" draggable="false" />
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -89,13 +103,36 @@ importance: 1
 (function () {
   var PDF_URL = "{{ '/assets/pdf/teaching/course-outline-macro-ulab.pdf' | relative_url }}";
   var pages = [], cur = 0;
-  var img, statusEl;
-  function show(i) {
+  var wrap, left, right, statusEl, mq;
+  function isSpread() { return mq && mq.matches; }
+  function render() {
     if (!pages.length) return;
-    cur = (i + pages.length) % pages.length;
-    img.style.opacity = "0";
-    setTimeout(function () { img.src = pages[cur]; img.style.opacity = "1"; }, 120);
-    statusEl.textContent = "Page " + (cur + 1) + " / " + pages.length;
+    var spread = isSpread();
+    wrap.classList.toggle("spread", spread);
+    if (spread && cur % 2 !== 0) cur -= 1;   // keep the left page even in a spread
+    left.style.opacity = "0"; right.style.opacity = "0";
+    setTimeout(function () {
+      left.src = pages[cur];
+      if (spread && pages[cur + 1]) {
+        right.src = pages[cur + 1]; right.style.display = "inline-block";
+      } else {
+        right.removeAttribute("src"); right.style.display = "none";
+      }
+      left.style.opacity = "1"; right.style.opacity = "1";
+    }, 120);
+    if (spread && pages[cur + 1]) {
+      statusEl.textContent = "Pages " + (cur + 1) + "–" + (cur + 2) + " / " + pages.length;
+    } else {
+      statusEl.textContent = "Page " + (cur + 1) + " / " + pages.length;
+    }
+  }
+  function step(dir) {
+    if (!pages.length) return;
+    var n = pages.length, inc = isSpread() ? 2 : 1;
+    cur += dir * inc;
+    if (cur >= n) cur = 0;
+    if (cur < 0) cur = isSpread() ? (n % 2 === 0 ? n - 2 : n - 1) : n - 1;
+    render();
   }
   function renderPage(pdf, num) {
     return pdf.getPage(num).then(function (page) {
@@ -108,8 +145,11 @@ importance: 1
   }
   function init() {
     if (!window.pdfjsLib) { return setTimeout(init, 150); }
-    img = document.getElementById("macro-pdf-page");
+    wrap = document.getElementById("macro-pdf-wrap");
+    left = document.getElementById("macro-pdf-left");
+    right = document.getElementById("macro-pdf-right");
     statusEl = document.getElementById("macro-pdf-status");
+    mq = window.matchMedia("(min-width: 992px)");
     pdfjsLib.GlobalWorkerOptions.workerSrc =
       "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
     pdfjsLib.getDocument(PDF_URL).promise.then(function (pdf) {
@@ -117,12 +157,13 @@ importance: 1
       for (var i = 1; i <= pdf.numPages; i++) tasks.push(renderPage(pdf, i));
       return Promise.all(tasks);
     }).then(function (imgs) {
-      pages = imgs;
-      img.src = pages[0]; img.style.opacity = "1";
-      statusEl.textContent = "Page 1 / " + pages.length;
-      img.addEventListener("click", function () { show(cur + 1); });
-      document.getElementById("macro-pdf-prev").addEventListener("click", function () { show(cur - 1); });
-      document.getElementById("macro-pdf-next").addEventListener("click", function () { show(cur + 1); });
+      pages = imgs; render();
+      left.addEventListener("click", function () { step(isSpread() ? -1 : 1); });
+      right.addEventListener("click", function () { step(1); });
+      document.getElementById("macro-pdf-prev").addEventListener("click", function () { step(-1); });
+      document.getElementById("macro-pdf-next").addEventListener("click", function () { step(1); });
+      if (mq.addEventListener) mq.addEventListener("change", render);
+      else if (mq.addListener) mq.addListener(render);
     }).catch(function () { statusEl.textContent = "Could not load the outline."; });
   }
   if (document.readyState !== "loading") init();
