@@ -3,7 +3,7 @@ title: Macroeconomics-I (ECON 202)
 description: Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.
 term: Monsoon 2026-27
 category: Undergraduate
-importance: 1
+importance: 0
 ---
 
 <style>
