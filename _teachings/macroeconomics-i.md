@@ -7,19 +7,14 @@ importance: 1
 ---
 
 <style>
-.macro-outline,
-.macro-outline p,
-.macro-outline li,
-.macro-outline h1,
-.macro-outline h2,
-.macro-outline h3,
-.macro-outline small,
-.macro-outline blockquote,
-.macro-outline summary { text-align: center; }
+/* Center the whole outline as a narrower column; text stays left-aligned
+   so lines don't stretch edge to edge. */
+.macro-outline {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .macro-outline table { margin-left: auto; margin-right: auto; }
-.macro-outline ul,
-.macro-outline ol { list-style-position: inside; padding-left: 0; }
-.macro-outline blockquote { border-left: 0; }
 .macro-outline details > summary {
   cursor: pointer;
   font-size: 1.15rem;
@@ -40,7 +35,7 @@ importance: 1
 ## Basic Information
 
 | | |
-| :-: | :-: |
+| :-- | :-- |
 | **Semester** | Monsoon/Fall 2026 |
 | **Course Title** | Macroeconomics-I |
 | **Course Code** | ECON 202 |
@@ -127,7 +122,7 @@ Labour-market equilibrium; goods-market equilibrium; asset-market equilibrium; g
 This is a demanding course, and the grading rewards genuine understanding rather than rote effort. To keep standards comparable across sections, I reserve the right to adjust marks **upwards** to standardize the median score; marks are never adjusted down for this procedure.
 
 | Component | Weight |
-| :-: | :-: |
+| :-- | :-- |
 | End Term Exam | 40% |
 | Mid Term Exam | 20% |
 | Problem Set (Group) | 20% |
@@ -149,7 +144,7 @@ Grades are awarded on the basis of the given rubric and not on other factors suc
 ## Sessions
 
 | Week (Date) | Module | Assessment |
-| :-: | :-: | :-: |
+| :-- | :-- | :-- |
 | Wk 1 (Aug 17) – Wk 3 (Aug 31) | Introduction to Macroeconomics | |
 | Wk 4 (Sep 7) – Wk 6 (Sep 21) | Productivity, Employment and Output | Individual Assignment (Wk 6) |
 | Wk 7 (Sep 28) – Wk 9 (Oct 12) | Consumption, Saving and Investment | Midterm Exam (Wk 9) |
