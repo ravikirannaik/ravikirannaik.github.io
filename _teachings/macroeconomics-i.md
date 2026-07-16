@@ -45,27 +45,6 @@ importance: 1
 
 <div class="macro-outline" markdown="1">
 
-## Basic Information
-
-| | |
-| :-- | :-- |
-| **Semester** | Monsoon/Fall 2026 |
-| **Course Title** | Macroeconomics-I |
-| **Course Code** | ECON 202 |
-| **Program** | Under-Graduate |
-| **Lecture–Tutorial–Practical** | 3-0-0 |
-| **Section** | Section A & B |
-| **Credit Hours** | 45 |
-| **Continuous Internal Assessment** | 60% (Assignments, Problem Set, Mid-Term, Participation) |
-| **End Term Examination** | 40% |
-| **Prerequisites** | ECON 101 or ECON 102, ECON 122 |
-| **Instructor** | Dr. Ravikiran Naik |
-| **Contact** | [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in) · +91-20-6790-6121 |
-| **Office** | Room 108, Amrita Shergill Building |
-| **Class Schedule** | Tue & Wed: 3:30–4:30 PM, and by appointment |
-
-<small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full; ignorance of its contents will not be accepted as justification after the first week of the semester.*</small>
-
 <details markdown="1">
 <summary>📄 Full Course Outline — click to expand</summary>
 
