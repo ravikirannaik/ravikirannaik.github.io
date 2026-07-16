@@ -28,6 +28,19 @@ importance: 1
   margin-top: 1rem;
   padding: 0.5rem 0;
 }
+.macro-outline .pdf-embed {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.macro-outline .pdf-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 </style>
 
 <div class="macro-outline" markdown="1">
@@ -188,5 +201,14 @@ Classroom conduct and disciplinary procedures are governed by the [FLAME Univers
 > — Mark Blaug, epigraph to Snowdon & Vane, *Modern Macroeconomics*
 
 </details>
+
+## Course Outline (PDF)
+
+<div class="pdf-embed" oncontextmenu="return false;">
+  <iframe
+    src="{{ '/assets/pdf/teaching/course-outline-macro-ulab.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH' | relative_url }}"
+    title="Macroeconomics-I (ECON 202) — Course Outline"
+    loading="lazy"></iframe>
+</div>
 
 </div>
