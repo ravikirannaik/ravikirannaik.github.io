@@ -17,11 +17,12 @@ related_posts: false
 
 <p style="text-align:center; font-style:italic; color:#777;">— Iqbal Sajid</p>
 
-I keep returning to this couplet. I first heard these lines in the 1990s, in the *Akbar the Great* serial on Doordarshan, and I made a point never to miss them. They have stayed with me ever since. They are beautiful lines — the [longer version](https://www.rekhta.org/ghazals/suuraj-huun-zindagii-kii-ramaq-chhod-jaauungaa-iqbal-sajid-ghazals?lang=hi) more beautiful still — and they carry, for me, the same tone as Frost's *miles to go before I sleep*.
+I keep coming back to this couplet. I first heard it in the 1990s, in the *Akbar the Great* serial on Doordarshan, and after that I never missed it. It has stayed with me since. Beautiful lines, and the [fuller ghazal](https://www.rekhta.org/ghazals/suuraj-huun-zindagii-kii-ramaq-chhod-jaauungaa-iqbal-sajid-ghazals?lang=hi) is better still. For some reason they sit in my head next to Frost's *miles to go before I sleep*.
 
+There is a more personal reason too. My name, Ravikiran, means a ray of the sun — *Ravi* is the sun, *kiran* its ray. So when the poet says "I am the sun," the line feels almost meant for me. Over the years it has become a kind of note to myself: to live like that.
 
-Roughly, it says: *I am the sun — I will leave behind a glow of life; and even when I sink, I will leave the crimson of dusk behind.* Two words carry it. **रमक़ (ramaq)** is the faint spark that says something is still alive. **शफ़क़ (shafaq)** is the red light that stays in the sky for a while after the sun has gone.
+Roughly, the couplet says: I am the sun; I will leave a glow of life behind me, and even when I sink I will leave the red of dusk. Two words carry it. **रमक़ (ramaq)** is the faint spark that means something is still alive. **शफ़क़ (shafaq)** is the red that stays in the sky after the sun has gone down.
 
-What I love is that the poet does not ask to be spared the setting. The sun sets; that is not in question. The claim is quieter and braver — that setting is not the same as vanishing. The light reaches the sky a little longer than the source lasts. The dusk is proof the sun was there.
+What I like is that the poet doesn't ask to be spared the setting. The sun sets. That was never the question. He is saying something quieter: setting is not the same as disappearing. The light lasts a little longer than its source, and the dusk is proof the sun was there.
 
-It is a generous way to think about a life. We spend a lot of energy hoping to last. The couplet suggests a different measure: not how long you burn, but what colour you leave on the sky when you are gone. The afterglow is the point.
+That is a kind way to think about a life. We spend so much effort just hoping to last. This says the measure is different — not how long you burn, but the colour you leave in the sky after you are gone.
