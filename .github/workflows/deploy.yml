@@ -10,7 +10,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -19,12 +19,11 @@ jobs:
       - name: Build Jekyll
         run: bundle exec jekyll build
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: d947c8c77413286e0d0cf994fe4e569a
-          projectName: ravikirannaik
-          directory: _site
+          command: pages deploy _site --project-name=ravikirannaik
       - name: Deploy to gh-pages (GitHub Pages)
         uses: JamesIves/github-pages-deploy-action@v4
         with:
