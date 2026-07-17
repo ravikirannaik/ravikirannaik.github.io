@@ -2,8 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: >
-  Assistant Professor of Economics, <a href="https://www.flame.edu.in/faculty/ravikiran-naik">FLAME University</a>, Pune, India
 
 profile:
   align: right
@@ -29,10 +27,12 @@ latest_posts:
   limit: 3
 ---
 
-I am an Assistant Professor of Economics at FLAME University, Pune, India. My research applies economic complexity and network science methods to labour markets, with a focus on skill structure, informality, and occupational mobility in the Global South. I study how skills depend on one another, how these dependencies shape wages and career paths, and whether the structures observed in advanced economies hold in contexts where the majority of workers are informally employed.
+I am an Assistant Professor of Economics at FLAME University, Pune, India.
 
-Current projects include constructing city-level industry spaces for Indian cities using complexity methods (RCA, proximity, density), investigating AI exposure across formal and informal occupations, and analysing skill specialisation and earnings resilience on digital labour platforms. I work with large-scale microdata (India's Periodic Labour Force Survey, Brazil's RAIS) and NLP-based approaches to occupation and task analysis.
+On the labour-market side, I study how skills relate to one another and how these dependencies shape wages and occupational mobility. I also examine informality from two angles — the workers who hold informal jobs and the enterprises that operate informally. On inequality, I study how economic advantage is transmitted across generations and how people perceive the inequality they live with.
 
-I am a 2025 Senior Fellow of the ILO's AI-Enabled Innovation programme and was selected for the 2026 CSH Winter School on Complexity Science. I have previously held positions at the Indian Institute for Human Settlements (Bangalore), the Institute of Rural Management Anand (IRMA), and CHRIST University, Lavasa-Pune.
+My current work spans a wide set of questions. On labour markets, I study how skill mismatch shapes wages and wellbeing where informal work dominates, whether early jobs launch or trap workers over their careers, and how occupational prestige and stratification structure mobility. On inequality, I examine intergenerational income mobility and its transmission channels, assortative marriage, and how meritocratic beliefs and social trust shape people's perceptions of fairness. A further set of projects extends this agenda to the mental-health costs of overeducation, the persistence of informality among both workers and enterprises, productivity gaps by gender and caste, and the earnings and caste divides emerging on digital labour platforms. Together these strands ask how skills, jobs, and opportunity are distributed — and perceived — in a largely informal economy.
 
-When not working, I am an avid reader of nonfiction --- anything from mathematics and physics to AI and beyond. I love watching world cinema, am addicted to chess, and love watching tennis, football, and test cricket.
+I have previously held positions at the Indian Institute for Human Settlements (Bangalore), the Institute of Rural Management Anand (IRMA), and CHRIST University, Lavasa-Pune.
+
+When not working, I am an avid reader of nonfiction --- anything from mathematics and physics to AI and beyond. I love world cinema, am addicted to chess, and follow tennis, football, and Test cricket.
