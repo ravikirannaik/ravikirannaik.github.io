@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-selected-for-csh-winter-school-2026-rethinking-human-capital",
+        },{id: "post-what-the-sun-leaves-behind",
+        
+          title: "What the Sun Leaves Behind",
+        
+        description: "A short reflection on a couplet by Iqbal Sajid — the sun, the dusk it leaves behind, and the idea of a legacy that outlives its source.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/what-the-sun-leaves-behind/";
+          
+        },
+      },{id: "post-selected-for-csh-winter-school-2026-rethinking-human-capital",
         
           title: "Selected for CSH Winter School 2026: Rethinking Human Capital",
         
