@@ -96,8 +96,12 @@ importance: 0
   background: color-mix(in srgb, var(--mc-c, var(--mc-blue)) 22%, transparent);
   padding-top: 0.6rem;
 }
-.mc-sched td.mod-cell .mod-name { display: block; font-weight: 700; color: var(--mc-ink); }
-.mc-sched td.mod-cell ul { margin: 0.4rem 0 0.55rem; padding-left: 1.1rem; }
+.mc-sched td.mod-cell .mod-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 0.6rem; flex-wrap: wrap;
+}
+.mc-sched td.mod-cell .mod-name { font-weight: 700; color: var(--mc-ink); }
+.mc-sched td.mod-cell ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
 .mc-sched td.mod-cell ul li { padding: 0.1rem 0; }
 .mc-sched td.mod-cell .mod-hours {
   display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--mc-ink);
@@ -274,19 +278,19 @@ By the end of the course, students should be able to:
     <tr><th>Week</th><th>Module &amp; Topics</th></tr>
   </thead>
   <tbody>
-    <tr class="grp"><td>Week 1 (Aug 17)</td><td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;"><span class="mod-name">Module 1 · Introduction to Macroeconomics</span><ul><li>Introduction to macroeconomics</li><li>Measuring the value of economic activity — GDP</li><li>Measuring the cost of living — CPI</li><li>Measuring joblessness — the unemployment rate</li></ul><span class="mod-hours">8 hours</span></td></tr>
+    <tr class="grp"><td>Week 1 (Aug 17)</td><td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;"><span class="mod-head"><span class="mod-name">Module 1 · Introduction to Macroeconomics</span><span class="mod-hours">8 hours</span></span><ul><li>Introduction to macroeconomics</li><li>Measuring the value of economic activity — GDP</li><li>Measuring the cost of living — CPI</li><li>Measuring joblessness — the unemployment rate</li></ul></td></tr>
     <tr><td>Week 2 (Aug 24)</td></tr>
     <tr><td>Week 3 (Aug 31)</td></tr>
-    <tr class="grp"><td>Week 4 (Sep 7)</td><td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;"><span class="mod-name">Module 2 · Productivity, Employment and Output</span><ul><li>The production function and its properties</li><li>Labour demand, labour supply, and equilibrium</li><li>Unemployment — structural, cyclical, frictional</li><li>Okun's Law</li></ul><span class="mod-hours">8 hours</span></td></tr>
+    <tr class="grp"><td>Week 4 (Sep 7)</td><td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;"><span class="mod-head"><span class="mod-name">Module 2 · Productivity, Employment and Output</span><span class="mod-hours">8 hours</span></span><ul><li>The production function and its properties</li><li>Labour demand, labour supply, and equilibrium</li><li>Unemployment — structural, cyclical, frictional</li><li>Okun's Law</li></ul></td></tr>
     <tr><td>Week 5 (Sep 14)</td></tr>
     <tr><td>Week 6 (Sep 21)</td></tr>
-    <tr class="grp"><td>Week 7 (Sep 28)</td><td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;"><span class="mod-name">Module 3 · Consumption, Saving and Investment</span><ul><li>Consumption, savings, and the factors affecting them</li><li>Investment — user cost, desired capital stock, desired investment</li><li>Goods-market equilibrium</li></ul><span class="mod-hours">8 hours</span></td></tr>
+    <tr class="grp"><td>Week 7 (Sep 28)</td><td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;"><span class="mod-head"><span class="mod-name">Module 3 · Consumption, Saving and Investment</span><span class="mod-hours">8 hours</span></span><ul><li>Consumption, savings, and the factors affecting them</li><li>Investment — user cost, desired capital stock, desired investment</li><li>Goods-market equilibrium</li></ul></td></tr>
     <tr><td>Week 8 (Oct 5)</td></tr>
     <tr><td>Week 9 (Oct 12)</td></tr>
-    <tr class="grp"><td>Week 10 (Oct 19)</td><td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;"><span class="mod-name">Module 4 · Asset Market, Money and Prices</span><ul><li>Money, functions of money, portfolio allocation, and demand for assets</li><li>Demand for money, velocity, and the Quantity Theory of Money</li><li>Asset-market equilibrium</li><li>Money growth and inflation</li></ul><span class="mod-hours">7 hours</span></td></tr>
+    <tr class="grp"><td>Week 10 (Oct 19)</td><td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;"><span class="mod-head"><span class="mod-name">Module 4 · Asset Market, Money and Prices</span><span class="mod-hours">7 hours</span></span><ul><li>Money, functions of money, portfolio allocation, and demand for assets</li><li>Demand for money, velocity, and the Quantity Theory of Money</li><li>Asset-market equilibrium</li><li>Money growth and inflation</li></ul></td></tr>
     <tr><td>Week 11 (Oct 26)</td></tr>
     <tr><td>Week 12 (Nov 2)</td></tr>
-    <tr class="grp"><td>Week 13 (Nov 9)</td><td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;"><span class="mod-name">Module 5 · IS–LM / AS–AD</span><ul><li>Labour-, goods-, and asset-market equilibrium</li><li>General equilibrium in IS-LM; price adjustments and attainment</li><li>Aggregate demand and aggregate supply; AS-AD equilibrium</li><li>Money neutrality</li></ul><span class="mod-hours">14 hours</span></td></tr>
+    <tr class="grp"><td>Week 13 (Nov 9)</td><td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;"><span class="mod-head"><span class="mod-name">Module 5 · IS–LM / AS–AD</span><span class="mod-hours">14 hours</span></span><ul><li>Labour-, goods-, and asset-market equilibrium</li><li>General equilibrium in IS-LM; price adjustments and attainment</li><li>Aggregate demand and aggregate supply; AS-AD equilibrium</li><li>Money neutrality</li></ul></td></tr>
     <tr><td>Week 14 (Nov 16)</td></tr>
     <tr><td>Week 15 (Nov 23)</td></tr>
     <tr><td>Week 16 (Nov 30)</td></tr>
