@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/teaching/";
           },
         },{id: "nav-ravinomics",
-          title: "Ravinomics",
+          title: "ravinomics",
           description: "",
           section: "Navigation",
           handler: () => {
