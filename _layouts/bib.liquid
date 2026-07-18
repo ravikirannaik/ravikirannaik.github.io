@@ -186,11 +186,16 @@
         {{ periodical_text }}
       </div>
     {% endif %}
-    {% unless entry.note == 'Working paper' %}
+    {% assign note_text = entry.note | strip %}
+    {% if note_text contains 'Under review' %}
       <div class="periodical">
-        {{ entry.note | strip }}
+        <span class="status-review">{{ note_text }}</span>
       </div>
-    {% endunless %}
+    {% elsif entry.note != 'Working paper' and note_text != "" %}
+      <div class="periodical">
+        {{ note_text }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
