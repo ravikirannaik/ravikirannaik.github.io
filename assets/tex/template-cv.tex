@@ -1,0 +1,257 @@
+\documentclass[11pt,english]{article}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\usepackage{newcent}
+
+% Colors
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{oucrimson}   {RGB}{132.,22. ,23. }
+\definecolor{navyblue}    {RGB}{0.  ,0.  ,128.}
+
+% Layout
+\usepackage{multirow}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage[verbose,margin=1in]{geometry}
+\setlength{\headheight}{15pt}
+\usepackage[bottom]{footmisc}
+
+% Headers/Footers
+\usepackage{lastpage}
+\setlength{\headheight}{0pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\lhead{} \chead{} \rhead{}
+\lfoot{\today} \cfoot{}
+\rfoot{Page \thepage \,of \pageref{LastPage}}
+
+% Packages
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[flushleft]{threeparttable}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+% Links
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,citecolor=black,filecolor=black,linkcolor=oucrimson,urlcolor=oucrimson}
+\usepackage[all]{hypcap}
+\usepackage{breakurl}
+
+% Custom heading command
+\newcommand{\makeheading}[2]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth\marginparwidth\marginparsep}%
+         {\LARGE\bfseries #1} \hfill  {\LARGE\bfseries #2 \hspace*{-2.3\marginparsep minus \marginparwidth}}\\[-0.2\baselineskip]%
+                 \rule{\textwidth}{1.5pt}\rule{\marginparsep}{1.5pt}\rule{\marginparwidth}{1.5pt}%
+         \end{minipage}}
+
+\setlength{\parindent}{0in}
+\reversemarginpar
+\renewcommand{\section}[2]{
+        \vspace{0.5\baselineskip}%
+        \phantomsection\addcontentsline{toc}{section}{#1}%
+        \hspace{0in}%
+        {\raggedright \scshape \large \textbf{#1}}%
+        \vspace{0.25\baselineskip}#2
+}
+
+% Coauthor shorthand — define your frequent coauthors here
+\newcommand{\Me}{\underline{LastName, F.}}
+\newcommand{\CA}{Coauthor, A.}
+\newcommand{\CB}{Coauthor, B.}
+
+% Shorthand for crimson-colored titles
+\newcommand{\T}[1]{\textcolor{oucrimson}{#1}}
+
+% Tighten longtable spacing
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\begin{document}
+\makeheading{Dr.\ First Last}{Curriculum Vitae}
+
+
+% ADDRESS/CONTACT HEADER
+% ==================================================================================
+\setstretch{1.0}
+\begin{multicols}{2}
+
+\begin{flushleft}
+Department of Economics
+
+University of Somewhere
+
+City, Country
+
+\end{flushleft}
+
+
+\begin{flushright}
+\textit{Phone:} +1-234-567-8900
+
+\textit{E-mail:} \href{mailto:first.last@university.edu}{first.last@university.edu}
+
+\textit{Homepage:} \href{https://www.firstname-lastname.com}{firstname-lastname.com}
+
+\textit{Citizenship:} Country
+
+\end{flushright}
+
+\end{multicols}
+% ==================================================================================
+
+
+
+\setstretch{1.2}
+\vspace{-.25in}
+
+
+
+\section{Education}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2018--2023 & Ph.D. in Economics, University of Somewhere \\
+     & \small{Dissertation: \T{\textit{Three Essays on Labour Markets and Human Capital}}} \\
+     & \small{Supervisor: \T{Prof.\ Jane Smith}} \\
+2016--2018 & M.A. in Economics, University of Elsewhere \\
+2012--2016 & B.A. in Economics (\textit{summa cum laude}), College of Liberal Arts \\
+\end{longtable}
+
+
+
+\section{Employment \& Affiliations}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2023--     & Assistant Professor, \T{University of Somewhere} \\
+2022--2023 & Postdoctoral Researcher, \T{Institute for Economic Research} \\
+2020--2022 & Research Assistant, \T{Centre for Policy Studies} \\
+\end{longtable}
+
+
+
+\section{Research Fields}\\
+% ==================================================================================
+\vspace{-1mm}
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Primary:   & Labour Economics, Applied Microeconomics\\
+Secondary: & Economics of Education, Public Economics\\
+\end{longtable}
+
+
+
+\section{Published \& Forthcoming Papers}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2025 & \T{``Title of Published Paper One''} (\Me; \CA), \textit{Journal of Labor Economics}, 43(2): 301--345. \\
+2024 & \T{``Title of Published Paper Two''} (\CA; \Me), \textit{American Economic Review}, 114(5): 1200--1235. \\
+2023 & \T{``Title of Published Paper Three''} (\Me), \textit{Review of Economics and Statistics}, 105(3): 600--620. \\
+\end{longtable}
+
+
+
+\section{Submitted / Under Review}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2026 & \T{``Title of Submitted Paper''} (\Me; \CB), \textit{Submitted to Quarterly Journal of Economics}. \\
+2025 & \T{``Title of Paper Under Review''} (\Me), \textit{Under Review at Econometrica}. \\
+\end{longtable}
+
+
+
+\section{Working Papers}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2026 & \T{``Title of Working Paper One''} (\Me), \textit{Target: Journal of Political Economy}. \\
+2025 & \T{``Title of Working Paper Two''} (\Me; \CA), \textit{Target: Review of Economic Studies}. \\
+\end{longtable}
+
+
+
+\section{Works in Progress}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2026 & \T{``Title of Work in Progress''} (\Me; \CB) \\
+\end{longtable}
+
+
+%%% Uncomment sections below as needed %%%
+% \section{Policy Writings}\\
+% \section{Paper Discussions}\\
+
+
+
+\section{Conference Presentations}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2025 & \T{``Presentation Title,''} NBER Summer Institute, Cambridge, July 14--18. \\
+2024 & \T{``Presentation Title,''} European Economic Association Annual Congress, Rotterdam, August 26--29. \\
+2023 & \T{``Presentation Title,''} ASSA Annual Meeting, New Orleans, January 6--8. \\
+\end{longtable}
+
+
+
+\section{Grants \& Funding}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2024 & \T{Project Title}, Funding Agency. Role: PI. \\
+2022 & \T{Project Title}, Funding Agency. Role: Co-PI. \\
+\end{longtable}
+
+
+
+\section{Teaching Experience}\\
+% ==================================================================================
+\vspace{3mm}
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Univ.\ A  & \T{Labour Economics} (Graduate), \T{Econometrics} (UG), 2023-- \\
+Univ.\ B  & \T{Microeconomics} (UG), \T{Public Economics} (UG), 2020--2022 \\
+\end{longtable}
+
+
+%%% Uncomment if applicable %%%
+% \section{Media Appearances}\\
+
+
+
+\section{Skills}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Coding   & Stata (Advanced), R (Advanced), Python (Intermediate), \LaTeX, Git \\
+Skills:  & \\
+Methods: & Panel data, DID, IV, RDD, Structural estimation \\
+Languages: & English (Native), German (Fluent), French (Intermediate) \\
+\end{longtable}
+
+
+
+\section{Professional Service}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Referee: & \textit{Journal of Labor Economics}, \textit{Review of Economics and Statistics} \\
+Member:  & \T{American Economic Association}, \T{European Economic Association} \\
+\end{longtable}
+
+
+%%% Uncomment if applicable %%%
+% \section{Departmental \& University Service}\\
+
+
+
+\section{References}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+ & \textbf{Prof.\ Jane Smith} (PhD Supervisor), Department of Economics, University of Somewhere. Email: \href{mailto:j.smith@university.edu}{j.smith@university.edu} \\
+ & \textbf{Prof.\ John Doe}, Department of Economics, University of Elsewhere. Email: \href{mailto:j.doe@elsewhere.edu}{j.doe@elsewhere.edu} \\
+ & \textbf{Dr.\ Alice Brown}, Research Division, International Organisation. Email: \href{mailto:a.brown@org.int}{a.brown@org.int} \\
+\end{longtable}
+
+
+\end{document}
