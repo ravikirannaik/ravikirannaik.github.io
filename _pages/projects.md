@@ -11,13 +11,13 @@ horizontal: true
 
 <ul class="nav nav-tabs justify-content-center mb-4" id="researchTabs" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="publications-tab" data-toggle="tab" href="#publications-pane" role="tab" aria-controls="publications-pane" aria-selected="true">Publications</a>
+    <a class="nav-link active font-weight-bold" id="publications-tab" data-toggle="tab" href="#publications-pane" role="tab" aria-controls="publications-pane" aria-selected="true">Publications</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="working-papers-tab" data-toggle="tab" href="#working-papers-pane" role="tab" aria-controls="working-papers-pane" aria-selected="false">Working Papers</a>
+    <a class="nav-link font-weight-bold" id="working-papers-tab" data-toggle="tab" href="#working-papers-pane" role="tab" aria-controls="working-papers-pane" aria-selected="false">Working Papers</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="research-projects-tab" data-toggle="tab" href="#research-projects-pane" role="tab" aria-controls="research-projects-pane" aria-selected="false">Research Projects</a>
+    <a class="nav-link font-weight-bold" id="research-projects-tab" data-toggle="tab" href="#research-projects-pane" role="tab" aria-controls="research-projects-pane" aria-selected="false">Research Projects</a>
   </li>
 </ul>
 
