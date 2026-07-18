@@ -202,6 +202,16 @@ importance: 0
 .macro-outline .modules .mod-links { margin-top: 0.15rem; font-size: 0.9rem; }
 .macro-outline .modules .mod-links a { margin-right: 0.9rem; }
 .macro-outline .modules .mod-soon { color: var(--global-text-color-light); font-size: 0.9rem; }
+.macro-outline .modules .mod-disabled {
+  color: var(--global-text-color-light); pointer-events: none;
+  opacity: 0.55; text-decoration: none; cursor: default;
+}
+.macro-outline .modules .mod-tag {
+  font-size: 0.72rem; font-weight: 700; color: var(--mc-ink);
+  border-radius: 4px; padding: 0.05rem 0.45rem; margin-left: 0.5rem; white-space: nowrap;
+}
+.macro-outline .modules .mod-tag.graded { background: #eeb4c8; }
+.macro-outline .modules .mod-tag.practice { background: #cde0c9; }
 
 /* ---- PDF download button ---- */
 .mc-pdf-btn {
@@ -242,7 +252,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#grading">Grading</a>
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
-  <a href="#lecture-slides-by-module">Slides</a>
+  <a href="#materials">Materials</a>
 </nav>
 
 ## Basic Information
@@ -428,7 +438,11 @@ Speak up in class — to ask questions or make comments. I often call on people,
 
 </details>
 
-## Lecture Slides by Module
+## Course Materials {#materials}
+
+Slides go up on MOODLE right after each module; the same files (plus notes and problem sets) are mirrored here as they become available.
+
+### Lecture Slides
 
 <ul class="modules">
   <li>
@@ -476,6 +490,31 @@ Speak up in class — to ask questions or make comments. I often call on people,
     </span>
   </li>
 </ul>
+
+### Lecture Notes
+
+<ul class="modules">
+  <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title">GDP, CPI, and Unemployment</span><span class="mod-soon">Notes — coming soon</span></span></li>
+  <li><span class="mod-no">M2</span><span class="mod-body"><span class="mod-title">Productivity, Employment and Output</span><span class="mod-soon">Notes — coming soon</span></span></li>
+  <li><span class="mod-no">M3</span><span class="mod-body"><span class="mod-title">Consumption, Saving and Investment</span><span class="mod-soon">Notes — coming soon</span></span></li>
+  <li><span class="mod-no">M4</span><span class="mod-body"><span class="mod-title">Asset Market, Money and Prices</span><span class="mod-soon">Notes — coming soon</span></span></li>
+  <li><span class="mod-no">M5</span><span class="mod-body"><span class="mod-title">IS–LM / AS–AD General Equilibrium</span><span class="mod-soon">Notes — coming soon</span></span></li>
+</ul>
+
+<small>Slides mark what a lecture broadly covers; notes are not a substitute for attending and taking your own.</small>
+
+### Problem Sets
+
+<ul class="modules">
+  <li><span class="mod-no">PS</span><span class="mod-body"><span class="mod-title">Graded Problem Set — comprehensive (Modules 1–4)<span class="mod-tag graded">Graded · 15%</span></span><span class="mod-links"><span class="mod-disabled" aria-disabled="true" title="Released soon">Problems (PDF)</span><span class="mod-disabled" aria-disabled="true" title="Posted after the due date">Solutions (PDF)</span></span><span class="mod-soon">Released Week 10 · due Wed, 4 Nov 2026</span></span></li>
+  <li><span class="mod-no">P1</span><span class="mod-body"><span class="mod-title">Practice — GDP, CPI, Unemployment<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
+  <li><span class="mod-no">P2</span><span class="mod-body"><span class="mod-title">Practice — Production, Labour Market, Okun's Law<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
+  <li><span class="mod-no">P3</span><span class="mod-body"><span class="mod-title">Practice — Consumption, Saving, Investment<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
+  <li><span class="mod-no">P4</span><span class="mod-body"><span class="mod-title">Practice — Money, Prices, Asset Market<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
+  <li><span class="mod-no">P5</span><span class="mod-body"><span class="mod-title">Practice — IS–LM / AS–AD (numerical)<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
+</ul>
+
+<small>Practice sets are ungraded self-study; the graded problem set is comprehensive and involves algebra and basic calculus.</small>
 
 </div>
 
