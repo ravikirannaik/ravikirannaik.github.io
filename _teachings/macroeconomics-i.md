@@ -25,7 +25,7 @@ importance: 0
   border-bottom: 2px solid var(--mc-blue);
   padding-bottom: 0.25rem;
   margin-top: 2.2rem;
-  scroll-margin-top: 5rem;   /* clear the fixed navbar on jump */
+  scroll-margin-top: 7.5rem;   /* clear the fixed navbar + sticky pill row on jump */
 }
 
 /* ---- Section jump-nav (sticky under the title) ---- */
@@ -37,17 +37,17 @@ importance: 0
   background: var(--global-bg-color);
   border-bottom: 1px solid var(--global-divider-color);
 }
-.mc-nav-title {
-  font-weight: 700; color: var(--mc-blue); align-self: center;
-  margin-right: 0.6rem; white-space: nowrap;
-}
 .mc-nav a {
-  font-size: 0.82rem; font-weight: 600; text-decoration: none;
-  color: #4a4a4a; border: 1px solid transparent;
-  border-radius: 999px; padding: 0.22rem 0.85rem;
-  transition: filter 0.15s ease, transform 0.15s ease;
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  color: #4a4a4a; border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px; padding: 0.4rem 0.95rem;
+  transition: filter 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 .mc-nav a:hover { filter: brightness(0.93); transform: translateY(-1px); }
+.mc-nav a.active {
+  box-shadow: 0 0 0 2px var(--mc-blue);
+  border-color: transparent; filter: brightness(0.96);
+}
 /* Japanese pastel palette — sakura, matcha, fuji, asagi, yamabuki … */
 .mc-nav a:nth-child(1) { background: #f7cfd8; }  /* 桜 sakura pink   */
 .mc-nav a:nth-child(2) { background: #cde0c9; }  /* 抹茶 matcha      */
@@ -102,9 +102,6 @@ importance: 0
 }
 .mc-card ul { margin: 0.6rem 0 0; padding-left: 1.1rem; }
 .mc-card ul li { padding: 0.12rem 0; }
-.mc-card .mc-slide { margin-top: 0.7rem; font-size: 0.9rem; }
-.mc-card .mc-slide a { margin-right: 0.9rem; font-weight: 600; }
-.mc-card .mc-soon { color: var(--global-text-color-light); font-style: italic; }
 
 /* ---- Schedule table ---- */
 .mc-sched { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem; }
@@ -113,7 +110,14 @@ importance: 0
   padding: 0.5rem 0.7rem;
 }
 .mc-sched td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--global-divider-color); }
-.mc-sched tbody tr:nth-child(odd) { background: var(--mc-soft); }
+/* Module cell spans its weeks; coloured edge ties it to the topic cards */
+.mc-sched td.mod-cell {
+  vertical-align: top; font-weight: 600;
+  border-left: 5px solid var(--mc-c, var(--mc-blue));
+  background: color-mix(in srgb, var(--mc-c, var(--mc-blue)) 22%, transparent);
+  padding-top: 0.6rem;
+}
+.mc-sched tr.grp td { border-top: 2px solid var(--global-divider-color); }
 .mc-badge {
   display: inline-block; font-size: 0.78rem; font-weight: 700;
   border-radius: 4px; padding: 0.08rem 0.5rem; color: var(--mc-ink);
@@ -181,6 +185,24 @@ importance: 0
   box-shadow: 0 2px 8px rgba(95,116,160,0.25); margin-top: 0.5rem;
 }
 .mc-pdf-btn:hover { filter: brightness(0.94); }
+
+/* ---- Dark-mode toning: mute the pastels so they don't glow ---- */
+html[data-theme="dark"] .macro-outline {
+  --mc-blue:   #9fb0d6;                 /* lighter for legible headers */
+  --mc-orange: #d6a985;
+  --mc-soft:   rgba(159, 176, 214, 0.14);
+}
+html[data-theme="dark"] .mc-nav a,
+html[data-theme="dark"] .mc-badge,
+html[data-theme="dark"] .mc-book .tag,
+html[data-theme="dark"] .mc-weights .dot,
+html[data-theme="dark"] .mc-scale li,
+html[data-theme="dark"] .mc-sched th,
+html[data-theme="dark"] .mc-sched td.mod-cell,
+html[data-theme="dark"] .mc-pdf-btn {
+  filter: brightness(0.82) saturate(0.85);
+}
+html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 </style>
 
 <div class="macro-outline" markdown="1">
@@ -329,23 +351,23 @@ By the end of the course, students should be able to:
     <tr><th>Week</th><th>Module</th><th>Assessment</th></tr>
   </thead>
   <tbody>
-    <tr><td>Wk 1</td><td>Introduction to Macroeconomics</td><td></td></tr>
-    <tr><td>Wk 2</td><td>Introduction to Macroeconomics</td><td></td></tr>
-    <tr><td>Wk 3</td><td>Introduction to Macroeconomics</td><td></td></tr>
-    <tr><td>Wk 4</td><td>Productivity, Employment and Output</td><td></td></tr>
-    <tr><td>Wk 5</td><td>Productivity, Employment and Output</td><td></td></tr>
-    <tr><td>Wk 6</td><td>Productivity, Employment and Output</td><td><span class="mc-badge quiz">Quiz 1</span></td></tr>
-    <tr><td>Wk 7</td><td>Consumption, Saving and Investment</td><td></td></tr>
-    <tr><td>Wk 8</td><td>Consumption, Saving and Investment</td><td></td></tr>
-    <tr><td>Wk 9</td><td>Consumption, Saving and Investment</td><td><span class="mc-badge exam">Midterm</span></td></tr>
-    <tr><td>Wk 10</td><td>Asset Market, Money and Prices</td><td></td></tr>
-    <tr><td>Wk 11</td><td>Asset Market, Money and Prices</td><td></td></tr>
-    <tr><td>Wk 12</td><td>Asset Market, Money and Prices</td><td><span class="mc-badge ps">Problem Set due</span></td></tr>
-    <tr><td>Wk 13</td><td>IS–LM / AS–AD</td><td></td></tr>
-    <tr><td>Wk 14</td><td>IS–LM / AS–AD</td><td></td></tr>
-    <tr><td>Wk 15</td><td>IS–LM / AS–AD</td><td><span class="mc-badge quiz">Quiz 2</span></td></tr>
-    <tr><td>Wk 16</td><td>IS–LM / AS–AD</td><td></td></tr>
-    <tr><td>Wk 17</td><td>IS–LM / AS–AD</td><td><span class="mc-badge rev">Review</span></td></tr>
+    <tr class="grp"><td>Wk 1</td><td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;">Introduction to Macroeconomics</td><td></td></tr>
+    <tr><td>Wk 2</td><td></td></tr>
+    <tr><td>Wk 3</td><td></td></tr>
+    <tr class="grp"><td>Wk 4</td><td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;">Productivity, Employment and Output</td><td></td></tr>
+    <tr><td>Wk 5</td><td></td></tr>
+    <tr><td>Wk 6</td><td><span class="mc-badge quiz">Quiz 1</span></td></tr>
+    <tr class="grp"><td>Wk 7</td><td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;">Consumption, Saving and Investment</td><td></td></tr>
+    <tr><td>Wk 8</td><td></td></tr>
+    <tr><td>Wk 9</td><td><span class="mc-badge exam">Midterm</span></td></tr>
+    <tr class="grp"><td>Wk 10</td><td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;">Asset Market, Money and Prices</td><td></td></tr>
+    <tr><td>Wk 11</td><td></td></tr>
+    <tr><td>Wk 12</td><td><span class="mc-badge ps">Problem Set due</span></td></tr>
+    <tr class="grp"><td>Wk 13</td><td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;">IS–LM / AS–AD</td><td></td></tr>
+    <tr><td>Wk 14</td><td></td></tr>
+    <tr><td>Wk 15</td><td><span class="mc-badge quiz">Quiz 2</span></td></tr>
+    <tr><td>Wk 16</td><td></td></tr>
+    <tr><td>Wk 17</td><td><span class="mc-badge rev">Review</span></td></tr>
   </tbody>
 </table>
 
@@ -484,3 +506,29 @@ Speak up in class — to ask questions or make comments. I often call on people,
 </ul>
 
 </div>
+
+<script>
+(function () {
+  var nav = document.querySelector('.mc-nav');
+  if (!nav || !('IntersectionObserver' in window)) return;
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+  var map = {};
+  var targets = links.map(function (a) {
+    var el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) map[el.id] = a;
+    return el;
+  }).filter(Boolean);
+  if (!targets.length) return;
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var a = map[e.target.id];
+      if (!a) return;
+      links.forEach(function (l) { l.classList.remove('active'); l.removeAttribute('aria-current'); });
+      a.classList.add('active');
+      a.setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  targets.forEach(function (t) { obs.observe(t); });
+})();
+</script>
