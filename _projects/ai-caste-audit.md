@@ -4,7 +4,7 @@ title: "From Human Prejudice to Machine Bias: Testing Caste Discrimination in AI
 description: "To test whether AI resume screeners respond to caste-signaling surnames."
 img:
 importance: 3
-category: research
+category: shelved
 ---
 
 **Ravikiran Naik** (Asst. Prof, FLAME University, [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in)) 
