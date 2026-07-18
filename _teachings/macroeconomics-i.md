@@ -24,7 +24,24 @@ importance: 0
   border-bottom: 2px solid var(--mc-blue);
   padding-bottom: 0.25rem;
   margin-top: 2.2rem;
+  scroll-margin-top: 5rem;   /* clear the fixed navbar on jump */
 }
+
+/* ---- Section jump-nav (sticky under the title) ---- */
+.mc-nav {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin: 1.2rem 0 0.5rem;
+  position: sticky; top: 4.5rem; z-index: 5;
+  padding: 0.5rem 0;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.mc-nav a {
+  font-size: 0.82rem; font-weight: 600; text-decoration: none;
+  color: var(--mc-blue); border: 1px solid var(--mc-blue);
+  border-radius: 999px; padding: 0.22rem 0.8rem; transition: all 0.15s ease;
+}
+.mc-nav a:hover { background: var(--mc-blue); color: #fff; }
 .macro-outline h3 { color: var(--mc-orange); margin-top: 1.5rem; }
 
 /* Lede line under the title */
@@ -159,6 +176,18 @@ variables (GDP, CPI, unemployment), moves through the micro-founded theory of pr
 consumption, investment, and money demand, and closes by integrating the goods, money, and labour
 markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> frameworks to examine general equilibrium.
 </p>
+
+<nav class="mc-nav">
+  <a href="#basic-information">Info</a>
+  <a href="#objectives">Objectives</a>
+  <a href="#course-outcomes">Outcomes</a>
+  <a href="#topics-covered">Topics</a>
+  <a href="#sessions">Schedule</a>
+  <a href="#grading">Grading</a>
+  <a href="#textbooks">Textbooks</a>
+  <a href="#course-policies">Policies</a>
+  <a href="#lecture-slides-by-module">Slides</a>
+</nav>
 
 ## Basic Information
 
