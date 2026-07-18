@@ -10,12 +10,12 @@ description: Academic curriculum vitae of Dr. Ravikiran Naik.
 
 <div class="cv-embed">
   <p class="text-right">
-    <a href="{{ '/assets/pdf/cv-ravikiran-lse.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+    <a href="{{ '/assets/pdf/cv-ravikiran-lse.pdf' | relative_url | bust_file_cache }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
       <i class="fa-solid fa-file-pdf"></i> Download / open in new tab
     </a>
   </p>
   <iframe
-    src="{{ '/assets/pdf/cv-ravikiran-lse.pdf' | relative_url }}#view=FitH"
+    src="{{ '/assets/pdf/cv-ravikiran-lse.pdf' | relative_url | bust_file_cache }}#view=FitH"
     title="Curriculum Vitae — Ravikiran Naik"
     width="100%"
     style="height: calc(100vh - 160px); min-height: 600px; border: 1px solid var(--global-divider-color); border-radius: 8px;"
