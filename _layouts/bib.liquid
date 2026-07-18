@@ -48,7 +48,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title{% if entry.abstract or entry.bibtex_show %} title-toggle{% endif %}" {% if entry.abstract or entry.bibtex_show %}role="button" tabindex="0"{% endif %}>{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -165,9 +165,6 @@
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
     {% assign entryyear = '' %}
-    {% if entry.year and entry.type != 'unpublished' %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
-    {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}
@@ -204,9 +201,6 @@
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
@@ -215,9 +209,6 @@
       {% endif %}
       {% if entry.hal %}
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
-      {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}

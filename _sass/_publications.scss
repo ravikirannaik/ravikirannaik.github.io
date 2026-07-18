@@ -72,6 +72,14 @@
         color: #007bff;
       }
 
+      .title-toggle {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       .status-review {
         display: inline-block;
         margin-top: 0.2rem;

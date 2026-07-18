@@ -15,6 +15,15 @@ $(document).ready(function () {
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
   });
+  // clicking a publication title toggles its abstract and bibtex
+  $(".title-toggle").on("click keypress", function (e) {
+    if (e.type === "keypress" && e.which !== 13 && e.which !== 32) return;
+    e.preventDefault();
+    var container = $(this).parent();
+    container.find(".abstract.hidden").toggleClass("open");
+    container.find(".bibtex.hidden").toggleClass("open");
+  });
+
   $("a").removeClass("waves-effect waves-light");
 
   // bootstrap-toc
