@@ -21,7 +21,6 @@ $(document).ready(function () {
     e.preventDefault();
     var container = $(this).parent();
     container.find(".abstract.hidden").toggleClass("open");
-    container.find(".bibtex.hidden").toggleClass("open");
   });
 
   $("a").removeClass("waves-effect waves-light");

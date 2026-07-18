@@ -48,7 +48,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title{% if entry.abstract or entry.bibtex_show %} title-toggle{% endif %}" {% if entry.abstract or entry.bibtex_show %}role="button" tabindex="0"{% endif %}>{{ entry.title }}</div>
+    <div class="title{% if entry.abstract %} title-toggle{% endif %}" {% if entry.abstract %}role="button" tabindex="0"{% endif %}>{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
