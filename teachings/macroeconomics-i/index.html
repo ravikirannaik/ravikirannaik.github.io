@@ -105,7 +105,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1784378795">
+<link rel="stylesheet" href="/assets/css/main.css?v=1784379114">
 <link rel="canonical" href="https://ravikirannaik.github.io/teachings/macroeconomics-i/">
 
 
@@ -370,6 +370,10 @@
 .macro-outline .modules .mod-links { margin-top: 0.15rem; font-size: 0.9rem; }
 .macro-outline .modules .mod-links a { margin-right: 0.9rem; }
 .macro-outline .modules .mod-soon { color: var(--global-text-color-light); font-size: 0.9rem; }
+.macro-outline .modules .mod-disabled {
+  color: var(--global-text-color-light); pointer-events: none; cursor: default;
+  text-decoration: none; opacity: 0.55;
+}
 /* Two-page spread on wide screens; the viewer breaks out of the 720px column. */
 @media (min-width: 992px) {
   .macro-outline #macro-pdf-wrap.spread {
@@ -556,7 +560,7 @@
     <span class="mod-body">
       <span class="mod-title">GDP, CPI, and Unemployment</span>
       <span class="mod-links">
-        <a href="/assets/slides/macroeconomics-i/ch2-measurement/" target="_blank" rel="noopener noreferrer">Slides (interactive)</a>
+        <span class="mod-disabled" aria-disabled="true" title="Interactive slides — available soon">Slides (interactive)</span>
         <a href="/assets/pdf/teaching/macroeconomics-i/m1-measurement.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
       </span>
     </span>
