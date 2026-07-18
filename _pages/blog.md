@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Ravinomics
+title: ravinomics
 nav: true
 nav_order: 5
 pagination:
