@@ -265,9 +265,6 @@ By the end of the course, students should be able to:
       <li>Measuring the cost of living — CPI</li>
       <li>Measuring joblessness — the unemployment rate</li>
     </ul>
-    <div class="mc-slide">
-      <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m1-measurement.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF) →</a>
-    </div>
   </div>
 
   <div class="mc-card" style="--mc-c:#cde0c9;">
@@ -281,9 +278,6 @@ By the end of the course, students should be able to:
       <li>Unemployment — structural, cyclical, frictional</li>
       <li>Okun's Law</li>
     </ul>
-    <div class="mc-slide">
-      <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m2-productivity.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF) →</a>
-    </div>
   </div>
 
   <div class="mc-card" style="--mc-c:#a9d8de;">
@@ -296,9 +290,6 @@ By the end of the course, students should be able to:
       <li>Investment — user cost, desired capital stock, desired investment</li>
       <li>Goods-market equilibrium</li>
     </ul>
-    <div class="mc-slide">
-      <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m3-consumption-saving-investment.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF) →</a>
-    </div>
   </div>
 
   <div class="mc-card" style="--mc-c:#f5c9a6;">
@@ -312,7 +303,6 @@ By the end of the course, students should be able to:
       <li>Asset-market equilibrium</li>
       <li>Money growth and inflation</li>
     </ul>
-    <div class="mc-slide"><span class="mc-soon">Slides — coming soon</span></div>
   </div>
 
   <div class="mc-card" style="--mc-c:#d8cfe8;">
@@ -326,10 +316,6 @@ By the end of the course, students should be able to:
       <li>Aggregate demand and aggregate supply; AS-AD equilibrium</li>
       <li>Money neutrality</li>
     </ul>
-    <div class="mc-slide">
-      <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF) →</a>
-      <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm-numerical.pdf' | relative_url }}" target="_blank" rel="noopener">Numerical Worksheet (PDF) →</a>
-    </div>
   </div>
 
 </div>
