@@ -80,30 +80,7 @@ importance: 0
   color: var(--mc-orange); font-weight: 700;
 }
 
-/* ---- Module cards (Topics Covered) ---- */
-.mc-modules { display: grid; gap: 1rem; margin-top: 1rem; }
-.mc-card {
-  border: 1px solid var(--global-divider-color);
-  border-left: 6px solid var(--mc-c, var(--mc-blue));
-  border-radius: 8px;
-  padding: 1rem 1.2rem;
-  background: var(--global-card-bg-color, var(--global-bg-color));
-  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-}
-.mc-card .mc-head {
-  display: flex; align-items: baseline; justify-content: space-between;
-  gap: 0.75rem; flex-wrap: wrap;
-}
-.mc-card .mc-title { font-weight: 700; color: var(--mc-ink); font-size: 1.08rem; }
-.mc-card .mc-hours {
-  font-size: 0.8rem; font-weight: 700; color: var(--mc-ink);
-  background: var(--mc-c, var(--mc-blue));
-  border-radius: 999px; padding: 0.1rem 0.6rem; white-space: nowrap;
-}
-.mc-card ul { margin: 0.6rem 0 0; padding-left: 1.1rem; }
-.mc-card ul li { padding: 0.12rem 0; }
-
-/* ---- Schedule table ---- */
+/* ---- Merged Topics & Schedule table ---- */
 .mc-sched { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem; }
 .mc-sched th {
   background: #cdd6e8; color: var(--mc-ink); text-align: left;
@@ -112,10 +89,18 @@ importance: 0
 .mc-sched td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--global-divider-color); }
 /* Module cell spans its weeks; coloured edge ties it to the topic cards */
 .mc-sched td.mod-cell {
-  vertical-align: top; font-weight: 600;
+  vertical-align: top;
   border-left: 5px solid var(--mc-c, var(--mc-blue));
   background: color-mix(in srgb, var(--mc-c, var(--mc-blue)) 22%, transparent);
   padding-top: 0.6rem;
+}
+.mc-sched td.mod-cell .mod-name { display: block; font-weight: 700; color: var(--mc-ink); }
+.mc-sched td.mod-cell ul { margin: 0.4rem 0 0.55rem; padding-left: 1.1rem; }
+.mc-sched td.mod-cell ul li { padding: 0.1rem 0; }
+.mc-sched td.mod-cell .mod-hours {
+  display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--mc-ink);
+  background: var(--mc-c, var(--mc-blue));
+  border-radius: 999px; padding: 0.1rem 0.65rem; white-space: nowrap;
 }
 .mc-sched tr.grp td { border-top: 2px solid var(--global-divider-color); }
 .mc-badge {
@@ -211,8 +196,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#basic-information">Info</a>
   <a href="#objectives">Objectives</a>
   <a href="#course-outcomes">Outcomes</a>
-  <a href="#topics-covered">Topics</a>
-  <a href="#sessions">Schedule</a>
+  <a href="#schedule">Topics &amp; Schedule</a>
   <a href="#grading">Grading</a>
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
@@ -272,104 +256,88 @@ By the end of the course, students should be able to:
 <li>Evaluate economic conditions using the IS-LM / AS-AD general framework.</li>
 </ul>
 
-## Topics Covered
-
-<div class="mc-modules">
-
-  <div class="mc-card" style="--mc-c:#f7cfd8;">
-    <div class="mc-head">
-      <span class="mc-title">Module 1 · Introduction to Macroeconomics</span>
-      <span class="mc-hours">8 hours</span>
-    </div>
-    <ul>
-      <li>Introduction to macroeconomics</li>
-      <li>Measuring the value of economic activity — GDP</li>
-      <li>Measuring the cost of living — CPI</li>
-      <li>Measuring joblessness — the unemployment rate</li>
-    </ul>
-  </div>
-
-  <div class="mc-card" style="--mc-c:#cde0c9;">
-    <div class="mc-head">
-      <span class="mc-title">Module 2 · Productivity, Employment and Output</span>
-      <span class="mc-hours">8 hours</span>
-    </div>
-    <ul>
-      <li>The production function and its properties</li>
-      <li>Labour demand, labour supply, and equilibrium</li>
-      <li>Unemployment — structural, cyclical, frictional</li>
-      <li>Okun's Law</li>
-    </ul>
-  </div>
-
-  <div class="mc-card" style="--mc-c:#a9d8de;">
-    <div class="mc-head">
-      <span class="mc-title">Module 3 · Consumption, Saving and Investment</span>
-      <span class="mc-hours">8 hours</span>
-    </div>
-    <ul>
-      <li>Consumption, savings, and the factors affecting them</li>
-      <li>Investment — user cost, desired capital stock, desired investment</li>
-      <li>Goods-market equilibrium</li>
-    </ul>
-  </div>
-
-  <div class="mc-card" style="--mc-c:#f5c9a6;">
-    <div class="mc-head">
-      <span class="mc-title">Module 4 · Asset Market, Money and Prices</span>
-      <span class="mc-hours">7 hours</span>
-    </div>
-    <ul>
-      <li>Money, functions of money, portfolio allocation, and demand for assets</li>
-      <li>Demand for money, velocity, and the Quantity Theory of Money</li>
-      <li>Asset-market equilibrium</li>
-      <li>Money growth and inflation</li>
-    </ul>
-  </div>
-
-  <div class="mc-card" style="--mc-c:#d8cfe8;">
-    <div class="mc-head">
-      <span class="mc-title">Module 5 · IS–LM / AS–AD</span>
-      <span class="mc-hours">14 hours</span>
-    </div>
-    <ul>
-      <li>Labour-, goods-, and asset-market equilibrium</li>
-      <li>General equilibrium in IS-LM; price adjustments and attainment</li>
-      <li>Aggregate demand and aggregate supply; AS-AD equilibrium</li>
-      <li>Money neutrality</li>
-    </ul>
-  </div>
-
-</div>
-
-<p style="margin-top:0.9rem;"><em>Additional topics (not for assessment):</em> schools of thought · fiscal and monetary policies · business cycles.</p>
-
-## Sessions
+## Topics &amp; Schedule {#schedule}
 
 <table class="mc-sched">
   <thead>
-    <tr><th>Week</th><th>Module</th><th>Assessment</th></tr>
+    <tr><th>Week</th><th>Module &amp; Topics</th><th>Assessment</th></tr>
   </thead>
   <tbody>
-    <tr class="grp"><td>Wk 1</td><td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;">Introduction to Macroeconomics</td><td></td></tr>
+    <tr class="grp"><td>Wk 1</td>
+      <td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;">
+        <span class="mod-name">Module 1 · Introduction to Macroeconomics</span>
+        <ul>
+          <li>Introduction to macroeconomics</li>
+          <li>Measuring the value of economic activity — GDP</li>
+          <li>Measuring the cost of living — CPI</li>
+          <li>Measuring joblessness — the unemployment rate</li>
+        </ul>
+        <span class="mod-hours">8 hours</span>
+      </td>
+      <td></td></tr>
     <tr><td>Wk 2</td><td></td></tr>
     <tr><td>Wk 3</td><td></td></tr>
-    <tr class="grp"><td>Wk 4</td><td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;">Productivity, Employment and Output</td><td></td></tr>
+    <tr class="grp"><td>Wk 4</td>
+      <td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;">
+        <span class="mod-name">Module 2 · Productivity, Employment and Output</span>
+        <ul>
+          <li>The production function and its properties</li>
+          <li>Labour demand, labour supply, and equilibrium</li>
+          <li>Unemployment — structural, cyclical, frictional</li>
+          <li>Okun's Law</li>
+        </ul>
+        <span class="mod-hours">8 hours</span>
+      </td>
+      <td></td></tr>
     <tr><td>Wk 5</td><td></td></tr>
     <tr><td>Wk 6</td><td><span class="mc-badge quiz">Quiz 1</span></td></tr>
-    <tr class="grp"><td>Wk 7</td><td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;">Consumption, Saving and Investment</td><td></td></tr>
+    <tr class="grp"><td>Wk 7</td>
+      <td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;">
+        <span class="mod-name">Module 3 · Consumption, Saving and Investment</span>
+        <ul>
+          <li>Consumption, savings, and the factors affecting them</li>
+          <li>Investment — user cost, desired capital stock, desired investment</li>
+          <li>Goods-market equilibrium</li>
+        </ul>
+        <span class="mod-hours">8 hours</span>
+      </td>
+      <td></td></tr>
     <tr><td>Wk 8</td><td></td></tr>
     <tr><td>Wk 9</td><td><span class="mc-badge exam">Midterm</span></td></tr>
-    <tr class="grp"><td>Wk 10</td><td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;">Asset Market, Money and Prices</td><td></td></tr>
+    <tr class="grp"><td>Wk 10</td>
+      <td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;">
+        <span class="mod-name">Module 4 · Asset Market, Money and Prices</span>
+        <ul>
+          <li>Money, functions of money, portfolio allocation, and demand for assets</li>
+          <li>Demand for money, velocity, and the Quantity Theory of Money</li>
+          <li>Asset-market equilibrium</li>
+          <li>Money growth and inflation</li>
+        </ul>
+        <span class="mod-hours">7 hours</span>
+      </td>
+      <td></td></tr>
     <tr><td>Wk 11</td><td></td></tr>
     <tr><td>Wk 12</td><td><span class="mc-badge ps">Problem Set due</span></td></tr>
-    <tr class="grp"><td>Wk 13</td><td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;">IS–LM / AS–AD</td><td></td></tr>
+    <tr class="grp"><td>Wk 13</td>
+      <td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;">
+        <span class="mod-name">Module 5 · IS–LM / AS–AD</span>
+        <ul>
+          <li>Labour-, goods-, and asset-market equilibrium</li>
+          <li>General equilibrium in IS-LM; price adjustments and attainment</li>
+          <li>Aggregate demand and aggregate supply; AS-AD equilibrium</li>
+          <li>Money neutrality</li>
+        </ul>
+        <span class="mod-hours">14 hours</span>
+      </td>
+      <td></td></tr>
     <tr><td>Wk 14</td><td></td></tr>
     <tr><td>Wk 15</td><td><span class="mc-badge quiz">Quiz 2</span></td></tr>
     <tr><td>Wk 16</td><td></td></tr>
     <tr><td>Wk 17</td><td><span class="mc-badge rev">Review</span></td></tr>
   </tbody>
 </table>
+
+<p style="margin-top:0.9rem;"><em>Additional topics (not for assessment):</em> schools of thought · fiscal and monetary policies · business cycles.</p>
 
 ## Grading
 
