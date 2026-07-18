@@ -352,12 +352,12 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 <div class="mc-book">
   <span class="tag req">Required</span>
-  <div markdown="1">**Macroeconomics** — Abel, A., Bernanke, B. & Croushore, D., 11th ed., Pearson Education. Prepares students to analyse real economic data through a unified model that balances classical and Keynesian perspectives, showing how different macroeconomic models connect within the broader framework.</div>
+  <p style="margin:0;"><strong>Macroeconomics</strong> — Abel, A., Bernanke, B. &amp; Croushore, D., 11th ed., Pearson Education. Prepares students to analyse real economic data through a unified model that balances classical and Keynesian perspectives, showing how different macroeconomic models connect within the broader framework.</p>
 </div>
 
 <div class="mc-book">
   <span class="tag sup">Supplemental</span>
-  <div markdown="1">**Macroeconomics** — N. Gregory Mankiw, 11th ed., Macmillan Learning. A thorough, accessible overview that balances theoretical coverage with practical applications.</div>
+  <p style="margin:0;"><strong>Macroeconomics</strong> — N. Gregory Mankiw, 11th ed., Macmillan Learning. A thorough, accessible overview that balances theoretical coverage with practical applications.</p>
 </div>
 
 <p><em>Additional readings</em> (journal articles, book chapters, and other resources) will be provided at the start of the course and updated on <strong>MOODLE</strong>.</p>
