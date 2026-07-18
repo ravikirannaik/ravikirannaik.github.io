@@ -263,73 +263,19 @@ By the end of the course, students should be able to:
     <tr><th>Week</th><th>Module &amp; Topics</th><th>Assessment</th></tr>
   </thead>
   <tbody>
-    <tr class="grp"><td>Wk 1</td>
-      <td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;">
-        <span class="mod-name">Module 1 · Introduction to Macroeconomics</span>
-        <ul>
-          <li>Introduction to macroeconomics</li>
-          <li>Measuring the value of economic activity — GDP</li>
-          <li>Measuring the cost of living — CPI</li>
-          <li>Measuring joblessness — the unemployment rate</li>
-        </ul>
-        <span class="mod-hours">8 hours</span>
-      </td>
-      <td></td></tr>
+    <tr class="grp"><td>Wk 1</td><td class="mod-cell" rowspan="3" style="--mc-c:#f7cfd8;"><span class="mod-name">Module 1 · Introduction to Macroeconomics</span><ul><li>Introduction to macroeconomics</li><li>Measuring the value of economic activity — GDP</li><li>Measuring the cost of living — CPI</li><li>Measuring joblessness — the unemployment rate</li></ul><span class="mod-hours">8 hours</span></td><td></td></tr>
     <tr><td>Wk 2</td><td></td></tr>
     <tr><td>Wk 3</td><td></td></tr>
-    <tr class="grp"><td>Wk 4</td>
-      <td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;">
-        <span class="mod-name">Module 2 · Productivity, Employment and Output</span>
-        <ul>
-          <li>The production function and its properties</li>
-          <li>Labour demand, labour supply, and equilibrium</li>
-          <li>Unemployment — structural, cyclical, frictional</li>
-          <li>Okun's Law</li>
-        </ul>
-        <span class="mod-hours">8 hours</span>
-      </td>
-      <td></td></tr>
+    <tr class="grp"><td>Wk 4</td><td class="mod-cell" rowspan="3" style="--mc-c:#cde0c9;"><span class="mod-name">Module 2 · Productivity, Employment and Output</span><ul><li>The production function and its properties</li><li>Labour demand, labour supply, and equilibrium</li><li>Unemployment — structural, cyclical, frictional</li><li>Okun's Law</li></ul><span class="mod-hours">8 hours</span></td><td></td></tr>
     <tr><td>Wk 5</td><td></td></tr>
     <tr><td>Wk 6</td><td><span class="mc-badge quiz">Quiz 1</span></td></tr>
-    <tr class="grp"><td>Wk 7</td>
-      <td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;">
-        <span class="mod-name">Module 3 · Consumption, Saving and Investment</span>
-        <ul>
-          <li>Consumption, savings, and the factors affecting them</li>
-          <li>Investment — user cost, desired capital stock, desired investment</li>
-          <li>Goods-market equilibrium</li>
-        </ul>
-        <span class="mod-hours">8 hours</span>
-      </td>
-      <td></td></tr>
+    <tr class="grp"><td>Wk 7</td><td class="mod-cell" rowspan="3" style="--mc-c:#a9d8de;"><span class="mod-name">Module 3 · Consumption, Saving and Investment</span><ul><li>Consumption, savings, and the factors affecting them</li><li>Investment — user cost, desired capital stock, desired investment</li><li>Goods-market equilibrium</li></ul><span class="mod-hours">8 hours</span></td><td></td></tr>
     <tr><td>Wk 8</td><td></td></tr>
     <tr><td>Wk 9</td><td><span class="mc-badge exam">Midterm</span></td></tr>
-    <tr class="grp"><td>Wk 10</td>
-      <td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;">
-        <span class="mod-name">Module 4 · Asset Market, Money and Prices</span>
-        <ul>
-          <li>Money, functions of money, portfolio allocation, and demand for assets</li>
-          <li>Demand for money, velocity, and the Quantity Theory of Money</li>
-          <li>Asset-market equilibrium</li>
-          <li>Money growth and inflation</li>
-        </ul>
-        <span class="mod-hours">7 hours</span>
-      </td>
-      <td></td></tr>
+    <tr class="grp"><td>Wk 10</td><td class="mod-cell" rowspan="3" style="--mc-c:#f5c9a6;"><span class="mod-name">Module 4 · Asset Market, Money and Prices</span><ul><li>Money, functions of money, portfolio allocation, and demand for assets</li><li>Demand for money, velocity, and the Quantity Theory of Money</li><li>Asset-market equilibrium</li><li>Money growth and inflation</li></ul><span class="mod-hours">7 hours</span></td><td></td></tr>
     <tr><td>Wk 11</td><td></td></tr>
     <tr><td>Wk 12</td><td><span class="mc-badge ps">Problem Set due</span></td></tr>
-    <tr class="grp"><td>Wk 13</td>
-      <td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;">
-        <span class="mod-name">Module 5 · IS–LM / AS–AD</span>
-        <ul>
-          <li>Labour-, goods-, and asset-market equilibrium</li>
-          <li>General equilibrium in IS-LM; price adjustments and attainment</li>
-          <li>Aggregate demand and aggregate supply; AS-AD equilibrium</li>
-          <li>Money neutrality</li>
-        </ul>
-        <span class="mod-hours">14 hours</span>
-      </td>
-      <td></td></tr>
+    <tr class="grp"><td>Wk 13</td><td class="mod-cell" rowspan="5" style="--mc-c:#d8cfe8;"><span class="mod-name">Module 5 · IS–LM / AS–AD</span><ul><li>Labour-, goods-, and asset-market equilibrium</li><li>General equilibrium in IS-LM; price adjustments and attainment</li><li>Aggregate demand and aggregate supply; AS-AD equilibrium</li><li>Money neutrality</li></ul><span class="mod-hours">14 hours</span></td><td></td></tr>
     <tr><td>Wk 14</td><td></td></tr>
     <tr><td>Wk 15</td><td><span class="mc-badge quiz">Quiz 2</span></td></tr>
     <tr><td>Wk 16</td><td></td></tr>
