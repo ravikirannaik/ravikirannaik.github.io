@@ -1,0 +1,287 @@
+\documentclass[11pt,english]{article}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\usepackage{newcent}
+
+% Colors
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{oucrimson}   {RGB}{132.,22. ,23. }
+\definecolor{navyblue}    {RGB}{0.  ,0.  ,128.}
+
+% Layout
+\usepackage{multirow}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage[verbose,margin=1in]{geometry}
+\setlength{\headheight}{15pt}
+\usepackage[bottom]{footmisc}
+
+% Headers/Footers
+\usepackage{lastpage}
+\setlength{\headheight}{0pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\lhead{} \chead{} \rhead{}
+\lfoot{\today} \cfoot{}
+\rfoot{Page \thepage \,of \pageref{LastPage}}
+
+% Packages
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[flushleft]{threeparttable}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+% Links
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,citecolor=black,filecolor=black,linkcolor=oucrimson,urlcolor=oucrimson}
+\usepackage[all]{hypcap}
+\usepackage{breakurl}
+
+% Custom heading command
+\newcommand{\makeheading}[2]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth\marginparwidth\marginparsep}%
+         {\LARGE\bfseries #1} \hfill  {\LARGE\bfseries #2 \hspace*{-2.3\marginparsep minus \marginparwidth}}\\[-0.2\baselineskip]%
+                 \rule{\textwidth}{1.5pt}\rule{\marginparsep}{1.5pt}\rule{\marginparwidth}{1.5pt}%
+         \end{minipage}}
+
+\setlength{\parindent}{0in}
+\reversemarginpar
+\renewcommand{\section}[2]{
+        \vspace{0.5\baselineskip}%
+        \phantomsection\addcontentsline{toc}{section}{#1}%
+        \hspace{0in}%
+        {\raggedright \scshape \large \textbf{#1}}%
+        \vspace{0.25\baselineskip}#2
+}
+
+% Coauthor shorthand
+\newcommand{\Me}{\underline{Naik, R.}}
+\newcommand{\Ju}{Unni, J.}
+\newcommand{\Sr}{Ravindra, S.}
+
+% Shorthand for crimson-colored titles (matching Ransom style)
+\newcommand{\T}[1]{\textcolor{oucrimson}{#1}}
+
+% Tighten longtable spacing
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\begin{document}
+\makeheading{Dr.\ Ravikiran Naik}{Curriculum Vitae}
+
+
+% ADDRESS/CONTACT HEADER
+% ==================================================================================
+\setstretch{1.0}
+\begin{multicols}{2}
+
+\begin{flushleft}
+Department of Economics
+
+School of Liberal Education
+
+FLAME University
+
+Pune, India
+
+\end{flushleft}
+
+
+\begin{flushright}
+\textit{Phone:} +91-9724-845-424
+
+\textit{E-mail:} \href{mailto:ravikiran.naik@flame.edu.in}{ravikiran.naik@flame.edu.in}
+
+\textit{ORCID:} \href{https://orcid.org/0000-0002-0146-3918}{0000-0002-0146-3918}
+
+\textit{Citizenship:} India
+
+\end{flushright}
+
+\end{multicols}
+% ==================================================================================
+
+
+
+\setstretch{1.2}
+%\vspace{-.25in}
+
+
+
+\section{Education}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2014--2020 & Ph.D. in Economics, Jawaharlal Nehru University (JNU), New Delhi \\
+     & \small{Dissertation: \T{\textit{Intergenerational Economic Mobility in India: During 1945--1990}}} \\
+     & \small{Supervisor: \T{Prof.\ Praveen Jha}} \\
+2005--2007 & M.A. in Economics, Gokhale Institute of Economics \& Politics (GIPE), Pune \\
+2002--2005 & B.A. in Economics, Rajaram College, Shivaji University, Kolhapur \\
+\end{longtable}
+
+
+
+\section{Employment \& Affiliations}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2022--     & Assistant Professor, \T{FLAME University}, Pune \\
+2020--2022 & Assistant Professor, \T{Christ University-Lavasa} \\
+2018--2020 & Senior Consultant , \T{Indian Institute for Human Settlements (IIHS)}, Bangalore \\
+2009--2014 & Research Associate, \T{Institute of Rural Management Anand (IRMA)}, Anand\\
+2008--2009 & Research Assistant, \T{CUTS International}, Jaipur \\
+\end{longtable}
+
+
+
+\section{Research Fields}\\
+% ==================================================================================
+\vspace{-1mm}
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Primary:   & Development Economics, Labour Markets \& Inequality, Caste and Social Stratification\\
+Secondary: & Education--Occupation Mismatch, Vulnerability \& Informal Employment, Platform/Gig Work\\
+\end{longtable}
+
+
+
+\section{Published \& Forthcoming Papers}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2025 & \T{``Gender Differences in Returns to Education Mismatch''} (\Ju; \Me), in \textit{Women and Work: Challenges, Opportunities and Perspectives for Policy}, Springer Nature (Forthcoming). \\
+2024 & \T{``Heterogeneity of Labour on Digital Platforms in India''} (\Ju; \Me), \textit{Economic \& Political Weekly}. \\
+2022 & \T{``Gender Differentials in Entrepreneurship: Insights from a Multi-method Study''} (\Ju; Yadav, V.; \Me; Datta, S.), \textit{The Journal of Entrepreneurship}, 31(1): 30--64. \\
+2021 & \T{``Women Entrepreneurs In The New Indian Middle Class: Macro \& Micro Perspectives''} (\Ju; Yadav, V.; \Me; Datta, S.), Orient Blackswan, ISBN: 9789354421457. \\
+2013 & \T{``Employment Vulnerability in the Urban Labour Market in India''} (\Me; \Ju), \textit{The Indian Journal of Labour Economics}, 56(4): 509--523. \\
+2013 & \T{``Measuring Informality of Employment in Urban India''} (\Ju; \Me), \textit{The Indian Journal of Labour Economics}, 56(4): 493--508. \\
+2009 & \T{``Rural Structural Transformation: Case of the Service Sector in India''} (\Ju; \Me), \textit{Economic \& Political Weekly}, 46(26--27). \\
+\end{longtable}
+
+
+
+\section{Submitted / Under Review}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2026 & \T{``Analysis of Returns to Education-Occupation Mismatch in Presence of Informality in India''} (\Me; \Ju), \textit{Submitted to Labour Economics}. \\
+2026 & \T{``Economic Inequality, Institutional Trust, and Political Participation in India: Evidence from the India Human Development Survey''} (\Me), \textit{Under Review at World Development}. \\
+2026 & \T{``Stratified Modernisation: Caste, Gender, and Occupational Prestige in Urban India''} (\Me; \Sr), \textit{Under Review at Journal of Development Economics}. \\
+2025 & \T{``Fighting the Double-Edged Sword: Innovation and Internationalisation of Emerging-Market Firms''} (Sayyad, A.A.; \Me), \textit{Under Review at American Business Review}. \\
+\end{longtable}
+
+
+
+\section{Working Papers}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2026 & \T{``Educational Mismatch, Wage Returns, and Occupational Mobility: Evidence from the NLSY79''} (\Me), \textit{Target: Journal of Human Resources / Journal of Labor Economics}. \\
+2026 & \T{``Stepping Stone or Trap? Educational Mismatch and Occupational Mobility in Urban India''} (\Me), \textit{Target: Labour Economics / Journal of Development Economics}. \\
+2025 & \T{``Earning Differentials among Heterogeneous Platforms and Non-Platforms in India''} (\Ju; \Me), \textit{Target: Labor Economics / Journal of Development Economics}. \\
+2025 & \T{``Why Perceived Inequality Does Not Translate into Redistribution Demand: Anger and Political Cynicism'} (\Me), \textit{Target: The Journal of Economic Behavior and Organization}. \\
+2025 & \T{``Inter-generational Economic Mobility and Transmission in India''} (\Me), \textit{Target: Review of Income and Wealth / Journal of Economic Inequality}. \\
+\end{longtable}
+
+
+%\newpage
+\section{Works in Progress}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2026 & \T{``Is the Overeducation Wage Penalty a Worker Effect, a Firm Effect, or a Sorting Effect?''} (\Me) \\
+\\
+
+2026 & \T{``Same Degree, Different Jobs: Caste, Class, and Education-Occupation Mismatch in India}
+\end{longtable}
+
+%%% BLOCKED: Not applicable %%%
+% \section{Policy Writings}\\
+% \section{Paper Discussions}\\
+
+
+
+\section{Conference Presentations}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2025 & \T{``Unleashing India's Hustle: Role of Caste and Gender in the Performance of Informal Enterprises,''} 3rd Global Conference on Caste, Business and Society, Sa\"{i}d Business School, Oxford, July 21--23. \\
+2025 & \T{``Platform Workers and Wage Determination in India's Gig Economy,''} 61st Annual Indian Society of Labour Economics Conference. \\
+2019 & \T{``Dualistic Structure of Industry and Growth of Firms,''} 28th IAFFE Annual Conference, Glasgow Caledonian University, June 27--29. \\
+2019 & \T{``Puzzle of Low Return Entrepreneurship and Small Business in India,''} 60th Annual ISLE Conference, IGIDR, Mumbai, December 17--18. \\
+2016 & \T{``Educational Mismatch, Informality and Returns to Education in India,''} 58th Annual ISLE Conference, IIT Guwahati, November 23--25. \\
+2015 & \T{``Educational Expansion and Social Mobility in India: Origin, Education and Destination,''} International Conference on ``(Persistent) Inequalities Revisited,'' Monte Verit\`{a}, Switzerland, July 26--31. \\
+\end{longtable}
+
+
+
+\section{Grants \& Funding}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2024 & \T{Digital Labour Platforms in India: Understanding Precarity and Empowerment}, Indian Council of Social Science Research (ICSSR). Role: Co-Project Director. \\
+2017 & \T{IDRC-Think Tank Initiative Grant}, International Development Research Centre (IDRC). Role: Research Associate. \\
+\end{longtable}
+
+
+
+\section{Research Projects}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+2022--     & \T{Platform Workers in India: Wages, Skills, and Working Conditions}. Primary survey of 2,000+ workers across Ahmedabad and Pune. Role: Co-Project Director. \\
+2018--2019 & \T{Mapping Bangalore's Industrial Transformation}, IIHS. Role: Research Associate. \\
+2015--2017 & \T{Women Entrepreneurs in the New Indian Middle Class}, IRMA. Role: Research Associate and Co-coordinator. \\
+2017--2021 & \T{IDRC-Think Tank Initiative Project}, IRMA. Role: Research Associate. \\
+2009--2016 & \T{Informality, Poverty and Growth in India-China}, IRMA. Role: Research Assistant. \\
+\end{longtable}
+
+
+
+\section{Teaching Experience}\\
+% ==================================================================================
+\vspace{3mm}
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+FLAME     & \T{Labor Economics}, \T{Macroeconomics}, \T{Gender Economics}, \T{Public Economics} (UG), 2022-- \\
+Christ    & \T{Labor Economics}, \T{Econometrics} (Graduate); \T{Microeconomics}, \T{Law \& Economics}, \T{Public Economics} (UG), 2020--2022 \\
+\end{longtable}
+
+
+%%% BLOCKED: Not applicable %%%
+% \section{Media Appearances}\\
+
+
+
+\section{Skills}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Coding   & Stata (Advanced), Python (Intermediate), Julia (Familiar), \LaTeX, GitHub \\
+Methods: & Panel data estimation, DID, IV, DML, Causal forests, Survey design \\
+Data:    & PLFS, IHDS, NLSY79, Primary surveys \\
+Languages: & English (Fluent), Hindi (Native), German (Beginner), Russian (Basic) \\
+\end{longtable}
+
+
+
+\section{Professional Service}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+Referee: & \textit{Economic \& Political Weekly}, \textit{Indian Journal of Labour Economics} (SAGE), \textit{Humanities and Social Science Communications} (Springer Nature) \\
+Member:  & \T{Indian Society of Labour Economics (ISLE)}, \T{European Association of Labour Economics (EALE)}, \T{International Association for Feminist Economics (IAFFE)}, \T{American Association of Geographers (AAG)} \\
+\end{longtable}
+
+
+%%% BLOCKED: Not applicable %%%
+% \section{Departmental \& University Service}\\
+
+
+
+\section{References}\\
+% ==================================================================================
+\begin{longtable}{p{.85in}>{\hangindent=1em}p{5.65in}<{\raggedright}}
+ & \textbf{Dr.\ Uma Rani}, Senior Economist, International Labour Organisation (ILO), Geneva, Switzerland. Email: \href{mailto:amara@ilo.org}{amara@ilo.org} \\
+ & \textbf{Prof.\ Praveen Jha} (PhD Supervisor), Centre for Informal Sector \& Labour Studies, Jawaharlal Nehru University, New Delhi. Email: \href{mailto:praveen@jnu.ac.in}{praveen@jnu.ac.in} \\
+ & \textbf{Prof.\ Jeemol Unni}, Amrut Mody School of Management, Ahmedabad University. Email: \href{mailto:jeemol@gmail.com}{jeemol@gmail.com} \\
+\end{longtable}
+
+
+\end{document}
