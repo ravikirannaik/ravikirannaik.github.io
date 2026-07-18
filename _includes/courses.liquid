@@ -5,16 +5,13 @@
       <div class="card">
         <div class="card-header p-0" id="courseHead{{ forloop.index }}">
           <button
-            class="btn btn-link btn-block text-left collapsed d-flex justify-content-between align-items-center"
+            class="btn btn-link btn-block text-left collapsed"
             type="button"
             data-toggle="collapse"
             data-target="#courseBody{{ forloop.index }}"
             aria-expanded="false"
             aria-controls="courseBody{{ forloop.index }}">
             <span class="course-title font-weight-bold">{{ course.title }}</span>
-            {% if course.term %}
-              <small class="text-muted ml-2 text-nowrap">{{ course.term }}</small>
-            {% endif %}
           </button>
         </div>
         <div
