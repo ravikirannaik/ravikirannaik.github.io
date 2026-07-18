@@ -37,6 +37,10 @@ importance: 0
   background: var(--global-bg-color);
   border-bottom: 1px solid var(--global-divider-color);
 }
+.mc-nav-title {
+  font-weight: 700; color: var(--mc-blue); align-self: center;
+  margin-right: 0.6rem; white-space: nowrap;
+}
 .mc-nav a {
   font-size: 0.82rem; font-weight: 600; text-decoration: none;
   color: #4a4a4a; border: 1px solid transparent;
@@ -181,15 +185,8 @@ importance: 0
 
 <div class="macro-outline" markdown="1">
 
-<p class="macro-lede">
-This course is the first part of a two-course sequence introducing the fundamental concepts of
-macroeconomics — the study of the economy as a whole. It begins with the measurement of aggregate
-variables (GDP, CPI, unemployment), moves through the micro-founded theory of productivity,
-consumption, investment, and money demand, and closes by integrating the goods, money, and labour
-markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> frameworks to examine general equilibrium.
-</p>
-
 <nav class="mc-nav">
+  <span class="mc-nav-title">Macroeconomics-I · ECON 202</span>
   <a href="#basic-information">Info</a>
   <a href="#objectives">Objectives</a>
   <a href="#course-outcomes">Outcomes</a>
@@ -223,6 +220,14 @@ markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> framewo
 <small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full; ignorance of its contents will not be accepted as justification after the first week of the semester.*</small>
 
 <a class="mc-pdf-btn" href="{{ '/assets/pdf/teaching/course-outline-macro-ulab.pdf' | relative_url }}" target="_blank" rel="noopener">📄 Download the full course outline (PDF)</a>
+
+<p class="macro-lede">
+This course is the first part of a two-course sequence introducing the fundamental concepts of
+macroeconomics — the study of the economy as a whole. It begins with the measurement of aggregate
+variables (GDP, CPI, unemployment), moves through the micro-founded theory of productivity,
+consumption, investment, and money demand, and closes by integrating the goods, money, and labour
+markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> frameworks to examine general equilibrium.
+</p>
 
 ## Objectives
 
