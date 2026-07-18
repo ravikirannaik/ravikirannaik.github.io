@@ -202,7 +202,7 @@ importance: 0
       <span class="mod-title">GDP, CPI, and Unemployment</span>
       <span class="mod-links">
         <span class="mod-disabled" aria-disabled="true" title="Interactive slides — available soon">Slides (interactive)</span>
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m1-measurement.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
+        <span class="mod-disabled" aria-disabled="true" title="Slides PDF — available soon">PDF</span>
       </span>
     </span>
   </li>
@@ -211,7 +211,7 @@ importance: 0
     <span class="mod-body">
       <span class="mod-title">Productivity and Output</span>
       <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m2-productivity.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
+        <span class="mod-disabled" aria-disabled="true" title="Slides — available soon">Slides (PDF)</span>
       </span>
     </span>
   </li>
@@ -220,7 +220,7 @@ importance: 0
     <span class="mod-body">
       <span class="mod-title">Consumption, Saving, and Investment</span>
       <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m3-consumption-saving-investment.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
+        <span class="mod-disabled" aria-disabled="true" title="Slides — available soon">Slides (PDF)</span>
       </span>
     </span>
   </li>
@@ -236,8 +236,8 @@ importance: 0
     <span class="mod-body">
       <span class="mod-title">IS–LM / AS–AD General Equilibrium</span>
       <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm-numerical.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Numerical Worksheet (PDF)</a>
+        <span class="mod-disabled" aria-disabled="true" title="Slides — available soon">Slides (PDF)</span>
+        <span class="mod-disabled" aria-disabled="true" title="Numerical worksheet — available soon">Numerical Worksheet (PDF)</span>
       </span>
     </span>
   </li>
