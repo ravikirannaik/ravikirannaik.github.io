@@ -186,7 +186,6 @@ importance: 0
 <div class="macro-outline" markdown="1">
 
 <nav class="mc-nav">
-  <span class="mc-nav-title">Macroeconomics-I · ECON 202</span>
   <a href="#basic-information">Info</a>
   <a href="#objectives">Objectives</a>
   <a href="#course-outcomes">Outcomes</a>
