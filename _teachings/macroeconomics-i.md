@@ -47,6 +47,22 @@ importance: 0
   transition: opacity 0.15s ease;
 }
 .macro-outline #macro-pdf-right { display: none; }
+/* Module-wise lecture-slide list */
+.macro-outline .modules { list-style: none; padding: 0; margin: 1rem 0 0; }
+.macro-outline .modules li {
+  display: flex; align-items: baseline; gap: 0.75rem;
+  padding: 0.7rem 0; border-bottom: 1px solid var(--global-divider-color);
+}
+.macro-outline .modules li:first-child { border-top: 1px solid var(--global-divider-color); }
+.macro-outline .modules .mod-no {
+  flex: 0 0 auto; font-weight: 600; color: var(--global-theme-color);
+  min-width: 2.4rem;
+}
+.macro-outline .modules .mod-body { flex: 1 1 auto; }
+.macro-outline .modules .mod-title { font-weight: 500; }
+.macro-outline .modules .mod-links { margin-top: 0.15rem; font-size: 0.9rem; }
+.macro-outline .modules .mod-links a { margin-right: 0.9rem; }
+.macro-outline .modules .mod-soon { color: var(--global-text-color-light); font-size: 0.9rem; }
 /* Two-page spread on wide screens; the viewer breaks out of the 720px column. */
 @media (min-width: 992px) {
   .macro-outline #macro-pdf-wrap.spread {
@@ -172,5 +188,55 @@ importance: 0
 </script>
 
 </details>
+
+## Lecture Slides by Module
+
+<ul class="modules">
+  <li>
+    <span class="mod-no">M1</span>
+    <span class="mod-body">
+      <span class="mod-title">GDP, CPI, and Unemployment</span>
+      <span class="mod-links">
+        <a href="{{ '/assets/slides/macroeconomics-i/ch2-measurement/' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (interactive)</a>
+        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m1-measurement.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="mod-no">M2</span>
+    <span class="mod-body">
+      <span class="mod-title">Productivity and Output</span>
+      <span class="mod-links">
+        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m2-productivity.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="mod-no">M3</span>
+    <span class="mod-body">
+      <span class="mod-title">Consumption, Saving, and Investment</span>
+      <span class="mod-links">
+        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m3-consumption-saving-investment.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
+      </span>
+    </span>
+  </li>
+  <li>
+    <span class="mod-no">M4</span>
+    <span class="mod-body">
+      <span class="mod-title">Money and Prices</span>
+      <span class="mod-soon">Slides — coming soon</span>
+    </span>
+  </li>
+  <li>
+    <span class="mod-no">M5</span>
+    <span class="mod-body">
+      <span class="mod-title">IS–LM / AS–AD General Equilibrium</span>
+      <span class="mod-links">
+        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
+        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm-numerical.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Numerical Worksheet (PDF)</a>
+      </span>
+    </span>
+  </li>
+</ul>
 
 </div>
