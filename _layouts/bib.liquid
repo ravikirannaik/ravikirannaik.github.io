@@ -165,6 +165,9 @@
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
     {% assign entryyear = '' %}
+    {% if entry.year and entry.type != 'unpublished' %}
+      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
+    {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}

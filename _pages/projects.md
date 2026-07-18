@@ -27,7 +27,7 @@ horizontal: true
   <div class="tab-pane fade show active" id="publications-pane" role="tabpanel" aria-labelledby="publications-tab" tabindex="0">
     {% include bib_search.liquid %}
     <div class="publications">
-      {% bibliography --query @article, @book, @incollection %}
+      {% bibliography --query @article, @book, @incollection --group_by none %}
     </div>
   </div>
 
