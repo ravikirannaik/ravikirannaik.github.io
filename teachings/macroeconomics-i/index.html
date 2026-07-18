@@ -105,7 +105,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1784393772">
+<link rel="stylesheet" href="/assets/css/main.css?v=1784394033">
 <link rel="canonical" href="https://ravikirannaik.github.io/teachings/macroeconomics-i/">
 
 
@@ -435,20 +435,46 @@
 .mc-badge.rev  { background: #cde0c9; }  /* matcha   */
 
 /* ---- Grading ---- */
-.mc-grade-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+.mc-grade-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; margin-top: 1rem; }
 @media (max-width: 720px) { .mc-grade-wrap { grid-template-columns: 1fr; } }
-.mc-weights li, .mc-scale li { list-style: none; }
-.mc-weights ul, .mc-scale ul { padding: 0; margin: 0.5rem 0 0; }
-.mc-weights li {
-  display: flex; align-items: center; gap: 0.6rem; padding: 0.25rem 0;
+
+/* Donut chart (component breakdown) */
+.mc-donut-wrap { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; margin-top: 0.6rem; }
+.mc-donut {
+  width: 158px; height: 158px; border-radius: 50%; flex: 0 0 auto; position: relative;
+  background: conic-gradient(
+    #f7e3a1 0 40%,      /* End Term 40 */
+    #a9d8de 40% 60%,    /* Mid Term 20 */
+    #cde0c9 60% 75%,    /* Quizzes 15  */
+    #f5c9a6 75% 90%,    /* Problem Set 15 */
+    #d8cfe8 90% 100%);  /* Class Part 10 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
-.mc-weights .dot { width: 0.9rem; height: 0.9rem; border-radius: 3px; flex: 0 0 auto; }
-.mc-weights .pct { margin-left: auto; font-weight: 700; }
-.mc-scale li {
-  display: flex; align-items: center; color: var(--mc-ink); font-weight: 600;
-  padding: 0.3rem 0.7rem; margin-bottom: 3px; border-radius: 4px;
+.mc-donut::after {
+  content: ""; position: absolute; inset: 30px; border-radius: 50%;
+  background: var(--global-bg-color);
 }
-.mc-scale .min { margin-left: auto; font-weight: 400; font-size: 0.9rem; }
+.mc-donut .mc-donut-c {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1;
+}
+.mc-donut .mc-donut-c b { font-size: 1.25rem; color: var(--mc-blue); }
+.mc-donut .mc-donut-c small { font-size: 0.68rem; color: var(--global-text-color-light); }
+.mc-legend { list-style: none; padding: 0; margin: 0; min-width: 12rem; }
+.mc-legend li { display: flex; align-items: center; gap: 0.55rem; padding: 0.22rem 0; }
+.mc-legend .sw { width: 0.85rem; height: 0.85rem; border-radius: 3px; flex: 0 0 auto; }
+.mc-legend .pct { margin-left: auto; font-weight: 700; padding-left: 1rem; }
+
+/* Benchmark ladder (grading scale) */
+.gs-list { margin-top: 0.6rem; }
+.gs-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; }
+.gs-grade { flex: 0 0 1.9rem; font-weight: 700; text-align: right; }
+.gs-track { flex: 1 1 auto; height: 1.45rem; border-radius: 5px; background: var(--mc-soft); }
+.gs-fill {
+  height: 100%; border-radius: 5px; display: flex; align-items: center; justify-content: flex-end;
+  padding-right: 0.45rem; font-size: 0.74rem; font-weight: 700; color: var(--mc-ink);
+  min-width: 2.4rem;
+}
 
 /* ---- Textbook rows ---- */
 .mc-book { display: flex; gap: 1rem; align-items: flex-start; margin: 0.8rem 0; }
@@ -502,8 +528,9 @@ html[data-theme="dark"] .macro-outline {
 html[data-theme="dark"] .mc-nav a,
 html[data-theme="dark"] .mc-badge,
 html[data-theme="dark"] .mc-book .tag,
-html[data-theme="dark"] .mc-weights .dot,
-html[data-theme="dark"] .mc-scale li,
+html[data-theme="dark"] .mc-legend .sw,
+html[data-theme="dark"] .mc-donut,
+html[data-theme="dark"] .gs-fill,
 html[data-theme="dark"] .mc-sched th,
 html[data-theme="dark"] .mc-sched td.mod-cell,
 html[data-theme="dark"] .mc-pdf-btn {
@@ -742,44 +769,54 @@ markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> framewo
 upwards to standardise the median score; marks will never be adjusted down for this procedure.</p>
 
   <div class="mc-grade-wrap">
-  <div class="mc-weights">
+  <div class="mc-chart">
     <strong>Component breakdown</strong>
-    <ul>
-      <li>
-<span class="dot" style="background:#f7e3a1;"></span> End Term Exam <span class="pct">40%</span>
+    <div class="mc-donut-wrap">
+      <div class="mc-donut"><span class="mc-donut-c"><b>60/40</b><small>CIA · Final</small></span></div>
+      <ul class="mc-legend">
+        <li>
+<span class="sw" style="background:#f7e3a1;"></span> End Term Exam <span class="pct">40%</span>
 </li>
-      <li>
-<span class="dot" style="background:#a9d8de;"></span> Mid Term Exam <span class="pct">20%</span>
+        <li>
+<span class="sw" style="background:#a9d8de;"></span> Mid Term Exam <span class="pct">20%</span>
 </li>
-      <li>
-<span class="dot" style="background:#cde0c9;"></span> Quizzes (2) <span class="pct">15%</span>
+        <li>
+<span class="sw" style="background:#cde0c9;"></span> Quizzes (2) <span class="pct">15%</span>
 </li>
-      <li>
-<span class="dot" style="background:#d9d9d9;"></span> Problem Set <span class="pct">15%</span>
+        <li>
+<span class="sw" style="background:#f5c9a6;"></span> Problem Set <span class="pct">15%</span>
 </li>
-      <li>
-<span class="dot" style="background:#f5c9a6;"></span> Class Participation <span class="pct">10%</span>
+        <li>
+<span class="sw" style="background:#d8cfe8;"></span> Class Participation <span class="pct">10%</span>
 </li>
-    </ul>
+      </ul>
+    </div>
   </div>
-  <div class="mc-scale">
+  <div class="mc-bench">
     <strong>Grading scale</strong>
-    <ul>
-      <li style="background:#b7ddd0;">O <span class="min">Minimum: 90</span>
-</li>
-      <li style="background:#cde0c9;">A+ <span class="min">Minimum: 80</span>
-</li>
-      <li style="background:#f7e3a1;">A <span class="min">Minimum: 70</span>
-</li>
-      <li style="background:#f5c9a6;">B+ <span class="min">Minimum: 60</span>
-</li>
-      <li style="background:#a9d8de;">B <span class="min">Minimum: 50</span>
-</li>
-      <li style="background:#d8cfe8;">C <span class="min">Minimum: 40</span>
-</li>
-      <li style="background:#eeb4c8;">P <span class="min">Minimum: 35</span>
-</li>
-    </ul>
+    <div class="gs-list">
+      <div class="gs-row">
+<span class="gs-grade">O</span><div class="gs-track"><div class="gs-fill" style="width:90%;background:#b7ddd0;">90+</div></div>
+</div>
+      <div class="gs-row">
+<span class="gs-grade">A+</span><div class="gs-track"><div class="gs-fill" style="width:80%;background:#cde0c9;">80+</div></div>
+</div>
+      <div class="gs-row">
+<span class="gs-grade">A</span><div class="gs-track"><div class="gs-fill" style="width:70%;background:#f7e3a1;">70+</div></div>
+</div>
+      <div class="gs-row">
+<span class="gs-grade">B+</span><div class="gs-track"><div class="gs-fill" style="width:60%;background:#f5c9a6;">60+</div></div>
+</div>
+      <div class="gs-row">
+<span class="gs-grade">B</span><div class="gs-track"><div class="gs-fill" style="width:50%;background:#a9d8de;">50+</div></div>
+</div>
+      <div class="gs-row">
+<span class="gs-grade">C</span><div class="gs-track"><div class="gs-fill" style="width:40%;background:#d8cfe8;">40+</div></div>
+</div>
+      <div class="gs-row">
+<span class="gs-grade">P</span><div class="gs-track"><div class="gs-fill" style="width:35%;background:#eeb4c8;">35+</div></div>
+</div>
+    </div>
   </div>
 </div>
 
