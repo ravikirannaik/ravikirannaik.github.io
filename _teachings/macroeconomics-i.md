@@ -474,19 +474,19 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     <span class="mod-no">M1</span>
     <span class="mod-body">
       <span class="mod-title">GDP, CPI, and Unemployment</span>
-      <span class="mod-links">
-        <a href="{{ '/assets/slides/macroeconomics-i/ch2-measurement/' | relative_url }}" target="_blank" rel="noopener">Open slides ↗</a>
-      </span>
-      <div style="margin-top:0.75rem; border-radius:8px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.12);">
-        <iframe
-          src="{{ '/assets/slides/macroeconomics-i/ch2-measurement/' | relative_url }}"
-          width="100%" height="480"
-          style="border:none; display:block;"
-          allowfullscreen
-          loading="lazy"
-          title="M1 Slides — GDP, CPI, and Unemployment">
-        </iframe>
-      </div>
+      <details style="margin-top:0.4rem;">
+        <summary style="cursor:pointer; color:var(--mc-blue); font-weight:600; list-style:none; display:inline;">Open slides ↗</summary>
+        <div style="margin-top:0.75rem; border-radius:8px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.12);">
+          <iframe
+            src="{{ '/assets/slides/macroeconomics-i/ch2-measurement/' | relative_url }}"
+            width="100%" height="480"
+            style="border:none; display:block;"
+            allowfullscreen
+            loading="lazy"
+            title="M1 Slides — GDP, CPI, and Unemployment">
+          </iframe>
+        </div>
+      </details>
     </span>
   </li>
   <li>
