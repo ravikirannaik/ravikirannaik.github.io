@@ -474,27 +474,21 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     <span class="mod-no">M1</span>
     <span class="mod-body">
       <span class="mod-title">GDP, CPI, and Unemployment</span>
-      <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m1-measurement.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF)</a>
-      </span>
+      <span class="mod-soon">Slides — coming soon</span>
     </span>
   </li>
   <li>
     <span class="mod-no">M2</span>
     <span class="mod-body">
       <span class="mod-title">Productivity and Output</span>
-      <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m2-productivity.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF)</a>
-      </span>
+      <span class="mod-soon">Slides — coming soon</span>
     </span>
   </li>
   <li>
     <span class="mod-no">M3</span>
     <span class="mod-body">
       <span class="mod-title">Consumption, Saving, and Investment</span>
-      <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m3-consumption-saving-investment.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF)</a>
-      </span>
+      <span class="mod-soon">Slides — coming soon</span>
     </span>
   </li>
   <li>
@@ -508,10 +502,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     <span class="mod-no">M5</span>
     <span class="mod-body">
       <span class="mod-title">IS–LM / AS–AD General Equilibrium</span>
-      <span class="mod-links">
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm.pdf' | relative_url }}" target="_blank" rel="noopener">Slides (PDF)</a>
-        <a href="{{ '/assets/pdf/teaching/macroeconomics-i/m5-is-lm-numerical.pdf' | relative_url }}" target="_blank" rel="noopener">Numerical Worksheet (PDF)</a>
-      </span>
+      <span class="mod-soon">Slides — coming soon</span>
     </span>
   </li>
 </ul>
