@@ -138,8 +138,8 @@ importance: 0
   background: conic-gradient(
     #f7e3a1 0 40%,      /* End Term 40 */
     #a9d8de 40% 60%,    /* Mid Term 20 */
-    #cde0c9 60% 75%,    /* Quizzes 15  */
-    #f5c9a6 75% 90%,    /* Problem Set 15 */
+    #cde0c9 60% 70%,    /* Individual Assignment 10 */
+    #f5c9a6 70% 90%,    /* Problem Set 20 */
     #d8cfe8 90% 100%);  /* Class Part 10 */
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
@@ -246,6 +246,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 
 <nav class="mc-nav">
   <a href="#basic-information">Info</a>
+  <a href="#teaching-philosophy" style="background:#cbb8e0;">Philosophy</a>
   <a href="#objectives">Objectives</a>
   <a href="#course-outcomes">Outcomes</a>
   <a href="#schedule">Topics &amp; Schedule</a>
@@ -285,6 +286,10 @@ variables (GDP, CPI, unemployment), moves through the micro-founded theory of pr
 consumption, investment, and money demand, and closes by integrating the goods, money, and labour
 markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> frameworks to examine general equilibrium.
 </p>
+
+## Teaching Philosophy {#teaching-philosophy}
+
+I teach macroeconomics as a connected set of models, not a list of topics: we build the goods, money, and labour markets and assemble them into one general-equilibrium framework. My emphasis is **genuine understanding over memorisation** — explaining the intuition, working through the mathematics, and applying models to real problems. Class time is active and the course is deliberately demanding; I ask you to protect your attention, take your own notes, and use AI to support your learning, never to replace your thinking.
 
 ## Objectives
 
@@ -363,8 +368,8 @@ upwards to standardise the median score; marks will never be adjusted down for t
       <ul class="mc-legend">
         <li><span class="sw" style="background:#f7e3a1;"></span> End Term Exam <span class="pct">40%</span></li>
         <li><span class="sw" style="background:#a9d8de;"></span> Mid Term Exam <span class="pct">20%</span></li>
-        <li><span class="sw" style="background:#cde0c9;"></span> Quizzes (2) <span class="pct">15%</span></li>
-        <li><span class="sw" style="background:#f5c9a6;"></span> Problem Set <span class="pct">15%</span></li>
+        <li><span class="sw" style="background:#cde0c9;"></span> Individual Assignment <span class="pct">10%</span></li>
+        <li><span class="sw" style="background:#f5c9a6;"></span> Problem Set (Group) <span class="pct">20%</span></li>
         <li><span class="sw" style="background:#d8cfe8;"></span> Class Participation <span class="pct">10%</span></li>
       </ul>
     </div>
@@ -399,44 +404,64 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 ## Course Policies
 
-<details class="mc-acc" markdown="1">
-<summary>Lectures, Workload & Attendance</summary>
+### Workload & Attendance
 
-Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are expected to attend, take your own notes, and review the chapter-end questions and problems. You are responsible for all assigned content in the textbook(s), even if it is not covered explicitly in class. Attendance, active participation, and handwritten notes are expected; arrive on time and prepared.
+Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are responsible for **all assigned content in the textbooks, even if not covered explicitly in class.** Attendance, active participation in group activities, and taking handwritten notes are expected; arrive on time and be prepared to participate every day. A **minimum of 80% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. I will post lecture slides online, but simply reading slides is not a substitute for being in class.
 
-</details>
+### Assessments & Late Submission
 
-<details class="mc-acc" markdown="1">
-<summary>Assessments & Assignments</summary>
+- **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://www.socrative.com), used to monitor learning and give ongoing feedback.
+- **Individual Assignment** — one individual assignment worth **10%**, to be **completed on your own**; tests material covered up to that point.
+- **Problem Set (Group)** — comprehensive group assignment worth **20%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
+- **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions.
+- **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm, **closed book**.
 
-- **Formative coursework** — non-graded quizzes and *Space Run* on the Socrative platform, used to monitor learning and give ongoing feedback.
-- **Quizzes** — two in-class quizzes (10% total), multiple-choice, answered on paper (~20–30 questions).
-- **Problem Set** — comprehensive, covering analytical questions and mathematical problems involving algebra and basic calculus.
-- **Midterm** — covers 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy-medium and difficult questions.
-- **End Term** — comprehensive, emphasising the second half of the semester; same format as the midterm, closed book.
+**Deadlines are firm.** Late submissions of the individual assignment or problem set lose **10% of the component's marks per day** and are not accepted more than three days after the deadline, except where you have a documented and valid reason discussed with me in advance. There are no make-ups for the Midterm or End Term Examination except under the Office of Examination's regulations for genuine, documented emergencies.
 
-</details>
+### Anti-Cheating Policy
 
-<details class="mc-acc" markdown="1">
-<summary>Anti-Cheating Policy</summary>
+A strong anti-cheating policy is in place. It provides assurance to all students that cheating is not occurring, and creates a deterrent effect. Violations of specified rules result in an **automatic deduction of 5 points**; more severe infractions incur a straight **0 for the component**. Claiming ignorance of these rules is not an acceptable excuse. The End Term Exam follows the regulations set by the Office of Examination.
 
-A strong anti-cheating policy is in place. Violations of specified rules result in an automatic deduction of 5 points; more severe infractions incur a straight 0 for the component. Claiming ignorance of these rules is not an acceptable excuse. The End Term Exam follows the regulations set by the Office of Examination.
+### Academic Integrity & Referencing
 
-</details>
+**All work you submit must be your own.** Plagiarism (presenting others' words or ideas as your own), collusion (unauthorised collaboration — note that the group problem set is the *only* collaborative assessment), fabrication of results, and contract cheating are serious violations handled under FLAME University's academic-integrity regulations. Whenever you draw on a source — a textbook, article, dataset, or website — cite it clearly and consistently; if you are unsure what needs a citation, ask me before submitting.
 
-<details class="mc-acc" markdown="1">
-<summary>Class Participation & Email</summary>
+### Use of Generative AI
 
-Speak up in class — to ask questions or make comments. I often call on people, but this is to think out loud, not to "test" you; it will not affect your grade. Be kind and respectful when addressing others. Email is the best way to reach me; I aim to reply within 24 hours. Include **"ECON 202 / Section ?"** in the subject line. Use the MOODLE forum to ask classmates questions.
+This is a **no-AI class** for all graded work. Generative-AI tools may not be used to produce any part of your submitted individual assignment, the group problem set, or your exam answers; doing so is treated as an academic-integrity violation under the anti-cheating policy above.
 
-</details>
+That said, you are **encouraged to use AI tools — such as Claude, ChatGPT, Gemini, and NotebookLM — for your own learning**: to explain difficult concepts, test your understanding, or explore ideas outside of assessed work. They also make confident mistakes, so **verifying anything they tell you is your own responsibility** — treat AI output as a starting point to check against the textbook and lectures, never as an authoritative source.
 
-<details class="mc-acc" markdown="1">
-<summary>Electronics & Classroom Etiquette</summary>
+### Class Participation
 
-**Laptops and tablets are prohibited during class sessions** unless specific instructions are given — research and classroom observation show these devices impair learning and engagement, and students taking handwritten notes significantly outperform. Cell phones should be silenced and put away. Remaining rules follow the FLAME University Handbook (pp. 28–29); a faculty member is fully authorised to ask a student to leave on grounds of classroom indiscipline.
+I encourage you to speak up in class — to ask questions or make comments. I often call on people, but do not be intimidated. **The goal is to think out loud, not to "test" you;** it is completely fine if you do not know an answer, and this will not affect your grade. **Engagement and active participation are critical** towards developing a deeper understanding of the material and will have a positive impact on your final grade. Be kind and respectful when addressing others.
 
-</details>
+### Email Policy
+
+Email is the best way to contact me. I aim to **reply within 24 hours**; if you have not heard back, resend or remind me in class. Please include **"ECON 202 / Section ?"** in the subject line. Use the MOODLE forum to ask classmates questions — I will keep track and address questions as needed.
+
+### Accessibility & Accommodations
+
+I am committed to an inclusive classroom. Students with a disability or any condition that affects their participation or assessment are entitled to **reasonable accommodations**. Please contact the relevant FLAME University student-support office — and me, in confidence — as early in the semester as possible. All such requests are treated confidentially.
+
+### Student Wellbeing & Support
+
+**Your wellbeing matters more than any single grade.** If personal, health, or financial difficulties are affecting your studies, please reach out — to me, or to FLAME University's counselling and student-support services. Seeking help early makes a difference, and doing so will never count against you.
+
+### Classroom Etiquette
+
+- **Please keep phones silenced and out of sight during class.** Divided attention measurably lowers comprehension — for you and for those around you.
+- Laptops and tablets are used only when a specific task calls for them (see Electronics Policy below).
+- Arrive on time and engage with each other respectfully. Persistent disruption after a reminder may carry a small grade penalty.
+- Standards of classroom conduct are **governed by the [FLAME University Handbook (pp. 28–29)](https://drive.google.com/file/d/1f7dzW6cfqjJFq1Yx-A9Q4LIbB-HZ7e29/view)**. A faculty member may ask a student to leave on grounds of indiscipline.
+
+### Electronics Policy: No Laptops or Tablets During Class
+
+Electronic devices including laptops and tablets are **prohibited during class sessions**. Multiple studies confirm that laptop use during lectures harms academic performance. Research from Princeton and UCLA shows that students taking handwritten notes significantly outperform laptop users on conceptual comprehension, because typing encourages verbatim transcription rather than the deeper processing that learning requires [(Mueller & Oppenheimer, 2014)](https://journals.sagepub.com/doi/abs/10.1177/0956797614524581). A randomised trial at the US Military Academy found that students in laptop-permitted classrooms scored lower on final exams [(Carter et al., 2017)](https://www.sciencedirect.com/science/article/abs/pii/S0272775716303454). Non-academic browsing during class predicts lower exam scores even after accounting for motivation and ability [(Ravizza et al., 2017)](https://journals.sagepub.com/doi/10.1177/0956797616677314); the broader literature consistently links media multitasking to weaker recall, comprehension, and grades [(Beland & Murphy, 2016)](https://www.sciencedirect.com/science/article/abs/pii/S0927537116300136); [(May & Elder, 2018)](https://link.springer.com/article/10.1186/s41239-018-0096-z).
+
+**No Recording Devices:** Audio and video recording in the classroom, during examinations, and in office hours is **strictly prohibited** without explicit written permission. This covers all devices — phones, AI-enabled smart glasses, smartwatches, or any wearable capable of capturing audio or video. Violations are a breach of academic integrity and will be **referred to the University's Disciplinary Committee** per the [FLAME University Handbook (pp. 28–29)](https://drive.google.com/file/d/1f7dzW6cfqjJFq1Yx-A9Q4LIbB-HZ7e29/view).
+
+**Exceptions:** Students with documented disabilities or legitimate academic needs may request device accommodations by scheduling office hours and providing professional documentation explaining why electronic devices are essential for their learning.
 
 ## Course Materials {#materials}
 
