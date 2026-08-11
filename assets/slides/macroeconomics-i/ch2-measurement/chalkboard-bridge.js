@@ -1,3 +1,10 @@
+// Hide toolbar buttons when slides are embedded in an iframe
+if (window !== window.top) {
+  var _s = document.createElement("style");
+  _s.textContent = ".slide-chalkboard-buttons, .slide-menu-button { display: none !important; }";
+  document.head.appendChild(_s);
+}
+
 // chalkboard-bridge.js — Syncs chalkboard drawings between speaker view and presentation
 // Uses BroadcastChannel API to relay chalkboard plugin events across windows/iframes
 (function () {
