@@ -436,9 +436,45 @@ That said, you are **encouraged to use AI tools — such as Claude, ChatGPT, Gem
 
 I encourage you to speak up in class — to ask questions or make comments. I often call on people, but do not be intimidated. **The goal is to think out loud, not to "test" you;** it is completely fine if you do not know an answer, and this will not affect your grade. **Engagement and active participation are critical** towards developing a deeper understanding of the material and will have a positive impact on your final grade. Be kind and respectful when addressing others.
 
-### Email Policy
+### Communication & Email Policy
 
-Email is the best way to contact me. I aim to **reply within 24 hours**; if you have not heard back, resend or remind me in class. Please include **"ECON 202 / Section ?"** in the subject line. Use the MOODLE forum to ask classmates questions — I will keep track and address questions as needed.
+Before sending me a message, ask yourself two questions: *Can I find this myself — in the syllabus, on MOODLE, or by asking a classmate?* And: *if this were a workplace, would I take the initiative to figure this out before approaching my manager?* If the answer to either is yes, find it yourself first. This is not about protecting my inbox; it is about building the professional instincts you will need from day one of your first job.
+
+**What belongs in an email:** substantive questions about course material you have genuinely thought through but cannot resolve alone, or personal concerns. These I welcome and will engage with seriously.
+
+**What does not belong in an email:** deadline reminders, grade percentages, whether class is cancelled — anything answerable in thirty seconds by reading the syllabus or the MOODLE page. I will redirect these rather than answer them.
+
+- Include **"ECON 202 / Section ?"** in the subject line.
+- I reply within **24 hours** on working days; if you have not heard back, resend or remind me in class.
+- For logistical questions that may help others, use the **MOODLE forum** — I monitor it and answer there so everyone benefits.
+- A living FAQ page on MOODLE captures questions the syllabus did not answer; check it before emailing.
+
+Substantive questions — the ones that push your thinking — are always welcome.
+
+<details class="mc-acc">
+<summary>The thinking behind this policy</summary>
+
+Early in my teaching career I was too available — not in the mentorship sense, which is worth every minute, but in the logistical sense. I answered every question that arrived in my inbox, no matter how easily it could have been found on the syllabus or the course page. I told myself I was being responsive. What I was actually doing was training students to outsource their initiative to me.
+
+The harm runs both ways. For me: constant interruptions, time stolen from research and meaningful feedback. For students: quietly undermined self-directed instincts — the exact instincts employers will expect from day one. A ResumeBuilder survey found that three in four managers report difficulty working with recent graduates, with complaints centering on lack of initiative and effort. Those are not fixed traits; they are habits, and habits are exactly what a classroom can shape long before a first job depends on them.
+
+What I landed on was not a stricter policy. It was a reframe: I ask students to treat our course as a professional environment, where taking initiative to find information before asking someone else is a basic expectation — not a burden, but a skill worth building now.
+
+**Five practices behind this policy:**
+
+**1. Two questions before emailing.** *Can I find this myself? If this were a workplace, would I ask my manager or figure it out first?* The moment students frame it that way, they recognize that emailing about a deadline already on the syllabus is the professional equivalent of asking a manager what time the meeting is. When executives from my network speak in class, the feedback is consistent: the candidates who get hired and grow are the ones who figure things out before asking someone else to do it for them.
+
+**2. The syllabus has to earn this standard.** The "find it yourself" expectation only holds if there is somewhere easy to look. Before I ask students to be self-directed, I audit the course site the way a first-day student would. If finding the rubric requires more than two clicks, I reorganize. If any of the five most-asked questions takes more than sixty seconds to locate, it goes on my redesign list. Robert Sutton and Huggy Rao call unnecessary search friction a leadership and design failure, not a user failure — and they are right.
+
+**3. A living FAQ — not just a static syllabus.** After the first week, gaps surface. I keep a pinned page ("Not in the Syllabus? Check Here") updated each term. When a student asks a useful logistical question in person, I add it there and mention I am doing so — reinforcing the document's existence and modeling something valuable: building shared knowledge rather than siloing information in one-to-one exchanges.
+
+**4. Good questions get amplified.** The goal is not fewer questions — it is better ones. When a student sends something substantive, I occasionally open the next class with it (anonymised). Showing students what high-quality intellectual engagement looks like gives them a behavioral anchor; telling them only what not to do leaves them with no model to follow.
+
+**5. I model the behavior myself.** If I email students with information already on MOODLE, I am signaling that redundance is acceptable. So I point rather than push, and I say "the instructions are in the brief — let me know if anything is unclear" rather than re-summarizing content students can read themselves. At every moment I am demonstrating what a self-directed professional looks like.
+
+The inbox is quieter. More importantly, students leave with a habit that will serve them far beyond this course.
+
+</details>
 
 ### Accessibility & Accommodations
 
