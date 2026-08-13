@@ -128,13 +128,13 @@ importance: 0
 .mc-badge.rev  { background: #cde0c9; }  /* matcha   */
 
 /* ---- Grading ---- */
-.mc-grade-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; margin-top: 1rem; }
+.mc-grade-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1rem; align-items: start; }
 @media (max-width: 720px) { .mc-grade-wrap { grid-template-columns: 1fr; } }
 
 /* Donut chart (component breakdown) */
-.mc-donut-wrap { display: flex; align-items: center; gap: 1.3rem; flex-wrap: wrap; margin-top: 0.6rem; }
+.mc-donut-wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: nowrap; margin-top: 0.6rem; }
 .mc-donut {
-  width: 158px; height: 158px; border-radius: 50%; flex: 0 0 auto; position: relative;
+  width: 130px; height: 130px; border-radius: 50%; flex: 0 0 auto; position: relative;
   background: conic-gradient(
     #f7e3a1 0 40%,      /* End Term 40 */
     #a9d8de 40% 60%,    /* Mid Term 20 */
@@ -144,7 +144,7 @@ importance: 0
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 .mc-donut::after {
-  content: ""; position: absolute; inset: 30px; border-radius: 50%;
+  content: ""; position: absolute; inset: 25px; border-radius: 50%;
   background: var(--global-bg-color);
 }
 .mc-donut .mc-donut-c {
