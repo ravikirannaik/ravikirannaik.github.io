@@ -675,6 +675,12 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 <p>Reach out early — to me, or to FLAME University's counselling and student-support services. Personal, health, or financial difficulties affecting your studies are taken seriously, and seeking help will <strong>never count against you</strong>. If it is purely academic, office hours are the right first step; bring a specific question or a worked attempt, not just "I don't understand." → <a href="#course-policies">Student wellbeing</a></p>
 </details>
 
+<details class="mc-acc">
+<summary>Why are laptops, tablets, and phones completely banned — and what counts as a nuisance?</summary>
+<p>The ban is based on evidence, not preference. Multiple controlled studies show that laptop use during lectures <strong>lowers exam scores</strong> — for the user and for students around them — because screens fragment attention even when you are "just taking notes." Phones cause the same problem the moment they appear on the desk. The rule covers all sessions without exception; exceptions require documented academic need arranged in advance.<br><br>
+<strong>What counts as a nuisance:</strong> side conversations after a reminder, arriving late and disrupting a lecture in progress, audible phone notifications, using a screen when one task doesn't call for it, or any behaviour that pulls focus away from the people around you. A first reminder is a courtesy; persistent disruption can result in a grade penalty or a request to leave. The classroom belongs to everyone in it. → <a href="#course-policies">Electronics &amp; classroom etiquette</a></p>
+</details>
+
 </div>
 
 <script>
