@@ -170,10 +170,13 @@ importance: 0
 }
 
 /* ---- Textbook rows ---- */
-.mc-book { display: flex; gap: 1rem; align-items: flex-start; margin: 0.8rem 0; }
+.mc-book { display: flex; gap: 1.2rem; align-items: flex-start; margin: 1.2rem 0; }
+.mc-book-cover { flex: 0 0 auto; }
+.mc-book-cover img { width: 80px; display: block; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.mc-book-body { flex: 1 1 auto; }
 .mc-book .tag {
-  font-size: 0.78rem; font-weight: 700; color: var(--mc-ink); border-radius: 4px;
-  padding: 0.12rem 0.55rem; white-space: nowrap; margin-top: 0.15rem;
+  display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--mc-ink); border-radius: 4px;
+  padding: 0.12rem 0.55rem; white-space: nowrap; margin-bottom: 0.4rem;
 }
 .mc-book .tag.req { background: #eeb4c8; }  /* nadeshiko */
 .mc-book .tag.sup { background: #f7e3a1; }  /* yamabuki  */
@@ -390,13 +393,27 @@ upwards to standardise the median score; marks will never be adjusted down for t
 ## Textbooks
 
 <div class="mc-book">
-  <span class="tag req">Required</span>
-  <p style="margin:0;"><strong>Macroeconomics</strong> — Abel, A., Bernanke, B. &amp; Croushore, D., 11th ed., Pearson Education. Prepares students to analyse real economic data through a unified model that balances classical and Keynesian perspectives, showing how different macroeconomic models connect within the broader framework.</p>
+  <div class="mc-book-cover">
+    <a href="https://www.pearson.com/en-us/subject-catalog/p/macroeconomics/P200000007767" target="_blank" rel="noopener">
+      <img src="https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-A1030-00-06-62-A103000066259-A103000066259-Lrg.jpg?context=bWFzdGVyfGltYWdlc3w3MTcwMnxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g1My9oNTkvMTUyOTg4ODQ4NTUwMzgvc2l6ZV9XMzcwXy9BMTAzMC8wMC8wNi82Mi9BMTAzMDAwMDY2MjU5L0ExMDMwMDAwNjYyNTlfTHJnLmpwZ3xiYzE5MjhlNWQ4YmEyZjZmMDA5MjZiMTc0YzU3NTlhOTk3MDZhZDdhZGQ3Y2ZhMGQ0ZTQxNmM5ZjExNmMwYTdl&imwidth=370" alt="Abel, Bernanke & Croushore – Macroeconomics 11e cover">
+    </a>
+  </div>
+  <div class="mc-book-body">
+    <span class="tag req">Required</span>
+    <p style="margin:0;"><strong>Macroeconomics</strong> — Abel, A., Bernanke, B. &amp; Croushore, D., 11th ed., Pearson Education. Prepares students to analyse real economic data through a unified model that balances classical and Keynesian perspectives, showing how different macroeconomic models connect within the broader framework.</p>
+  </div>
 </div>
 
 <div class="mc-book">
-  <span class="tag sup">Supplemental</span>
-  <p style="margin:0;"><strong>Macroeconomics</strong> — N. Gregory Mankiw, 11th ed., Macmillan Learning. A thorough, accessible overview that balances theoretical coverage with practical applications.</p>
+  <div class="mc-book-cover">
+    <a href="https://www.macmillanlearning.com/college/us/product/Macroeconomics/p/1319387993" target="_blank" rel="noopener">
+      <img src="https://prod-cat-files.macmillan.cloud/MediaResources/Jackets/258W/9781319387990.jpg" alt="Mankiw – Macroeconomics 11e cover">
+    </a>
+  </div>
+  <div class="mc-book-body">
+    <span class="tag sup">Supplemental</span>
+    <p style="margin:0;"><strong>Macroeconomics</strong> — N. Gregory Mankiw, 11th ed., Macmillan Learning. A thorough, accessible overview that balances theoretical coverage with practical applications.</p>
+  </div>
 </div>
 
 <p><em>Additional readings</em> (journal articles, book chapters, and other resources) will be provided at the start of the course and updated on <strong>MOODLE</strong>.</p>
