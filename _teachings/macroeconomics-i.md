@@ -410,10 +410,10 @@ Lecture slides are shared on MOODLE immediately after each module is completed. 
 ### Assessments & Late Submission
 
 - **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://www.socrative.com), used to monitor learning and give ongoing feedback.
-- **Quiz (2)** — two quizzes worth **20%** combined, to be **completed on your own**; each tests material covered up to that point.
+- **Quiz (2)** — two quizzes worth **20%** combined, to be **completed on your own**; each covers in-class material taught up to the previous week.
 - **Problem Set (Group)** — comprehensive group assignment worth **10%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
-- **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions.
-- **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm, **closed book**.
+- **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions; **closed book**.
+- **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm; also **closed book**.
 
 **Deadlines are firm.** Late submissions of the individual assignment or problem set lose **10% of the component's marks per day** and are not accepted more than three days after the deadline, except where you have a documented and valid reason discussed with me in advance. There are no make-ups for the Midterm Examination except under the Office of the Dean or the Office of Examination's regulations for genuine, documented emergencies. The End Term Examination is governed solely by the Office of Examination's regulations.
 
