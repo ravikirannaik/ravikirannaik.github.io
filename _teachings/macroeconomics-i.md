@@ -405,7 +405,7 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 ### Workload & Attendance
 
-Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are responsible for **all assigned content in the textbooks, even if not covered explicitly in class.** Attendance, active participation in group activities, and taking handwritten notes are expected; arrive on time and be prepared to participate every day. A **minimum of 80% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. I will post lecture slides online, but simply reading slides is not a substitute for being in class.
+Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are responsible for **all assigned content in the textbooks, even if not covered explicitly in class.** Attendance, active participation in group activities, and taking handwritten notes are expected; arrive on time and be prepared to participate every day. A **minimum of 75% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. I will post lecture slides online, but simply reading slides is not a substitute for being in class.
 
 ### Assessments & Late Submission
 
@@ -415,7 +415,7 @@ Lecture slides are shared on MOODLE immediately after each module is completed. 
 - **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions.
 - **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm, **closed book**.
 
-**Deadlines are firm.** Late submissions of the individual assignment or problem set lose **10% of the component's marks per day** and are not accepted more than three days after the deadline, except where you have a documented and valid reason discussed with me in advance. There are no make-ups for the Midterm or End Term Examination except under the Office of Examination's regulations for genuine, documented emergencies.
+**Deadlines are firm.** Late submissions of the individual assignment or problem set lose **10% of the component's marks per day** and are not accepted more than three days after the deadline, except where you have a documented and valid reason discussed with me in advance. There are no make-ups for the Midterm Examination except under the Office of the Dean or the Office of Examination's regulations for genuine, documented emergencies. The End Term Examination is governed solely by the Office of Examination's regulations.
 
 ### Anti-Cheating Policy
 
