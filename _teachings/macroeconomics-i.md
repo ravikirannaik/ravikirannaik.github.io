@@ -257,6 +257,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
   <a href="#materials">Materials</a>
+  <a href="#faq">FAQ</a>
 </nav>
 
 ## Basic Information
@@ -594,6 +595,60 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 </ul>
 
 <small>Practice sets are ungraded self-study; the graded problem set is comprehensive and involves algebra and basic calculus.</small>
+
+## FAQ {#faq}
+
+<p style="color:var(--global-text-color-light); font-size:0.9rem; margin-top:-0.5rem;">Ten questions students almost always ask — answered briefly, with a link to the full policy.</p>
+
+<details class="mc-acc">
+<summary>Can I use ChatGPT or any AI tool for assignments?</summary>
+<p>For <strong>graded work — no.</strong> Using AI to write or solve any part of a quiz, problem set, or exam answer is an academic-integrity violation treated the same as cheating. You <em>can</em> use AI tools (Claude, ChatGPT, NotebookLM, etc.) to study, test your understanding, and explore ideas outside assessed work — but verify everything against the textbook, because they make confident mistakes. → <a href="#course-policies">AI & Integrity policy</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Do I actually have to buy the textbook?</summary>
+<p>Yes — you are responsible for <strong>all assigned content</strong>, even if not covered explicitly in class. Abel, Bernanke & Croushore (11th ed., Pearson) is the required text; Mankiw (11th ed., Macmillan) is supplemental. The library may have copies; digital/rental options are available from Pearson+ and VitalSource. → <a href="#textbooks">Textbooks</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Can I just read the slides and skip class?</summary>
+<p><strong>No.</strong> Slides indicate what a lecture broadly covers — they do not replace it. You need <strong>75 % attendance</strong> to sit the End Term Examination. Beyond the policy, the problems and in-class quizzes test material that only makes sense if you were there and took your own notes. → <a href="#course-policies">Attendance</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Are the quizzes and exams open book?</summary>
+<p><strong>Both the Midterm and End Term are closed book.</strong> The two in-class quizzes are also closed book — bring a pen, nothing else. The problem set is a take-home group assignment where you may use your notes and textbook. → <a href="#course-policies">Assessments</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>What if I miss the midterm?</summary>
+<p>There are <strong>no make-ups</strong> for the Midterm unless the Office of the Dean or the Office of Examination authorises an exception for a genuine, documented emergency. If you foresee a conflict, contact me <em>before</em> the exam, not after. The End Term is governed entirely by the Office of Examination's regulations. → <a href="#course-policies">Make-up policy</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Can I submit the problem set late?</summary>
+<p>Late submissions lose <strong>10 % of the component's marks per day</strong> and are not accepted more than three days after the deadline. If you have a documented reason (illness, emergency), discuss it with me <em>in advance where possible</em> — after the fact is much harder to accommodate. → <a href="#course-policies">Late submission</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Can I use my laptop or phone in class?</summary>
+<p><strong>Phones silent and out of sight; laptops and tablets prohibited</strong> during class sessions. The evidence on devices and learning is unambiguous — they hurt you even when you think they don't. Students with documented disabilities who need device accommodations should contact me early. → <a href="#course-policies">Electronics policy</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>How does grading work — is there a curve?</summary>
+<p>Grades follow an absolute scale (O ≥ 90, A+ ≥ 80, A ≥ 70, B+ ≥ 60, B ≥ 50, C ≥ 40, P ≥ 35). I reserve the right to <strong>adjust marks upward</strong> to standardise the median — marks are never adjusted down. Grades are based on rubric criteria, not effort or appearance. → <a href="#grading">Grading scale</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>When exactly are the quizzes and midterm?</summary>
+<p><strong>Quiz 1</strong> — Week 7 (~28 Sep). <strong>Midterm</strong> — Term Exam Period 12–17 Oct. <strong>Quiz 2</strong> — Week 13 (~9 Nov). <strong>End Term</strong> — 14–19 Dec. Exact dates within each window are confirmed on MOODLE. The problem set is due around Week 10 (~19 Oct). → <a href="#schedule">Schedule</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>What's the fastest way to get a response from you?</summary>
+<p>Check the syllabus and MOODLE FAQ page first — if the answer is there, I'll redirect you. For logistical questions that might help others, post on the <strong>MOODLE forum</strong> so everyone benefits. For substantive or personal matters, email with <strong>"ECON 202 / Section ?"</strong> in the subject line; I reply within 24 hours on working days. → <a href="#course-policies">Email policy</a></p>
+</details>
 
 </div>
 
