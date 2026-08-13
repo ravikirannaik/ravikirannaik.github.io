@@ -650,6 +650,31 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 <p>Check the syllabus and MOODLE FAQ page first — if the answer is there, I'll redirect you. For logistical questions that might help others, post on the <strong>MOODLE forum</strong> so everyone benefits. For substantive or personal matters, email with <strong>"ECON 202 / Section ?"</strong> in the subject line; I reply within 24 hours on working days. → <a href="#course-policies">Email policy</a></p>
 </details>
 
+<details class="mc-acc">
+<summary>What actually happens if I get caught cheating or plagiarising?</summary>
+<p>Penalties are automatic and substantial. Violating specified rules results in an <strong>automatic deduction of 5 points</strong> from the component; more serious infractions (copying, contract cheating, collusion outside the group problem set) earn a straight <strong>0 for the component</strong>. Severe cases are referred to FLAME University's Disciplinary Committee under the University Handbook (pp. 28–29). Claiming ignorance of the rules is not an acceptable defence. → <a href="#course-policies">Anti-cheating policy</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Can I record the lecture on my phone or smart glasses?</summary>
+<p><strong>No.</strong> Audio and video recording in class, during exams, and in office hours is <strong>strictly prohibited</strong> without explicit written permission — this includes phones, smartwatches, and AI-enabled wearables. Violations are treated as academic-integrity breaches and referred to the University's Disciplinary Committee. → <a href="#course-policies">No recording devices</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>Can I be asked to leave the classroom?</summary>
+<p>Yes. Under the FLAME University Handbook (pp. 28–29), a faculty member may ask a student to leave on grounds of indiscipline — persistent disruption, ignoring a reminder, or side conversations after a warning. A small grade penalty may also apply for repeated disruption. The standard is simple: arrive on time, engage respectfully, and keep devices away. → <a href="#course-policies">Classroom discipline</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>What if I need special accommodations for exams or class?</summary>
+<p>Students with a disability or condition affecting participation or assessment are entitled to <strong>reasonable accommodations</strong>. Contact the FLAME University student-support office <em>and</em> me — in confidence — <strong>as early in the semester as possible</strong> so arrangements can be put in place before assessments. All requests are treated confidentially. → <a href="#course-policies">Accessibility & accommodations</a></p>
+</details>
+
+<details class="mc-acc">
+<summary>I'm struggling — personally or academically. What should I do?</summary>
+<p>Reach out early — to me, or to FLAME University's counselling and student-support services. Personal, health, or financial difficulties affecting your studies are taken seriously, and seeking help will <strong>never count against you</strong>. If it is purely academic, office hours are the right first step; bring a specific question or a worked attempt, not just "I don't understand." → <a href="#course-policies">Student wellbeing</a></p>
+</details>
+
 </div>
 
 <script>
