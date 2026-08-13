@@ -138,8 +138,8 @@ importance: 0
   background: conic-gradient(
     #f7e3a1 0 40%,      /* End Term 40 */
     #a9d8de 40% 60%,    /* Mid Term 20 */
-    #cde0c9 60% 70%,    /* Individual Assignment 10 */
-    #f5c9a6 70% 90%,    /* Problem Set 20 */
+    #cde0c9 60% 80%,    /* Quiz (2) 20 */
+    #f5c9a6 80% 90%,    /* Problem Set 10 */
     #d8cfe8 90% 100%);  /* Class Part 10 */
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
@@ -366,8 +366,8 @@ upwards to standardise the median score; marks will never be adjusted down for t
       <ul class="mc-legend">
         <li><span class="sw" style="background:#f7e3a1;"></span> End Term Exam <span class="pct">40%</span></li>
         <li><span class="sw" style="background:#a9d8de;"></span> Mid Term Exam <span class="pct">20%</span></li>
-        <li><span class="sw" style="background:#cde0c9;"></span> Individual Assignment <span class="pct">10%</span></li>
-        <li><span class="sw" style="background:#f5c9a6;"></span> Problem Set (Group) <span class="pct">20%</span></li>
+        <li><span class="sw" style="background:#cde0c9;"></span> Quiz (2) <span class="pct">20%</span></li>
+        <li><span class="sw" style="background:#f5c9a6;"></span> Problem Set (Group) <span class="pct">10%</span></li>
         <li><span class="sw" style="background:#d8cfe8;"></span> Class Participation <span class="pct">10%</span></li>
       </ul>
     </div>
@@ -409,8 +409,8 @@ Lecture slides are shared on MOODLE immediately after each module is completed. 
 ### Assessments & Late Submission
 
 - **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://www.socrative.com), used to monitor learning and give ongoing feedback.
-- **Individual Assignment** — one individual assignment worth **10%**, to be **completed on your own**; tests material covered up to that point.
-- **Problem Set (Group)** — comprehensive group assignment worth **20%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
+- **Quiz (2)** — two quizzes worth **20%** combined, to be **completed on your own**; each tests material covered up to that point.
+- **Problem Set (Group)** — comprehensive group assignment worth **10%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
 - **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions.
 - **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm, **closed book**.
 
@@ -567,7 +567,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 ### Problem Sets
 
 <ul class="modules">
-  <li><span class="mod-no">PS</span><span class="mod-body"><span class="mod-title">Graded Problem Set — comprehensive (Modules 1–4)<span class="mod-tag graded">Graded · 15%</span></span><span class="mod-links"><span class="mod-disabled" aria-disabled="true" title="Released soon">Problems (PDF)</span><span class="mod-disabled" aria-disabled="true" title="Posted after the due date">Solutions (PDF)</span></span><span class="mod-soon">Released Week 10 · due Wed, 4 Nov 2026</span></span></li>
+  <li><span class="mod-no">PS</span><span class="mod-body"><span class="mod-title">Graded Problem Set — comprehensive (Modules 1–4)<span class="mod-tag graded">Graded · 10%</span></span><span class="mod-links"><span class="mod-disabled" aria-disabled="true" title="Released soon">Problems (PDF)</span><span class="mod-disabled" aria-disabled="true" title="Posted after the due date">Solutions (PDF)</span></span><span class="mod-soon">Released Week 10 · due Wed, 4 Nov 2026</span></span></li>
   <li><span class="mod-no">P1</span><span class="mod-body"><span class="mod-title">Practice — GDP, CPI, Unemployment<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
   <li><span class="mod-no">P2</span><span class="mod-body"><span class="mod-title">Practice — Production, Labour Market, Okun's Law<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
   <li><span class="mod-no">P3</span><span class="mod-body"><span class="mod-title">Practice — Consumption, Saving, Investment<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
