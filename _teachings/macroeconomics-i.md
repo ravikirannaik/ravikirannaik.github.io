@@ -410,7 +410,7 @@ Lecture slides are shared on MOODLE immediately after each module is completed. 
 ### Assessments & Late Submission
 
 - **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://www.socrative.com), used to monitor learning and give ongoing feedback.
-- **Quiz (2)** — two quizzes worth **20%** combined, to be **completed on your own**; each covers in-class material taught up to the previous week.
+- **Quiz (2)** — two **in-class** quizzes worth **20%** combined; each covers material taught in class up to the previous week.
 - **Problem Set (Group)** — comprehensive group assignment worth **10%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
 - **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions; **closed book**.
 - **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm; also **closed book**.
