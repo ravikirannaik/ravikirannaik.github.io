@@ -273,11 +273,9 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 | **Instructor** | Dr. Ravikiran Naik |
 | **Contact** | [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in) · +91-20-6790-6121 |
 | **Office** | Room 108, Amrita Shergill Building |
-| **Class Schedule** | Tue & Wed: 3:30–4:30 PM, and by appointment |
+| **Class Schedule** | **Sec A:** Tue 2:15–3:10 PM, Fri 2:15–4:10 PM · **Sec B:** Mon 2:15–4:10 PM, Wed 1:00–1:55 PM |
 
 <small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full; ignorance of its contents will not be accepted as justification after the first week of the semester.*</small>
-
-<a class="mc-pdf-btn" href="{{ '/assets/pdf/teaching/course-outline-macro-ulab.pdf' | relative_url }}" target="_blank" rel="noopener">📄 Download the full course outline (PDF)</a>
 
 <p class="macro-lede">
 This course is the first part of a two-course sequence introducing the fundamental concepts of
@@ -345,15 +343,14 @@ By the end of the course, students should be able to:
 ### Important Dates <small>(tentative)</small>
 
 <ul class="mc-dates">
-  <li><span class="mc-badge quiz">Quiz 1</span><span class="d-date">Wed, 23 Sep 2026</span></li>
-  <li><span class="mc-badge exam">Midterm Exam</span><span class="d-date">Wed, 14 Oct 2026</span></li>
-  <li><span class="mc-badge ps">Problem Set due</span><span class="d-date">Wed, 4 Nov 2026</span></li>
-  <li><span class="mc-badge quiz">Quiz 2</span><span class="d-date">Wed, 25 Nov 2026</span></li>
-  <li><span class="mc-badge rev">Review Session</span><span class="d-date">Wed, 9 Dec 2026</span></li>
-  <li><span class="mc-badge exam">End Term Exam</span><span class="d-date">Exam week, mid-Dec 2026</span></li>
+  <li><span class="mc-badge quiz">Ind. Assignment</span><span class="d-date">Week 6 · ~21 Sep 2026</span></li>
+  <li><span class="mc-badge exam">Midterm Exam</span><span class="d-date">12–17 Oct 2026 (Term Exam Period)</span></li>
+  <li><span class="mc-badge ps">Problem Set due</span><span class="d-date">~Wed, 4 Nov 2026</span></li>
+  <li><span class="mc-badge rev">Review Session</span><span class="d-date">Week 17 · ~7 Dec 2026</span></li>
+  <li><span class="mc-badge exam">End Term Exam</span><span class="d-date">14–19 Dec 2026</span></li>
 </ul>
 
-<small>Assessment dates fall on class days (Tue/Wed) and assume no institutional holidays; they may shift with the FLAME academic calendar.</small>
+<small>**Holidays (no class):** Ganesh Chaturthi Sep 14 (Sec B Mon); Gandhi Jayanti Oct 2 (Sec A Fri); Dussehra Oct 20 (Sec A Tue); Diwali break Nov 7–14 (both sections). Assessment deadlines may shift slightly around holidays.</small>
 
 ## Grading
 
