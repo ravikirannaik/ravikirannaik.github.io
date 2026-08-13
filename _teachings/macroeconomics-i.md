@@ -344,9 +344,10 @@ By the end of the course, students should be able to:
 ### Important Dates <small>(tentative)</small>
 
 <ul class="mc-dates">
-  <li><span class="mc-badge quiz">Ind. Assignment</span><span class="d-date">Week 6 · ~21 Sep 2026</span></li>
+  <li><span class="mc-badge quiz">Quiz 1</span><span class="d-date">Week 7 · ~28 Sep 2026</span></li>
   <li><span class="mc-badge exam">Midterm Exam</span><span class="d-date">12–17 Oct 2026 (Term Exam Period)</span></li>
-  <li><span class="mc-badge ps">Problem Set due</span><span class="d-date">~Wed, 4 Nov 2026</span></li>
+  <li><span class="mc-badge ps">Problem Set due</span><span class="d-date">Week 10 · ~19 Oct 2026</span></li>
+  <li><span class="mc-badge quiz">Quiz 2</span><span class="d-date">Week 13 · ~9 Nov 2026</span></li>
   <li><span class="mc-badge rev">Review Session</span><span class="d-date">Week 17 · ~7 Dec 2026</span></li>
   <li><span class="mc-badge exam">End Term Exam</span><span class="d-date">14–19 Dec 2026</span></li>
 </ul>
