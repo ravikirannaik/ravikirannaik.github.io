@@ -256,6 +256,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#grading">Grading</a>
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
+  <a href="#attendance">Attendance</a>
   <a href="#materials">Materials</a>
   <a href="#faq">FAQ</a>
 </nav>
@@ -468,31 +469,6 @@ Before sending me a message, ask yourself two questions: *Can I find this myself
 
 Substantive questions — the ones that push your thinking — are always welcome.
 
-<details class="mc-acc">
-<summary>The thinking behind this policy</summary>
-
-Early in my teaching career I was too available — not in the mentorship sense, which is worth every minute, but in the logistical sense. I answered every question that arrived in my inbox, no matter how easily it could have been found on the syllabus or the course page. I told myself I was being responsive. What I was actually doing was training students to outsource their initiative to me.
-
-The harm runs both ways. For me: constant interruptions, time stolen from research and meaningful feedback. For students: quietly undermined self-directed instincts — the exact instincts employers will expect from day one. A ResumeBuilder survey found that three in four managers report difficulty working with recent graduates, with complaints centering on lack of initiative and effort. Those are not fixed traits; they are habits, and habits are exactly what a classroom can shape long before a first job depends on them.
-
-What I landed on was not a stricter policy. It was a reframe: I ask students to treat our course as a professional environment, where taking initiative to find information before asking someone else is a basic expectation — not a burden, but a skill worth building now.
-
-**Five practices behind this policy:**
-
-**1. Two questions before emailing.** *Can I find this myself? If this were a workplace, would I ask my manager or figure it out first?* The moment students frame it that way, they recognize that emailing about a deadline already on the syllabus is the professional equivalent of asking a manager what time the meeting is. When executives from my network speak in class, the feedback is consistent: the candidates who get hired and grow are the ones who figure things out before asking someone else to do it for them.
-
-**2. The syllabus has to earn this standard.** The "find it yourself" expectation only holds if there is somewhere easy to look. Before I ask students to be self-directed, I audit the course site the way a first-day student would. If finding the rubric requires more than two clicks, I reorganize. If any of the five most-asked questions takes more than sixty seconds to locate, it goes on my redesign list. Robert Sutton and Huggy Rao call unnecessary search friction a leadership and design failure, not a user failure — and they are right.
-
-**3. A living FAQ — not just a static syllabus.** After the first week, gaps surface. I keep a pinned page ("Not in the Syllabus? Check Here") updated each term. When a student asks a useful logistical question in person, I add it there and mention I am doing so — reinforcing the document's existence and modeling something valuable: building shared knowledge rather than siloing information in one-to-one exchanges.
-
-**4. Good questions get amplified.** The goal is not fewer questions — it is better ones. When a student sends something substantive, I occasionally open the next class with it (anonymised). Showing students what high-quality intellectual engagement looks like gives them a behavioral anchor; telling them only what not to do leaves them with no model to follow.
-
-**5. I model the behavior myself.** If I email students with information already on MOODLE, I am signaling that redundance is acceptable. So I point rather than push, and I say "the instructions are in the brief — let me know if anything is unclear" rather than re-summarizing content students can read themselves. At every moment I am demonstrating what a self-directed professional looks like.
-
-The inbox is quieter. More importantly, students leave with a habit that will serve them far beyond this course.
-
-</details>
-
 ### Accessibility & Accommodations
 
 I am committed to an inclusive classroom. Students with a disability or any condition that affects their participation or assessment are entitled to **reasonable accommodations**. Please contact the relevant FLAME University student-support office — and me, in confidence — as early in the semester as possible. All such requests are treated confidentially.
@@ -510,11 +486,20 @@ I am committed to an inclusive classroom. Students with a disability or any cond
 
 ### Electronics Policy: No Laptops or Tablets During Class
 
-Electronic devices including laptops and tablets are **prohibited during class sessions**. Multiple studies confirm that laptop use during lectures harms academic performance. Research from Princeton and UCLA shows that students taking handwritten notes significantly outperform laptop users on conceptual comprehension, because typing encourages verbatim transcription rather than the deeper processing that learning requires [(Mueller & Oppenheimer, 2014)](https://journals.sagepub.com/doi/abs/10.1177/0956797614524581). A randomised trial at the US Military Academy found that students in laptop-permitted classrooms scored lower on final exams [(Carter et al., 2017)](https://www.sciencedirect.com/science/article/abs/pii/S0272775716303454). Non-academic browsing during class predicts lower exam scores even after accounting for motivation and ability [(Ravizza et al., 2017)](https://journals.sagepub.com/doi/10.1177/0956797616677314); the broader literature consistently links media multitasking to weaker recall, comprehension, and grades [(Beland & Murphy, 2016)](https://www.sciencedirect.com/science/article/abs/pii/S0927537116300136); [(May & Elder, 2018)](https://link.springer.com/article/10.1186/s41239-018-0096-z).
+Electronic devices including laptops and tablets are **prohibited during class sessions**.
 
 **No Recording Devices:** Audio and video recording in the classroom, during examinations, and in office hours is **strictly prohibited** without explicit written permission. This covers all devices — phones, AI-enabled smart glasses, smartwatches, or any wearable capable of capturing audio or video. Violations are a breach of academic integrity and will be **referred to the University's Disciplinary Committee** per the [FLAME University Handbook (pp. 28–29)](https://drive.google.com/file/d/1f7dzW6cfqjJFq1Yx-A9Q4LIbB-HZ7e29/view).
 
 **Exceptions:** Students with documented disabilities or legitimate academic needs may request device accommodations by scheduling office hours and providing professional documentation explaining why electronic devices are essential for their learning.
+
+## Attendance Policy {#attendance}
+
+- Attendance is based solely on **physical presence** in class. There is no provision for make-up attendance through extra assignments or any other means.
+- A **minimum of 75% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. The 25% leeway is specifically designed to cover all medical and personal contingencies over the semester.
+- Approved exemptions (if any) are handled administratively at the backend — **the actual attendance record is never adjusted**.
+- In case of a **prolonged medical emergency** (more than one week), inform me immediately — not after the semester is over and grades have been released.
+- You are responsible for **catching up on all coursework** missed due to absence. Make-up tests or presentations may be permitted for a documented medical emergency, at my discretion.
+- If you are unable to attend a class, it would be helpful for me to know the reason, although it does not excuse the absence.
 
 ## Course Materials {#materials}
 
