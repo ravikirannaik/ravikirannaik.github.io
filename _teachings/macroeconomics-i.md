@@ -1,4 +1,4 @@
-<img width="2398" height="2996" alt="Macroeconomics, Global Edition - Abel, Andrew;Bernanke, Ben;Croushore, Dean page Cover" src="https://github.com/user-attachments/assets/df7ff5ed-16ed-442f-ae86-62cf8f74a1f2" />---
+---
 title: Macroeconomics-I (ECON 202)
 description: Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.
 term: Monsoon 2026-27
