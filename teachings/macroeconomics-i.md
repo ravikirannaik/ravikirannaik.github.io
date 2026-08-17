@@ -291,7 +291,7 @@ markets within the <strong>IS–LM</strong> and <strong>AS–AD</strong> framewo
 
 ## Teaching Philosophy {#teaching-philosophy}
 
-I teach macroeconomics as a connected set of models, not a list of topics: we build the goods, money, and labour markets and assemble them into one general-equilibrium framework. My emphasis is **genuine understanding over memorisation** — explaining the intuition, working through the mathematics, and applying models to real problems. Class time is active and the course is deliberately demanding; I ask you to protect your attention, take your own notes, and use AI to support your learning, never to replace your thinking.
+I teach macroeconomics as a connected set of models, not a list of topics: we build the goods, money, and labour markets and assemble them into one general-equilibrium framework. My emphasis is **genuine understanding over memorisation** — explaining the intuition, working through the mathematics, and applying models to real problems. Class time is active, and the course is deliberately demanding; I ask you to protect your attention, take your own notes, and use AI to support your learning, never to replace your thinking.
 
 ## Objectives
 
@@ -482,7 +482,7 @@ I am committed to an inclusive classroom. Students with a disability or any cond
 
 ### Student Wellbeing & Support
 
-**Your wellbeing matters more than any single grade.** If personal, health, or financial difficulties are affecting your studies, please reach out — to me, or to FLAME University's counselling and student-support services. Seeking help early makes a difference, and doing so will never count against you.
+**Your well-being matters more than any single grade.** If personal, health, or financial difficulties are affecting your studies, please reach out to me or to FLAME University's counselling and student-support services. Seeking help early makes a difference, and doing so will never count against you.
 
 ### Classroom Etiquette
 
