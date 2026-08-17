@@ -394,9 +394,7 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 <div class="mc-book">
   <div class="mc-book-cover">
-    <a href="https://www.pearson.com/en-us/subject-catalog/p/macroeconomics/P200000007767" target="_blank" rel="noopener">
-      <img src="https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-A1030-00-06-62-A103000066259-A103000066259-Lrg.jpg?context=bWFzdGVyfGltYWdlc3w3MTcwMnxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g1My9oNTkvMTUyOTg4ODQ4NTUwMzgvc2l6ZV9XMzcwXy9BMTAzMC8wMC8wNi82Mi9BMTAzMDAwMDY2MjU5L0ExMDMwMDAwNjYyNTlfTHJnLmpwZ3xiYzE5MjhlNWQ4YmEyZjZmMDA5MjZiMTc0YzU3NTlhOTk3MDZhZDdhZGQ3Y2ZhMGQ0ZTQxNmM5ZjExNmMwYTdl&imwidth=370" alt="Abel, Bernanke & Croushore – Macroeconomics 11e cover">
-    </a>
+    <img src="{{ '/assets/img/teaching/macroeconomics-i/abel-cover.png' | relative_url }}" alt="Abel, Bernanke & Croushore – Macroeconomics 11e cover">
   </div>
   <div class="mc-book-body">
     <span class="tag req">Required</span>
@@ -406,9 +404,7 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 <div class="mc-book">
   <div class="mc-book-cover">
-    <a href="https://www.macmillanlearning.com/college/us/product/Macroeconomics/p/1319387993" target="_blank" rel="noopener">
-      <img src="https://prod-cat-files.macmillan.cloud/MediaResources/Jackets/258W/9781319387990.jpg" alt="Mankiw – Macroeconomics 11e cover">
-    </a>
+    <img src="{{ '/assets/img/teaching/macroeconomics-i/mankiw-cover.jpg' | relative_url }}" alt="Mankiw – Macroeconomics 11e cover">
   </div>
   <div class="mc-book-body">
     <span class="tag sup">Supplemental</span>
