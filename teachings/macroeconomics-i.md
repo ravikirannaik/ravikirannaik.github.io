@@ -429,9 +429,9 @@ upwards to standardise the median score; marks will never be adjusted down for t
 - You are responsible for **catching up on all coursework** missed due to absence.
 - If you are unable to attend a class, it would be helpful for me to know the reason, although it does not excuse the absence.
 
-### Workload & Attendance
+### Workload
 
-Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are responsible for **all assigned content in the textbooks, even if not covered explicitly in class.** Attendance, active participation in group activities, and taking handwritten notes are expected; arrive on time and be prepared to participate every day. A **minimum of 75% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. I will post lecture slides online, but simply reading slides is not a substitute for being in class.
+Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are responsible for **all assigned content in the textbooks, even if not covered explicitly in class.** I will post lecture slides online, but simply reading slides is not a substitute for being in class.
 
 ### Assessments & Late Submission
 
