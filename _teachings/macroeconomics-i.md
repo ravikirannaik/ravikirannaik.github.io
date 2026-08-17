@@ -256,7 +256,6 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#grading">Grading</a>
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
-  <a href="#attendance">Attendance</a>
   <a href="#materials">Materials</a>
 </nav>
 
@@ -421,6 +420,15 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 ## Course Policies
 
+### Attendance Policy
+
+- Attendance is based solely on **physical presence** in class. There is no provision for make-up attendance through extra assignments or any other means.
+- A **minimum of 75% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. The 25% leeway is specifically designed to cover all medical and personal contingencies over the semester.
+- Approved exemptions (if any) are handled administratively at the backend — **the actual attendance record is never adjusted**.
+- In case of a **prolonged medical emergency** (more than one week), inform me immediately — not after the semester is over and grades have been released.
+- You are responsible for **catching up on all coursework** missed due to absence.
+- If you are unable to attend a class, it would be helpful for me to know the reason, although it does not excuse the absence.
+
 ### Workload & Attendance
 
 Lecture slides are shared on MOODLE immediately after each module is completed. **Slides do not cover the complete course material** — they indicate what is broadly intended for the lecture. You are responsible for **all assigned content in the textbooks, even if not covered explicitly in class.** Attendance, active participation in group activities, and taking handwritten notes are expected; arrive on time and be prepared to participate every day. A **minimum of 75% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. I will post lecture slides online, but simply reading slides is not a substitute for being in class.
@@ -490,15 +498,6 @@ Electronic devices including laptops and tablets are **prohibited during class s
 **No Recording Devices:** Audio and video recording in the classroom, during examinations, and in office hours is **strictly prohibited** without explicit written permission. This covers all devices — phones, AI-enabled smart glasses, smartwatches, or any wearable capable of capturing audio or video. Violations are a breach of academic integrity and will be **referred to the University's Disciplinary Committee** per the [FLAME University Handbook (pp. 28–29)](https://drive.google.com/file/d/1f7dzW6cfqjJFq1Yx-A9Q4LIbB-HZ7e29/view).
 
 **Exceptions:** Students with documented disabilities or legitimate academic needs may request device accommodations by scheduling office hours and providing professional documentation explaining why electronic devices are essential for their learning.
-
-## Attendance Policy {#attendance}
-
-- Attendance is based solely on **physical presence** in class. There is no provision for make-up attendance through extra assignments or any other means.
-- A **minimum of 75% attendance** is required to be eligible for the End Term Examination, as per FLAME University policy. The 25% leeway is specifically designed to cover all medical and personal contingencies over the semester.
-- Approved exemptions (if any) are handled administratively at the backend — **the actual attendance record is never adjusted**.
-- In case of a **prolonged medical emergency** (more than one week), inform me immediately — not after the semester is over and grades have been released.
-- You are responsible for **catching up on all coursework** missed due to absence. Make-up tests or presentations may be permitted for a documented medical emergency, at my discretion.
-- If you are unable to attend a class, it would be helpful for me to know the reason, although it does not excuse the absence.
 
 ## Course Materials {#materials}
 
