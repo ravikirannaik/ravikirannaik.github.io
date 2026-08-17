@@ -1,4 +1,4 @@
----
+<img width="2398" height="2996" alt="Macroeconomics, Global Edition - Abel, Andrew;Bernanke, Ben;Croushore, Dean page Cover" src="https://github.com/user-attachments/assets/df7ff5ed-16ed-442f-ae86-62cf8f74a1f2" />---
 title: Macroeconomics-I (ECON 202)
 description: Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.
 term: Monsoon 2026-27
@@ -438,14 +438,14 @@ Lecture slides are shared on MOODLE immediately after each module is completed. 
 - **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://www.socrative.com), used to monitor learning and give ongoing feedback.
 - **Quiz (2)** — two **in-class** quizzes worth **20%** combined; each covers material taught in class up to the previous week.
 - **Problem Set (Group)** — comprehensive group assignment worth **10%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
-- **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy–medium and difficult questions; **closed book**.
+- **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy, medium and difficult questions; **closed book**.
 - **End Term Examination** — comprehensive, emphasising the second half of the semester; same format as the midterm; also **closed book**.
 
-**Deadlines are firm.** Late submissions of the individual assignment or problem set lose **10% of the component's marks per day** and are not accepted more than three days after the deadline, except where you have a documented and valid reason discussed with me in advance. There are no make-ups for the Midterm Examination except under the Office of the Dean or the Office of Examination's regulations for genuine, documented emergencies. The End Term Examination is governed solely by the Office of Examination's regulations.
+**Deadlines are firm.** Late submissions of the individual assignment or problem set lose **10% of the component's marks per day** and are not accepted more than three days after the deadline, except where you have a documented and valid reason discussed with me in advance. There are no make-ups for the Midterm Examination except under the Office of the Dean or the Office of Examination's regulations for genuine, documented emergencies. The End Term Examination is governed solely by the Office of Examinations' regulations.
 
 ### Anti-Cheating Policy
 
-A strong anti-cheating policy is in place. It provides assurance to all students that cheating is not occurring, and creates a deterrent effect. Violations of specified rules result in an **automatic deduction of 5 points**; more severe infractions incur a straight **0 for the component**. Claiming ignorance of these rules is not an acceptable excuse. The End Term Exam follows the regulations set by the Office of Examination.
+A strong anti-cheating policy is in place. It assures all students that cheating is not occurring, and creates a deterrent effect. Violations of specified rules result in an **automatic deduction of 5 points**; more severe infractions incur a straight **0 for the component**. Claiming ignorance of these rules is not an acceptable excuse. The End Term Exam follows the regulations set by the Office of Examination.
 
 ### Academic Integrity & Referencing
 
@@ -493,9 +493,9 @@ I am committed to an inclusive classroom. Students with a disability or any cond
 
 ### Electronics Policy: No Laptops or Tablets During Class
 
-Electronic devices including laptops and tablets are **prohibited during class sessions**.
+Electronic devices, including laptops and tablets, are **prohibited during class sessions**.
 
-**No Recording Devices:** Audio and video recording in the classroom, during examinations, and in office hours is **strictly prohibited** without explicit written permission. This covers all devices — phones, AI-enabled smart glasses, smartwatches, or any wearable capable of capturing audio or video. Violations are a breach of academic integrity and will be **referred to the University's Disciplinary Committee** per the [FLAME University Handbook (pp. 28–29)](https://drive.google.com/file/d/1f7dzW6cfqjJFq1Yx-A9Q4LIbB-HZ7e29/view).
+**No Recording Devices:** Audio and video recording in the classroom, during examinations, and in office hours is **strictly prohibited** without explicit written permission. This covers all devices — phones, AI-enabled smart glasses, smartwatches, or any wearable capable of capturing audio or video. Violations are a breach of academic integrity and will be **referred to the University's Disciplinary Committee**.
 
 **Exceptions:** Students with documented disabilities or legitimate academic needs may request device accommodations by scheduling office hours and providing professional documentation explaining why electronic devices are essential for their learning.
 
