@@ -87,11 +87,6 @@ ninja.data = [{
           description: "Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/labor-economics/";
-            },},{id: "teachings-macroeconomics-i-econ-202",
-          title: 'Macroeconomics-I (ECON 202)',
-          description: "Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/macroeconomics-i/";
             },},{id: "teachings-macroeconomics",
           title: 'Macroeconomics',
           description: "Undergraduate macroeconomics course at FLAME University covering national income, growth, business cycles, and policy.",
