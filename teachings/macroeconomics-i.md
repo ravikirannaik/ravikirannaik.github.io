@@ -173,6 +173,7 @@ importance: 0
 .mc-book { display: flex; gap: 1.2rem; align-items: flex-start; margin: 1.2rem 0; }
 .mc-book-cover { flex: 0 0 auto; }
 .mc-book-cover img { width: 80px; display: block; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+img.mc-book-cover-img { width: 80px; flex: 0 0 auto; display: block; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 .mc-book-body { flex: 1 1 auto; }
 .mc-book .tag {
   display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--mc-ink); border-radius: 4px;
@@ -392,25 +393,9 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 ## Textbooks
 
-<div class="mc-book">
-  <div class="mc-book-cover">
-    <img src="{{ '/assets/img/teaching/macroeconomics-i/abel-cover.png' | relative_url }}" alt="Abel, Bernanke & Croushore – Macroeconomics 11e cover">
-  </div>
-  <div class="mc-book-body">
-    <span class="tag req">Required</span>
-    <p style="margin:0;"><strong>Macroeconomics</strong> — Abel, A., Bernanke, B. &amp; Croushore, D., 11th ed., Pearson Education. Prepares students to analyse real economic data through a unified model that balances classical and Keynesian perspectives, showing how different macroeconomic models connect within the broader framework.</p>
-  </div>
-</div>
+<div class="mc-book"><img class="mc-book-cover-img" src="/assets/img/teaching/macroeconomics-i/abel-cover.png" alt="Abel, Bernanke &amp; Croushore – Macroeconomics 11e cover"><div class="mc-book-body"><span class="tag req">Required</span><p style="margin:0;"><strong>Macroeconomics</strong> — Abel, A., Bernanke, B. &amp; Croushore, D., 11th ed., Pearson Education. Prepares students to analyse real economic data through a unified model that balances classical and Keynesian perspectives, showing how different macroeconomic models connect within the broader framework.</p></div></div>
 
-<div class="mc-book">
-  <div class="mc-book-cover">
-    <img src="{{ '/assets/img/teaching/macroeconomics-i/mankiw-cover.jpg' | relative_url }}" alt="Mankiw – Macroeconomics 11e cover">
-  </div>
-  <div class="mc-book-body">
-    <span class="tag sup">Supplemental</span>
-    <p style="margin:0;"><strong>Macroeconomics</strong> — N. Gregory Mankiw, 11th ed., Macmillan Learning. A thorough, accessible overview that balances theoretical coverage with practical applications.</p>
-  </div>
-</div>
+<div class="mc-book"><img class="mc-book-cover-img" src="/assets/img/teaching/macroeconomics-i/mankiw-cover.jpg" alt="Mankiw – Macroeconomics 11e cover"><div class="mc-book-body"><span class="tag sup">Supplemental</span><p style="margin:0;"><strong>Macroeconomics</strong> — N. Gregory Mankiw, 11th ed., Macmillan Learning. A thorough, accessible overview that balances theoretical coverage with practical applications.</p></div></div>
 
 <p><em>Additional readings</em> (journal articles, book chapters, and other resources) will be provided at the start of the course and updated on <strong>MOODLE</strong>.</p>
 
