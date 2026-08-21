@@ -58,6 +58,7 @@ importance: 0
 .mc-nav a:nth-child(7) { background: #cbb8e0; }  /* 藤鼠 wisteria    */
 .mc-nav a:nth-child(8) { background: #eeb4c8; }  /* 撫子 nadeshiko   */
 .mc-nav a:nth-child(9) { background: #b7ddd0; }  /* 白緑 byakuroku   */
+.mc-nav a:nth-child(10) { background: #bde0f5; } /* 空色 sorairo sky */
 .macro-outline h3 { color: var(--mc-orange); margin-top: 1.5rem; }
 
 /* Lede line under the title */
@@ -258,6 +259,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
   <a href="#materials">Materials</a>
+  <a href="https://b.socrative.com/student-v2/join" target="_blank" rel="noopener">Socrative ↗</a>
 </nav>
 
 ## Basic Information
@@ -416,7 +418,7 @@ Lecture slides are shared on MOODLE immediately after each module is completed. 
 
 ### Assessments & Late Submission
 
-- **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://www.socrative.com), used to monitor learning and give ongoing feedback.
+- **Formative coursework** — non-graded quizzes and *Space Run* on [Socrative](https://b.socrative.com/student-v2/join), used to monitor learning and give ongoing feedback.
 - **Quiz (2)** — two **in-class** quizzes worth **20%** combined; each covers material taught in class up to the previous week.
 - **Problem Set (Group)** — comprehensive group assignment worth **10%**, covering analytical questions and mathematical problems involving algebra and basic calculus.
 - **Midterm Exam** — covers the first 3–4 chapters; MCQs, short-answer questions, and problems with a fair mix of easy, medium and difficult questions; **closed book**.
