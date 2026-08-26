@@ -247,7 +247,7 @@ html[data-theme="dark"] .mc-pdf-btn {
 html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 
 /* ---- Blinking "Book your slot" link ---- */
-.mc-blink { font-weight: 700; animation: mc-blink 1.1s steps(1) infinite; }
+.mc-blink { font-weight: 700; animation: mc-blink 2.4s steps(1) infinite; }
 @keyframes mc-blink { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .mc-blink { animation: none; } }
 </style>
