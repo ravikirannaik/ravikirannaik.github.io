@@ -278,7 +278,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 | **Lecture–Tutorial–Practical** | 3-0-0 |
 | **Section** | Section A & B |
 | **Credit Hours** | 45 |
-| **Continuous Internal Assessment** | 60% (Assignments, Problem Set, Mid-Term, Participation) |
+| **Internal Assessment** | 60% (Assignments, Problem Set, Mid-Term, Participation) |
 | **End Term Examination** | 40% |
 | **Prerequisites** | ECON 101 or ECON 102, ECON 122 |
 | **Instructor** | Dr. Ravikiran Naik |
