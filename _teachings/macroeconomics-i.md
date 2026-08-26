@@ -284,7 +284,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 | **Instructor** | Dr. Ravikiran Naik |
 | **Contact** | [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in) · +91-20-6790-6121 |
 | **Office** | Room 108, Amrita Shergill Building |
-| **Office Hours** | <a class="mc-blink" href="https://calendly.com/ravikiran-naik-flame/meet-dr-ravikirant">Book your slot</a> |
+| **Office Hours** | <a class="mc-blink" href="https://calendly.com/ravikiran-naik-flame/meet-dr-ravikiran">Book your slot</a> |
 | **Classroom** | TGR001 |
 | **Class Schedule** | **Sec A:** Tue 2:15–3:10 PM, Fri 2:15–4:10 PM · **Sec B:** Mon 2:15–4:10 PM, Wed 1:00–1:55 PM |
 
