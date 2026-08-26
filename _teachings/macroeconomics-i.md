@@ -245,6 +245,11 @@ html[data-theme="dark"] .mc-pdf-btn {
   filter: brightness(0.82) saturate(0.85);
 }
 html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
+
+/* ---- Blinking "Book your slot" link ---- */
+.mc-blink { font-weight: 700; animation: mc-blink 1.1s steps(1) infinite; }
+@keyframes mc-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .mc-blink { animation: none; } }
 </style>
 
 <div class="macro-outline" markdown="1">
@@ -279,7 +284,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 | **Instructor** | Dr. Ravikiran Naik |
 | **Contact** | [ravikiran.naik@flame.edu.in](mailto:ravikiran.naik@flame.edu.in) · +91-20-6790-6121 |
 | **Office** | Room 108, Amrita Shergill Building |
-| **Office Hours** | [Book your slot](https://calendly.com/ravikiran-naik-flame/meet-dr-ravikirant) |
+| **Office Hours** | <a class="mc-blink" href="https://calendly.com/ravikiran-naik-flame/meet-dr-ravikirant">Book your slot</a> |
 | **Classroom** | TGR001 |
 | **Class Schedule** | **Sec A:** Tue 2:15–3:10 PM, Fri 2:15–4:10 PM · **Sec B:** Mon 2:15–4:10 PM, Wed 1:00–1:55 PM |
 
