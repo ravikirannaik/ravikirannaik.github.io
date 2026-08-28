@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-what-the-sun-leaves-behind",
+        },{id: "post-on-learning",
+        
+          title: "On Learning",
+        
+        description: "A note on what it means to truly understand something — the ability to tell the same story at any resolution.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/on-learning/";
+          
+        },
+      },{id: "post-what-the-sun-leaves-behind",
         
           title: "What the Sun Leaves Behind",
         
