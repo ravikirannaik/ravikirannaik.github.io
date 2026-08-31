@@ -499,19 +499,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
   <li>
     <span class="mod-no">M1</span>
     <span class="mod-body">
-      <span class="mod-title">GDP, CPI, and Unemployment</span>
-      <details style="margin-top:0.4rem;">
-        <summary style="cursor:pointer; color:var(--mc-blue); font-weight:600; list-style:none; display:inline;">Open handout ↗</summary>
-        <div style="margin-top:0.75rem; border-radius:8px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.12);">
-          <iframe
-            src="{{ '/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf' | relative_url }}"
-            width="100%" height="520"
-            style="border:none; display:block;"
-            loading="lazy"
-            title="M1 Handout — GDP, CPI, and Unemployment (4-up)">
-          </iframe>
-        </div>
-      </details>
+      <span class="mod-title"><a href="{{ '/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf' | relative_url }}" target="_blank" rel="noopener" title="Open the 4-up handout (PDF)">GDP, CPI, and Unemployment ↗</a></span>
     </span>
   </li>
   <li>
