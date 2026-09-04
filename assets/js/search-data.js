@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-on-learning",
+        },{id: "post-before-you-cheer-the-gdp-number-ask-what-they-divided-by",
+        
+          title: "Before You Cheer the GDP Number, Ask What They Divided By",
+        
+        description: "India&#39;s 7.8% growth is correctly calculated and quietly generous. A note on real GDP, the deflator, and why Garg, Basu, and Rajan are arguing past each other.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/what-did-they-divide-by/";
+          
+        },
+      },{id: "post-on-learning",
         
           title: "On Learning",
         
