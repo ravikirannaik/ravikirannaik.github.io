@@ -535,7 +535,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 ### Lecture Notes
 
 <ul class="modules">
-  <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title">GDP, CPI, and Unemployment</span><span class="mod-soon">Notes — coming soon</span></span></li>
+  <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title"><a href="{{ '/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf' | relative_url }}" target="_blank" rel="noopener" title="Open the student notes (PDF)">GDP, CPI, and Unemployment ↗</a></span></span></li>
   <li><span class="mod-no">M2</span><span class="mod-body"><span class="mod-title">Productivity, Employment and Output</span><span class="mod-soon">Notes — coming soon</span></span></li>
   <li><span class="mod-no">M3</span><span class="mod-body"><span class="mod-title">Consumption, Saving and Investment</span><span class="mod-soon">Notes — coming soon</span></span></li>
   <li><span class="mod-no">M4</span><span class="mod-body"><span class="mod-title">Asset Market, Money and Prices</span><span class="mod-soon">Notes — coming soon</span></span></li>
