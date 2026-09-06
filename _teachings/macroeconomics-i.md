@@ -557,6 +557,11 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 
 <small>Practice sets are ungraded self-study; the graded problem set is comprehensive and involves algebra and basic calculus.</small>
 
+<blockquote style="max-width:640px;margin:3rem auto 0;padding:0.25rem 0 0.25rem 1.25rem;border-left:3px solid var(--mc-blue);font-size:1.05rem;line-height:1.7;color:var(--mc-ink);">
+  <p style="margin:0 0 0.5rem;">Microeconomics is what economists know about. But macroeconomics is what they want to know about. That's what makes it so interesting.</p>
+  <span style="display:block;font-size:0.9rem;color:var(--mc-orange);">&mdash; Benjamin Friedman (quoted in Fisher, 1993)</span>
+</blockquote>
+
 </div>
 
 <script>

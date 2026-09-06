@@ -36,6 +36,11 @@ nav: false
 <span class="attribution">&mdash; </span>
 </blockquote>
 
+<blockquote>
+<p>Microeconomics is what economists know about. But macroeconomics is what they want to know about. That's what makes it so interesting.</p>
+<span class="attribution">&mdash; Benjamin Friedman (quoted in Fisher, 1993)</span>
+</blockquote>
+
 </div>
 
 </div>
