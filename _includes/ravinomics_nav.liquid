@@ -1,0 +1,41 @@
+<style>
+  .rv-header { margin-bottom: 0.25rem; }
+  .rv-header h1 { margin-bottom: 0.1rem; }
+  .rv-header .rv-tagline {
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    margin: 0;
+  }
+  .rv-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    margin: 1rem 0 1.5rem;
+  }
+  .rv-nav a {
+    padding: 0 0 0.6rem;
+    font-size: 1.05rem;
+    color: var(--global-text-color-light);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+  }
+  .rv-nav a:hover { color: var(--global-hover-color); }
+  .rv-nav a.active {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    border-bottom-color: var(--global-theme-color);
+  }
+</style>
+
+<div class="rv-header">
+  <h1>ravinomics</h1>
+  <p class="rv-tagline">Essays, quotes, and notes.</p>
+</div>
+
+<nav class="rv-nav">
+  <a href="{{ '/blog/' | relative_url }}"{% if include.active == 'essays' %} class="active"{% endif %}>Essays</a>
+  <a href="{{ '/blog/quotes/' | relative_url }}"{% if include.active == 'quotes' %} class="active"{% endif %}>Quotes</a>
+  <a href="{{ '/news/' | relative_url }}"{% if include.active == 'news' %} class="active"{% endif %}>News</a>
+</nav>

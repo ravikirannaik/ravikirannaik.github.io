@@ -6,6 +6,7 @@ description: "A note on what it means to truly understand something — the abil
 tags:
   - reflection
   - learning
+essay: true
 related_posts: false
 ---
 

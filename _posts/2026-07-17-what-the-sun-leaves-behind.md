@@ -7,6 +7,7 @@ tags:
   - poetry
   - reflection
   - urdu
+essay: true
 related_posts: false
 ---
 

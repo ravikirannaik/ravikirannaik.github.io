@@ -8,6 +8,7 @@ tags:
   - india
   - gdp
   - teaching
+essay: true
 related_posts: false
 ---
 
