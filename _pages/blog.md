@@ -18,6 +18,10 @@ pagination:
 
 <div class="post">
 
+<p class="post-meta" style="margin-bottom: 1rem;">
+  <a href="{{ '/blog/quotes/' | relative_url }}"><i class="fa-solid fa-quote-left fa-sm"></i> quotes</a>
+</p>
+
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
 
