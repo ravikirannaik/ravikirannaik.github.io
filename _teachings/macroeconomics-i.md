@@ -412,6 +412,8 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 <p><a href="{{ '/teachings/macroeconomics-i/history-of-macroeconomics/' | relative_url }}"><strong>▸ A Short History of Macroeconomics</strong></a> — an optional illustrated background reading (schools of thought, from Keynes to IS–LM/AS–AD), with links to encyclopedia entries, blogs, and podcasts.</p>
 
+<p><a href="{{ '/blog/2026/what-did-they-divide-by/' | relative_url }}"><strong>▸ Before You Cheer the GDP Number, Ask What They Divided By</strong></a> — a short essay on real GDP, the deflator, and why the growth number is trickier than it looks (ties to Module 1).</p>
+
 ## Course Policies
 
 ### Attendance Policy
