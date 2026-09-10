@@ -266,7 +266,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#course-policies">Policies</a>
   <a href="#materials">Materials</a>
   <a href="https://b.socrative.com/student-v2/join" target="_blank" rel="noopener">Socrative ↗</a>
-  <a class="mc-blink" href="#office-hours" style="background:#f5c9a6;">Book Office Hours</a>
+  <a class="mc-blink" href="https://calendly.com/ravikiran-naik-flame/offiice-hours" target="_blank" rel="noopener" style="background:#f5c9a6;">Book Office Hours ↗</a>
 </nav>
 
 ## Basic Information
@@ -291,13 +291,6 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 | **Class Schedule** | **Sec A:** Tue 2:15–3:10 PM, Fri 2:15–4:10 PM · **Sec B:** Mon 2:15–4:10 PM, Wed 1:00–1:55 PM |
 
 <small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full; ignorance of its contents will not be accepted as justification after the first week of the semester.*</small>
-
-## Book Office Hours {#office-hours}
-
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/ravikiran-naik-flame/offiice-hours" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
 
 <p class="macro-lede">
 This course is the first part of a two-course sequence introducing the fundamental concepts of
