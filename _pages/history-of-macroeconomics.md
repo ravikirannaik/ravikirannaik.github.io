@@ -34,6 +34,16 @@ _styles: >
 Optional background for the "schools of thought" thread in ECON 202. It traces how macroeconomics grew from Keynes to the IS–LM / AS–AD toolkit you meet in class, and why economists still argue about the same handful of questions. Not for assessment. Read it to see how the models you are learning fit together.
 </p>
 
+## Where to read, watch, and listen next
+
+**Encyclopedia entries (start here):** the EconLib *Concise Encyclopedia* entries on [Keynesian Economics](https://www.econlib.org/library/Enc/KeynesianEconomics.html), [Monetarism](https://www.econlib.org/library/Enc/Monetarism.html), [New Classical Macroeconomics](https://www.econlib.org/library/Enc/NewClassicalMacroeconomics.html), and [New Keynesian Economics](https://www.econlib.org/library/Enc/NewKeynesianEconomics.html); plus the [Wikipedia overview](https://en.wikipedia.org/wiki/History_of_macroeconomic_thought).
+
+**Blogs by historians of macro:** Beatrice Cherrier's [The Undercover Historian](https://beatricecherrier.wordpress.com/), Aurélien Goutsmedt's [history-of-macroeconomics posts](https://aurelien-goutsmedt.com/tag/history-of-macroeconomics/), and the [INET blog](https://www.ineteconomics.org/perspectives/blog).
+
+**Podcasts:** [Smith and Marx Walk Into a Bar](https://hetpodcast.libsyn.com/) for the history of economics, and [Macro Musings](https://www.mercatus.org/macro-musings) for modern policy debates.
+
+**Go deeper:** Snowdon & Vane, *Modern Macroeconomics* (2005), which includes interviews with the economists themselves; De Vroey, *A History of Macroeconomics from Keynes to Lucas and Beyond* (2016); and the open-access Sergi et al., [*A History of Macroeconomics*](https://hal.science/hal-05720158) (2026).
+
 ## The whole story in one picture
 
 Almost all of macroeconomics is one long argument that keeps splitting into two camps and then partly merging again. One camp trusts markets to heal themselves. The other thinks the government and the central bank sometimes have to step in. Read the map top to bottom as time, and notice that ideas get inherited, not thrown away.
@@ -156,16 +166,6 @@ That messier, truer account is the subject of the recent open-access book that p
 | Lucas | Expectations matter | People anticipate policy, so build models from individual choices |
 | Kydland & Prescott | Shocks matter | Cycles can be the economy's efficient response to shocks |
 | New Keynesians (Mankiw, Woodford) | Stickiness matters | Prices and wages adjust slowly, so policy still has a job |
-
-## Where to read, watch, and listen next
-
-**Encyclopedia entries (start here):** the EconLib *Concise Encyclopedia* entries on [Keynesian Economics](https://www.econlib.org/library/Enc/KeynesianEconomics.html), [Monetarism](https://www.econlib.org/library/Enc/Monetarism.html), [New Classical Macroeconomics](https://www.econlib.org/library/Enc/NewClassicalMacroeconomics.html), and [New Keynesian Economics](https://www.econlib.org/library/Enc/NewKeynesianEconomics.html); plus the [Wikipedia overview](https://en.wikipedia.org/wiki/History_of_macroeconomic_thought).
-
-**Blogs by historians of macro:** Beatrice Cherrier's [The Undercover Historian](https://beatricecherrier.wordpress.com/), Aurélien Goutsmedt's [history-of-macroeconomics posts](https://aurelien-goutsmedt.com/tag/history-of-macroeconomics/), and the [INET blog](https://www.ineteconomics.org/perspectives/blog).
-
-**Podcasts:** [Smith and Marx Walk Into a Bar](https://hetpodcast.libsyn.com/) for the history of economics, and [Macro Musings](https://www.mercatus.org/macro-musings) for modern policy debates.
-
-**Go deeper:** Snowdon & Vane, *Modern Macroeconomics* (2005), which includes interviews with the economists themselves; De Vroey, *A History of Macroeconomics from Keynes to Lucas and Beyond* (2016); and the open-access Sergi et al., [*A History of Macroeconomics*](https://hal.science/hal-05720158) (2026).
 
 <p class="hom-note">Compiled for ECON 202 (Macroeconomics-I), FLAME University. Background reading only, not examinable. Suggestions and corrections are welcome by email.</p>
 
