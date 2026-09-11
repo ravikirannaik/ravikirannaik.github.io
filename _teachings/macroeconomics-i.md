@@ -512,8 +512,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
   <li>
     <span class="mod-no">M2</span>
     <span class="mod-body">
-      <span class="mod-title">Productivity and Output</span>
-      <span class="mod-soon">Slides — coming soon</span>
+      <span class="mod-title"><a href="{{ '/assets/pdf/teaching/macroeconomics-i/ch3-productivity-handout.pdf' | relative_url }}" target="_blank" rel="noopener" title="Open the 4-up handout (PDF)">Productivity and Output ↗</a></span>
     </span>
   </li>
   <li>
