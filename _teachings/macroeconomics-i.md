@@ -59,7 +59,7 @@ importance: 0
 .mc-nav a:nth-child(8) { background: #eeb4c8; }  /* 撫子 nadeshiko   */
 .mc-nav a:nth-child(9) { background: #b7ddd0; }  /* 白緑 byakuroku   */
 .mc-nav a:nth-child(10) { background: #bde0f5; } /* 空色 sorairo sky */
-.macro-outline h3 { color: var(--mc-orange); margin-top: 1.5rem; }
+.macro-outline h3 { color: var(--mc-orange); margin-top: 1.5rem; scroll-margin-top: 7.5rem; }
 
 /* Lede line under the title */
 .macro-lede {
@@ -266,7 +266,8 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#course-policies">Policies</a>
   <a href="#materials">Materials</a>
   <a href="https://b.socrative.com/student-v2/join" target="_blank" rel="noopener">Socrative ↗</a>
-  <a class="mc-blink" href="https://calendly.com/ravikiran-naik-flame/offiice-hours" target="_blank" rel="noopener" style="background:#f5c9a6;">Book Office Hours ↗</a>
+  <a href="https://calendly.com/ravikiran-naik-flame/offiice-hours" target="_blank" rel="noopener" style="background:#f5c9a6;">Book Office Hours ↗</a>
+  <a class="mc-blink" href="#important-dates" style="background:#eeb4c8;color:#b02a37;">IMP Dates/deadlines</a>
 </nav>
 
 ## Basic Information
@@ -355,7 +356,7 @@ By the end of the course, students should be able to:
 
 <p style="margin-top:0.9rem;"><em>Additional topics (not for assessment):</em> schools of thought · fiscal and monetary policies · business cycles.</p>
 
-### Important Dates <small>(tentative)</small>
+### Important Dates <small>(tentative)</small> {#important-dates}
 
 <ul class="mc-dates">
   <li><span class="mc-badge quiz">Quiz 1</span><span class="d-date">Week 7 · ~28 Sep 2026</span></li>
@@ -367,6 +368,16 @@ By the end of the course, students should be able to:
 </ul>
 
 <small>**Holidays (no class):** Ganesh Chaturthi Sep 14 (Sec B Mon); Gandhi Jayanti Oct 2 (Sec A Fri); Dussehra Oct 20 (Sec A Tue); Diwali break Nov 7–14 (both sections). Assessment deadlines may shift slightly around holidays.</small>
+
+<table class="mc-sched" style="max-width:520px;margin-top:1.1rem;">
+  <thead>
+    <tr><th>Assessment</th><th>Section A</th><th>Section B</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Group Assignment <small>(in class)</small></td><td>16 Oct 2026</td><td>19 Oct 2026</td></tr>
+    <tr><td>Mid-Term Exam <small>(closed book)</small></td><td>24 Oct 2026</td><td>26 Oct 2026</td></tr>
+  </tbody>
+</table>
 
 ## Grading
 
