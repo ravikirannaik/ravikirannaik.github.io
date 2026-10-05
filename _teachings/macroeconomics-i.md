@@ -506,13 +506,15 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
   <li>
     <span class="mod-no">M1</span>
     <span class="mod-body">
-      <span class="mod-title"><span class="mod-disabled" aria-disabled="true" title="Not yet available">GDP, CPI, and Unemployment</span></span>
+      <span class="mod-title">GDP, CPI, and Unemployment</span>
+      <span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf">Handout (PDF)</a></span>
     </span>
   </li>
   <li>
     <span class="mod-no">M2</span>
     <span class="mod-body">
-      <span class="mod-title"><span class="mod-disabled" aria-disabled="true" title="Not yet available">Productivity and Output</span></span>
+      <span class="mod-title">Productivity and Output</span>
+      <span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/ch3-productivity-handout.pdf">Handout (PDF)</a></span>
     </span>
   </li>
   <li>
@@ -541,8 +543,8 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 ### Lecture Notes
 
 <ul class="modules">
-  <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title"><span class="mod-disabled" aria-disabled="true" title="Not yet available">GDP, CPI, and Unemployment</span></span></span></li>
-  <li><span class="mod-no">M2</span><span class="mod-body"><span class="mod-title"><span class="mod-disabled" aria-disabled="true" title="Not yet available">Productivity, Employment and Output</span></span></span></li>
+  <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title">GDP, CPI, and Unemployment</span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf">Notes (PDF)</a></span></span></li>
+  <li><span class="mod-no">M2</span><span class="mod-body"><span class="mod-title">Productivity, Employment and Output</span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf">Notes (PDF)</a></span></span></li>
   <li><span class="mod-no">M3</span><span class="mod-body"><span class="mod-title">Consumption, Saving and Investment</span><span class="mod-soon">Notes — coming soon</span></span></li>
   <li><span class="mod-no">M4</span><span class="mod-body"><span class="mod-title">Asset Market, Money and Prices</span><span class="mod-soon">Notes — coming soon</span></span></li>
   <li><span class="mod-no">M5</span><span class="mod-body"><span class="mod-title">IS–LM / AS–AD General Equilibrium</span><span class="mod-soon">Notes — coming soon</span></span></li>
