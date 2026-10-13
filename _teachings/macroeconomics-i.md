@@ -426,6 +426,10 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 <p><a href="{{ '/blog/2026/what-did-they-divide-by/' | relative_url }}"><strong>▸ Before You Cheer the GDP Number, Ask What They Divided By</strong></a> — a short essay on real GDP, the deflator, and why the growth number is trickier than it looks (ties to Module 1).</p>
 
+<p><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}"><strong>▸ Concept Map — Consumption, Saving &amp; Investment</strong></a> — an interactive map of Module 3: how the real interest rate ties the saving decision, the user cost of capital, and goods-market equilibrium into one connected model (hover, click, or watch it build lecture-by-lecture).</p>
+
+<p><a href="{{ '/teachings/macroeconomics-i/nobel-2026-hall-woodford/' | relative_url }}"><strong>▸ The 2026 Economics Nobel &mdash; Hall, Woodford, and where it sits in ECON 202</strong></a> &mdash; student notes on the Nobel awarded to Robert Hall and Michael Woodford: what they won for, and how it maps onto Modules 2&ndash;5 (the consumption function, unemployment, money, forward guidance, and IS&ndash;LM).</p>
+
 ## Course Policies
 
 ### Attendance Policy
@@ -532,6 +536,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     <span class="mod-no">M3</span>
     <span class="mod-body">
       <span class="mod-title">Consumption, Saving, and Investment</span>
+      <span class="mod-links"><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Interactive concept map</a></span>
       <span class="mod-soon">Slides — coming soon</span>
     </span>
   </li>
@@ -556,7 +561,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 <ul class="modules">
   <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title">GDP, CPI, and Unemployment</span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf">Notes (PDF)</a></span></span></li>
   <li><span class="mod-no">M2</span><span class="mod-body"><span class="mod-title">Productivity, Employment and Output</span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf">Notes (PDF)</a></span></span></li>
-  <li><span class="mod-no">M3</span><span class="mod-body"><span class="mod-title">Consumption, Saving and Investment</span><span class="mod-soon">Notes — coming soon</span></span></li>
+  <li><span class="mod-no">M3</span><span class="mod-body"><span class="mod-title">Consumption, Saving and Investment</span><span class="mod-links"><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Interactive concept map</a><a href="{{ '/teachings/macroeconomics-i/story-consumption-saving-investment/' | relative_url }}">Chapter story</a></span><span class="mod-soon">Notes (PDF) — coming soon</span></span></li>
   <li><span class="mod-no">M4</span><span class="mod-body"><span class="mod-title">Asset Market, Money and Prices</span><span class="mod-soon">Notes — coming soon</span></span></li>
   <li><span class="mod-no">M5</span><span class="mod-body"><span class="mod-title">IS–LM / AS–AD General Equilibrium</span><span class="mod-soon">Notes — coming soon</span></span></li>
 </ul>
