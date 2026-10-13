@@ -235,6 +235,7 @@ rate</strong>, the single price that ties saving, investment, and equilibrium to
     <li><strong>Click</strong> &mdash; one-line what &amp; why</li>
     <li><strong>Filter</strong> &mdash; by section or cross-links</li>
     <li><strong>Build the chapter</strong> &mdash; watch it assemble</li>
+    <li><strong>&#128200;</strong> &mdash; this bubble has a graph/figure</li>
   </ul>
 </div>
 
@@ -690,7 +691,7 @@ learning &mdash; the point is to see the <em>connections</em>, not to memorise a
   }
   function closePop() { pop.classList.remove('show'); }
   function clearPanel() {
-    panel.innerHTML = '<p class="hint"><strong>How to read:</strong> read <span style="white-space:nowrap">box &rarr; label &rarr; box</span> as a sentence; general ideas on top, specifics below.</p><ul class="hint-list"><li><strong>Hover</strong> &mdash; trace its links</li><li><strong>Click</strong> &mdash; one-line what &amp; why</li><li><strong>Filter</strong> &mdash; by section or cross-links</li><li><strong>Build the chapter</strong> &mdash; watch it assemble</li></ul>';
+    panel.innerHTML = '<p class="hint"><strong>How to read:</strong> read <span style="white-space:nowrap">box &rarr; label &rarr; box</span> as a sentence; general ideas on top, specifics below.</p><ul class="hint-list"><li><strong>Hover</strong> &mdash; trace its links</li><li><strong>Click</strong> &mdash; one-line what &amp; why</li><li><strong>Filter</strong> &mdash; by section or cross-links</li><li><strong>Build the chapter</strong> &mdash; watch it assemble</li><li><strong>&#128200;</strong> &mdash; this bubble has a graph/figure</li></ul>';
   }
   clearPanel();
 
