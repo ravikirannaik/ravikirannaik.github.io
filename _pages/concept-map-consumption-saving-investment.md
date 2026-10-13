@@ -2,7 +2,7 @@
 layout: page
 permalink: /teachings/macroeconomics-i/concept-map-consumption-saving-investment/
 title: "Concept Map — Consumption, Saving & Investment"
-description: An interactive concept map of Module 3 (ECON 202): the determinants of consumption and saving, the user cost of capital and desired investment, and how the real interest rate clears the goods market. Hover to trace a concept, click for the definition and formula, or press Build to watch the chapter assemble lecture-by-lecture.
+description: "An interactive concept map of Module 3 (ECON 202): the determinants of consumption and saving, the user cost of capital and desired investment, and how the real interest rate clears the goods market. Hover to trace a concept, click for the definition and formula, or press Build to watch the chapter assemble lecture-by-lecture."
 nav: false
 ---
 
