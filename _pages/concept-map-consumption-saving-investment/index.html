@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+/* ============================================================================
+   Ch.4 Concept Map — Consumption, Saving & Investment (ECON 202, Module 3)
+   Self-contained: hand-placed hierarchical nodes + JS-drawn propositional edges.
+   Palette = course-page Japanese pastels (section groups) + ch4 deck
+   Johnny.Decimal orange #F04C00 / blue #0000DC (focus node, r-hub, cross-links).
+   ========================================================================== */
+.cmap {
+  --cs:     #f7cfd8;  --cs-b:   #cf7f94;   /* §4.1 sakura rose   */
+  --inv:    #cde0c9;  --inv-b:  #74a86c;   /* §4.2 matcha green  */
+  --gm:     #d8cfe8;  --gm-b:   #8d66c6;   /* §4.3 fuji purple   */
+  --appx:   #e4e4e4;  --appx-b: #9a9a9a;   /* appendix grey      */
+  --rr:     #d7ddff;  --rr-b:   #0000DC;   /* real interest rate */
+  --root:   #ffd9c7;  --root-b: #F04C00;   /* focus / demand     */
+  --edge:   #b4bcca;  --cross:  #0000DC;   /* edges & cross-links*/
+  --ink:    #3a3a3a;
+  --lab-bg: #ffffff;
+  max-width: 980px; margin: 0 auto;
+}
+.cmap-back { display:inline-block; font-size:0.9rem; font-weight:600; margin-bottom:0.4rem; }
+.cmap-lede {
+  font-size: 1.04rem; line-height: 1.6;
+  border-left: 4px solid var(--root-b);
+  background: rgba(240,76,0,0.06);
+  padding: 0.8rem 1.05rem; border-radius: 0 6px 6px 0; margin: 0.6rem 0 1.1rem;
+}
+.cmap-lede .fq { font-weight: 700; color: var(--root-b); }
+
+/* ---- controls ---- */
+.cmap-controls { display:flex; flex-wrap:wrap; gap:0.45rem; align-items:center; margin-bottom:0.65rem; }
+.cmap-chip {
+  font-size:0.84rem; font-weight:700; cursor:pointer; user-select:none;
+  border:1px solid rgba(0,0,0,0.14); border-radius:999px; padding:0.32rem 0.8rem;
+  background:#f4f4f6; color:var(--ink); transition: filter .15s, transform .15s, box-shadow .15s;
+}
+.cmap-chip:hover { transform:translateY(-1px); filter:brightness(0.96); }
+.cmap-chip[data-f="all"]   { background:#eceef2; }
+.cmap-chip[data-f="cs"]    { background:var(--cs); }
+.cmap-chip[data-f="inv"]   { background:var(--inv); }
+.cmap-chip[data-f="gm"]    { background:var(--gm); }
+.cmap-chip[data-f="r"]     { background:var(--rr); }
+.cmap-chip[data-f="cross"] { background:#e7eaff; color:var(--cross); border-color:rgba(0,0,221,0.25); }
+.cmap-chip[data-f="appx"]  { background:var(--appx); }
+.cmap-chip.active { box-shadow:0 0 0 2px var(--root-b); border-color:transparent; }
+.cmap-btn {
+  font-size:0.84rem; font-weight:700; cursor:pointer; border:none; border-radius:999px;
+  padding:0.34rem 0.95rem; background:var(--root-b); color:#fff; text-decoration:none;
+  box-shadow:0 2px 8px rgba(240,76,0,0.3); transition: filter .15s, transform .15s;
+}
+.cmap-btn:hover { filter:brightness(1.05); transform:translateY(-1px); }
+.cmap-btn.ghost { background:transparent; color:var(--root-b); box-shadow:none; border:1px solid var(--root-b); }
+.cmap-sep { flex:1 1 auto; }
+
+/* ---- reading panel ---- */
+.cmap-panel {
+  border:1px solid var(--global-divider-color, #e0e0e0); border-left:5px solid var(--root-b);
+  border-radius:0 8px 8px 0; background:rgba(0,0,0,0.015);
+  padding:0.75rem 1rem; margin-bottom:0.8rem; min-height:4.6rem;
+}
+.cmap-panel .pt { font-weight:700; font-size:1.02rem; margin:0 0 0.15rem; }
+.cmap-panel .ptag {
+  display:inline-block; font-size:0.68rem; font-weight:700; letter-spacing:0.04em;
+  border-radius:4px; padding:0.05rem 0.5rem; margin-left:0.5rem; vertical-align:middle; color:#2b2b2b;
+}
+.cmap-panel .pd { font-size:0.95rem; line-height:1.55; margin:0.2rem 0 0; }
+.cmap-panel .pex {
+  font-size:0.88rem; line-height:1.5; margin-top:0.45rem; padding-top:0.4rem;
+  border-top:1px dashed var(--global-divider-color,#ddd); color:var(--global-text-color-light,#666);
+}
+.cmap-panel .pex b { color:var(--root-b); }
+.cmap-panel .hint { color:var(--global-text-color-light,#777); font-size:0.92rem; margin:0; }
+.cmap-panel .hint-list {
+  list-style:none; padding:0; margin:0.45rem 0 0; font-size:0.9rem;
+  color:var(--global-text-color-light,#777);
+  display:flex; flex-wrap:wrap; gap:0.3rem 1.4rem;
+}
+.cmap-panel .hint-list li { position:relative; padding-left:1rem; }
+.cmap-panel .hint-list li::before { content:"\25B8"; position:absolute; left:0; color:var(--root-b); font-weight:700; }
+.cmap-panel .hint-list strong { color:var(--ink); }
+
+/* ---- click popover: concise what / why, anchored to the bubble ---- */
+.cmap-pop {
+  position:absolute; z-index:20; width:284px; box-sizing:border-box;
+  background:var(--global-bg-color,#fff); color:var(--ink);
+  border:1px solid var(--global-divider-color,#e0e0e0);
+  border-radius:12px; box-shadow:0 10px 28px rgba(20,30,60,0.2);
+  padding:0.62rem 0.82rem 0.68rem; font-size:0.95rem; line-height:1.5;
+  opacity:0; transform:translateY(5px); pointer-events:none; transition:opacity .16s, transform .16s;
+}
+.cmap-pop.show { opacity:1; transform:none; pointer-events:auto; }
+.cmap-pop .pph { display:flex; align-items:center; gap:0.5rem; margin-bottom:0.15rem; }
+.cmap-pop .ppt { font-weight:700; font-size:1.0rem; }
+.cmap-pop .ppfoot { margin-top:0.5rem; padding-top:0.4rem; border-top:1px dashed var(--global-divider-color,#ddd); }
+.cmap-pop .pptag { font-size:0.68rem; font-weight:700; border-radius:4px; padding:0.06rem 0.5rem; color:#2b2b2b; white-space:nowrap; }
+.cmap-pop .ppx { margin-left:auto; cursor:pointer; font-weight:700; color:var(--global-text-color-light,#999); border:none; background:none; font-size:1.1rem; line-height:1; padding:0 0.1rem; }
+.cmap-pop p { margin:0.2rem 0 0; }
+.cmap-pop .k { font-weight:800; font-size:0.68rem; letter-spacing:0.04em; text-transform:uppercase; margin-right:0.35rem; }
+.cmap-pop .k.what { color:#2b7a4b; }
+.cmap-pop .k.why  { color:var(--root-b); }
+.cmap-pop .ppfig { margin:0.6rem 0 0; }
+.cmap-pop .ppfig img { display:block; width:100%; height:auto; border:1px solid var(--global-divider-color,#e0e0e0); border-radius:8px; background:#fff; }
+.cmap-pop .ppfig figcaption { font-size:0.74rem; color:var(--global-text-color-light,#777); margin-top:0.28rem; line-height:1.3; }
+html[data-theme="dark"] .cmap-pop { background:#1f2127; }
+html[data-theme="dark"] .cmap-pop .k.what { color:#7fd1a0; }
+
+/* ---- stage / scaled canvas ---- */
+.cmap-stage { overflow:auto; -webkit-overflow-scrolling:touch; border-radius:10px; }
+.cmap-scalewrap { position:relative; margin:0 auto; }
+.cmap-canvas { position:absolute; top:0; left:0; width:1360px; height:1430px; transform-origin:top left; }
+.cmap-edges  { position:absolute; inset:0; overflow:visible; pointer-events:none; z-index:1; }
+.cmap-labels { position:absolute; inset:0; overflow:visible; pointer-events:none; z-index:5; }
+
+.cmap-node {
+  position:absolute; z-index:2; box-sizing:border-box; cursor:pointer;
+  border:2px solid #ccc; border-radius:12px; padding:0.55rem 0.7rem;
+  background-color:#fff; color:var(--ink); text-align:center;
+  font-size:15px; line-height:1.22; font-weight:600;
+  box-shadow:0 2px 7px rgba(30,40,70,0.12);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .15s ease, filter .15s ease;
+}
+.cmap-node:hover { box-shadow:0 5px 16px rgba(30,40,70,0.22); }
+/* little badge marking a bubble that has a graph attached */
+.cmap-node.has-fig::after {
+  content:"\01F4C8"; position:absolute; top:-9px; right:-8px;
+  width:20px; height:20px; border-radius:50%;
+  font-size:11px; line-height:18px; text-align:center;
+  background:#fff; border:2px solid #9aa0ab; box-shadow:0 1px 3px rgba(0,0,0,0.25);
+}
+.cmap-node .nf {
+  display:block; font-weight:800; font-size:0.84em; margin-top:0.18em;
+  letter-spacing:0.01em; opacity:0.92;
+}
+.cmap-node[data-sec="cs"]   { background-color:var(--cs);   border-color:var(--cs-b); }
+.cmap-node[data-sec="cs"]   .nf { color:#9c3550; }
+.cmap-node[data-sec="inv"]  { background-color:var(--inv);  border-color:var(--inv-b); }
+.cmap-node[data-sec="inv"]  .nf { color:#3f6e38; }
+.cmap-node[data-sec="gm"]   { background-color:var(--gm);   border-color:var(--gm-b); }
+.cmap-node[data-sec="gm"]   .nf { color:#5a3a95; }
+.cmap-node[data-sec="appx"] { background-color:var(--appx); border-color:var(--appx-b); }
+.cmap-node[data-sec="r"] {
+  background-color:var(--rr); border-color:var(--rr-b); border-width:2.5px; color:#15186b;
+  box-shadow:0 3px 14px rgba(0,0,221,0.22);
+}
+.cmap-node[data-sec="r"] .nf { color:var(--rr-b); font-style:normal; }
+.cmap-node[data-sec="root"] {
+  background-color:var(--root); border-color:var(--root-b); border-width:2.5px;
+  font-size:16px; color:#7a2700; box-shadow:0 3px 14px rgba(240,76,0,0.25);
+}
+.cmap-node[data-sec="root"] .nf { color:var(--root-b); font-size:0.92em; }
+
+.cmap-node.dim  { opacity:0.14; }
+.cmap-node.hot  { transform:scale(1.045); box-shadow:0 6px 20px rgba(30,40,70,0.28); z-index:4; }
+.cmap-node.off  { opacity:0; transform:scale(0.55); pointer-events:none; }
+
+/* edge + label states (driven from JS via opacity / stroke attrs) */
+.cmap-edges path.e { fill:none; stroke:var(--edge); stroke-width:2; stroke-linecap:round; transition:opacity .25s, stroke-width .15s; }
+.cmap-edges path.e.cross { stroke:var(--cross); stroke-width:2; stroke-dasharray:7 6; }
+.cmap-edges path.e.hot { stroke-width:3.4; }
+.cmap-labels .lab rect { fill:var(--lab-bg); opacity:1; rx:4; }
+.cmap-labels .lab text { fill:#5a6170; font-size:13px; font-weight:600; font-family:inherit; }
+.cmap-labels .lab.cross text { fill:var(--cross); }
+.cmap-labels .lab.off, .cmap-edges path.e.off { opacity:0 !important; }
+.cmap-labels .lab.dim { opacity:0.12; }
+.cmap-edges path.e.dim { opacity:0.07; }
+
+.cmap-legend { display:flex; flex-wrap:wrap; gap:0.8rem 1.3rem; margin:0.9rem 0 0; font-size:0.86rem; }
+.cmap-legend span { display:inline-flex; align-items:center; gap:0.4rem; }
+.cmap-legend i { width:0.95rem; height:0.95rem; border-radius:3px; display:inline-block; border:1.5px solid rgba(0,0,0,0.25); }
+.cmap-legend i.l-cross { background:transparent; border-style:dashed; border-color:var(--cross); }
+.cmap-note {
+  font-size:0.86rem; color:var(--global-text-color-light,#777);
+  border-top:1px solid var(--global-divider-color,#e0e0e0); margin-top:1.6rem; padding-top:0.9rem;
+}
+
+/* ---- dark mode toning ---- */
+html[data-theme="dark"] .cmap {
+  --cs:#4a3640; --cs-b:#c98197; --inv:#36432f; --inv-b:#8fc085;
+  --gm:#3d3450; --gm-b:#b79ae0; --appx:#3a3a3a; --appx-b:#888;
+  --rr:#23264f; --rr-b:#8f9bff; --root:#4a2f1f; --root-b:#ff8c5a;
+  --edge:#5a6475; --cross:#8f9bff; --ink:#e6e6e6; --lab-bg:#1b1d22;
+}
+html[data-theme="dark"] .cmap-node { color:#eee; box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+html[data-theme="dark"] .cmap-node[data-sec="cs"] .nf { color:#f1b6c6; }
+html[data-theme="dark"] .cmap-node[data-sec="inv"] .nf { color:#b7e0ac; }
+html[data-theme="dark"] .cmap-node[data-sec="gm"] .nf { color:#cdb6f0; }
+html[data-theme="dark"] .cmap-node[data-sec="r"] { color:#cfd5ff; }
+html[data-theme="dark"] .cmap-node[data-sec="root"] { color:#ffd0b8; }
+html[data-theme="dark"] .cmap-chip { background:#2a2c31; color:#ddd; border-color:rgba(255,255,255,0.14); }
+html[data-theme="dark"] .cmap-labels .lab text { fill:#aab2c2; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cmap-node, .cmap-edges path.e { transition:none; }
+}
+</style>
+
+</head>
+<body>
+<div class="cmap">
+
+<a class="cmap-back" href="/teachings/macroeconomics-i/">← Back to Macroeconomics-I</a>
+
+<p class="cmap-lede">
+<span class="fq">Focus question:</span> How do households and firms decide to consume, save, and invest —
+and what makes those plans consistent in the goods market? This map lays out Module 3 (Abel Ch. 4) as a
+connected set of ideas. The three coloured spines are the three sections; the blue dashed <em>cross-connections</em>
+(revealed on demand) are where the chapter's deep structure lives — above all the <strong>real interest
+rate</strong>, the single price that ties saving, investment, and equilibrium together.
+</p>
+
+<div class="cmap-controls" role="group" aria-label="Concept map controls">
+  <span class="cmap-chip active" data-f="all">All</span>
+  <span class="cmap-chip" data-f="cs">§4.1 Consumption &amp; Saving</span>
+  <span class="cmap-chip" data-f="inv">§4.2 Investment</span>
+  <span class="cmap-chip" data-f="gm">§4.3 Goods Market</span>
+  <span class="cmap-chip" data-f="r">Real interest rate</span>
+  <span class="cmap-chip" data-f="cross">Cross-links</span>
+  <span class="cmap-chip" data-f="appx">Appendix</span>
+  <span class="cmap-sep"></span>
+  <button class="cmap-btn" id="cmap-build" type="button">▶ Build the chapter</button>
+  <button class="cmap-btn ghost" id="cmap-voice" type="button">🔊 Voice: on</button>
+  <button class="cmap-btn ghost" id="cmap-reset" type="button">Reset</button>
+  <a class="cmap-btn ghost" href="/teachings/macroeconomics-i/story-consumption-saving-investment/">📖 Chapter story</a>
+</div>
+
+<div class="cmap-panel" id="cmap-panel">
+  <p class="hint"><strong>How to read:</strong> read <span style="white-space:nowrap">box → label → box</span> as a sentence; general ideas on top, specifics below.</p>
+  <ul class="hint-list">
+    <li>
+<strong>Hover</strong> — trace its links</li>
+    <li>
+<strong>Click</strong> — one-line what &amp; why</li>
+    <li>
+<strong>Filter</strong> — by section or cross-links</li>
+    <li>
+<strong>Build the chapter</strong> — watch it assemble</li>
+  </ul>
+</div>
+
+<div class="cmap-stage" id="cmap-stage">
+  <div class="cmap-scalewrap" id="cmap-scalewrap">
+    <div class="cmap-canvas" id="cmap-canvas">
+      <svg class="cmap-edges" id="cmap-edges" width="1360" height="1430" viewbox="0 0 1360 1430" aria-hidden="true"></svg>
+      <!-- labels drawn on a layer above the bubbles so they're never hidden -->
+      <svg class="cmap-labels" id="cmap-labels" width="1360" height="1430" viewbox="0 0 1360 1430" aria-hidden="true"></svg>
+      <!-- nodes injected by JS -->
+    </div>
+  </div>
+</div>
+
+<div class="cmap-legend">
+  <span><i style="background:#ffd9c7;border-color:#F04C00;"></i> Demand for goods (focus)</span>
+  <span><i style="background:#f7cfd8;border-color:#cf7f94;"></i> §4.1 Consumption &amp; Saving</span>
+  <span><i style="background:#cde0c9;border-color:#74a86c;"></i> §4.2 Investment</span>
+  <span><i style="background:#d8cfe8;border-color:#8d66c6;"></i> §4.3 Goods Market</span>
+  <span><i style="background:#d7ddff;border-color:#0000DC;"></i> Real interest rate</span>
+  <span><i style="background:#e4e4e4;border-color:#9a9a9a;"></i> Appendix</span>
+  <span><i class="l-cross"></i> Cross-link (proposition between sections)</span>
+</div>
+
+<p class="cmap-note">
+<small>* The design follows Novak &amp; Gowin's concept-mapping framework, grounded in Ausubel's theory of meaningful
+learning — the point is to see the <em>connections</em>, not to memorise a list.</small>
+</p>
+
+</div>
+
+<script>
+(function () {
+  var CANVAS_H = 1430;
+  var CANVAS_W = 1360;
+
+  // ---- concept nodes: id, sec, order (lecture sequence), cx (centre), y (top), w, title, def, example ----
+  var N = [
+    {id:'root', sec:'root', order:0, cx:730, y:24, w:390,
+      t:"The demand for goods<span class='nf'>Y = Cᵈ + Iᵈ + G</span>",
+      d:"This chapter studies the <em>demand</em> side of output — how the goods firms produce get used. Aggregate demand has four parts: consumption \\(C\\), investment \\(I\\), government purchases \\(G\\), and net exports \\(NX\\). We take \\(G\\) as given and assume a closed economy (\\(NX=0\\)), so attention falls on \\(C\\) and \\(I\\). Studying the demand for goods <strong>is</strong> studying saving and capital formation."},
+
+    // ---- §4.1 Consumption & Saving (spine, cx 210) ----
+    {id:'a_cd', sec:'cs', order:1, cx:430, y:150, w:232,
+      t:"Desired consumption<span class='nf'>Cᵈ</span>",
+      d:"What households <em>plan</em> to consume — a desired level, not actual spending. It is over two-thirds of total spending, the largest single component of demand, so shifts in it move the whole economy.",
+      ex:"Measured consumption counts durables as spending; theory wants only the <em>services</em> they provide."},
+    {id:'a_sd', sec:'cs', order:2, cx:430, y:270, w:232,
+      t:"Desired national saving<span class='nf'>Sᵈ = Y − Cᵈ − G</span>",
+      d:"National saving once consumption is at its desired level: \\(S^{d}=Y-C^{d}-G\\). Saving is simply the output left over after desired consumption and government purchases."},
+    {id:'a_one', sec:'cs', order:3, cx:430, y:390, w:232,
+      t:"Saving &amp; consuming:<br>one decision",
+      d:"Because \\(S = Y - C\\), choosing how much to consume <em>is</em> choosing how much to save — two sides of one coin. We save to move consumption to the future. Keep <em>saving</em> (a flow) distinct from <em>savings</em> (a stock).",
+      ex:"Evelyn earns \\$8000; if she consumes \\$7400 she saves \\$600 automatically."},
+    {id:'a_tr', sec:'cs', order:4, cx:430, y:510, w:232,
+      t:"Current ⇄ future<br>trade-off",
+      d:"One unit consumed today costs \\((1+r)\\) units of future consumption, where \\(r\\) is the real interest rate — the <em>price</em> of trading present for future. Compounding multiplies by \\((1+r)\\); discounting divides by it."},
+    {id:'a_sm', sec:'cs', order:5, cx:430, y:630, w:232,
+      t:"Consumption-smoothing<br>motive",
+      d:"Households prefer a relatively <em>even</em> path of consumption over time, rejecting both extremes (borrow-it-all-now, or starve-to-save). This one motive drives the income, future-income and wealth effects below.",
+      ex:"The clearest present-vs-future trade-off students face is being in college: forgoing pay now to raise future income."},
+    {id:'a_yc', sec:'cs', order:6, cx:430, y:750, w:232,
+      t:"Current income ↑<span class='nf'>⇒ Cᵈ↑ and Sᵈ↑</span>",
+      d:"A rise in current income raises <em>both</em> consumption and saving. The marginal propensity to consume satisfies \\(0<\\text{MPC}<1\\): part of extra income is consumed, the rest saved. A <em>temporary</em> rise is mostly saved; a <em>permanent</em> rise is mostly consumed (permanent-income theory).",
+      ex:"A \\$6000 bonus with MPC = 0.4: consumption rises \\$2400, saving rises \\$3600."},
+    {id:'a_yf', sec:'cs', order:7, cx:430, y:870, w:232,
+      t:"Expected future income ↑<span class='nf'>⇒ Cᵈ↑, Sᵈ↓</span>",
+      d:"Smoothing brings future income forward: consume more now, save less today. This is the basis of the permanent-income (Friedman) and life-cycle (Modigliani) theories."},
+    {id:'a_w', sec:'cs', order:8, cx:430, y:990, w:232,
+      t:"Wealth ↑<span class='nf'>⇒ Cᵈ↑, Sᵈ↓</span>",
+      d:"Wealth = assets − liabilities. A windfall raises current consumption by <em>less</em> than the windfall (smoothing); with income unchanged, that extra consumption is an equal fall in current saving. The stock market is a major source of wealth swings.",
+      ex:"Prudence finds 50 forgotten shares worth \\$6000 — same effect as a \\$6000 income rise, but she spends only part of it now."},
+    {id:'a_fp', sec:'cs', order:12, cx:430, y:1110, w:232,
+      t:"Fiscal policy<br>(G and taxes)",
+      d:"Government purchases and taxes change households' current and expected future income, shifting \\(C^{d}\\); \\(G\\) also enters \\(S^{d}\\) <em>directly</em> through the \\(-G\\) term. A temporary tax-financed \\(G\\!\\uparrow\\) lowers after-tax income, so \\(C^{d}\\) falls — but by less than \\(G\\) rises, so national saving falls too.",
+      ex:"\\(G\\) up \\$10bn ⇒ \\(C^{d}\\) down \\$6bn ⇒ \\(S^{d}\\) down \\$4bn."},
+    {id:'a_ri', sec:'cs', order:13, cx:430, y:1230, w:232,
+      t:"Ricardian equivalence",
+      d:"A lump-sum tax cut financed by higher future taxes is only a change in <em>timing</em>, not in the total (present-value) tax burden — so a forward-looking household saves the whole cut and \\(C\\), \\(S^{d}\\) are unchanged. It fails if future taxes go unforeseen, if households are liquidity-constrained, or if horizons are finite without bequests.",
+      ex:"₹100 cut today, repaid as ₹110 next year at \\(r=10\\%\\): present value ₹100 ⇒ lifetime resources unchanged."},
+
+    // side branch of §4.1 — Keynesian consumption function (left, cx 100)
+    {id:'a_kf', sec:'cs', order:11, cx:100, y:748, w:175,
+      t:"Keynesian consumption fn.<span class='nf'>Cᵈ = c₀ + MPC·Y</span>",
+      d:"A simple rule of thumb: a base amount \\(c_0\\) (autonomous consumption) plus a fixed fraction of income. The slope is the MPC (\\(c_y\\)), with \\(0<c_y<1\\). Contrast it with the forward-looking permanent-income / life-cycle view."},
+
+    // ---- §4.2 Investment (spine, cx 600) ----
+    {id:'i_inv', sec:'inv', order:14, cx:730, y:170, w:232,
+      t:"Investment<span class='nf'>I</span>",
+      d:"The most <em>volatile</em> component of GDP: only about one-sixth of output, yet in a typical recession half or more of the total fall in spending is falling investment. It also builds the capital stock that drives long-run growth."},
+    {id:'i_kstar', sec:'inv', order:15, cx:730, y:290, w:232,
+      t:"Desired capital stock<span class='nf'>K*</span>",
+      d:"The capital stock that maximises a firm's expected profit, set by comparing the marginal <em>benefit</em> of one more unit of capital against its marginal <em>cost</em>.",
+      ex:"Kyle's Bakery sizing a solar-powered oven: \\(p_K=\\$100\\)/cu&nbsp;ft, \\(d=10\\%\\), \\(r=8\\%\\)."},
+    {id:'i_mpk', sec:'inv', order:16, cx:730, y:410, w:232,
+      t:"Future marginal product<span class='nf'>MPKᶠ &mdash; the benefit</span>",
+      d:"Because investing pays off with a lag, the benefit of extra capital is its <em>future</em> marginal product, \\(MPK^{f}\\). It <em>falls</em> as \\(K\\) rises (diminishing returns). A higher expected \\(MPK^{f}\\) — e.g. new technology — raises desired capital."},
+    {id:'i_uc', sec:'inv', order:17, cx:730, y:530, w:232,
+      t:"User cost of capital<span class='nf'>uc = (r + d)pₖ</span>",
+      d:"The cost of using one unit of capital for a period: forgone interest \\(r p_K\\) plus depreciation \\(d p_K\\). Even self-financed capital bears the interest as an <em>opportunity</em> cost (Jorgenson, 1963).",
+      ex:"\\((0.08+0.10)\\times\\$100 = \\$18\\) per cubic foot per year."},
+    {id:'i_rule', sec:'inv', order:18, cx:730, y:650, w:232,
+      t:"Optimum rule<span class='nf'>MPKᶠ = uc</span>",
+      d:"Desired capital sits where the future marginal product equals the user cost — the same marginal-benefit-equals-marginal-cost logic as labour (\\(MPN=w\\)). If \\(MPK^{f}>uc\\) add capital; if \\(MPK^{f}<uc\\) cut it back."},
+    {id:'i_shift', sec:'inv', order:19, cx:730, y:770, w:232,
+      t:"Shifters of K*",
+      d:"Desired capital moves only when one side moves: a lower user cost (lower \\(r\\), \\(d\\) or \\(p_K\\)) <em>or</em> a higher \\(MPK^{f}\\) curve (better technology) raises \\(K^{*}\\)."},
+    {id:'i_tax', sec:'inv', order:20, cx:730, y:890, w:232,
+      t:"Taxing capital's return<span class='nf'>MPKᶠ = uc/(1−τ)</span>",
+      d:"A tax on capital's return is a <em>wedge</em>: the firm keeps only \\((1-\\tau)MPK^{f}\\), so it must earn a higher <em>pre-tax</em> return to clear the same user cost, and desired capital <em>falls</em>. Because real codes tax profit, not revenue, an <strong>effective tax rate</strong> (netting depreciation allowances and investment tax credits) summarises the true distortion."},
+    {id:'i_net', sec:'inv', order:21, cx:730, y:1010, w:232,
+      t:"Net investment<span class='nf'>= gross I − dK = ΔK</span>",
+      d:"Net investment is the change in the capital stock: \\(K_{t+1}-K_t = I_t - dK_t\\). Solving for gross investment, \\(I_t = (K^{*}-K_t) + dK_t\\) — close the gap to desired capital <em>plus</em> replace what wore out."},
+    {id:'i_lag', sec:'inv', order:22, cx:730, y:1130, w:232,
+      t:"Build lags",
+      d:"Some capital installs fast; factories and infrastructure take years. So adjustment toward \\(K^{*}\\) is spread over several years (Kydland–Prescott, &lsquo;Time to Build&rsquo;, 1982), and investment responds to \\(r\\) only gradually."},
+
+    // ---- §4.3 Goods Market (spine, cx 990) ----
+    {id:'g_eq', sec:'gm', order:23, cx:1040, y:170, w:232,
+      t:"Goods-market equilibrium<span class='nf'>Y = Cᵈ + Iᵈ + G</span>",
+      d:"Output equals desired spending. Unlike the <em>identity</em> \\(Y=C+I+G\\) (always true by definition), this <em>equilibrium condition</em> uses <em>desired</em> spending and need not hold: if firms over-produce, unsold goods pile up as inventory and the market is out of equilibrium."},
+    {id:'g_si', sec:'gm', order:24, cx:1040, y:290, w:232,
+      t:"Equivalently<span class='nf'>Sᵈ = Iᵈ</span>",
+      d:"Subtracting \\(C^{d}+G\\) from both sides, equilibrium is desired national saving equal to desired investment. The real interest rate adjusts to make them equal."},
+    {id:'g_diag', sec:'gm', order:25, cx:1040, y:410, w:232,
+      t:"Saving–investment<br>diagram",
+      d:"Desired saving slopes <em>up</em> in \\(r\\) and desired investment slopes <em>down</em> in \\(r\\); they cross at the equilibrium real interest rate. The <strong>real interest rate is the price that clears the goods market</strong>.",
+      ex:"At \\(r=3\\%\\), \\(I^{d}=1500>S^{d}=850\\): borrowers bid \\(r\\) up to 6%, where \\(S^{d}=I^{d}=1000\\)."},
+    {id:'g_sdn', sec:'gm', order:26, cx:1040, y:530, w:232,
+      t:"Desired saving ↓<span class='nf'>⇒ r↑, crowding out</span>",
+      d:"A fall in desired saving (e.g. a temporary \\(G\\!\\uparrow\\)) shifts the saving curve left; the equilibrium real interest rate rises and investment is <em>crowded out</em>. Lower investment means a smaller future capital stock — so future generations bear today's deficit."},
+    {id:'g_idn', sec:'gm', order:27, cx:1040, y:650, w:232,
+      t:"Desired investment ↑<span class='nf'>⇒ r↑, S &amp; I ↑</span>",
+      d:"A rise in desired investment (e.g. an invention raising \\(MPK^{f}\\)) shifts the investment curve right; the equilibrium real interest rate rises and both saving and investment increase."},
+
+    // ---- real interest rate hub + appendix ----
+    {id:'rhub', sec:'r', order:10, cx:860, y:1300, w:400,
+      t:"The real interest rate r<span class='nf'>the coordinating price</span>",
+      d:"One variable ties the whole chapter together. \\(r\\) is the price of present-vs-future consumption (so it drives <em>saving</em>), it enters the user cost of capital \\((r+d)p_K\\) (so it drives <em>investment</em>), and it adjusts to clear the goods market where \\(S^{d}=I^{d}\\). Follow \\(r\\) and the three sections become one model."},
+    {id:'appx', sec:'appx', order:28, cx:1040, y:850, w:250,
+      t:"Business cycle<br>(appendix)",
+      d:"Recurring expansions and contractions of real GDP around its long-run trend (potential output): peak → contraction/recession → trough → expansion/recovery. Because investment is the most volatile spending component, its swings drive most of the cyclical movement in GDP (Burns–Mitchell 1946; Kydland–Prescott 1982)."}
+  ];
+
+  // ---- propositions: [from, to, label, isCross] ----
+  var E = [
+    ['root','a_cd','its largest part is',false],
+    ['a_cd','a_sd','leaves, as saving',false],
+    ['a_sd','a_one','so C and S are',false],
+    ['a_one','a_tr','priced by (1+r)',false],
+    ['a_tr','a_sm','motivates',false],
+    ['a_sm','a_yc','→ income effect',false],
+    ['a_yc','a_yf','→ future-income effect',false],
+    ['a_yf','a_w','→ wealth effect',false],
+    ['a_w','a_fp','and the policy lever',false],
+    ['a_fp','a_ri','may be undone by',false],
+    ['a_yc','a_kf','rule-of-thumb form',false],
+
+    ['root','i_inv','its most volatile part is',false],
+    ['i_inv','i_kstar','firms choose',false],
+    ['i_kstar','i_mpk','marginal benefit',false],
+    ['i_mpk','i_uc','weighed against',false],
+    ['i_uc','i_rule','equal at the optimum',false],
+    ['i_rule','i_shift','moves when either shifts',false],
+    ['i_shift','i_tax','and when it is taxed',false],
+    ['i_tax','i_net','closing the gap to K* gives',false],
+    ['i_net','i_lag','but spread out by',false],
+
+    ['root','g_eq','is in equilibrium when',false],
+    ['g_eq','g_si','equivalently',false],
+    ['g_si','g_diag','drawn as',false],
+    ['g_diag','g_sdn','a leftward shift',false],
+    ['g_sdn','g_idn','conversely',false],
+
+    ['rhub','a_tr','prices present vs future',true],
+    ['rhub','i_uc','enters the user cost',true],
+    ['rhub','g_diag','adjusts to clear',true],
+    ['a_sd','g_si','re-appears as Sᵈ',true],
+    ['i_net','g_si','and Iᵈ must equal it',true],
+    ['a_fp','g_sdn','temporary G↑ causes',true],
+    ['i_shift','g_idn','higher MPKᶠ raises',true],
+    ['i_inv','appx','whose volatility drives',true]
+  ];
+
+  var SEC_LABEL = {cs:'§4.1 Consumption & Saving', inv:'§4.2 Investment', gm:'§4.3 Goods Market',
+                   r:'Coordinating price', root:'Focus', appx:'Appendix'};
+  var SEC_TINT = {cs:'#f7cfd8', inv:'#cde0c9', gm:'#d8cfe8', r:'#d7ddff', root:'#ffd9c7', appx:'#e4e4e4'};
+  var SEC_BD   = {cs:'#cf7f94', inv:'#74a86c', gm:'#8d66c6', r:'#0000DC', root:'#F04C00', appx:'#9a9a9a'};
+
+  // concise what / why shown in the click popover (1–2 lines each, no HTML tags, no '<')
+  var WW = {
+    root:  {wh:"The four-part demand for output: C + I + G (+ NX).", wy:"With G given and NX = 0, the whole chapter reduces to C and I."},
+    a_cd:  {wh:"What households plan to consume — over two-thirds of demand.", wy:"Its swings move the whole economy, so the chapter starts here."},
+    a_sd:  {wh:"Output left after desired C and G: Sᵈ = Y − Cᵈ − G.", wy:"Saving is defined by the consumption choice, not a separate one."},
+    a_one: {wh:"Since S = Y − C, choosing consumption is choosing saving.", wy:"We save only to move consumption to the future — one decision."},
+    a_tr:  {wh:"One unit today is worth (1+r) units tomorrow.", wy:"Makes the real interest rate the hinge of every saving choice."},
+    a_sm:  {wh:"Households want an even path, not feast-or-famine.", wy:"This one motive generates the income, future-income and wealth effects."},
+    a_yc:  {wh:"Higher current income raises both Cᵈ and Sᵈ (MPC between 0 and 1).", wy:"Temporary gains are mostly saved; permanent gains mostly consumed."},
+    a_yf:  {wh:"Expecting more later: consume more now, save less.", wy:"Core of the permanent-income and life-cycle theories."},
+    a_w:   {wh:"A wealth gain raises consumption now and lowers current saving.", wy:"Links stock-market booms and busts straight to spending."},
+    a_fp:  {wh:"G and taxes shift Cᵈ; G hits Sᵈ directly via the −G term.", wy:"A temporary G↑ lowers national saving — the bridge to crowding out."},
+    a_ri:  {wh:"A debt-financed tax cut is only a change in timing.", wy:"So Cᵈ and Sᵈ need not move — deficits needn't boost demand."},
+    a_kf:  {wh:"A rule of thumb: Cᵈ = c₀ + MPC·Y.", wy:"The simple benchmark against the forward-looking theories."},
+    i_inv: {wh:"The most volatile part of GDP, and the builder of capital.", wy:"Small in level, but drives both the cycle and long-run growth."},
+    i_kstar:{wh:"The capital stock that maximises a firm's expected profit.", wy:"Set by weighing the benefit of one more unit against its cost."},
+    i_mpk: {wh:"The future marginal product of capital — the benefit of investing.", wy:"Falls as K rises; better technology shifts it up and lifts K*."},
+    i_uc:  {wh:"The yearly cost of a unit of capital: uc = (r + d)pₖ.", wy:"Even self-financed capital bears this opportunity cost."},
+    i_rule:{wh:"Firms hold capital up to where MPKᶠ = uc.", wy:"Same marginal-benefit-equals-cost logic as labour (MPN = w)."},
+    i_shift:{wh:"K* moves when user cost or the MPKᶠ curve moves.", wy:"Lower r, d or pₖ — or better technology — raises desired capital."},
+    i_tax: {wh:"A tax on returns is a wedge: MPKᶠ = uc/(1−τ), so K* falls.", wy:"The effective rate, after allowances and credits, is what really bites."},
+    i_net: {wh:"Change in capital: net I = gross I − depreciation = ΔK.", wy:"So investment = close the gap to K* plus replace what wore out."},
+    i_lag: {wh:"Big capital takes years to build and install.", wy:"Investment responds to r gradually, not all at once."},
+    g_eq:  {wh:"Output equals desired spending: Y = Cᵈ + Iᵈ + G.", wy:"Unlike the identity it can fail — then inventories signal disequilibrium."},
+    g_si:  {wh:"Equilibrium is also just Sᵈ = Iᵈ.", wy:"Recasts the whole chapter as saving meeting investment."},
+    g_diag:{wh:"Saving slopes up, investment down; they cross at the equilibrium r.", wy:"The real interest rate is the price that clears the goods market."},
+    g_sdn: {wh:"Less desired saving → r↑ and investment is crowded out.", wy:"A smaller future capital stock — future generations pay for deficits."},
+    g_idn: {wh:"More desired investment → r↑, with both S and I higher.", wy:"Shows how an investment boom, e.g. new tech, raises rates."},
+    rhub:  {wh:"The one price that prices saving, enters user cost, and clears S = I.", wy:"Follow r and the three sections become a single model."},
+    appx:  {wh:"Expansions and contractions of real GDP around its trend.", wy:"Investment's volatility is what drives most of the cycle."}
+  };
+
+  // relevant Abel figure for a concept — shown inside that bubble's popover
+  var FIGBASE = '/assets/img/teaching/macroeconomics-i/ch4/';
+  var FIG = {
+    a_cd:   ['fig-4.1-abel-11e.png',  'Fig. 4.1 — The pandemic recession and consumption'],
+    a_yc:   ['fig-4.2-abel-11e.png',  'Fig. 4.2 — Income, consumption, and saving'],
+    i_rule: ['fig-4.3-abel-11e.png',  'Fig. 4.3 — Determination of the desired capital stock'],
+    i_shift:['fig-4.4-abel-11e.png',  'Fig. 4.4 — A lower real interest rate raises K*'],
+    i_mpk:  ['fig-4.5-abel-11e.png',  'Fig. 4.5 — A higher expected MPKᶠ raises K*'],
+    i_net:  ['fig-4.6-abel-11e.png',  'Fig. 4.6 — Gross and net investment, 1929–2021'],
+    g_diag: ['fig-4.8-abel-11e.png',  'Fig. 4.8 — Goods-market equilibrium (Sᵈ = Iᵈ)'],
+    g_sdn:  ['fig-4.9-abel-11e.png',  'Fig. 4.9 — A decline in desired saving'],
+    g_idn:  ['fig-4.10-abel-11e.png', 'Fig. 4.10 — An increase in desired investment']
+  };
+
+  var byId = {}; N.forEach(function (n) { byId[n.id] = n; });
+  var adjN = {};   // id -> Set of neighbour ids
+  var adjE = {};   // id -> Set of edge indices
+  N.forEach(function (n) { adjN[n.id] = {}; adjE[n.id] = {}; });
+  E.forEach(function (e, i) {
+    adjN[e[0]][e[1]] = 1; adjN[e[1]][e[0]] = 1;
+    adjE[e[0]][i] = 1; adjE[e[1]][i] = 1;
+  });
+
+  var canvas = document.getElementById('cmap-canvas');
+  var svg    = document.getElementById('cmap-edges');
+  var lsvg   = document.getElementById('cmap-labels');
+  var stage  = document.getElementById('cmap-stage');
+  var swrap  = document.getElementById('cmap-scalewrap');
+  var panel  = document.getElementById('cmap-panel');
+  var SVGNS  = 'http://www.w3.org/2000/svg';
+
+  // ---- build nodes ----
+  var nodeEl = {};
+  N.forEach(function (n) {
+    var el = document.createElement('div');
+    el.className = 'cmap-node';
+    if (FIG[n.id]) el.classList.add('has-fig');
+    el.setAttribute('data-sec', n.sec);
+    el.setAttribute('data-id', n.id);
+    el.style.width = n.w + 'px';
+    el.style.left = (n.cx - n.w / 2) + 'px';
+    el.style.top  = n.y + 'px';
+    el.innerHTML = n.t;
+    canvas.appendChild(el);
+    nodeEl[n.id] = el;
+  });
+
+  // ---- geometry (offset* are pre-transform, i.e. in canvas coords) ----
+  function geom(id) {
+    var el = nodeEl[id];
+    var w = el.offsetWidth, h = el.offsetHeight;
+    var cx = el.offsetLeft + w / 2, cy = el.offsetTop + h / 2;
+    return { cx: cx, cy: cy, hw: w / 2, hh: h / 2 };
+  }
+  function border(g, tx, ty) {         // point on g's border on the ray toward (tx,ty)
+    var dx = tx - g.cx, dy = ty - g.cy;
+    if (dx === 0 && dy === 0) return { x: g.cx, y: g.cy };
+    var s = 1 / Math.max(Math.abs(dx) / g.hw, Math.abs(dy) / g.hh);
+    return { x: g.cx + dx * s, y: g.cy + dy * s };
+  }
+
+  // ---- draw edges ----
+  var edgeObj = [];   // {path, lab, a, b, cross, order}
+  function drawEdges() {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    while (lsvg.firstChild) lsvg.removeChild(lsvg.firstChild);
+    edgeObj = [];
+    E.forEach(function (e, i) {
+      var ga = geom(e[0]), gb = geom(e[1]);
+      var pa = border(ga, gb.cx, gb.cy), pb = border(gb, ga.cx, ga.cy);
+      var mx = (pa.x + pb.x) / 2, my = (pa.y + pb.y) / 2;
+      var path = document.createElementNS(SVGNS, 'path');
+      var dstr;
+      if (e[3]) {   // cross-link: gentle curve
+        var ex = pb.x - pa.x, ey = pb.y - pa.y, len = Math.hypot(ex, ey) || 1;
+        var nx = -ey / len, ny = ex / len, bend = Math.min(60, len * 0.12);
+        var ccx = mx + nx * bend, ccy = my + ny * bend;
+        dstr = 'M' + pa.x + ',' + pa.y + ' Q' + ccx + ',' + ccy + ' ' + pb.x + ',' + pb.y;
+        mx = 0.25 * pa.x + 0.5 * ccx + 0.25 * pb.x;
+        my = 0.25 * pa.y + 0.5 * ccy + 0.25 * pb.y;
+      } else {
+        dstr = 'M' + pa.x + ',' + pa.y + ' L' + pb.x + ',' + pb.y;
+      }
+      path.setAttribute('d', dstr);
+      path.setAttribute('class', 'e' + (e[3] ? ' cross' : ''));
+      svg.appendChild(path);
+
+      var g = document.createElementNS(SVGNS, 'g');
+      g.setAttribute('class', 'lab' + (e[3] ? ' cross' : ''));
+      var rect = document.createElementNS(SVGNS, 'rect');
+      var txt = document.createElementNS(SVGNS, 'text');
+      txt.setAttribute('text-anchor', 'middle');
+      txt.setAttribute('dominant-baseline', 'middle');
+      txt.textContent = e[2];
+      g.appendChild(rect); g.appendChild(txt);
+      lsvg.appendChild(g);
+      var bb = txt.getBBox();
+      txt.setAttribute('x', mx); txt.setAttribute('y', my);
+      rect.setAttribute('x', mx - bb.width / 2 - 4);
+      rect.setAttribute('y', my - bb.height / 2 - 1);
+      rect.setAttribute('width', bb.width + 8);
+      rect.setAttribute('height', bb.height + 2);
+
+      var ord = Math.max(byId[e[0]].order, byId[e[1]].order);
+      edgeObj.push({ path: path, lab: g, a: e[0], b: e[1], cross: !!e[3], order: ord });
+    });
+  }
+
+  // ---- responsive scale ----
+  var curS = 1;
+  function fit() {
+    var w = stage.clientWidth || 1000;
+    var s = Math.min(1, w / CANVAS_W);       // scale the 16:9 canvas to fit the full-page width — no scrolling
+    curS = s;
+    canvas.style.transform = 'scale(' + s + ')';
+    swrap.style.width = (CANVAS_W * s) + 'px';
+    swrap.style.height = (CANVAS_H * s) + 'px';
+  }
+
+  // ---- state machine: filter / pin / build ----
+  var state = { filter: 'all', pin: null, buildK: null };
+
+  function emphasisFromState() {
+    if (state.pin) {
+      var ns = {}; ns[state.pin] = 1;
+      for (var k in adjN[state.pin]) ns[k] = 1;
+      return { nodes: ns, edges: adjE[state.pin] };
+    }
+    if (state.filter === 'all') return null;
+    if (state.filter === 'cross') {
+      var cn = {}, ce = {};
+      edgeObj.forEach(function (o, i) { if (o.cross) { ce[i] = 1; cn[o.a] = 1; cn[o.b] = 1; } });
+      return { nodes: cn, edges: ce };
+    }
+    // a section (cs/inv/gm) or r / appx
+    var sn = {}, se = {};
+    N.forEach(function (n) { if (n.sec === state.filter) sn[n.id] = 1; });
+    if (state.filter === 'r') { sn['rhub'] = 1; }
+    edgeObj.forEach(function (o, i) { if (sn[o.a] && sn[o.b]) se[i] = 1; });
+    // for r filter, also light its cross-links
+    if (state.filter === 'r') {
+      edgeObj.forEach(function (o, i) { if (o.a === 'rhub' || o.b === 'rhub') { se[i] = 1; sn[o.a] = 1; sn[o.b] = 1; } });
+    }
+    return { nodes: sn, edges: se };
+  }
+
+  function visibleByBuild(id) { return state.buildK === null || byId[id].order <= state.buildK; }
+
+  function apply(em) {
+    N.forEach(function (n) {
+      var el = nodeEl[n.id];
+      var vis = visibleByBuild(n.id);
+      el.classList.toggle('off', !vis);
+      if (!vis) { el.classList.remove('dim', 'hot'); return; }
+      if (!em) { el.classList.remove('dim', 'hot'); return; }
+      var inSet = !!em.nodes[n.id];
+      el.classList.toggle('dim', !inSet);
+      el.classList.toggle('hot', inSet && !!state.pin);
+    });
+    edgeObj.forEach(function (o, i) {
+      var vis = visibleByBuild(o.a) && visibleByBuild(o.b);
+      if (o.cross) {
+        // cross-links are revealed on demand only — when the current emphasis
+        // (a hovered/pinned node, or the Cross-links / r filter) includes them
+        var show = vis && !!em && !!em.edges[i];
+        o.path.classList.toggle('off', !show);
+        o.lab.classList.toggle('off', !show);
+        o.path.classList.remove('dim'); o.lab.classList.remove('dim');
+        o.path.classList.toggle('hot', show);
+        return;
+      }
+      o.path.classList.toggle('off', !vis);
+      o.lab.classList.toggle('off', !vis);
+      if (!vis) { o.path.classList.remove('dim', 'hot'); o.lab.classList.remove('dim'); return; }
+      if (!em) { o.path.classList.remove('dim', 'hot'); o.lab.classList.remove('dim'); return; }
+      var inSet = !!em.edges[i];
+      o.path.classList.toggle('dim', !inSet);
+      o.path.classList.toggle('hot', inSet);
+      o.lab.classList.toggle('dim', !inSet);
+    });
+  }
+  function render() { apply(emphasisFromState()); }
+
+  // transient hover emphasis (does not change state)
+  function hoverOn(id) {
+    if (state.buildK !== null && !visibleByBuild(id)) return;
+    var ns = {}; ns[id] = 1;
+    for (var k in adjN[id]) ns[k] = 1;
+    apply({ nodes: ns, edges: adjE[id] });
+    N.forEach(function (n) { if (ns[n.id] && visibleByBuild(n.id)) nodeEl[n.id].classList.add('hot'); });
+  }
+
+  // ---- click popover: concise what / why, anchored beside the bubble ----
+  var pop = document.createElement('div');
+  pop.className = 'cmap-pop';
+  pop.addEventListener('click', function (e) { e.stopPropagation(); });
+  swrap.appendChild(pop);
+
+  function plainTitle(n) {
+    return n.t.replace(/<span class='nf'>[\s\S]*?<\/span>/, '').replace(/<br\s*\/?>/g, ' ').trim();
+  }
+  function positionPop(el) {
+    var s = curS, POPW = 284, pad = 11;
+    var sx = el.offsetLeft * s, sy = el.offsetTop * s, sw = el.offsetWidth * s;
+    var wrapW = CANVAS_W * s, wrapH = CANVAS_H * s;
+    var flipped = false;
+    var px = sx + sw + pad;
+    if (px + POPW > wrapW) { px = sx - POPW - pad; flipped = true; }   // flip to the left if it would overflow
+    if (px < 4) px = 4;
+    pop.classList.toggle('flip', flipped);
+    pop.style.left = px + 'px';
+    pop.style.top = sy + 'px';
+    var ph = pop.offsetHeight, py = sy;             // clamp so it stays inside the stage
+    if (py + ph > wrapH - 4) py = Math.max(4, wrapH - ph - 4);
+    pop.style.top = py + 'px';
+  }
+  function showPopover(n) {
+    var ww = WW[n.id] || { wh: '', wy: '' };
+    var tint = SEC_TINT[n.sec] || '#eee';
+    pop.innerHTML =
+      '<div class="pph"><span class="ppt">' + plainTitle(n) + '</span>' +
+      '<button class="ppx" type="button" aria-label="Close">&times;</button></div>' +
+      '<p><span class="k what">What</span>' + ww.wh + '</p>' +
+      (ww.wy ? '<p><span class="k why">Why</span>' + ww.wy + '</p>' : '') +
+      (FIG[n.id] ? '<figure class="ppfig"><img src="' + FIGBASE + FIG[n.id][0] + '" alt="' + FIG[n.id][1] + '" loading="lazy"><figcaption>' + FIG[n.id][1] + '</figcaption></figure>' : '') +
+      '<div class="ppfoot"><span class="pptag" style="background:' + tint + '">' + (SEC_LABEL[n.sec] || '') + '</span></div>';
+    pop.classList.add('show');
+    positionPop(nodeEl[n.id]);
+    pop.querySelector('.ppx').addEventListener('click', function (e) {
+      e.stopPropagation(); state.pin = null; closePop(); render();
+    });
+  }
+  function closePop() { pop.classList.remove('show'); }
+  function clearPanel() {
+    panel.innerHTML = '<p class="hint"><strong>How to read:</strong> read <span style="white-space:nowrap">box &rarr; label &rarr; box</span> as a sentence; general ideas on top, specifics below.</p><ul class="hint-list"><li><strong>Hover</strong> &mdash; trace its links</li><li><strong>Click</strong> &mdash; one-line what &amp; why</li><li><strong>Filter</strong> &mdash; by section or cross-links</li><li><strong>Build the chapter</strong> &mdash; watch it assemble</li></ul>';
+  }
+  clearPanel();
+
+  // ---- wire node events ----
+  N.forEach(function (n) {
+    var el = nodeEl[n.id];
+    el.addEventListener('mouseenter', function () { if (!state.pin) hoverOn(n.id); });
+    el.addEventListener('mouseleave', function () { if (!state.pin) render(); });
+    el.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      if (state.pin === n.id) { state.pin = null; closePop(); }
+      else { state.pin = n.id; showPopover(n); }
+      render();
+    });
+  });
+  stage.addEventListener('click', function () { if (state.pin) { state.pin = null; closePop(); render(); } });
+
+  // ---- filters ----
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.cmap-chip'));
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); });
+      c.classList.add('active');
+      state.filter = c.getAttribute('data-f');
+      state.pin = null; closePop();
+      render();
+    });
+  });
+
+  // ---- build animation (optionally narrated via the Web Speech API) ----
+  var building = false, buildTimer = null, voiceOn = true;
+  var buildBtn = document.getElementById('cmap-build');
+  var voiceBtn = document.getElementById('cmap-voice');
+  var maxOrder = N.reduce(function (m, n) { return Math.max(m, n.order); }, 0);
+  var byOrder = []; N.forEach(function (n) { byOrder[n.order] = n; });
+  var synth = window.speechSynthesis || null;
+
+  // turn a bubble's text into something a TTS voice reads sensibly
+  function speakable(s) {
+    return (s || '')
+      .replace(/Cᵈ/g, 'desired consumption').replace(/Sᵈ/g, 'desired saving').replace(/Iᵈ/g, 'desired investment')
+      .replace(/MPKᶠ/g, 'future marginal product of capital').replace(/MPK/g, 'marginal product of capital')
+      .replace(/K\*/g, 'desired capital stock').replace(/pₖ/g, 'price of capital')
+      .replace(/rₐ₋ₜ/g, 'after-tax real interest rate').replace(/πᵉ/g, 'expected inflation')
+      .replace(/↑/g, ' rises').replace(/↓/g, ' falls')
+      .replace(/[⇒→]/g, ' leads to ').replace(/⇄/g, ' versus ')
+      .replace(/×/g, ' times ').replace(/−/g, ' minus ').replace(/=/g, ' equals ').replace(/\+/g, ' plus ')
+      .replace(/[₀-₉⁰-⁹ᵈᶠᵉₖₐₜ]/g, '').replace(/\s+/g, ' ').trim();
+  }
+  function narrationFor(n) {
+    if (!n) return '';
+    return speakable(plainTitle(n)) + '. ' + speakable((WW[n.id] || {}).wh || '');
+  }
+  function stopBuild() {
+    building = false;
+    if (buildTimer) { clearTimeout(buildTimer); buildTimer = null; }
+    if (synth) synth.cancel();
+    buildBtn.innerHTML = '▶ Build the chapter';
+  }
+  function fullReset() {
+    stopBuild();
+    state.filter = 'all'; state.pin = null; state.buildK = null;
+    chips.forEach(function (x) { x.classList.toggle('active', x.getAttribute('data-f') === 'all'); });
+    closePop(); clearPanel(); render();
+  }
+  function stepBuild() {
+    if (!building) return;
+    render();
+    var advance = function () {
+      if (!building) return;
+      if (state.buildK >= maxOrder) { stopBuild(); return; }
+      state.buildK++; stepBuild();
+    };
+    var n = byOrder[state.buildK];
+    if (voiceOn && synth && n) {                 // speech-paced: next bubble after the voice finishes
+      var u = new SpeechSynthesisUtterance(narrationFor(n));
+      u.rate = 1.03; u.pitch = 1.0; u.lang = 'en-US';
+      u.onend = function () { if (building) buildTimer = setTimeout(advance, 180); };
+      u.onerror = function () { if (building) buildTimer = setTimeout(advance, 180); };
+      synth.cancel(); synth.speak(u);
+    } else {                                     // silent: fixed pace
+      buildTimer = setTimeout(advance, 1150);
+    }
+  }
+  buildBtn.addEventListener('click', function () {
+    if (building) { stopBuild(); return; }
+    state.filter = 'all'; state.pin = null; closePop();
+    chips.forEach(function (x) { x.classList.toggle('active', x.getAttribute('data-f') === 'all'); });
+    building = true; state.buildK = 0;
+    buildBtn.innerHTML = '❚❚ Pause';
+    stepBuild();
+  });
+  if (voiceBtn) {
+    if (!synth) { voiceBtn.disabled = true; voiceBtn.innerHTML = '🔇 Voice n/a'; voiceOn = false; }
+    voiceBtn.addEventListener('click', function () {
+      voiceOn = !voiceOn;
+      voiceBtn.innerHTML = voiceOn ? '🔊 Voice: on' : '🔇 Voice: off';
+      if (!voiceOn && synth) synth.cancel();
+    });
+  }
+  document.getElementById('cmap-reset').addEventListener('click', fullReset);
+
+  // ---- init (draw once fonts/MathJax settle, then on resize) ----
+  function init() { fit(); drawEdges(); render(); }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { init(); });
+  }
+  window.addEventListener('load', init);
+  setTimeout(init, 400);
+  var rT;
+  window.addEventListener('resize', function () { clearTimeout(rT); rT = setTimeout(function () { fit(); drawEdges(); render(); if (state.pin) positionPop(nodeEl[state.pin]); }, 150); });
+})();
+</script>
+
+</body>
+</html>
