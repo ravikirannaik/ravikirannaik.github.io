@@ -564,12 +564,6 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
       <td><span class="na">NA</span></td>
       <td><span class="na">NA</span></td>
     </tr>
-    <tr class="graded-row">
-      <td class="mod-cell" style="--mc-c:#eeb4c8;"><span class="mod-no">PS</span><span class="mod-name">Graded Problem Set — comprehensive (Modules 1–4)<span class="mod-tag graded">Graded · 10%</span></span></td>
-      <td><span class="na">—</span></td>
-      <td><span class="na">—</span></td>
-      <td><span class="na">NA</span><span class="soon">Released Week 10 · due Wed, 4 Nov 2026</span></td>
-    </tr>
   </tbody>
 </table>
 
