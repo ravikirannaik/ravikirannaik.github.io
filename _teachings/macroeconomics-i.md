@@ -551,7 +551,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     <tr>
       <td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-no">M3</span><span class="mod-name">Consumption, Saving &amp; Investment</span></td>
       <td><a href="/assets/pdf/teaching/macroeconomics-i/ch4-consumption-saving-investment-handout.pdf">Handout (PDF)</a></td>
-      <td><a href="{{ '/teachings/macroeconomics-i/story-consumption-saving-investment/' | relative_url }}">Chapter story</a><br><a href="/assets/pdf/teaching/macroeconomics-i/notes/ch4-consumption-saving-investment-guided-notes-key.pdf">Guided notes (PDF)</a></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/notes/ch4-consumption-saving-investment-guided-notes-key.pdf">Guided notes (PDF)</a></td>
       <td><a href="/assets/pdf/teaching/macroeconomics-i/problem-sets/ch4-consumption-saving-investment-key.pdf">Problems &amp; Solutions (PDF)</a></td>
       <td><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Concept map</a></td>
     </tr>
