@@ -531,7 +531,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
 
 <table class="mc-sched mc-matrix">
   <thead>
-    <tr><th>Module</th><th>Slides</th><th>Notes</th><th>Problems</th></tr>
+    <tr><th>Module</th><th>Slides</th><th>Notes</th><th>Problems</th><th>Concept map</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -539,21 +539,25 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
       <td><a href="/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf">Handout (PDF)</a></td>
       <td><a href="/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf">Notes (PDF)</a></td>
       <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-no">M2</span><span class="mod-name">Productivity, Employment &amp; Output</span></td>
       <td><a href="/assets/pdf/teaching/macroeconomics-i/ch3-productivity-handout.pdf">Handout (PDF)</a></td>
       <td><a href="/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf">Notes (PDF)</a></td>
       <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-no">M3</span><span class="mod-name">Consumption, Saving &amp; Investment</span></td>
-      <td><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Concept map</a></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/ch4-consumption-saving-investment-handout.pdf">Handout (PDF)</a></td>
       <td><a href="{{ '/teachings/macroeconomics-i/story-consumption-saving-investment/' | relative_url }}">Chapter story</a><br><a href="/assets/pdf/teaching/macroeconomics-i/notes/ch4-consumption-saving-investment-guided-notes-key.pdf">Guided notes (PDF)</a></td>
       <td><a href="/assets/pdf/teaching/macroeconomics-i/problem-sets/ch4-consumption-saving-investment-key.pdf">Problems &amp; Solutions (PDF)</a></td>
+      <td><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Concept map</a></td>
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-no">M4</span><span class="mod-name">Asset Market, Money &amp; Prices</span></td>
+      <td><span class="na">NA</span></td>
       <td><span class="na">NA</span></td>
       <td><span class="na">NA</span></td>
       <td><span class="na">NA</span></td>
@@ -563,11 +567,12 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
       <td><span class="na">NA</span></td>
       <td><span class="na">NA</span></td>
       <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
     </tr>
   </tbody>
 </table>
 
-<small>Slides mark what a lecture broadly covers; notes are not a substitute for attending and taking your own. Practice problems are ungraded self-study; the graded problem set is comprehensive (Modules 1–4) and involves algebra and basic calculus. Module 3 currently offers an interactive concept map (under Slides) and a chapter story (under Notes) while the PDF versions are prepared.</small>
+<small>Slides mark what a lecture broadly covers; notes are not a substitute for attending and taking your own. Practice problems are ungraded self-study; the graded problem set is comprehensive (Modules 1–4) and involves algebra and basic calculus. The Concept map column links the interactive, lecture-by-lecture map for each module as it becomes available.</small>
 
 <blockquote style="max-width:640px;margin:3rem auto 0;padding:0.25rem 0 0.25rem 1.25rem;border-left:3px solid var(--mc-blue);font-size:1.05rem;line-height:1.7;color:var(--mc-ink);">
   <p style="margin:0 0 0.5rem;">Microeconomics is what economists know about. But macroeconomics is what they want to know about. That's what makes it so interesting.</p>
