@@ -111,6 +111,20 @@ importance: 0
 }
 .mc-sched tr.grp td { border-top: 2px solid var(--global-divider-color); }
 
+/* ---- Course-materials matrix ---- */
+.mc-matrix th:not(:first-child), .mc-matrix td:not(:first-child) { text-align: center; vertical-align: middle; }
+.mc-matrix td.mod-cell { white-space: normal; }
+.mc-matrix td.mod-cell .mod-no { font-weight: 700; color: var(--mc-ink); margin-right: 0.5rem; }
+.mc-matrix td.mod-cell .mod-name { font-weight: 700; color: var(--mc-ink); }
+.mc-matrix .na { color: var(--global-text-color-light); font-weight: 600; }
+.mc-matrix .soon { display: block; color: var(--global-text-color-light); font-size: 0.78rem; margin-top: 0.15rem; }
+.mc-matrix .mod-tag {
+  font-size: 0.72rem; font-weight: 700; color: var(--mc-ink);
+  border-radius: 4px; padding: 0.05rem 0.45rem; margin-left: 0.4rem; white-space: nowrap;
+}
+.mc-matrix .mod-tag.graded { background: #eeb4c8; }
+.mc-matrix tr.graded-row td:not(.mod-cell) { background: color-mix(in srgb, #eeb4c8 16%, transparent); }
+
 /* ---- Important dates ---- */
 .mc-dates { list-style: none; padding: 0; margin: 0.8rem 0 0.4rem; max-width: 460px; }
 .mc-dates li {
@@ -515,71 +529,51 @@ Electronic devices, including laptops and tablets, are **prohibited during class
 
 Slides go up on MOODLE right after each module; the same files (plus notes and problem sets) are mirrored here as they become available.
 
-### Lecture Slides
+<table class="mc-sched mc-matrix">
+  <thead>
+    <tr><th>Module</th><th>Slides</th><th>Notes</th><th>Problems</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-no">M1</span><span class="mod-name">GDP, CPI &amp; Unemployment</span></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf">Handout (PDF)</a></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf">Notes (PDF)</a></td>
+      <td><span class="na">NA</span></td>
+    </tr>
+    <tr>
+      <td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-no">M2</span><span class="mod-name">Productivity, Employment &amp; Output</span></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/ch3-productivity-handout.pdf">Handout (PDF)</a></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf">Notes (PDF)</a></td>
+      <td><span class="na">NA</span></td>
+    </tr>
+    <tr>
+      <td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-no">M3</span><span class="mod-name">Consumption, Saving &amp; Investment</span></td>
+      <td><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Concept map</a></td>
+      <td><a href="{{ '/teachings/macroeconomics-i/story-consumption-saving-investment/' | relative_url }}">Chapter story</a></td>
+      <td><a href="/assets/pdf/teaching/macroeconomics-i/problem-sets/ch4-consumption-saving-investment-key.pdf">Problems &amp; Solutions (PDF)</a></td>
+    </tr>
+    <tr>
+      <td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-no">M4</span><span class="mod-name">Asset Market, Money &amp; Prices</span></td>
+      <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
+    </tr>
+    <tr>
+      <td class="mod-cell" style="--mc-c:#d8cfe8;"><span class="mod-no">M5</span><span class="mod-name">IS–LM / AS–AD General Equilibrium</span></td>
+      <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
+      <td><span class="na">NA</span></td>
+    </tr>
+    <tr class="graded-row">
+      <td class="mod-cell" style="--mc-c:#eeb4c8;"><span class="mod-no">PS</span><span class="mod-name">Graded Problem Set — comprehensive (Modules 1–4)<span class="mod-tag graded">Graded · 10%</span></span></td>
+      <td><span class="na">—</span></td>
+      <td><span class="na">—</span></td>
+      <td><span class="na">NA</span><span class="soon">Released Week 10 · due Wed, 4 Nov 2026</span></td>
+    </tr>
+  </tbody>
+</table>
 
-<ul class="modules">
-  <li>
-    <span class="mod-no">M1</span>
-    <span class="mod-body">
-      <span class="mod-title">GDP, CPI, and Unemployment</span>
-      <span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf">Handout (PDF)</a></span>
-    </span>
-  </li>
-  <li>
-    <span class="mod-no">M2</span>
-    <span class="mod-body">
-      <span class="mod-title">Productivity and Output</span>
-      <span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/ch3-productivity-handout.pdf">Handout (PDF)</a></span>
-    </span>
-  </li>
-  <li>
-    <span class="mod-no">M3</span>
-    <span class="mod-body">
-      <span class="mod-title">Consumption, Saving, and Investment</span>
-      <span class="mod-links"><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Interactive concept map</a><a href="{{ '/teachings/macroeconomics-i/story-consumption-saving-investment/' | relative_url }}">Chapter story</a></span>
-      <span class="mod-soon">Slides — coming soon</span>
-    </span>
-  </li>
-  <li>
-    <span class="mod-no">M4</span>
-    <span class="mod-body">
-      <span class="mod-title">Money and Prices</span>
-      <span class="mod-soon">Slides — coming soon</span>
-    </span>
-  </li>
-  <li>
-    <span class="mod-no">M5</span>
-    <span class="mod-body">
-      <span class="mod-title">IS–LM / AS–AD General Equilibrium</span>
-      <span class="mod-soon">Slides — coming soon</span>
-    </span>
-  </li>
-</ul>
-
-### Lecture Notes
-
-<ul class="modules">
-  <li><span class="mod-no">M1</span><span class="mod-body"><span class="mod-title">GDP, CPI, and Unemployment</span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf">Notes (PDF)</a></span></span></li>
-  <li><span class="mod-no">M2</span><span class="mod-body"><span class="mod-title">Productivity, Employment and Output</span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf">Notes (PDF)</a></span></span></li>
-  <li><span class="mod-no">M3</span><span class="mod-body"><span class="mod-title">Consumption, Saving and Investment</span><span class="mod-links"><a href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}">Interactive concept map</a><a href="{{ '/teachings/macroeconomics-i/story-consumption-saving-investment/' | relative_url }}">Chapter story</a></span><span class="mod-soon">Notes (PDF) — coming soon</span></span></li>
-  <li><span class="mod-no">M4</span><span class="mod-body"><span class="mod-title">Asset Market, Money and Prices</span><span class="mod-soon">Notes — coming soon</span></span></li>
-  <li><span class="mod-no">M5</span><span class="mod-body"><span class="mod-title">IS–LM / AS–AD General Equilibrium</span><span class="mod-soon">Notes — coming soon</span></span></li>
-</ul>
-
-<small>Slides mark what a lecture broadly covers; notes are not a substitute for attending and taking your own.</small>
-
-### Problem Sets
-
-<ul class="modules">
-  <li><span class="mod-no">PS</span><span class="mod-body"><span class="mod-title">Graded Problem Set — comprehensive (Modules 1–4)<span class="mod-tag graded">Graded · 10%</span></span><span class="mod-links"><span class="mod-disabled" aria-disabled="true" title="Released soon">Problems (PDF)</span><span class="mod-disabled" aria-disabled="true" title="Posted after the due date">Solutions (PDF)</span></span><span class="mod-soon">Released Week 10 · due Wed, 4 Nov 2026</span></span></li>
-  <li><span class="mod-no">P1</span><span class="mod-body"><span class="mod-title">Practice — GDP, CPI, Unemployment<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
-  <li><span class="mod-no">P2</span><span class="mod-body"><span class="mod-title">Practice — Production, Labour Market, Okun's Law<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
-  <li><span class="mod-no">P3</span><span class="mod-body"><span class="mod-title">Practice — Consumption, Saving, Investment<span class="mod-tag practice">Practice</span></span><span class="mod-links"><a href="/assets/pdf/teaching/macroeconomics-i/problem-sets/ch4-consumption-saving-investment-key.pdf">Problems &amp; Solutions (PDF)</a></span></span></li>
-  <li><span class="mod-no">P4</span><span class="mod-body"><span class="mod-title">Practice — Money, Prices, Asset Market<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
-  <li><span class="mod-no">P5</span><span class="mod-body"><span class="mod-title">Practice — IS–LM / AS–AD (numerical)<span class="mod-tag practice">Practice</span></span><span class="mod-soon">Coming soon</span></span></li>
-</ul>
-
-<small>Practice sets are ungraded self-study; the graded problem set is comprehensive and involves algebra and basic calculus.</small>
+<small>Slides mark what a lecture broadly covers; notes are not a substitute for attending and taking your own. Practice problems are ungraded self-study; the graded problem set is comprehensive (Modules 1–4) and involves algebra and basic calculus. Module 3 currently offers an interactive concept map (under Slides) and a chapter story (under Notes) while the PDF versions are prepared.</small>
 
 <blockquote style="max-width:640px;margin:3rem auto 0;padding:0.25rem 0 0.25rem 1.25rem;border-left:3px solid var(--mc-blue);font-size:1.05rem;line-height:1.7;color:var(--mc-ink);">
   <p style="margin:0 0 0.5rem;">Microeconomics is what economists know about. But macroeconomics is what they want to know about. That's what makes it so interesting.</p>
