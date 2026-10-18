@@ -46,6 +46,11 @@ nav: false
 <span class="attribution">&mdash; Benjamin Friedman (quoted in Fisher, 1993)</span>
 </blockquote>
 
+<blockquote>
+<p>I have found out what economics is; it is the science of confusing stocks with flows.</p>
+<span class="attribution">&mdash; Michal Kalecki, c. 1936 (verbal remark, as cited by Joan Robinson, &ldquo;Shedding Darkness,&rdquo; <em>Cambridge Journal of Economics</em>, 6(3), September 1982, 295&ndash;6)</span>
+</blockquote>
+
 </div>
 
 </div>
