@@ -1,6 +1,6 @@
 ---
 title: Ideas in Economics (Doing Economics)
-description: A data-first "Doing Economics" gateway at FLAME University — six feature films and Nobel-winning research, split evenly into a microeconomics half and a macroeconomics half, each unit worked with real data. Builds the conceptual and empirical foundation for Microeconomics-I and Macroeconomics-I.
+description: A rigorous-but-accessible "Doing Economics" gateway at FLAME University — built on Acemoglu, Laibson & List with CORE's The Economy 2.0 for support, split evenly into a microeconomics half and a macroeconomics half, each unit worked with real data. Feature films and Nobel-winning research are optional enrichment. Builds the conceptual and empirical foundation for Microeconomics-I and Macroeconomics-I.
 term: 2 Credits · Level 100
 category: Undergraduate
 importance: 0
@@ -253,26 +253,26 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 <small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full.*</small>
 
 <p class="macro-lede">
-Economics is a way of understanding the world — and the fastest way to learn it is to <em>do</em> it. Each unit
-opens with a <strong>feature film</strong> and a <strong>Nobel Prize-winning idea</strong>, then puts that idea to work on
-<strong>real data</strong>. The course is split evenly into a <strong>microeconomics half</strong> (choice, firms, markets, market
-failure) and a <strong>macroeconomics half</strong> (measuring the economy, growth, money and crises), so it builds the
-conceptual <em>and</em> empirical foundation you carry into <strong>Microeconomics-I (ECON 201)</strong> and
-<strong>Macroeconomics-I (ECON 202)</strong>.
+Economics is a way of understanding the world — and the fastest way to learn it is to <em>do</em> it. Each unit builds
+from the core <strong>optimisation framework</strong> (how people and firms make the best choice they can), applies it to
+<strong>real data</strong>, and offers an optional <strong>film and Nobel case</strong> for context. The course is split evenly
+into a <strong>microeconomics half</strong> (choice, firms, markets, market failure) and a <strong>macroeconomics half</strong>
+(measuring the economy, growth, money and crises), so it builds the conceptual <em>and</em> empirical foundation you carry
+into <strong>Microeconomics-I (ECON 201)</strong> and <strong>Macroeconomics-I (ECON 202)</strong>.
 </p>
 
 <a class="mc-pdf-btn" href="https://ravikirannaik.github.io/ideas-in-economics/" target="_blank" rel="noopener">🎬 Open the full interactive course site →</a>
 
 ## Teaching Philosophy {#teaching-philosophy}
 
-I teach introductory economics the way most people first meet it — through stories — but I don't stop there. A film gets you to the economist's questions (*What are the trade-offs? Who gains, who loses? What do the data actually say?*); then we answer them with **real data**. Every unit ends with a short "Doing Economics" exercise on an actual dataset — Indian wherever possible. My emphasis is **economic reasoning and evidence over memorisation**: films supply the intuition, a Nobel laureate's research supplies the rigour, and the data work gives you a skill — reading, plotting, and interpreting real numbers — that you carry straight into Microeconomics-I and Macroeconomics-I.
+I teach introductory economics as a tool you learn by using. Each unit starts from the economist's core question — *given scarce resources, what is the best choice, and what happens when everyone makes it?* — develops the formal framework to answer it (the **optimisation and equilibrium** spine of Acemoglu, Laibson & List), and then puts that framework to work on **real data**. Every unit ends with a short "Doing Economics" exercise on an actual dataset — Indian wherever possible. My emphasis is **economic reasoning and evidence over memorisation**: the textbook supplies the rigour, the data work gives you a skill — reading, plotting, and interpreting real numbers — and an optional film and Nobel-laureate case supplies the intuition and the human story. That combination is what you carry straight into Microeconomics-I and Macroeconomics-I.
 
 ## Objectives
 
 <ul class="pills">
-<li>Introduce core micro- and macroeconomic concepts through accessible film narratives, connecting abstract ideas to concrete situations.</li>
+<li>Introduce core micro- and macroeconomic concepts through the optimisation-and-equilibrium framework, connecting abstract ideas to concrete situations.</li>
 <li>Develop economic reasoning <em>and</em> basic empirical skill — reading, plotting, and interpreting real data to answer an economic question.</li>
-<li>Ground each unit in landmark Nobel Prize-winning research, linking popular stories to frontier scholarship.</li>
+<li>Connect each unit to landmark Nobel Prize-winning research and an optional film case, linking popular stories to frontier scholarship.</li>
 <li>Apply both halves to the Indian context — prices, labour, informality, poverty, growth, and the environment — using Indian datasets.</li>
 <li>Build the conceptual and empirical foundation for further study in Microeconomics-I and Macroeconomics-I.</li>
 </ul>
@@ -283,7 +283,7 @@ By the end of the course, students should be able to:
 
 <ul class="pills">
 <li>Identify and explain foundational concepts — scarcity, opportunity cost, supply and demand, market equilibrium, and externalities.</li>
-<li>Analyse economic behaviour and institutional dynamics as portrayed in feature films, connecting narrative to formal economic reasoning.</li>
+<li>Analyse economic behaviour and institutional dynamics using formal reasoning, and connect that reasoning to narrative cases drawn from film and current events.</li>
 <li>Evaluate the contributions of Nobel Prize-winning economists and relate their research to real-world phenomena and policy debates.</li>
 <li>Apply economic frameworks to contemporary issues in the Indian economy — informality, labour markets, poverty, and environmental challenges.</li>
 </ul>
@@ -294,7 +294,7 @@ By the end of the course, students should be able to:
     <thead><tr><th>#</th><th>Learning Outcome</th><th>REM</th><th>UND</th><th>APP</th><th>ANA</th><th>EVA</th><th>CRE</th></tr></thead>
     <tbody>
       <tr><td>1</td><td style="white-space:normal;">Foundational concepts (scarcity, opportunity cost, supply &amp; demand, equilibrium, externalities)</td><td>H</td><td>H</td><td>M</td><td>L</td><td>—</td><td>—</td></tr>
-      <tr><td>2</td><td style="white-space:normal;">Analyse behaviour &amp; institutions in film, linking narrative to formal reasoning</td><td>—</td><td>M</td><td>H</td><td>H</td><td>M</td><td>—</td></tr>
+      <tr><td>2</td><td style="white-space:normal;">Analyse behaviour &amp; institutions with formal reasoning, linking it to narrative cases</td><td>—</td><td>M</td><td>H</td><td>H</td><td>M</td><td>—</td></tr>
       <tr><td>3</td><td style="white-space:normal;">Evaluate Nobel laureates' contributions &amp; relate to policy debates</td><td>—</td><td>M</td><td>M</td><td>H</td><td>H</td><td>L</td></tr>
       <tr><td>4</td><td style="white-space:normal;">Apply economic frameworks to the Indian economy</td><td>—</td><td>L</td><td>H</td><td>H</td><td>M</td><td>M</td></tr>
     </tbody>
@@ -304,18 +304,18 @@ By the end of the course, students should be able to:
 
 ## Course Structure — a Micro half &amp; a Macro half {#schedule}
 
-Six units, three contact hours each. The first three build the **microeconomics** foundation (→ ECON 201); the second three build the **macroeconomics** foundation (→ ECON 202). Every unit = a film + a Nobel idea + a short **"Doing Economics" exercise on real data**.
+Six units, three contact hours each. The first three build the **microeconomics** foundation (→ ECON 201); the second three build the **macroeconomics** foundation (→ ECON 202). Every unit = a **theory core** (Acemoglu, Laibson & List, supported by CORE), a short **"Doing Economics" exercise on real data**, and an optional **film + Nobel** case for context.
 
 <p style="margin:1.2rem 0 0.4rem;font-weight:700;color:var(--mc-blue);">◀ MICRO HALF — how people &amp; firms decide <span style="font-weight:500;color:var(--global-text-color-light);">(prepares for Microeconomics-I)</span></p>
 
 <table class="mc-sched">
   <thead>
-    <tr><th>Unit</th><th>Film · Nobel · what you'll do with data</th></tr>
+    <tr><th>Unit</th><th>What you'll learn · math core · data · readings</th></tr>
   </thead>
   <tbody>
-    <tr><td>Unit 1</td><td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-head"><span class="mod-name">Choice, Preferences &amp; Strategy</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>A Beautiful Mind</em> (2001) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>John Nash</span><ul><li>Scarcity, opportunity cost, preferences, utility; rational choice &amp; strategic interaction — the idea of equilibrium</li><li><strong>📊 Data:</strong> run a class game (prisoner's dilemma / public goods); compute cooperation vs. the Nash prediction</li></ul></td></tr>
-    <tr><td>Unit 2</td><td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-head"><span class="mod-name">Firms, Markets &amp; Competition</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Margin Call</em> (2011) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Paul Krugman</span><ul><li>Supply, demand, prices &amp; market clearing; production &amp; costs; competition and consumer/producer surplus</li><li><strong>📊 Data:</strong> pull daily mandi prices (Agmarknet) through a supply shock and tell the demand–supply story</li></ul></td></tr>
-    <tr><td>Unit 3</td><td class="mod-cell" style="--mc-c:#b7ddd0;"><span class="mod-head"><span class="mod-name">Externalities, Welfare &amp; Market Failure</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Erin Brockovich</em> (2000) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Elinor Ostrom</span><ul><li>Externalities, public goods, the commons; welfare loss and the case for policy</li><li><strong>📊 Data:</strong> plot your city's air quality (CPCB) against a pollution source; "price" the externality</li></ul></td></tr>
+    <tr><td>Unit 1</td><td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-head"><span class="mod-name">Choice, Preferences &amp; Strategic Behaviour</span><span class="mod-hours">3 hours</span></span><ul><li>Scarcity, opportunity cost, preferences, utility; rational choice &amp; strategic interaction — the idea of equilibrium</li><li><strong>🧮 Math core:</strong> utility maximisation, indifference curves, best-response &amp; Nash equilibrium</li><li><strong>📊 Data:</strong> run a class game (prisoner's dilemma / public goods); compute cooperation vs. the Nash prediction</li></ul><span class="mod-film"><span class="tag">📖 Read</span>ALL Ch 3, 5, 13 · CORE (choice &amp; strategic interaction) · Begg (consumer choice) &nbsp;·&nbsp; <span class="tag">🎬 Optional</span><em>A Beautiful Mind</em> · Nash</span></td></tr>
+    <tr><td>Unit 2</td><td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-head"><span class="mod-name">Firms, Markets &amp; Competition</span><span class="mod-hours">3 hours</span></span><ul><li>Supply, demand, prices &amp; market clearing; production &amp; costs; competition and consumer/producer surplus</li><li><strong>🧮 Math core:</strong> cost curves, profit maximisation (MR = MC), consumer &amp; producer surplus</li><li><strong>📊 Data:</strong> pull daily mandi prices (Agmarknet) through a supply shock and tell the demand–supply story</li></ul><span class="mod-film"><span class="tag">📖 Read</span>ALL Ch 6, 7, 12 · CORE (firm &amp; price-taking) · Begg (costs &amp; market structure) &nbsp;·&nbsp; <span class="tag">🎬 Optional</span><em>Margin Call</em> · Krugman</span></td></tr>
+    <tr><td>Unit 3</td><td class="mod-cell" style="--mc-c:#b7ddd0;"><span class="mod-head"><span class="mod-name">Externalities, Welfare &amp; Market Failure</span><span class="mod-hours">3 hours</span></span><ul><li>Externalities, public goods, the commons; welfare loss and the case for policy</li><li><strong>🧮 Math core:</strong> deadweight loss, Pigouvian tax, private vs. social cost</li><li><strong>📊 Data:</strong> plot your city's air quality (CPCB) against a pollution source; "price" the externality</li></ul><span class="mod-film"><span class="tag">📖 Read</span>ALL Ch 9, 10 · CORE (property, power &amp; the commons) · Begg (market failure &amp; welfare) &nbsp;·&nbsp; <span class="tag">🎬 Optional</span><em>Erin Brockovich</em> · Ostrom</span></td></tr>
   </tbody>
 </table>
 
@@ -323,12 +323,12 @@ Six units, three contact hours each. The first three build the **microeconomics*
 
 <table class="mc-sched">
   <thead>
-    <tr><th>Unit</th><th>Film · Nobel · what you'll do with data</th></tr>
+    <tr><th>Unit</th><th>What you'll learn · math core · data · readings</th></tr>
   </thead>
   <tbody>
-    <tr><td>Unit 4</td><td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-head"><span class="mod-name">Measuring the Economy &amp; Development</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Slumdog Millionaire</em> (2008) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Duflo &amp; Banerjee</span><ul><li>GDP, CPI, unemployment — what the headline numbers mean; the informal economy; evidence-based development</li><li><strong>📊 Data:</strong> measure poverty / income from PLFS or World Bank data — and ask what GDP leaves out</li></ul></td></tr>
-    <tr><td>Unit 5</td><td class="mod-cell" style="--mc-c:#f7e3a1;"><span class="mod-head"><span class="mod-name">Growth &amp; Productivity</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Moneyball</em> (2011) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Robert Solow</span><ul><li>Production and productivity at the economy level; data-driven decisions; what drives long-run growth</li><li><strong>📊 Data:</strong> plot India vs. South Korea GDP per capita since 1950 (Maddison); discuss catch-up</li></ul></td></tr>
-    <tr><td>Unit 6</td><td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-head"><span class="mod-name">Money, Finance &amp; Crises</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>The Big Short</em> (2015) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Richard Thaler</span><ul><li>Money, asset markets &amp; prices; bubbles, business cycles; how central banks (the RBI) respond</li><li><strong>📊 Data:</strong> trace a house-price bubble (FRED / RBI index) and the policy response that followed</li></ul></td></tr>
+    <tr><td>Unit 4</td><td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-head"><span class="mod-name">Measuring the Economy &amp; Development</span><span class="mod-hours">3 hours</span></span><ul><li>GDP, CPI, unemployment — what the headline numbers mean; the informal economy; evidence-based development</li><li><strong>🧮 Math core:</strong> the GDP identity, real vs. nominal, price-index numbers</li><li><strong>📊 Data:</strong> measure poverty / income from PLFS or World Bank data — and ask what GDP leaves out</li></ul><span class="mod-film"><span class="tag">📖 Read</span>ALL Ch 19, 20 · CORE (measuring the economy) · Begg (national accounts) &nbsp;·&nbsp; <span class="tag">🎬 Optional</span><em>Slumdog Millionaire</em> · Banerjee–Duflo</span></td></tr>
+    <tr><td>Unit 5</td><td class="mod-cell" style="--mc-c:#f7e3a1;"><span class="mod-head"><span class="mod-name">Growth &amp; Productivity</span><span class="mod-hours">3 hours</span></span><ul><li>Production and productivity at the economy level; data-driven decisions; what drives long-run growth</li><li><strong>🧮 Math core:</strong> the aggregate production function, capital accumulation, the Solow steady state</li><li><strong>📊 Data:</strong> plot India vs. South Korea GDP per capita since 1950 (Maddison); discuss catch-up</li></ul><span class="mod-film"><span class="tag">📖 Read</span>ALL Ch 21, 22 · CORE (long-run growth) · Begg (growth) &nbsp;·&nbsp; <span class="tag">🎬 Optional</span><em>Moneyball</em> · Solow</span></td></tr>
+    <tr><td>Unit 6</td><td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-head"><span class="mod-name">Money, Finance &amp; Crises</span><span class="mod-hours">3 hours</span></span><ul><li>Money, asset markets &amp; prices; bubbles, business cycles; how central banks (the RBI) respond</li><li><strong>🧮 Math core:</strong> the money multiplier, credit-market equilibrium, a light IS–LM sketch</li><li><strong>📊 Data:</strong> trace a house-price bubble (FRED / RBI index) and the policy response that followed</li></ul><span class="mod-film"><span class="tag">📖 Read</span>ALL Ch 24, 25, 26 · CORE (money &amp; banking) · Begg (money &amp; IS–LM) &nbsp;·&nbsp; <span class="tag">🎬 Optional</span><em>The Big Short</em> · Thaler</span></td></tr>
   </tbody>
 </table>
 
@@ -336,7 +336,7 @@ Six units, three contact hours each. The first three build the **microeconomics*
 
 ## Where it Leads — Microeconomics-I &amp; Macroeconomics-I {#prepares}
 
-This course is designed to flow into the Year-2 core. The micro half front-loads the ideas ECON 201 builds on; the macro half does the same for ECON 202. The optimisation *mathematics* for those courses is carried by **ECON 122 (Mathematics for Economics)** — this course gives you the concepts and the data skill, not the calculus.
+This course is designed to flow into the Year-2 core. The micro half front-loads the ideas ECON 201 builds on; the macro half does the same for ECON 202. You meet the **optimisation-and-equilibrium framework** and its graphs here; the full *calculus* behind it is carried by **ECON 122 (Mathematics for Economics)** — this course gives you the concepts, the framework, and the data skill, with the heavy mathematics deferred to ECON 122.
 
 <table class="mc-sched" style="max-width:680px;">
   <thead>
@@ -391,24 +391,26 @@ The course rewards steady engagement across the semester, culminating in an orig
 
 ## Readings, Resources &amp; Data {#readings}
 
-No single textbook is required. Two free, open-access resources run through the whole course — one for concepts, one for the data work — alongside accessible trade books, the Nobel archive, and Indian datasets. Specific chapters are assigned per unit and posted on MOODLE.
+The course is built on **one modern principles textbook**, supported by two free, open-access companions for the concepts and the data work, with a traditional text kept on the shelf as a theory reference. Specific chapters are assigned per unit and posted on MOODLE.
 
-### The two engines
+### The spine — three books
 
 <ul class="mc-readings">
-  <li><span class="tag req">Concepts</span><a href="https://www.core-econ.org/" target="_blank" rel="noopener">CORE Econ — <em>The Economy 2.0</em></a>. Free, open-access; the rigorous conceptual backbone behind every unit, micro and macro.</li>
+  <li><span class="tag req">Primary</span><strong>Acemoglu, Laibson &amp; List — <em>Economics</em></strong> (Pearson). The backbone of every unit: a modern, evidence-based text organised around three principles — <em>optimisation, equilibrium, empiricism</em> — that carries the formal and mathematical content.</li>
+  <li><span class="tag req">Support</span><a href="https://www.core-econ.org/" target="_blank" rel="noopener">CORE Econ — <em>The Economy 2.0</em></a>. Free, open-access; the applied, data-first companion — development- and India-aware — that grounds each unit in real-world questions.</li>
   <li><span class="tag req">Data</span><a href="https://www.core-econ.org/" target="_blank" rel="noopener">CORE Econ — <em>Doing Economics</em></a>. Free empirical-projects book; each project is a ready-made real-data exercise (the model this course is named after).</li>
+  <li><span class="tag ref">Reference</span><strong>Begg, Vernasca, Fischer &amp; Dornbusch — <em>Economics</em></strong> (McGraw-Hill). Kept as an exam-style theory reference — clean graphs and derivations for consumer choice, costs, market structures, and IS–LM — for students heading toward an LSE-style second year.</li>
 </ul>
 
-### Best reading per unit
+### Optional reading &amp; enrichment per unit
 
 <ul class="mc-readings">
-  <li><span class="tag sup">Micro · U1</span>Dixit &amp; Nalebuff, <em>The Art of Strategy</em>; Thaler, <em>Misbehaving</em> (behavioural thread).</li>
-  <li><span class="tag sup">Micro · U2</span>Harford, <em>The Undercover Economist</em> (prices &amp; markets); Krugman, selected essays.</li>
-  <li><span class="tag sup">Micro · U3</span>Ostrom, <em>Governing the Commons</em> (selections); Hardin, "The Tragedy of the Commons," <em>Science</em> (1968).</li>
-  <li><span class="tag sup">Macro · U4</span>Banerjee &amp; Duflo, <em>Poor Economics</em>.</li>
-  <li><span class="tag sup">Macro · U5</span>Lewis, <em>Moneyball</em> (excerpt); C. I. Jones, <em>Introduction to Economic Growth</em> (selections).</li>
-  <li><span class="tag sup">Macro · U6</span>Lewis, <em>The Big Short</em> (excerpt); Thaler, <em>Misbehaving</em> (bubbles).</li>
+  <li><span class="tag sup">U1</span>Dixit &amp; Nalebuff, <em>The Art of Strategy</em>; Thaler, <em>Misbehaving</em> (behavioural thread). &nbsp;Film: <em>A Beautiful Mind</em>.</li>
+  <li><span class="tag sup">U2</span>Harford, <em>The Undercover Economist</em> (prices &amp; markets); Krugman, selected essays. &nbsp;Film: <em>Margin Call</em>.</li>
+  <li><span class="tag sup">U3</span>Ostrom, <em>Governing the Commons</em> (selections); Hardin, "The Tragedy of the Commons," <em>Science</em> (1968). &nbsp;Film: <em>Erin Brockovich</em>.</li>
+  <li><span class="tag sup">U4</span>Banerjee &amp; Duflo, <em>Poor Economics</em>. &nbsp;Film: <em>Slumdog Millionaire</em>.</li>
+  <li><span class="tag sup">U5</span>Lewis, <em>Moneyball</em> (excerpt); C. I. Jones, <em>Introduction to Economic Growth</em> (selections). &nbsp;Film: <em>Moneyball</em>.</li>
+  <li><span class="tag sup">U6</span>Lewis, <em>The Big Short</em> (excerpt); Thaler, <em>Misbehaving</em> (bubbles). &nbsp;Film: <em>The Big Short</em>.</li>
 </ul>
 
 ### General readers &amp; reference
@@ -432,7 +434,7 @@ No single textbook is required. Two free, open-access resources run through the 
 
 ### Suggested Pedagogy
 
-Each unit opens with a feature-film screening (or assigned viewing), then unpacks the embedded economics through guided discussion and worked examples, and closes with a short **"Doing Economics" exercise on real data**. Nobel-winning research connects popular stories to frontier scholarship; browser-based simulations let students experiment with supply and demand, externalities, and game theory in real time; and Indian Context essays and datasets ground the material locally.
+Each unit opens with the **core framework** — a short lecture and worked examples from Acemoglu, Laibson & List, supported by CORE — then unpacks it through guided discussion, and closes with a short **"Doing Economics" exercise on real data**. Browser-based simulations let students experiment with supply and demand, externalities, and game theory in real time; Indian Context essays and datasets ground the material locally; and an optional feature film and a Nobel-laureate case connect the framework to a popular story and to frontier scholarship.
 
 ### Attendance &amp; Participation
 
@@ -440,7 +442,7 @@ A **minimum of 75% attendance** is required to be eligible for the End-Term asse
 
 ### Assessments &amp; Late Submission
 
-- **Problem Sets (20%)** — four to five sets distributed across the semester; applied economic reasoning on scenarios, data, and film content.
+- **Problem Sets (20%)** — four to five sets distributed across the semester; applied economic reasoning on the framework, worked scenarios, and real data.
 - **Mid-Term Examination (30%)** — covers the **micro half (Units 1–3)**; conceptual questions, short-answer problems, and data interpretation.
 - **End-Term Empirical Project (40%)** — a group "Doing Economics" study applying course concepts to a real-world question on real data, with a written report.
 
@@ -460,7 +462,7 @@ Generative-AI tools may **not** be used to produce any part of your graded submi
 
 ## Modules &amp; Materials {#materials}
 
-The full course lives on the interactive site — every module has an overview, a scene-by-scene **film analysis**, a **Nobel focus** biography, a self-assessment **quiz**, and resources. The **Indian Context** essays and **30+ browser simulations** are linked there too.
+The full course lives on the interactive site — every module has an overview, a self-assessment **quiz**, and resources, plus optional **film analysis** and **Nobel focus** pages for context. The **Indian Context** essays and **30+ browser simulations** are linked there too.
 
 <table class="mc-sched mc-matrix">
   <thead>
