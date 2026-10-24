@@ -1,6 +1,6 @@
 ---
 title: Ideas in Economics (Doing Economics)
-description: A film-based introduction to economic thinking at FLAME University — six feature films paired with Nobel Prize-winning research to introduce scarcity, incentives, markets and labour, poverty and development, innovation and growth, and environmental and public economics. No prerequisites.
+description: A data-first "Doing Economics" gateway at FLAME University — six feature films and Nobel-winning research, split evenly into a microeconomics half and a macroeconomics half, each unit worked with real data. Builds the conceptual and empirical foundation for Microeconomics-I and Macroeconomics-I.
 term: 2 Credits · Level 100
 category: Undergraduate
 importance: 0
@@ -221,9 +221,10 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#teaching-philosophy" style="background:#cbb8e0;">Philosophy</a>
   <a href="#objectives">Objectives</a>
   <a href="#course-outcomes">Outcomes</a>
-  <a href="#schedule">Topics &amp; Films</a>
+  <a href="#schedule">Micro &amp; Macro</a>
+  <a href="#prepares">Where it Leads</a>
   <a href="#grading">Grading</a>
-  <a href="#readings">Readings</a>
+  <a href="#readings">Readings &amp; Data</a>
   <a href="#course-policies">Policies</a>
   <a href="#materials">Modules &amp; Materials</a>
   <a href="https://ravikirannaik.github.io/ideas-in-economics/" target="_blank" rel="noopener" style="background:#f5c9a6;">Course Site ↗</a>
@@ -252,26 +253,28 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 <small>*I reserve the right to make changes to this syllabus, including topics and due dates. Any changes will be announced as early as possible. Students are expected to read this outline in full.*</small>
 
 <p class="macro-lede">
-Economics is a way of understanding the world — a lens that reveals economic ideas in everyday life. This
-course uses <strong>six feature films</strong> as a gateway to fundamental economic concepts, pairing each
-with a <strong>Nobel Prize-winning contribution</strong> that shaped how economists think about markets,
-behaviour, poverty, growth, and the environment. No prior knowledge of economics is required; the course
-also serves as a foundation for further study in microeconomics and macroeconomics.
+Economics is a way of understanding the world — and the fastest way to learn it is to <em>do</em> it. Each unit
+opens with a <strong>feature film</strong> and a <strong>Nobel Prize-winning idea</strong>, then puts that idea to work on
+<strong>real data</strong>. The course is split evenly into a <strong>microeconomics half</strong> (choice, firms, markets, market
+failure) and a <strong>macroeconomics half</strong> (measuring the economy, growth, money and crises), so it builds the
+conceptual <em>and</em> empirical foundation you carry into <strong>Microeconomics-I (ECON 201)</strong> and
+<strong>Macroeconomics-I (ECON 202)</strong>.
 </p>
 
 <a class="mc-pdf-btn" href="https://ravikirannaik.github.io/ideas-in-economics/" target="_blank" rel="noopener">🎬 Open the full interactive course site →</a>
 
 ## Teaching Philosophy {#teaching-philosophy}
 
-I teach introductory economics the way most people first meet it — through stories. Each module opens with a film you already enjoy, then slows the tape down to ask the economist's questions: *What are the trade-offs? Who gains, who loses? What incentives are shaping behaviour?* My emphasis is **economic reasoning over memorisation** — a lens you can carry into everyday decisions, policy debates, and the Indian economy around you. Films supply the intuition; a Nobel laureate's research supplies the rigour; and interactive simulations let you experiment with the models in real time.
+I teach introductory economics the way most people first meet it — through stories — but I don't stop there. A film gets you to the economist's questions (*What are the trade-offs? Who gains, who loses? What do the data actually say?*); then we answer them with **real data**. Every unit ends with a short "Doing Economics" exercise on an actual dataset — Indian wherever possible. My emphasis is **economic reasoning and evidence over memorisation**: films supply the intuition, a Nobel laureate's research supplies the rigour, and the data work gives you a skill — reading, plotting, and interpreting real numbers — that you carry straight into Microeconomics-I and Macroeconomics-I.
 
 ## Objectives
 
 <ul class="pills">
-<li>Introduce core economic concepts through accessible, real-world narratives drawn from cinema, connecting abstract ideas to concrete situations.</li>
-<li>Develop economic reasoning by analysing trade-offs, incentives, market behaviour, and strategic interaction as depicted in feature films.</li>
-<li>Expose students to landmark economic research by pairing each module with the work of a Nobel Prize-winning economist, grounding film-based discussion in rigorous scholarship.</li>
-<li>Apply economic thinking to the Indian context — informality, public goods, labour markets, and development policy as they operate in India's economic landscape.</li>
+<li>Introduce core micro- and macroeconomic concepts through accessible film narratives, connecting abstract ideas to concrete situations.</li>
+<li>Develop economic reasoning <em>and</em> basic empirical skill — reading, plotting, and interpreting real data to answer an economic question.</li>
+<li>Ground each unit in landmark Nobel Prize-winning research, linking popular stories to frontier scholarship.</li>
+<li>Apply both halves to the Indian context — prices, labour, informality, poverty, growth, and the environment — using Indian datasets.</li>
+<li>Build the conceptual and empirical foundation for further study in Microeconomics-I and Macroeconomics-I.</li>
 </ul>
 
 ## Course Outcomes
@@ -299,25 +302,51 @@ By the end of the course, students should be able to:
   <small>REM = Remember · UND = Understand · APP = Apply · ANA = Analyse · EVA = Evaluate · CRE = Create. H = High, M = Medium, L = Low, — = Not applicable.</small>
 </details>
 
-## Topics, Films &amp; Nobel Laureates {#schedule}
+## Course Structure — a Micro half &amp; a Macro half {#schedule}
 
-Six modules, three contact hours each. Every module anchors on a feature film and a Nobel Prize-winning contribution.
+Six units, three contact hours each. The first three build the **microeconomics** foundation (→ ECON 201); the second three build the **macroeconomics** foundation (→ ECON 202). Every unit = a film + a Nobel idea + a short **"Doing Economics" exercise on real data**.
+
+<p style="margin:1.2rem 0 0.4rem;font-weight:700;color:var(--mc-blue);">◀ MICRO HALF — how people &amp; firms decide <span style="font-weight:500;color:var(--global-text-color-light);">(prepares for Microeconomics-I)</span></p>
 
 <table class="mc-sched">
   <thead>
-    <tr><th>Module</th><th>Topic · Film · Nobel Focus</th></tr>
+    <tr><th>Unit</th><th>Film · Nobel · what you'll do with data</th></tr>
   </thead>
   <tbody>
-    <tr><td>Module 1</td><td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-head"><span class="mod-name">Understanding Economic Thinking</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>The Big Short</em> (2015) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Richard Thaler</span><ul><li>Scarcity, opportunity cost, trade-offs; rational vs. behavioural decision-making; market bubbles and financial crises</li></ul></td></tr>
-    <tr><td>Module 2</td><td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-head"><span class="mod-name">Incentives and Human Behavior</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>A Beautiful Mind</em> (2001) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>John Nash</span><ul><li>Game theory and strategic interaction; behavioural biases; institutions and incentive structures; cooperation vs. competition</li></ul></td></tr>
-    <tr><td>Module 3</td><td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-head"><span class="mod-name">Market Dynamics and Labor Markets</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Margin Call</em> (2011) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Paul Krugman</span><ul><li>Supply, demand, and equilibrium; market failures and government intervention; labour markets and wage determination; globalisation and trade</li></ul></td></tr>
-    <tr><td>Module 4</td><td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-head"><span class="mod-name">Poverty, Inequality, and Development</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Slumdog Millionaire</em> (2008) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Duflo &amp; Banerjee</span><ul><li>Measuring poverty and mobility; informal economies and livelihoods; evidence-based approaches to poverty alleviation; education and health</li></ul></td></tr>
-    <tr><td>Module 5</td><td class="mod-cell" style="--mc-c:#d8cfe8;"><span class="mod-head"><span class="mod-name">Innovation, Technology, and Growth</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Moneyball</em> (2011) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Robert Solow</span><ul><li>Economics of innovation and R&amp;D; technology and productivity growth; data-driven decision-making; theories of long-run growth</li></ul></td></tr>
-    <tr><td>Module 6</td><td class="mod-cell" style="--mc-c:#eeb4c8;"><span class="mod-head"><span class="mod-name">Environmental and Public Economics</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Erin Brockovich</em> (2000) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Elinor Ostrom</span><ul><li>Externalities and market-based solutions; climate policy; public goods and common-resource management; regulatory and behavioural approaches to sustainability</li></ul></td></tr>
+    <tr><td>Unit 1</td><td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-head"><span class="mod-name">Choice, Preferences &amp; Strategy</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>A Beautiful Mind</em> (2001) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>John Nash</span><ul><li>Scarcity, opportunity cost, preferences, utility; rational choice &amp; strategic interaction — the idea of equilibrium</li><li><strong>📊 Data:</strong> run a class game (prisoner's dilemma / public goods); compute cooperation vs. the Nash prediction</li></ul></td></tr>
+    <tr><td>Unit 2</td><td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-head"><span class="mod-name">Firms, Markets &amp; Competition</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Margin Call</em> (2011) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Paul Krugman</span><ul><li>Supply, demand, prices &amp; market clearing; production &amp; costs; competition and consumer/producer surplus</li><li><strong>📊 Data:</strong> pull daily mandi prices (Agmarknet) through a supply shock and tell the demand–supply story</li></ul></td></tr>
+    <tr><td>Unit 3</td><td class="mod-cell" style="--mc-c:#b7ddd0;"><span class="mod-head"><span class="mod-name">Externalities, Welfare &amp; Market Failure</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Erin Brockovich</em> (2000) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Elinor Ostrom</span><ul><li>Externalities, public goods, the commons; welfare loss and the case for policy</li><li><strong>📊 Data:</strong> plot your city's air quality (CPCB) against a pollution source; "price" the externality</li></ul></td></tr>
   </tbody>
 </table>
 
-<p style="margin-top:0.9rem;"><em>Total contact hours: 18.</em> Each module also carries a dedicated <strong>Indian Context</strong> essay linking the concept to the Indian economy.</p>
+<p style="margin:1.6rem 0 0.4rem;font-weight:700;color:var(--mc-blue);">▶ MACRO HALF — how the whole economy behaves <span style="font-weight:500;color:var(--global-text-color-light);">(prepares for Macroeconomics-I)</span></p>
+
+<table class="mc-sched">
+  <thead>
+    <tr><th>Unit</th><th>Film · Nobel · what you'll do with data</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Unit 4</td><td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-head"><span class="mod-name">Measuring the Economy &amp; Development</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Slumdog Millionaire</em> (2008) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Duflo &amp; Banerjee</span><ul><li>GDP, CPI, unemployment — what the headline numbers mean; the informal economy; evidence-based development</li><li><strong>📊 Data:</strong> measure poverty / income from PLFS or World Bank data — and ask what GDP leaves out</li></ul></td></tr>
+    <tr><td>Unit 5</td><td class="mod-cell" style="--mc-c:#f7e3a1;"><span class="mod-head"><span class="mod-name">Growth &amp; Productivity</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>Moneyball</em> (2011) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Robert Solow</span><ul><li>Production and productivity at the economy level; data-driven decisions; what drives long-run growth</li><li><strong>📊 Data:</strong> plot India vs. South Korea GDP per capita since 1950 (Maddison); discuss catch-up</li></ul></td></tr>
+    <tr><td>Unit 6</td><td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-head"><span class="mod-name">Money, Finance &amp; Crises</span><span class="mod-hours">3 hours</span></span><span class="mod-film"><span class="tag">🎬 Film</span><em>The Big Short</em> (2015) &nbsp;·&nbsp; <span class="tag">🏅 Nobel</span>Richard Thaler</span><ul><li>Money, asset markets &amp; prices; bubbles, business cycles; how central banks (the RBI) respond</li><li><strong>📊 Data:</strong> trace a house-price bubble (FRED / RBI index) and the policy response that followed</li></ul></td></tr>
+  </tbody>
+</table>
+
+<p style="margin-top:0.9rem;"><em>Total contact hours: 18.</em> Each unit also carries a dedicated <strong>Indian Context</strong> essay. The six exercises are rehearsals for the <strong>End-Term Empirical Project</strong>.</p>
+
+## Where it Leads — Microeconomics-I &amp; Macroeconomics-I {#prepares}
+
+This course is designed to flow into the Year-2 core. The micro half front-loads the ideas ECON 201 builds on; the macro half does the same for ECON 202. The optimisation *mathematics* for those courses is carried by **ECON 122 (Mathematics for Economics)** — this course gives you the concepts and the data skill, not the calculus.
+
+<table class="mc-sched" style="max-width:680px;">
+  <thead>
+    <tr><th>From this course…</th><th>…into the core</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="mod-cell" style="--mc-c:#cde0c9;">Choice, preferences, markets, competition, externalities &amp; welfare</td><td style="white-space:normal;"><strong>Microeconomics-I (ECON 201)</strong> — consumer theory, production &amp; costs, perfect competition</td></tr>
+    <tr><td class="mod-cell" style="--mc-c:#f5c9a6;">Measuring the economy, growth &amp; productivity, money &amp; crises</td><td style="white-space:normal;"><strong>Macroeconomics-I (ECON 202)</strong> — GDP/CPI/unemployment, productivity &amp; output, money, IS–LM / AS–AD</td></tr>
+  </tbody>
+</table>
 
 ## Grading
 
@@ -354,32 +383,56 @@ The course rewards steady engagement across the semester, culminating in an orig
   <thead><tr><th>Component</th><th>Weight</th><th>What it assesses</th></tr></thead>
   <tbody>
     <tr><td>End-Term Empirical Project</td><td>40%</td><td style="white-space:normal;">Group project applying course concepts to a real-world question, with data analysis and a written report.</td></tr>
-    <tr><td>Mid-Term Examination</td><td>30%</td><td style="white-space:normal;">Written exam over Modules 1–3: conceptual questions, short-answer problems, and film-based analysis.</td></tr>
-    <tr><td>Problem Sets</td><td>20%</td><td style="white-space:normal;">Four to five sets across the semester applying economic reasoning to scenarios, data, and film content.</td></tr>
+    <tr><td>Mid-Term Examination</td><td>30%</td><td style="white-space:normal;">Written exam over the micro half (Units 1–3): concepts, short-answer problems, and data interpretation.</td></tr>
+    <tr><td>Problem Sets</td><td>20%</td><td style="white-space:normal;">Four to five sets — one short "Doing Economics" data exercise per unit.</td></tr>
     <tr><td>Class Participation</td><td>10%</td><td style="white-space:normal;">Active engagement in discussions, film screenings, and in-class activities.</td></tr>
   </tbody>
 </table>
 
-## Suggested Readings &amp; Textbooks {#readings}
+## Readings, Resources &amp; Data {#readings}
 
-No single textbook is required; readings are drawn from accessible trade books and the Nobel Prize archive. Chapters and articles are assigned per module and posted on MOODLE.
+No single textbook is required. Two free, open-access resources run through the whole course — one for concepts, one for the data work — alongside accessible trade books, the Nobel archive, and Indian datasets. Specific chapters are assigned per unit and posted on MOODLE.
+
+### The two engines
 
 <ul class="mc-readings">
-  <li><span class="tag req">Film &amp; Econ</span>Staley, S. R. (2018). <em>Contemporary Film and Economics: Lights! Camera! Econ!</em></li>
-  <li><span class="tag req">Nobel</span>Simpson, D. (2023). <em>Striding with Economic Giants: Business and Public Policy Lessons from Nobel Laureates.</em> Business Expert Press.</li>
-  <li><span class="tag sup">Intro</span>Wolfe, L. &amp; Buckles, S. (2011). <em>Easy Economics: A Visual Guide to What You Need to Know.</em></li>
-  <li><span class="tag sup">Intro</span>Chang, H.-J. (2014). <em>Economics: The User's Guide.</em></li>
-  <li><span class="tag sup">Intro</span>van Staveren, I. (2015). <em>Economics After The Crisis.</em></li>
-  <li><span class="tag sup">Intro</span>Frank, R. H. (2011). <em>The Economic Naturalist: Why Economics Explains Almost Everything.</em> Ebury Publishing.</li>
-  <li><span class="tag ref">Reference</span><a href="https://www.nobelprize.org/" target="_blank" rel="noopener">nobelprize.org</a> — prize lectures, biographies, and popular-science backgrounds for all Economics laureates.</li>
-  <li><span class="tag ref">Model course</span>Langlois, R. N. <a href="https://richard-langlois.uconn.edu/home/teaching/econ-1495-economics-through-film/" target="_blank" rel="noopener"><em>Economics Through Film</em></a> (ECON 1101), University of Connecticut — a key pedagogical model for this course.</li>
+  <li><span class="tag req">Concepts</span><a href="https://www.core-econ.org/" target="_blank" rel="noopener">CORE Econ — <em>The Economy 2.0</em></a>. Free, open-access; the rigorous conceptual backbone behind every unit, micro and macro.</li>
+  <li><span class="tag req">Data</span><a href="https://www.core-econ.org/" target="_blank" rel="noopener">CORE Econ — <em>Doing Economics</em></a>. Free empirical-projects book; each project is a ready-made real-data exercise (the model this course is named after).</li>
 </ul>
+
+### Best reading per unit
+
+<ul class="mc-readings">
+  <li><span class="tag sup">Micro · U1</span>Dixit &amp; Nalebuff, <em>The Art of Strategy</em>; Thaler, <em>Misbehaving</em> (behavioural thread).</li>
+  <li><span class="tag sup">Micro · U2</span>Harford, <em>The Undercover Economist</em> (prices &amp; markets); Krugman, selected essays.</li>
+  <li><span class="tag sup">Micro · U3</span>Ostrom, <em>Governing the Commons</em> (selections); Hardin, "The Tragedy of the Commons," <em>Science</em> (1968).</li>
+  <li><span class="tag sup">Macro · U4</span>Banerjee &amp; Duflo, <em>Poor Economics</em>.</li>
+  <li><span class="tag sup">Macro · U5</span>Lewis, <em>Moneyball</em> (excerpt); C. I. Jones, <em>Introduction to Economic Growth</em> (selections).</li>
+  <li><span class="tag sup">Macro · U6</span>Lewis, <em>The Big Short</em> (excerpt); Thaler, <em>Misbehaving</em> (bubbles).</li>
+</ul>
+
+### General readers &amp; reference
+
+<ul class="mc-readings">
+  <li><span class="tag sup">Reader</span>Chang, H.-J. (2014), <em>Economics: The User's Guide</em>; Frank, R. H. (2011), <em>The Economic Naturalist</em>.</li>
+  <li><span class="tag sup">Film &amp; Econ</span>Staley, S. R. (2018), <em>Lights! Camera! Econ!</em>; Simpson, D. (2023), <em>Striding with Economic Giants</em>.</li>
+  <li><span class="tag ref">Nobel</span><a href="https://www.nobelprize.org/" target="_blank" rel="noopener">nobelprize.org</a> — lectures and popular backgrounds for Nash (1994), Krugman (2008), Ostrom (2009), Banerjee–Duflo–Kremer (2019), Solow (1987), Thaler (2017).</li>
+</ul>
+
+### Data sources you'll use
+
+<ul class="mc-readings">
+  <li><span class="tag ref">India</span><a href="https://www.mospi.gov.in/" target="_blank" rel="noopener">MoSPI — PLFS &amp; NSS</a> · <a href="https://dbie.rbi.org.in/" target="_blank" rel="noopener">RBI DBIE</a> · <a href="https://data.gov.in/" target="_blank" rel="noopener">data.gov.in / Agmarknet</a> · <a href="https://cpcb.nic.in/" target="_blank" rel="noopener">CPCB air quality</a>.</li>
+  <li><span class="tag ref">Global</span><a href="https://ourworldindata.org/" target="_blank" rel="noopener">Our World in Data</a> · <a href="https://www.gapminder.org/" target="_blank" rel="noopener">Gapminder</a> · World Bank, FRED, Maddison Project.</li>
+</ul>
+
+<small>Tooling is light — spreadsheets (Excel/Google Sheets) are enough; a gentle optional introduction to Python/R is offered for the keen.</small>
 
 ## Course Policies
 
 ### Suggested Pedagogy
 
-Each module opens with a feature-film screening (or assigned viewing) that introduces the module's themes through narrative. Class sessions then unpack the embedded economics using guided discussion, worked examples, and short problem-solving. Nobel Prize-winning research connects popular stories to frontier scholarship; browser-based simulations let students experiment with supply and demand, externalities, and game theory in real time; and Indian Context essays ground the material locally.
+Each unit opens with a feature-film screening (or assigned viewing), then unpacks the embedded economics through guided discussion and worked examples, and closes with a short **"Doing Economics" exercise on real data**. Nobel-winning research connects popular stories to frontier scholarship; browser-based simulations let students experiment with supply and demand, externalities, and game theory in real time; and Indian Context essays and datasets ground the material locally.
 
 ### Attendance &amp; Participation
 
@@ -388,8 +441,8 @@ A **minimum of 75% attendance** is required to be eligible for the End-Term asse
 ### Assessments &amp; Late Submission
 
 - **Problem Sets (20%)** — four to five sets distributed across the semester; applied economic reasoning on scenarios, data, and film content.
-- **Mid-Term Examination (30%)** — covers Modules 1–3; conceptual questions, short-answer problems, and film-based analysis.
-- **End-Term Empirical Project (40%)** — a group project applying course concepts to a real-world question, with data analysis and a written report.
+- **Mid-Term Examination (30%)** — covers the **micro half (Units 1–3)**; conceptual questions, short-answer problems, and data interpretation.
+- **End-Term Empirical Project (40%)** — a group "Doing Economics" study applying course concepts to a real-world question on real data, with a written report.
 
 **Deadlines are firm.** Late submissions lose **10% of the component's marks per day** and are not accepted more than three days past the deadline, except with a documented, valid reason discussed in advance.
 
@@ -414,47 +467,49 @@ The full course lives on the interactive site — every module has an overview, 
     <tr><th>Module</th><th>Overview</th><th>Film Analysis</th><th>Nobel Focus</th><th>Quiz</th></tr>
   </thead>
   <tbody>
+    <tr><td colspan="5" style="background:var(--mc-soft);font-weight:700;color:var(--mc-blue);">◀ Micro half (→ ECON 201)</td></tr>
     <tr>
-      <td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-no">M1</span><span class="mod-name">Understanding Economic Thinking</span></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/" target="_blank" rel="noopener">&#10003; Open</a></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
-    </tr>
-    <tr>
-      <td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-no">M2</span><span class="mod-name">Incentives and Human Behavior</span></td>
+      <td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-no">U1</span><span class="mod-name">Choice, Preferences &amp; Strategy</span></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/02-incentives-behavior/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/02-incentives-behavior/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/02-incentives-behavior/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/02-incentives-behavior/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
     </tr>
     <tr>
-      <td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-no">M3</span><span class="mod-name">Market Dynamics and Labor Markets</span></td>
+      <td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-no">U2</span><span class="mod-name">Firms, Markets &amp; Competition</span></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/03-markets-labor/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/03-markets-labor/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/03-markets-labor/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/03-markets-labor/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
     </tr>
     <tr>
-      <td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-no">M4</span><span class="mod-name">Poverty, Inequality &amp; Development</span></td>
+      <td class="mod-cell" style="--mc-c:#b7ddd0;"><span class="mod-no">U3</span><span class="mod-name">Externalities, Welfare &amp; Market Failure</span></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
+    </tr>
+    <tr><td colspan="5" style="background:var(--mc-soft);font-weight:700;color:var(--mc-blue);">▶ Macro half (→ ECON 202)</td></tr>
+    <tr>
+      <td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-no">U4</span><span class="mod-name">Measuring the Economy &amp; Development</span></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/04-poverty-inequality/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/04-poverty-inequality/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/04-poverty-inequality/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/04-poverty-inequality/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
     </tr>
     <tr>
-      <td class="mod-cell" style="--mc-c:#d8cfe8;"><span class="mod-no">M5</span><span class="mod-name">Innovation, Technology &amp; Growth</span></td>
+      <td class="mod-cell" style="--mc-c:#f7e3a1;"><span class="mod-no">U5</span><span class="mod-name">Growth &amp; Productivity</span></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/05-innovation-growth/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/05-innovation-growth/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/05-innovation-growth/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
       <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/05-innovation-growth/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
     </tr>
     <tr>
-      <td class="mod-cell" style="--mc-c:#eeb4c8;"><span class="mod-no">M6</span><span class="mod-name">Environmental &amp; Public Economics</span></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/" target="_blank" rel="noopener">&#10003; Open</a></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
-      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/06-environment-public/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-no">U6</span><span class="mod-name">Money, Finance &amp; Crises</span></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/film-analysis/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/nobel-focus/" target="_blank" rel="noopener">&#10003; Open</a></td>
+      <td><a class="yes" href="https://ravikirannaik.github.io/ideas-in-economics/modules/01-economic-thinking/quiz/" target="_blank" rel="noopener">&#10003; Open</a></td>
     </tr>
   </tbody>
 </table>
