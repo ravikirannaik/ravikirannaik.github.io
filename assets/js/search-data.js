@@ -104,6 +104,11 @@ ninja.data = [{
           description: "Elective course in gender economics at FLAME University examining gender gaps in labor markets, education, entrepreneurship, and development.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/gender-economics/";
+            },},{id: "teachings-ideas-in-economics-doing-economics",
+          title: 'Ideas in Economics (Doing Economics)',
+          description: "A film-based introduction to economic thinking at FLAME University — six feature films paired with Nobel Prize-winning research to introduce scarcity, incentives, markets and labour, poverty and development, innovation and growth, and environmental and public economics. No prerequisites.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ideas-in-economics/";
             },},{id: "teachings-labor-economics",
           title: 'Labor Economics',
           description: "Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.",
