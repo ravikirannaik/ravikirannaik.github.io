@@ -1,32 +1,30 @@
 {% if site.teachings %}
-  <div class="courses accordion" id="coursesAccordion">
+  <style>
+    .courses a.course-card-link { display: block; text-decoration: none; color: inherit; }
+    .courses a.course-card-link:hover { text-decoration: none; color: inherit; }
+    .courses .course-card { transition: box-shadow .15s ease, transform .15s ease; }
+    .courses a.course-card-link:hover .course-card {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12); transform: translateY(-2px);
+    }
+    .courses .course-title { color: var(--global-theme-color); }
+    .courses .course-term  { color: var(--global-text-color-light); font-weight: 500; }
+    .courses .course-arrow { color: var(--global-theme-color); font-weight: 700; }
+  </style>
+  <div class="courses">
     {% assign sorted_courses = site.teachings | sort: 'importance' %}
     {% for course in sorted_courses %}
-      <div class="card">
-        <div class="card-header p-0" id="courseHead{{ forloop.index }}">
-          <button
-            class="btn btn-link btn-block text-left collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#courseBody{{ forloop.index }}"
-            aria-expanded="false"
-            aria-controls="courseBody{{ forloop.index }}">
-            <span class="course-title font-weight-bold">{{ course.title }}</span>
-          </button>
-        </div>
-        <div
-          id="courseBody{{ forloop.index }}"
-          class="collapse"
-          aria-labelledby="courseHead{{ forloop.index }}"
-          data-parent="#coursesAccordion">
+      <a class="course-card-link" href="{{ course.url | relative_url }}">
+        <div class="card course-card mt-2">
           <div class="card-body">
+            <span class="course-arrow float-right">&rarr;</span>
+            <span class="course-title font-weight-bold">{{ course.title }}</span>
+            {% if course.term %}<span class="course-term"> · {{ course.term }}</span>{% endif %}
             {% if course.description %}
-              <p class="card-text">{{ course.description }}</p>
+              <p class="card-text mt-2 mb-0">{{ course.description }}</p>
             {% endif %}
-            <a href="{{ course.url | relative_url }}">Course page &rarr;</a>
           </div>
         </div>
-      </div>
+      </a>
     {% endfor %}
   </div>
 {% else %}
