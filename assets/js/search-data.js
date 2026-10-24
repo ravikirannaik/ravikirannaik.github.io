@@ -106,7 +106,7 @@ ninja.data = [{
               window.location.href = "/teachings/gender-economics/";
             },},{id: "teachings-ideas-in-economics-doing-economics",
           title: 'Ideas in Economics (Doing Economics)',
-          description: "A film-based introduction to economic thinking at FLAME University — six feature films paired with Nobel Prize-winning research to introduce scarcity, incentives, markets and labour, poverty and development, innovation and growth, and environmental and public economics. No prerequisites.",
+          description: "A data-first &quot;Doing Economics&quot; gateway at FLAME University — six feature films and Nobel-winning research, split evenly into a microeconomics half and a macroeconomics half, each unit worked with real data. Builds the conceptual and empirical foundation for Microeconomics-I and Macroeconomics-I.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/ideas-in-economics/";
             },},{id: "teachings-labor-economics",
