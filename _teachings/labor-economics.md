@@ -3,7 +3,7 @@ title: Labor Economics
 description: Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.
 term: 2024--present (ongoing)
 category: Undergraduate
-importance: 1
+importance: 2
 toc:
   sidebar: left
 ---

@@ -3,7 +3,7 @@ title: Public Economics
 description: Elective course in public economics at FLAME University covering taxation, public goods, externalities, and social welfare programs.
 term: 2023--present
 category: Elective
-importance: 4
+importance: 5
 ---
 
 ## Introduction

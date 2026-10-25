@@ -3,7 +3,7 @@ title: Gender Economics
 description: Elective course in gender economics at FLAME University examining gender gaps in labor markets, education, entrepreneurship, and development.
 term: 2024--present
 category: Elective
-importance: 2
+importance: 3
 ---
 
 ## Introduction

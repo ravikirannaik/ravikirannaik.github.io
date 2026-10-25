@@ -3,7 +3,7 @@ title: Macroeconomics
 description: Undergraduate macroeconomics course at FLAME University covering national income, growth, business cycles, and policy.
 term: 2023--present
 category: Undergraduate
-importance: 3
+importance: 4
 ---
 
 ## Introduction
