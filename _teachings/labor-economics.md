@@ -4,8 +4,6 @@ description: Undergraduate course in labor economics at FLAME University coverin
 term: 2024--present (ongoing)
 category: Undergraduate
 importance: 2
-toc:
-  sidebar: left
 ---
 
 ## Course Overview
