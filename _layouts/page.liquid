@@ -18,22 +18,37 @@ layout: default
   </header>
 
   {% if page.collection == "teachings" %}
-    <div class="row course-shell">
-      <aside class="col-lg-3 d-none d-lg-block course-nav-col">
-        {% include course-sidebar.liquid %}
-      </aside>
-      <div class="col-lg-9 course-main">
-        <article>
-          {{ content }}
-        </article>
-        {% if page.last_updated %}
-          <p class="course-last-updated text-muted mt-4 mb-0">
-            <small>Last updated on {{ page.last_updated }}</small>
-          </p>
-        {% endif %}
-        {% include course-pager.liquid %}
+    {% assign show_course_nav = true %}
+    {% if page.course_nav == false %}{% assign show_course_nav = false %}{% endif %}
+    {% if page.slug == "macroeconomics-i" %}{% assign show_course_nav = false %}{% endif %}
+    {% if show_course_nav %}
+      <div class="row course-shell">
+        <aside class="col-lg-3 d-none d-lg-block course-nav-col">
+          {% include course-sidebar.liquid %}
+        </aside>
+        <div class="col-lg-9 course-main">
+          <article>
+            {{ content }}
+          </article>
+          {% if page.last_updated %}
+            <p class="course-last-updated text-muted mt-4 mb-0">
+              <small>Last updated on {{ page.last_updated }}</small>
+            </p>
+          {% endif %}
+          {% include course-pager.liquid %}
+        </div>
       </div>
-    </div>
+    {% else %}
+      <article>
+        {{ content }}
+      </article>
+      {% if page.last_updated %}
+        <p class="course-last-updated text-muted mt-4 mb-0">
+          <small>Last updated on {{ page.last_updated }}</small>
+        </p>
+      {% endif %}
+      {% include course-pager.liquid %}
+    {% endif %}
   {% else %}
     <article>
       {{ content }}
