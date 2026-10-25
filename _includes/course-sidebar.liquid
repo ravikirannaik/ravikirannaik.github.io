@@ -1,0 +1,39 @@
+<style>
+  .course-nav { position: sticky; top: 5rem; }
+  .course-nav .course-nav-title {
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+    font-weight: 700; color: var(--global-text-color-light);
+    margin-bottom: 0.6rem;
+  }
+  .course-nav ul { list-style: none; padding-left: 0; margin: 0; }
+  .course-nav li { margin: 0; }
+  .course-nav a {
+    display: block; padding: 0.4rem 0.7rem; border-radius: 6px;
+    color: var(--global-text-color); text-decoration: none; line-height: 1.3;
+    border-left: 2px solid transparent;
+  }
+  .course-nav a:hover { background: rgba(0, 0, 0, 0.04); text-decoration: none; }
+  .course-nav a.active {
+    background: rgba(95, 116, 160, 0.12);
+    color: var(--global-theme-color); font-weight: 600;
+    border-left-color: var(--global-theme-color);
+  }
+  .course-nav .course-nav-term {
+    display: block; font-size: 0.72rem; font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+</style>
+<nav class="course-nav">
+  <div class="course-nav-title">Courses</div>
+  <ul>
+    {% assign sorted_courses = site.teachings | sort: 'importance' %}
+    {% for course in sorted_courses %}
+      <li>
+        <a href="{{ course.url | relative_url }}"{% if course.url == page.url %} class="active" aria-current="page"{% endif %}>
+          {{ course.title }}
+          {% if course.term %}<span class="course-nav-term">{{ course.term }}</span>{% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -223,6 +223,8 @@ defaults:
       type: teachings
     values:
       layout: page
+      toc:
+        sidebar: right
 
 sass:
   style: compressed
