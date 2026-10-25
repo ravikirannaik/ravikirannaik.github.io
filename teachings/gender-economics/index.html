@@ -99,13 +99,16 @@
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
 
 
+  <!-- Sidebar Table of Contents -->
+  <link defer href="/assets/css/bootstrap-toc.min.css?v=6f5af0bb9aab25d79b2448143cbeaa88" rel="stylesheet">
+
 
 <!-- Styles -->
 
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1792858466">
+<link rel="stylesheet" href="/assets/css/main.css?v=1792941917">
 <link rel="canonical" href="https://ravikirannaik.github.io/teachings/gender-economics/">
 
 
@@ -322,6 +325,9 @@
     <div class="container mt-5" role="main">
       
         
+          <div class="row">
+            <!-- main content area -->
+            <div class="col-sm-9">
 
 <div class="post">
   
@@ -332,8 +338,88 @@
     <p class="post-description">Elective course in gender economics at FLAME University examining gender gaps in labor markets, education, entrepreneurship, and development.</p>
   </header>
 
-  <article>
-    <h2 id="introduction">Introduction</h2>
+  
+    <div class="row course-shell">
+      <aside class="col-lg-3 d-none d-lg-block course-nav-col">
+        <style>
+  .course-nav { position: sticky; top: 5rem; }
+  .course-nav .course-nav-title {
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+    font-weight: 700; color: var(--global-text-color-light);
+    margin-bottom: 0.6rem;
+  }
+  .course-nav ul { list-style: none; padding-left: 0; margin: 0; }
+  .course-nav li { margin: 0; }
+  .course-nav a {
+    display: block; padding: 0.4rem 0.7rem; border-radius: 6px;
+    color: var(--global-text-color); text-decoration: none; line-height: 1.3;
+    border-left: 2px solid transparent;
+  }
+  .course-nav a:hover { background: rgba(0, 0, 0, 0.04); text-decoration: none; }
+  .course-nav a.active {
+    background: rgba(95, 116, 160, 0.12);
+    color: var(--global-theme-color); font-weight: 600;
+    border-left-color: var(--global-theme-color);
+  }
+  .course-nav .course-nav-term {
+    display: block; font-size: 0.72rem; font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+</style>
+<nav class="course-nav">
+  <div class="course-nav-title">Courses</div>
+  <ul>
+    
+    
+      <li>
+        <a href="/teachings/ideas-in-economics/">
+          Ideas in Economics (Doing Economics)
+          <span class="course-nav-term">2 Credits · Level 100</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/teachings/macroeconomics-i/">
+          Macroeconomics-I (ECON 202)
+          <span class="course-nav-term">Monsoon 2026-27</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/teachings/labor-economics/">
+          Labor Economics
+          <span class="course-nav-term">2024--present (ongoing)</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/teachings/gender-economics/" class="active" aria-current="page">
+          Gender Economics
+          <span class="course-nav-term">2024--present</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/teachings/macroeconomics/">
+          Macroeconomics
+          <span class="course-nav-term">2023--present</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/teachings/public-economics/">
+          Public Economics
+          <span class="course-nav-term">2023--present</span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+      </aside>
+      <div class="col-lg-9 course-main">
+        <article>
+          <h2 id="introduction">Introduction</h2>
 
 <p>This elective course examines gender differences in economic outcomes through the lens of economic theory and empirical evidence. It covers gender gaps in labor force participation, wages, education, entrepreneurship, and development, with particular focus on the Indian context and the Global South.</p>
 
@@ -349,13 +435,72 @@
   <li>Platform work and gender</li>
 </ul>
 
-  </article>
+        </article>
+        
+        <style>
+  .course-pager {
+    display: flex; justify-content: space-between; gap: 1rem;
+    margin-top: 2.5rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+  .course-pager > div { flex: 1 1 0; min-width: 0; }
+  .course-pager .course-pager-next { text-align: right; }
+  .course-pager a {
+    display: inline-block; text-decoration: none;
+    color: var(--global-text-color); max-width: 100%;
+  }
+  .course-pager a:hover { text-decoration: none; }
+  .course-pager a:hover .course-pager-title { color: var(--global-theme-color); }
+  .course-pager .course-pager-dir {
+    display: block; font-size: 0.72rem; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--global-text-color-light);
+  }
+  .course-pager .course-pager-title {
+    display: block; font-weight: 600; line-height: 1.25;
+  }
+</style>
+
+
+
+
+
+
+<nav class="course-pager" aria-label="Course navigation">
+  <div class="course-pager-prev">
+    
+      
+      <a href="/teachings/labor-economics/">
+        <span class="course-pager-dir">← Previous</span>
+        <span class="course-pager-title">Labor Economics</span>
+      </a>
+    
+  </div>
+  <div class="course-pager-next">
+    
+      
+      <a href="/teachings/macroeconomics/">
+        <span class="course-pager-dir">Next →</span>
+        <span class="course-pager-title">Macroeconomics</span>
+      </a>
+    
+  </div>
+</nav>
+
+      </div>
+    </div>
+  
 
   
 
   
 </div>
-
+</div>
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-3">
+              <nav id="toc-sidebar" class="sticky-top"></nav>
+            </div>
+          </div>
+        
       
     </div>
 
@@ -373,7 +518,7 @@
 
   
   
-    Last updated: October 24, 2026.
+    Last updated: October 25, 2026.
   
 
     </div>
@@ -424,6 +569,9 @@
   <script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script>
 
 
+
+  <!-- Sidebar Table of Contents -->
+  <script defer src="/assets/js/bootstrap-toc.min.js?v=c82ff4de8b0955d6ff14f5b05eed7eb6"></script>
 
 
 
