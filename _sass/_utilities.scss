@@ -446,6 +446,52 @@ nav[data-toggle="toc"] {
 
 #toc-sidebar {
   z-index: 1;
+
+  // Flatten the bootstrap-toc output into a plain, clean vertical list
+  // (no pill/bubble backgrounds); keep it sticky in the right column.
+  top: 5rem;
+
+  ul,
+  .nav {
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.2rem 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    line-height: 1.35;
+
+    &:hover {
+      background: transparent;
+      color: var(--global-theme-color);
+    }
+
+    &.active {
+      background: transparent;
+      color: var(--global-theme-color);
+      font-weight: 600;
+      border-left: 2px solid var(--global-theme-color);
+      padding-left: 0.55rem;
+    }
+  }
+
+  // Nested (sub-section) links: indent and slightly smaller
+  .nav .nav .nav-link {
+    padding-left: 0.9rem;
+    font-size: 0.8rem;
+
+    &.active {
+      padding-left: 0.85rem;
+    }
+  }
 }
 
 .echarts {
