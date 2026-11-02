@@ -24,8 +24,11 @@ body {
 }
 
 /* --- Headings: tighter tracking, balanced wrapping, confident weight ---- */
+$serif-stack: "Source Serif Pro", Georgia, Cambria, "Times New Roman", serif;
+
 h1, h2, h3, h4, h5, h6,
 .post-title, .card-title {
+  font-family: $serif-stack;
   letter-spacing: -0.021em;
   text-wrap: balance;
   line-height: 1.25;
@@ -136,6 +139,33 @@ hr { opacity: 0.55; }
   color: var(--global-theme-color);
   transform: translateX(-3px);
   text-decoration: none;
+}
+
+/* --- Reading prose in the editorial serif (UI/nav stay Inter) --------- */
+/* Scoped to article bodies so navbar, cards, and metadata keep Inter.    */
+.post-content p,
+.post-content li,
+.post-description,
+.profile .address {
+  font-family: $serif-stack;
+  line-height: 1.68;
+}
+
+/* Optional editorial measure: keep long article lines readable.          */
+.post-content {
+  p, ul, ol, blockquote { max-width: 68ch; }
+}
+
+/* --- Metadata in mono with tabular figures (the "instrument" accent) --- */
+/* System monospace — no extra webfont downloaded. Dates/years only.      */
+.post-meta,
+.publications h2.year,
+.news .date,
+.news td.date,
+time {
+  font-family: ui-monospace, "SF Mono", "Iosevka Fixed", Menlo, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
 }
 
 /* --- Respect users who prefer reduced motion -------------------------- */

@@ -6,9 +6,9 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+  --global-bg-color: #{v.$paper-color};
   --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$dell-text-color};
+  --global-text-color: #{v.$ink-color};
   --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #{v.$dell-link-color};
   --global-hover-color: #{v.$dell-link-color};
@@ -19,7 +19,7 @@
   --global-distill-app-color: #{v.$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{v.$white-color};
-  --global-highlight-color: #{v.$red-color-dark};
+  --global-highlight-color: #{v.$dell-link-color};
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$black-color, "red", v.$space: rgb)},
     #{color.channel(v.$black-color, "green", v.$space: rgb)},
