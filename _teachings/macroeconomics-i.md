@@ -4,8 +4,6 @@ description: Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 â€
 term: Monsoon 2026-27
 category: Undergraduate
 importance: 1
-toc:
-  sidebar: right
 ---
 
 
