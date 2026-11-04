@@ -276,28 +276,28 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     <tr>
       <td class="mod-cell" style="--mc-c:#f7cfd8;"><span class="mod-no">M1</span><span class="mod-name">GDP, CPI &amp; Unemployment</span></td>
       <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/ch2-measurement-handout.pdf" title="Handout (PDF)">&#10003;</a></td>
-      <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf" title="Notes (PDF)">&#10003;</a></td>
+      <td><a class="yes" href="{{ '/teachings/macroeconomics-i/notes-viewer/' | relative_url }}?f=/assets/pdf/teaching/macroeconomics-i/notes/m1-gdp-cpi-unemployment-notes.pdf&amp;t=M1%20%E2%80%94%20GDP,%20CPI%20%26%20Unemployment%20Notes" title="View notes">&#10003;</a></td>
       <td><span class="na">&times;</span></td>
       <td><span class="na">&times;</span></td>
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#cde0c9;"><span class="mod-no">M2</span><span class="mod-name">Productivity, Employment &amp; Output</span></td>
       <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/ch3-productivity-handout.pdf" title="Handout (PDF)">&#10003;</a></td>
-      <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf" title="Notes (PDF)">&#10003;</a></td>
+      <td><a class="yes" href="{{ '/teachings/macroeconomics-i/notes-viewer/' | relative_url }}?f=/assets/pdf/teaching/macroeconomics-i/notes/m2-productivity-output-employment-notes.pdf&amp;t=M2%20%E2%80%94%20Productivity,%20Employment%20%26%20Output%20Notes" title="View notes">&#10003;</a></td>
       <td><span class="na">&times;</span></td>
       <td><span class="na">&times;</span></td>
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#a9d8de;"><span class="mod-no">M3</span><span class="mod-name">Consumption, Saving &amp; Investment</span></td>
       <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/ch4-consumption-saving-investment-handout.pdf" title="Handout (PDF)">&#10003;</a></td>
-      <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/notes/m3-consumption-saving-investment-notes.pdf" title="Notes (PDF)">&#10003;</a></td>
+      <td><a class="yes" href="{{ '/teachings/macroeconomics-i/notes-viewer/' | relative_url }}?f=/assets/pdf/teaching/macroeconomics-i/notes/m3-consumption-saving-investment-notes.pdf&amp;t=M3%20%E2%80%94%20Consumption,%20Saving%20%26%20Investment%20Notes" title="View notes">&#10003;</a></td>
       <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/problem-sets/ch4-consumption-saving-investment-key.pdf" title="Problems &amp; Solutions (PDF)">&#10003;</a></td>
       <td><a class="yes" href="{{ '/teachings/macroeconomics-i/concept-map-consumption-saving-investment/' | relative_url }}" title="Concept map">&#10003;</a></td>
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-no">M4</span><span class="mod-name">Asset Market, Money &amp; Prices</span></td>
       <td><span class="na">&times;</span></td>
-      <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/notes/m4-asset-market-money-prices-notes.pdf" title="Notes (PDF)">&#10003;</a></td>
+      <td><a class="yes" href="{{ '/teachings/macroeconomics-i/notes-viewer/' | relative_url }}?f=/assets/pdf/teaching/macroeconomics-i/notes/m4-asset-market-money-prices-notes.pdf&amp;t=M4%20%E2%80%94%20Asset%20Market,%20Money%20%26%20Prices%20Notes" title="View notes">&#10003;</a></td>
       <td><span class="na">&times;</span></td>
       <td><span class="na">&times;</span></td>
     </tr>
