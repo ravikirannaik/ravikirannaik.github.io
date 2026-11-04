@@ -105,7 +105,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1793794605">
+<link rel="stylesheet" href="/assets/css/main.css?v=1793795328">
 <link rel="canonical" href="https://ravikirannaik.com/teachings/labor-economics/">
 
 
@@ -595,16 +595,6 @@ img.mc-book-cover-img { width: 80px; flex: 0 0 auto; display: block; border-radi
 }
 .mc-pdf-btn:hover { filter: brightness(0.94); }
 
-/* ---- Course title pinned to the top of the right "On this page" ToC ---- */
-.toc-course-title {
-  position: sticky; top: 5rem; z-index: 6;
-  font-weight: 700; color: var(--mc-blue, #5f74a0);
-  font-size: 0.95rem; line-height: 1.25;
-  padding: 0.5rem 0.2rem 0.55rem; margin-bottom: 0.3rem;
-  border-bottom: 2px solid var(--mc-blue, #5f74a0);
-  background: var(--global-bg-color);
-}
-
 /* ---- Dark-mode toning: mute the pastels so they don't glow ---- */
 html[data-theme="dark"] .macro-outline {
   --mc-blue:   #9fb0d6;                 /* lighter for legible headers */
@@ -647,7 +637,6 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
     
     
     
-    
       <div class="row course-shell">
         <aside class="col-lg-3 d-none d-lg-block course-nav-col">
           <style>
@@ -674,6 +663,22 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
     display: block; font-size: 0.72rem; font-weight: 400;
     color: var(--global-text-color-light);
   }
+  /* Main (h2) sections of the active course, nested under its entry */
+  .course-nav .course-nav-sections {
+    margin: 0.15rem 0 0.5rem 0.8rem;
+    padding-left: 0.6rem;
+    border-left: 2px solid var(--global-divider-color);
+  }
+  .course-nav a.course-nav-sec {
+    padding: 0.25rem 0.55rem; font-size: 0.82rem; line-height: 1.25;
+    color: var(--global-text-color-light); margin-left: -0.62rem;
+  }
+  .course-nav a.course-nav-sec:hover { background: rgba(0, 0, 0, 0.04); color: var(--global-text-color); }
+  .course-nav a.course-nav-sec.active {
+    background: rgba(95, 116, 160, 0.12);
+    color: var(--global-theme-color); font-weight: 600;
+    border-left-color: var(--global-theme-color);
+  }
 </style>
 <nav class="course-nav">
   <div class="course-nav-title">Courses</div>
@@ -685,6 +690,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
           Ideas in Economics (Doing Economics)
           <span class="course-nav-term">2 Credits · Level 100</span>
         </a>
+        
       </li>
     
       <li>
@@ -692,6 +698,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
           Macroeconomics-I (ECON 202)
           <span class="course-nav-term">Monsoon 2026-27</span>
         </a>
+        
       </li>
     
       <li>
@@ -699,6 +706,9 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
           Labor Economics
           <span class="course-nav-term">2024--present (ongoing)</span>
         </a>
+        
+          <ul class="course-nav-sections" id="course-nav-sections"></ul>
+        
       </li>
     
       <li>
@@ -706,6 +716,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
           Gender Economics
           <span class="course-nav-term">2024--present</span>
         </a>
+        
       </li>
     
       <li>
@@ -713,6 +724,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
           Macroeconomics
           <span class="course-nav-term">2023--present</span>
         </a>
+        
       </li>
     
       <li>
@@ -720,10 +732,48 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
           Public Economics
           <span class="course-nav-term">2023--present</span>
         </a>
+        
       </li>
     
   </ul>
 </nav>
+
+<script>
+  // Build a jump-list of the active course's MAIN (h2) sections and
+  // highlight the current one as the reader scrolls.
+  (function () {
+    var box = document.getElementById('course-nav-sections');
+    if (!box) return;
+    var content = document.querySelector('.course-main article') || document.querySelector('.post article');
+    if (!content) { box.remove(); return; }
+    var heads = content.querySelectorAll('h2[id]');
+    if (!heads.length) { box.remove(); return; }
+
+    var byId = {};
+    heads.forEach(function (h) {
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.className = 'course-nav-sec';
+      a.textContent = (h.textContent || '').replace(/[¶#]+\s*$/, '').trim();
+      box.appendChild(a);
+      byId[h.id] = a;
+    });
+
+    var current = null;
+    function setActive(id) {
+      var a = byId[id];
+      if (!a || a === current) return;
+      if (current) current.classList.remove('active');
+      a.classList.add('active');
+      current = a;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) setActive(e.target.id); });
+    }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+    heads.forEach(function (h) { obs.observe(h); });
+    setActive(heads[0].id);
+  })();
+</script>
 
         </aside>
         <div class="col-lg-9 course-main">
