@@ -24,6 +24,7 @@ layout: default
   {% if page.collection == "teachings" %}
     {% assign show_course_nav = true %}
     {% if page.course_nav == false %}{% assign show_course_nav = false %}{% endif %}
+    {% if page.slug == "macroeconomics-i" %}{% assign show_course_nav = false %}{% endif %}
     {% if show_course_nav %}
       <div class="row course-shell">
         <aside class="col-lg-3 d-none d-lg-block course-nav-col">

@@ -9,6 +9,18 @@ importance: 1
 
 <div class="macro-outline" markdown="1">
 
+<nav class="mc-nav">
+  <a href="#basic-information">Info</a>
+  <a href="#teaching-philosophy">Philosophy</a>
+  <a href="#objectives">Objectives</a>
+  <a href="#course-outcomes">Outcomes</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#grading">Grading</a>
+  <a href="#textbooks">Textbooks</a>
+  <a href="#course-policies">Policies</a>
+  <a href="#materials">Materials</a>
+</nav>
+
 ## Basic Information
 
 | | |
