@@ -6,6 +6,13 @@ category: Elective
 importance: 5
 ---
 
+<div class="macro-outline" markdown="1">
+
+<nav class="mc-nav">
+  <a href="#introduction">Introduction</a>
+  <a href="#key-topics">Key Topics</a>
+</nav>
+
 ## Introduction
 
 This elective course examines the role of government in the economy, covering the theory and practice of taxation, public goods provision, externalities, and social welfare programs. The course combines theoretical frameworks with empirical evidence, emphasizing applications to Indian public policy.
@@ -19,3 +26,6 @@ This elective course examines the role of government in the economy, covering th
 + Social insurance and welfare programs
 + Public expenditure analysis
 + Fiscal federalism in India
+{: .pills}
+
+</div>

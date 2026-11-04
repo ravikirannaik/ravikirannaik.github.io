@@ -8,6 +8,10 @@ layout: default
   </style>
 {% endif %}
 
+{% if page.collection == "teachings" %}
+  {% include course-theme.liquid %}
+{% endif %}
+
 <div class="post">
   {% if page.collection == "teachings" %}
     <a class="back-link" href="{{ '/teaching/' | relative_url }}">← Back to Teaching</a>

@@ -6,6 +6,13 @@ category: Elective
 importance: 3
 ---
 
+<div class="macro-outline" markdown="1">
+
+<nav class="mc-nav">
+  <a href="#introduction">Introduction</a>
+  <a href="#key-topics">Key Topics</a>
+</nav>
+
 ## Introduction
 
 This elective course examines gender differences in economic outcomes through the lens of economic theory and empirical evidence. It covers gender gaps in labor force participation, wages, education, entrepreneurship, and development, with particular focus on the Indian context and the Global South.
@@ -19,3 +26,6 @@ This elective course examines gender differences in economic outcomes through th
 + Household bargaining models
 + Gender and development policy
 + Platform work and gender
+{: .pills}
+
+</div>

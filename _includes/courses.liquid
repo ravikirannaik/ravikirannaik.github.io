@@ -1,26 +1,51 @@
 {% if site.teachings %}
   <style>
-    .courses a.course-card-link { display: block; text-decoration: none; color: inherit; }
+    /* ---- Teaching index: pastel course cards (matches the course-page theme) ---- */
+    .courses { --cc-ink: #4a4a4a; margin-top: 1rem; }
+    .courses a.course-card-link { display: block; text-decoration: none; color: inherit; margin-bottom: 0.9rem; }
     .courses a.course-card-link:hover { text-decoration: none; color: inherit; }
-    .courses .course-card { transition: box-shadow .15s ease, transform .15s ease; }
+    .courses .course-card {
+      border: 1px solid var(--global-divider-color);
+      border-left: 6px solid var(--cc-c, #5f74a0);
+      border-radius: 8px;
+      transition: box-shadow .15s ease, transform .15s ease;
+    }
     .courses a.course-card-link:hover .course-card {
       box-shadow: 0 4px 14px rgba(0,0,0,0.12); transform: translateY(-2px);
     }
-    .courses .course-title { color: var(--global-theme-color); }
-    .courses .course-term  { color: var(--global-text-color-light); font-weight: 500; }
-    .courses .course-arrow { color: var(--global-theme-color); font-weight: 700; }
+    .courses .course-card .card-body { padding: 0.9rem 1.1rem; }
+    .courses .course-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+    .courses .course-title { color: var(--global-theme-color); font-weight: 700; font-size: 1.08rem; }
+    .courses .course-term  { color: var(--global-text-color-light); font-weight: 500; font-size: 0.9rem; }
+    .courses .course-cat {
+      font-size: 0.7rem; font-weight: 700; color: var(--cc-ink);
+      background: var(--cc-c, #cde0c9); border-radius: 999px;
+      padding: 0.1rem 0.6rem; white-space: nowrap;
+    }
+    .courses .course-arrow { color: var(--global-theme-color); font-weight: 700; margin-left: auto; }
+    .courses .card-text { color: var(--global-text-color); margin-top: 0.4rem; }
+
+    /* Dark-mode: tone the pastel edges/chips so they don't glow */
+    html[data-theme="dark"] .courses .course-card { border-left-color: var(--cc-c, #9fb0d6); }
+    html[data-theme="dark"] .courses .course-cat { filter: brightness(0.82) saturate(0.85); }
   </style>
+  {% assign palette = "#f7cfd8,#cde0c9,#d8cfe8,#a9d8de,#f7e3a1,#f5c9a6,#cbb8e0,#eeb4c8,#b7ddd0,#bde0f5" | split: "," %}
   <div class="courses">
     {% assign sorted_courses = site.teachings | sort: 'importance' %}
     {% for course in sorted_courses %}
+      {% assign ci = forloop.index0 | modulo: 10 %}
+      {% assign cc = palette[ci] %}
       <a class="course-card-link" href="{{ course.url | relative_url }}">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: {{ cc }};">
           <div class="card-body">
-            <span class="course-arrow float-right">&rarr;</span>
-            <span class="course-title font-weight-bold">{{ course.title }}</span>
-            {% if course.term %}<span class="course-term"> · {{ course.term }}</span>{% endif %}
+            <div class="course-head">
+              <span class="course-title">{{ course.title }}</span>
+              {% if course.term %}<span class="course-term">· {{ course.term }}</span>{% endif %}
+              {% if course.category %}<span class="course-cat">{{ course.category }}</span>{% endif %}
+              <span class="course-arrow">&rarr;</span>
+            </div>
             {% if course.description %}
-              <p class="card-text mt-2 mb-0">{{ course.description }}</p>
+              <p class="card-text mb-0">{{ course.description }}</p>
             {% endif %}
           </div>
         </div>

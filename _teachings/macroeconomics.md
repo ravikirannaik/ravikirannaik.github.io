@@ -6,6 +6,15 @@ category: Undergraduate
 importance: 4
 ---
 
+<div class="macro-outline" markdown="1">
+
+<nav class="mc-nav">
+  <a href="#introduction">Introduction</a>
+  <a href="#part-1-national-income-and-economic-growth">Part 1</a>
+  <a href="#part-2-business-cycles-and-short-run-fluctuations">Part 2</a>
+  <a href="#part-3-macroeconomic-policy">Part 3</a>
+</nav>
+
 ## Introduction
 
 This undergraduate course introduces students to the core concepts and models of macroeconomics. It covers national income accounting, long-run economic growth, business cycle analysis, and the tools of fiscal and monetary policy, with applications to the Indian and global economy.
@@ -16,6 +25,7 @@ This undergraduate course introduces students to the core concepts and models of
 + Long-run economic growth: Solow model and beyond
 + Savings, investment, and capital accumulation
 + Productivity and technological change
+{: .pills}
 
 ## Part 2: Business Cycles and Short-Run Fluctuations
 
@@ -23,6 +33,7 @@ This undergraduate course introduces students to the core concepts and models of
 + Aggregate demand and aggregate supply
 + Unemployment and inflation
 + Phillips Curve
+{: .pills}
 
 ## Part 3: Macroeconomic Policy
 
@@ -30,3 +41,6 @@ This undergraduate course introduces students to the core concepts and models of
 + Monetary policy: central banking and interest rates
 + Open economy macroeconomics
 + Macroeconomic policy in developing economies
+{: .pills}
+
+</div>

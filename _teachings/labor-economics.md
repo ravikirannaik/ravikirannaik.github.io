@@ -6,6 +6,23 @@ category: Undergraduate
 importance: 2
 ---
 
+<div class="macro-outline" markdown="1">
+
+<nav class="mc-nav">
+  <a href="#course-overview">Overview</a>
+  <a href="#chapter-1-introduction-to-labor-economics">Ch 1</a>
+  <a href="#chapter-2-labor-supply">Ch 2</a>
+  <a href="#chapter-3-labor-demand">Ch 3</a>
+  <a href="#chapter-4-labor-market-equilibrium">Ch 4</a>
+  <a href="#chapter-5-compensating-wage-differentials">Ch 5</a>
+  <a href="#chapter-6-human-capital">Ch 6</a>
+  <a href="#chapter-7-wage-inequality-and-discrimination">Ch 7</a>
+  <a href="#chapter-8-labor-market-institutions">Ch 8</a>
+  <a href="#chapter-9-informality-platform-work-and-the-future-of-work">Ch 9</a>
+  <a href="#chapter-10-unemployment">Ch 10</a>
+  <a href="#job-jungle-labour-market-simulation-game">Game</a>
+</nav>
+
 ## Course Overview
 
 This undergraduate course provides a comprehensive introduction to labor economics, examining how labor markets function, how wages are determined, and how institutions shape employment outcomes. The course draws on both theoretical frameworks and empirical evidence, with particular attention to labor market issues in developing economies.
@@ -327,3 +344,5 @@ Last chance to earn. All cards collected at the end.
 | **Rule Compliance** | 20% | Default 20 pts. Deduct 5 per infraction. Cheating = automatic 0. |
 
 **Prize:** Gift card to the top-earning worker and top-profit employer pair.
+
+</div>
