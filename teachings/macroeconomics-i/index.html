@@ -108,7 +108,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1793627589">
+<link rel="stylesheet" href="/assets/css/main.css?v=1793794605">
 <link rel="canonical" href="https://ravikirannaik.com/teachings/macroeconomics-i/">
 
 
@@ -165,6 +165,8 @@
 
           <!-- Other pages -->
           
+          
+            
           
             
           
@@ -329,23 +331,15 @@
             <!-- main content area -->
             <div class="col-sm-9">
 
-<div class="post">
-  
-    <a class="back-link" href="/teaching/">← Back to Teaching</a>
-  
-  <header class="post-header">
-    <h1 class="post-title">Macroeconomics-I (ECON 202)</h1>
-    <p class="post-description">Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.</p>
-  </header>
 
-  
-    
-    
-    
-    
-      <article>
-        <style>
-/* ---- Macroeconomics-I course page: colourful, native (no embedded PDF) ---- */
+  <style>
+/* ================================================================
+   Shared course-page theme (collection: teachings)
+   Extracted from the Macroeconomics-I / Ideas-in-Economics pages so
+   every course shares one pastel, native design. Per-course bits that
+   genuinely differ (e.g. the grading-donut weights) are set inline via
+   the --mc-donut-grad CSS variable; everything else lives here.
+   ================================================================ */
 .macro-outline {
   --mc-blue:   #5f74a0;   /* muted indigo — headers & structure */
   --mc-orange: #c0895e;   /* muted terracotta — sub-headers     */
@@ -397,6 +391,11 @@
 .mc-nav a:nth-child(8) { background: #eeb4c8; }  /* 撫子 nadeshiko   */
 .mc-nav a:nth-child(9) { background: #b7ddd0; }  /* 白緑 byakuroku   */
 .mc-nav a:nth-child(10) { background: #bde0f5; } /* 空色 sorairo sky */
+.mc-nav a:nth-child(11) { background: #f7cfd8; } /* cycle → sakura   */
+.mc-nav a:nth-child(12) { background: #cde0c9; } /* cycle → matcha   */
+.mc-nav a:nth-child(13) { background: #d8cfe8; } /* cycle → fuji     */
+.mc-nav a:nth-child(14) { background: #a9d8de; } /* cycle → asagi    */
+.mc-nav a:nth-child(15) { background: #f7e3a1; } /* cycle → yamabuki */
 .macro-outline h3 { color: var(--mc-orange); margin-top: 1.5rem; scroll-margin-top: 7.5rem; }
 
 /* Lede line under the title */
@@ -447,6 +446,14 @@
   background: var(--mc-c, var(--mc-blue));
   border-radius: 999px; padding: 0.1rem 0.65rem; white-space: nowrap;
 }
+/* Optional per-row enrichment line (e.g. films / readings) */
+.mc-sched td.mod-cell .mod-film {
+  display: block; font-size: 0.85rem; margin-top: 0.25rem; color: var(--mc-ink);
+}
+.mc-sched td.mod-cell .mod-film .tag {
+  display: inline-block; font-size: 0.74rem; font-weight: 700; color: var(--mc-ink);
+  background: rgba(255,255,255,0.55); border-radius: 4px; padding: 0.05rem 0.45rem; margin-right: 0.3rem;
+}
 .mc-sched tr.grp td { border-top: 2px solid var(--global-divider-color); }
 
 /* ---- Course-materials matrix ---- */
@@ -486,16 +493,16 @@
 .mc-grade-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1rem; align-items: start; }
 @media (max-width: 720px) { .mc-grade-wrap { grid-template-columns: 1fr; } }
 
-/* Donut chart (component breakdown) */
+/* Donut chart (component breakdown) — per-course weights via --mc-donut-grad */
 .mc-donut-wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: nowrap; margin-top: 0.6rem; }
 .mc-donut {
   width: 130px; height: 130px; border-radius: 50%; flex: 0 0 auto; position: relative;
-  background: conic-gradient(
+  background: var(--mc-donut-grad, conic-gradient(
     #f7e3a1 0 40%,      /* End Term 40 */
     #a9d8de 40% 60%,    /* Mid Term 20 */
     #cde0c9 60% 80%,    /* Quiz (2) 20 */
     #f5c9a6 80% 90%,    /* Problem Set 10 */
-    #d8cfe8 90% 100%);  /* Class Part 10 */
+    #d8cfe8 90% 100%)); /* Class Part 10 */
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 .mc-donut::after {
@@ -536,6 +543,19 @@ img.mc-book-cover-img { width: 80px; flex: 0 0 auto; display: block; border-radi
 }
 .mc-book .tag.req { background: #eeb4c8; }  /* nadeshiko */
 .mc-book .tag.sup { background: #f7e3a1; }  /* yamabuki  */
+
+/* ---- Readings rows ---- */
+.mc-readings { list-style: none; padding: 0; margin: 1rem 0 0; }
+.mc-readings li {
+  padding: 0.55rem 0; border-bottom: 1px solid var(--global-divider-color);
+}
+.mc-readings li .tag {
+  display: inline-block; font-size: 0.74rem; font-weight: 700; color: var(--mc-ink); border-radius: 4px;
+  padding: 0.1rem 0.5rem; white-space: nowrap; margin-right: 0.5rem;
+}
+.mc-readings li .tag.req { background: #eeb4c8; }  /* nadeshiko */
+.mc-readings li .tag.sup { background: #f7e3a1; }  /* yamabuki  */
+.mc-readings li .tag.ref { background: #a9d8de; }  /* asagi     */
 
 /* ---- Policy accordions ---- */
 .macro-outline details.mc-acc {
@@ -581,6 +601,16 @@ img.mc-book-cover-img { width: 80px; flex: 0 0 auto; display: block; border-radi
 }
 .mc-pdf-btn:hover { filter: brightness(0.94); }
 
+/* ---- Course title pinned to the top of the right "On this page" ToC ---- */
+.toc-course-title {
+  position: sticky; top: 5rem; z-index: 6;
+  font-weight: 700; color: var(--mc-blue, #5f74a0);
+  font-size: 0.95rem; line-height: 1.25;
+  padding: 0.5rem 0.2rem 0.55rem; margin-bottom: 0.3rem;
+  border-bottom: 2px solid var(--mc-blue, #5f74a0);
+  background: var(--global-bg-color);
+}
+
 /* ---- Dark-mode toning: mute the pastels so they don't glow ---- */
 html[data-theme="dark"] .macro-outline {
   --mc-blue:   #9fb0d6;                 /* lighter for legible headers */
@@ -590,6 +620,7 @@ html[data-theme="dark"] .macro-outline {
 html[data-theme="dark"] .mc-nav a,
 html[data-theme="dark"] .mc-badge,
 html[data-theme="dark"] .mc-book .tag,
+html[data-theme="dark"] .mc-readings li .tag,
 html[data-theme="dark"] .mc-legend .sw,
 html[data-theme="dark"] .mc-donut,
 html[data-theme="dark"] .gs-fill,
@@ -607,7 +638,24 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
 @media (prefers-reduced-motion: reduce) { .mc-blink, .mc-blink-slow { animation: none; } }
 </style>
 
-<div class="macro-outline">
+
+
+<div class="post">
+  
+    <a class="back-link" href="/teaching/">← Back to Teaching</a>
+  
+  <header class="post-header">
+    <h1 class="post-title">Macroeconomics-I (ECON 202)</h1>
+    <p class="post-description">Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.</p>
+  </header>
+
+  
+    
+    
+    
+    
+      <article>
+        <div class="macro-outline">
 
   <h2 id="basic-information">Basic Information</h2>
 
@@ -936,6 +984,8 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
   <p><a href="/teachings/macroeconomics-i/concept-map-consumption-saving-investment/"><strong>▸ Concept Map — Consumption, Saving &amp; Investment</strong></a> — an interactive map of Module 3: how the real interest rate ties the saving decision, the user cost of capital, and goods-market equilibrium into one connected model (hover, click, or watch it build lecture-by-lecture).</p>
 
+  <p><a href="/teachings/macroeconomics-i/islm-simulator/"><strong>▸ IS–LM Interactive Simulator</strong></a> — a browser-based tool for Module 5: drag the fiscal- and monetary-policy sliders and watch the IS and LM curves and the general equilibrium adjust in real time (based on the TU Berlin Chair of Macroeconomics toolkit).</p>
+
   <p><a href="/teachings/macroeconomics-i/nobel-2026-hall-woodford/"><strong>▸ The 2026 Economics Nobel — Hall, Woodford, and where it sits in ECON 202</strong></a> — student notes on the Nobel awarded to Robert Hall and Michael Woodford: what they won for, and how it maps onto Modules 2–5 (the consumption function, unemployment, money, forward guidance, and IS–LM).</p>
 
   <h2 id="course-policies">Course Policies</h2>
@@ -1193,6 +1243,7 @@ upwards to standardise the median score; marks will never be adjusted down for t
 </div>
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
+              <div class="toc-course-title">Macroeconomics-I (ECON 202)</div>
               <nav id="toc-sidebar" class="sticky-top"></nav>
             </div>
           </div>
@@ -1214,7 +1265,7 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
   
   
-    Last updated: November 02, 2026.
+    Last updated: November 04, 2026.
   
 
     </div>

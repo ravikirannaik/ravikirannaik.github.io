@@ -105,7 +105,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1793627589">
+<link rel="stylesheet" href="/assets/css/main.css?v=1793794605">
 <link rel="canonical" href="https://ravikirannaik.com/teaching/">
 
 
@@ -162,6 +162,8 @@
 
           <!-- Other pages -->
           
+          
+            
           
             
           
@@ -327,6 +329,8 @@
       
         
 
+
+
 <div class="post">
   
   <header class="post-header">
@@ -338,93 +342,142 @@
     <article>
       
 <style>
-    .courses a.course-card-link { display: block; text-decoration: none; color: inherit; }
+    /* ---- Teaching index: pastel course cards (matches the course-page theme) ---- */
+    .courses { --cc-ink: #4a4a4a; margin-top: 1rem; }
+    .courses a.course-card-link { display: block; text-decoration: none; color: inherit; margin-bottom: 0.9rem; }
     .courses a.course-card-link:hover { text-decoration: none; color: inherit; }
-    .courses .course-card { transition: box-shadow .15s ease, transform .15s ease; }
+    .courses .course-card {
+      border: 1px solid var(--global-divider-color);
+      border-left: 6px solid var(--cc-c, #5f74a0);
+      border-radius: 8px;
+      transition: box-shadow .15s ease, transform .15s ease;
+    }
     .courses a.course-card-link:hover .course-card {
       box-shadow: 0 4px 14px rgba(0,0,0,0.12); transform: translateY(-2px);
     }
-    .courses .course-title { color: var(--global-theme-color); }
-    .courses .course-term  { color: var(--global-text-color-light); font-weight: 500; }
-    .courses .course-arrow { color: var(--global-theme-color); font-weight: 700; }
+    .courses .course-card .card-body { padding: 0.9rem 1.1rem; }
+    .courses .course-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+    .courses .course-title { color: var(--global-theme-color); font-weight: 700; font-size: 1.08rem; }
+    .courses .course-term  { color: var(--global-text-color-light); font-weight: 500; font-size: 0.9rem; }
+    .courses .course-cat {
+      font-size: 0.7rem; font-weight: 700; color: var(--cc-ink);
+      background: var(--cc-c, #cde0c9); border-radius: 999px;
+      padding: 0.1rem 0.6rem; white-space: nowrap;
+    }
+    .courses .course-arrow { color: var(--global-theme-color); font-weight: 700; margin-left: auto; }
+    .courses .card-text { color: var(--global-text-color); margin-top: 0.4rem; }
+
+    /* Dark-mode: tone the pastel edges/chips so they don't glow */
+    html[data-theme="dark"] .courses .course-card { border-left-color: var(--cc-c, #9fb0d6); }
+    html[data-theme="dark"] .courses .course-cat { filter: brightness(0.82) saturate(0.85); }
   </style>
 
 <div class="courses">
     
     
+      
+      
       <a class="course-card-link" href="/teachings/ideas-in-economics/">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: #f7cfd8;">
           <div class="card-body">
-            <span class="course-arrow float-right">→</span>
-            <span class="course-title font-weight-bold">Ideas in Economics (Doing Economics)</span>
-            <span class="course-term"> · 2 Credits · Level 100</span>
+            <div class="course-head">
+              <span class="course-title">Ideas in Economics (Doing Economics)</span>
+              <span class="course-term">· 2 Credits · Level 100</span>
+              <span class="course-cat">Undergraduate</span>
+              <span class="course-arrow">→</span>
+            </div>
             
-              <p class="card-text mt-2 mb-0">A rigorous-but-accessible "Doing Economics" gateway at FLAME University — built on Acemoglu, Laibson &amp; List with CORE's The Economy 2.0 for support, split evenly into a microeconomics half and a macroeconomics half, each unit worked with real data. Feature films and Nobel-winning research are optional enrichment. Builds the conceptual and empirical foundation for Microeconomics-I and Macroeconomics-I.</p>
+              <p class="card-text mb-0">A rigorous-but-accessible "Doing Economics" gateway at FLAME University — built on Acemoglu, Laibson &amp; List with CORE's The Economy 2.0 for support, split evenly into a microeconomics half and a macroeconomics half, each unit worked with real data. Feature films and Nobel-winning research are optional enrichment. Builds the conceptual and empirical foundation for Microeconomics-I and Macroeconomics-I.</p>
             
           </div>
         </div>
       </a>
     
+      
+      
       <a class="course-card-link" href="/teachings/macroeconomics-i/">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: #cde0c9;">
           <div class="card-body">
-            <span class="course-arrow float-right">→</span>
-            <span class="course-title font-weight-bold">Macroeconomics-I (ECON 202)</span>
-            <span class="course-term"> · Monsoon 2026-27</span>
+            <div class="course-head">
+              <span class="course-title">Macroeconomics-I (ECON 202)</span>
+              <span class="course-term">· Monsoon 2026-27</span>
+              <span class="course-cat">Undergraduate</span>
+              <span class="course-arrow">→</span>
+            </div>
             
-              <p class="card-text mt-2 mb-0">Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.</p>
+              <p class="card-text mb-0">Undergraduate Macroeconomics-I at FLAME University, Monsoon 2026 — GDP, CPI, and unemployment; productivity and output; consumption, saving and investment; money and prices; and the IS-LM / AS-AD general-equilibrium framework.</p>
             
           </div>
         </div>
       </a>
     
+      
+      
       <a class="course-card-link" href="/teachings/labor-economics/">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: #d8cfe8;">
           <div class="card-body">
-            <span class="course-arrow float-right">→</span>
-            <span class="course-title font-weight-bold">Labor Economics</span>
-            <span class="course-term"> · 2024--present (ongoing)</span>
+            <div class="course-head">
+              <span class="course-title">Labor Economics</span>
+              <span class="course-term">· 2024--present (ongoing)</span>
+              <span class="course-cat">Undergraduate</span>
+              <span class="course-arrow">→</span>
+            </div>
             
-              <p class="card-text mt-2 mb-0">Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.</p>
+              <p class="card-text mb-0">Undergraduate course in labor economics at FLAME University covering labor supply, demand, wage determination, and contemporary labor market issues.</p>
             
           </div>
         </div>
       </a>
     
+      
+      
       <a class="course-card-link" href="/teachings/gender-economics/">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: #a9d8de;">
           <div class="card-body">
-            <span class="course-arrow float-right">→</span>
-            <span class="course-title font-weight-bold">Gender Economics</span>
-            <span class="course-term"> · 2024--present</span>
+            <div class="course-head">
+              <span class="course-title">Gender Economics</span>
+              <span class="course-term">· 2024--present</span>
+              <span class="course-cat">Elective</span>
+              <span class="course-arrow">→</span>
+            </div>
             
-              <p class="card-text mt-2 mb-0">Elective course in gender economics at FLAME University examining gender gaps in labor markets, education, entrepreneurship, and development.</p>
+              <p class="card-text mb-0">Elective course in gender economics at FLAME University examining gender gaps in labor markets, education, entrepreneurship, and development.</p>
             
           </div>
         </div>
       </a>
     
+      
+      
       <a class="course-card-link" href="/teachings/macroeconomics/">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: #f7e3a1;">
           <div class="card-body">
-            <span class="course-arrow float-right">→</span>
-            <span class="course-title font-weight-bold">Macroeconomics</span>
-            <span class="course-term"> · 2023--present</span>
+            <div class="course-head">
+              <span class="course-title">Macroeconomics</span>
+              <span class="course-term">· 2023--present</span>
+              <span class="course-cat">Undergraduate</span>
+              <span class="course-arrow">→</span>
+            </div>
             
-              <p class="card-text mt-2 mb-0">Undergraduate macroeconomics course at FLAME University covering national income, growth, business cycles, and policy.</p>
+              <p class="card-text mb-0">Undergraduate macroeconomics course at FLAME University covering national income, growth, business cycles, and policy.</p>
             
           </div>
         </div>
       </a>
     
+      
+      
       <a class="course-card-link" href="/teachings/public-economics/">
-        <div class="card course-card mt-2">
+        <div class="card course-card mt-2" style="--cc-c: #f5c9a6;">
           <div class="card-body">
-            <span class="course-arrow float-right">→</span>
-            <span class="course-title font-weight-bold">Public Economics</span>
-            <span class="course-term"> · 2023--present</span>
+            <div class="course-head">
+              <span class="course-title">Public Economics</span>
+              <span class="course-term">· 2023--present</span>
+              <span class="course-cat">Elective</span>
+              <span class="course-arrow">→</span>
+            </div>
             
-              <p class="card-text mt-2 mb-0">Elective course in public economics at FLAME University covering taxation, public goods, externalities, and social welfare programs.</p>
+              <p class="card-text mb-0">Elective course in public economics at FLAME University covering taxation, public goods, externalities, and social welfare programs.</p>
             
           </div>
         </div>
@@ -458,7 +511,7 @@
 
   
   
-    Last updated: November 02, 2026.
+    Last updated: November 04, 2026.
   
 
     </div>

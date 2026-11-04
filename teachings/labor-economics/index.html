@@ -105,7 +105,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1793627589">
+<link rel="stylesheet" href="/assets/css/main.css?v=1793794605">
 <link rel="canonical" href="https://ravikirannaik.com/teachings/labor-economics/">
 
 
@@ -162,6 +162,8 @@
 
           <!-- Other pages -->
           
+          
+            
           
             
           
@@ -323,6 +325,315 @@
       
         
 
+
+  <style>
+/* ================================================================
+   Shared course-page theme (collection: teachings)
+   Extracted from the Macroeconomics-I / Ideas-in-Economics pages so
+   every course shares one pastel, native design. Per-course bits that
+   genuinely differ (e.g. the grading-donut weights) are set inline via
+   the --mc-donut-grad CSS variable; everything else lives here.
+   ================================================================ */
+.macro-outline {
+  --mc-blue:   #5f74a0;   /* muted indigo — headers & structure */
+  --mc-orange: #c0895e;   /* muted terracotta — sub-headers     */
+  --mc-red:    #c98a97;   /* dusty rose — accents               */
+  --mc-ink:    #4a4a4a;   /* readable text on pastel fills      */
+  --mc-soft:   rgba(95, 116, 160, 0.08);
+  max-width: 820px;
+  margin: 0 auto;
+}
+.macro-outline table { margin-left: auto; margin-right: auto; }
+
+/* Section headers */
+.macro-outline h2 {
+  color: var(--mc-blue);
+  border-bottom: 2px solid var(--mc-blue);
+  padding-bottom: 0.25rem;
+  margin-top: 2.2rem;
+  scroll-margin-top: 7.5rem;   /* clear the fixed navbar + sticky pill row on jump */
+}
+
+/* ---- Section jump-nav (sticky under the title) ---- */
+.mc-nav {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin: 1.2rem 0 0.5rem;
+  position: sticky; top: 4.5rem; z-index: 5;
+  padding: 0.5rem 0;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.mc-nav a {
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  color: #4a4a4a; border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px; padding: 0.4rem 0.95rem;
+  transition: filter 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.mc-nav a:hover { filter: brightness(0.93); transform: translateY(-1px); }
+.mc-nav a.active {
+  box-shadow: 0 0 0 2px var(--mc-blue);
+  border-color: transparent; filter: brightness(0.96);
+}
+/* Japanese pastel palette — sakura, matcha, fuji, asagi, yamabuki … */
+.mc-nav a:nth-child(1) { background: #f7cfd8; }  /* 桜 sakura pink   */
+.mc-nav a:nth-child(2) { background: #cde0c9; }  /* 抹茶 matcha      */
+.mc-nav a:nth-child(3) { background: #d8cfe8; }  /* 藤 fuji purple   */
+.mc-nav a:nth-child(4) { background: #a9d8de; }  /* 浅葱 asagi blue  */
+.mc-nav a:nth-child(5) { background: #f7e3a1; }  /* 山吹 yamabuki    */
+.mc-nav a:nth-child(6) { background: #f5c9a6; }  /* 珊瑚 coral peach */
+.mc-nav a:nth-child(7) { background: #cbb8e0; }  /* 藤鼠 wisteria    */
+.mc-nav a:nth-child(8) { background: #eeb4c8; }  /* 撫子 nadeshiko   */
+.mc-nav a:nth-child(9) { background: #b7ddd0; }  /* 白緑 byakuroku   */
+.mc-nav a:nth-child(10) { background: #bde0f5; } /* 空色 sorairo sky */
+.mc-nav a:nth-child(11) { background: #f7cfd8; } /* cycle → sakura   */
+.mc-nav a:nth-child(12) { background: #cde0c9; } /* cycle → matcha   */
+.mc-nav a:nth-child(13) { background: #d8cfe8; } /* cycle → fuji     */
+.mc-nav a:nth-child(14) { background: #a9d8de; } /* cycle → asagi    */
+.mc-nav a:nth-child(15) { background: #f7e3a1; } /* cycle → yamabuki */
+.macro-outline h3 { color: var(--mc-orange); margin-top: 1.5rem; scroll-margin-top: 7.5rem; }
+
+/* Lede line under the title */
+.macro-lede {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  border-left: 4px solid var(--mc-blue);
+  background: var(--mc-soft);
+  padding: 0.85rem 1.1rem;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Objective / outcome pill lists */
+.macro-outline ul.pills { list-style: none; padding: 0; margin: 1rem 0 0; }
+.macro-outline ul.pills li {
+  position: relative; padding: 0.35rem 0 0.35rem 1.6rem;
+}
+.macro-outline ul.pills li::before {
+  content: "▸"; position: absolute; left: 0; top: 0.35rem;
+  color: var(--mc-orange); font-weight: 700;
+}
+
+/* ---- Merged Topics & Schedule table ---- */
+.mc-sched { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem; }
+.mc-sched th {
+  background: #cdd6e8; color: var(--mc-ink); text-align: left;
+  padding: 0.5rem 0.7rem;
+}
+.mc-sched td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--global-divider-color); }
+.mc-sched td:first-child { vertical-align: top; white-space: nowrap; font-weight: 500; }
+.mc-sched td:first-child .mc-badge { display: inline-block; margin-top: 0.3rem; }
+/* Module cell spans its weeks; coloured edge ties it to the topic cards */
+.mc-sched td.mod-cell {
+  vertical-align: top;
+  border-left: 5px solid var(--mc-c, var(--mc-blue));
+  background: color-mix(in srgb, var(--mc-c, var(--mc-blue)) 22%, transparent);
+  padding-top: 0.6rem;
+}
+.mc-sched td.mod-cell .mod-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 0.6rem; flex-wrap: wrap;
+}
+.mc-sched td.mod-cell .mod-name { font-weight: 700; color: var(--mc-ink); }
+.mc-sched td.mod-cell ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+.mc-sched td.mod-cell ul li { padding: 0.1rem 0; }
+.mc-sched td.mod-cell .mod-hours {
+  display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--mc-ink);
+  background: var(--mc-c, var(--mc-blue));
+  border-radius: 999px; padding: 0.1rem 0.65rem; white-space: nowrap;
+}
+/* Optional per-row enrichment line (e.g. films / readings) */
+.mc-sched td.mod-cell .mod-film {
+  display: block; font-size: 0.85rem; margin-top: 0.25rem; color: var(--mc-ink);
+}
+.mc-sched td.mod-cell .mod-film .tag {
+  display: inline-block; font-size: 0.74rem; font-weight: 700; color: var(--mc-ink);
+  background: rgba(255,255,255,0.55); border-radius: 4px; padding: 0.05rem 0.45rem; margin-right: 0.3rem;
+}
+.mc-sched tr.grp td { border-top: 2px solid var(--global-divider-color); }
+
+/* ---- Course-materials matrix ---- */
+.mc-matrix th:not(:first-child), .mc-matrix td:not(:first-child) { text-align: center; vertical-align: middle; }
+.mc-matrix td.mod-cell { white-space: normal; }
+.mc-matrix td.mod-cell .mod-no { font-weight: 700; color: var(--mc-ink); margin-right: 0.5rem; }
+.mc-matrix td.mod-cell .mod-name { font-weight: 700; color: var(--mc-ink); }
+.mc-matrix .na { color: var(--global-text-color-light); font-weight: 600; }
+.mc-matrix a.yes { color: #2e7d32; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+.mc-matrix a.yes:hover { color: #1b5e20; text-decoration: none; }
+.mc-matrix .soon { display: block; color: var(--global-text-color-light); font-size: 0.78rem; margin-top: 0.15rem; }
+.mc-matrix .mod-tag {
+  font-size: 0.72rem; font-weight: 700; color: var(--mc-ink);
+  border-radius: 4px; padding: 0.05rem 0.45rem; margin-left: 0.4rem; white-space: nowrap;
+}
+.mc-matrix .mod-tag.graded { background: #eeb4c8; }
+.mc-matrix tr.graded-row td:not(.mod-cell) { background: color-mix(in srgb, #eeb4c8 16%, transparent); }
+
+/* ---- Important dates ---- */
+.mc-dates { list-style: none; padding: 0; margin: 0.8rem 0 0.4rem; max-width: 460px; }
+.mc-dates li {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 0.5rem 0; border-bottom: 1px solid var(--global-divider-color);
+}
+.mc-dates .mc-badge { min-width: 8.5rem; text-align: center; }
+.mc-dates .d-date { margin-left: auto; font-weight: 600; color: var(--global-text-color); }
+.mc-badge {
+  display: inline-block; font-size: 0.78rem; font-weight: 700;
+  border-radius: 4px; padding: 0.08rem 0.5rem; color: var(--mc-ink);
+}
+.mc-badge.quiz { background: #a9d8de; }  /* asagi    */
+.mc-badge.exam { background: #eeb4c8; }  /* nadeshiko */
+.mc-badge.ps   { background: #f7e3a1; }  /* yamabuki */
+.mc-badge.rev  { background: #cde0c9; }  /* matcha   */
+
+/* ---- Grading ---- */
+.mc-grade-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1rem; align-items: start; }
+@media (max-width: 720px) { .mc-grade-wrap { grid-template-columns: 1fr; } }
+
+/* Donut chart (component breakdown) — per-course weights via --mc-donut-grad */
+.mc-donut-wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: nowrap; margin-top: 0.6rem; }
+.mc-donut {
+  width: 130px; height: 130px; border-radius: 50%; flex: 0 0 auto; position: relative;
+  background: var(--mc-donut-grad, conic-gradient(
+    #f7e3a1 0 40%,      /* End Term 40 */
+    #a9d8de 40% 60%,    /* Mid Term 20 */
+    #cde0c9 60% 80%,    /* Quiz (2) 20 */
+    #f5c9a6 80% 90%,    /* Problem Set 10 */
+    #d8cfe8 90% 100%)); /* Class Part 10 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.mc-donut::after {
+  content: ""; position: absolute; inset: 25px; border-radius: 50%;
+  background: var(--global-bg-color);
+}
+.mc-donut .mc-donut-c {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1;
+}
+.mc-donut .mc-donut-c b { font-size: 1.25rem; color: var(--mc-blue); }
+.mc-donut .mc-donut-c small { font-size: 0.68rem; color: var(--global-text-color-light); }
+.mc-legend { list-style: none; padding: 0; margin: 0; min-width: 12rem; }
+.mc-legend li { display: flex; align-items: center; gap: 0.55rem; padding: 0.22rem 0; }
+.mc-legend .sw { width: 0.85rem; height: 0.85rem; border-radius: 3px; flex: 0 0 auto; }
+.mc-legend .pct { margin-left: auto; font-weight: 700; padding-left: 1rem; }
+
+/* Benchmark ladder (grading scale) */
+.gs-list { margin-top: 0.6rem; }
+.gs-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; }
+.gs-grade { flex: 0 0 1.9rem; font-weight: 700; text-align: right; }
+.gs-track { flex: 1 1 auto; height: 1.45rem; border-radius: 5px; background: var(--mc-soft); }
+.gs-fill {
+  height: 100%; border-radius: 5px; display: flex; align-items: center; justify-content: flex-end;
+  padding-right: 0.45rem; font-size: 0.74rem; font-weight: 700; color: var(--mc-ink);
+  min-width: 2.4rem;
+}
+
+/* ---- Textbook rows ---- */
+.mc-book { display: flex; gap: 1.2rem; align-items: flex-start; margin: 1.2rem 0; }
+.mc-book-cover { flex: 0 0 auto; }
+.mc-book-cover img { width: 80px; display: block; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+img.mc-book-cover-img { width: 80px; flex: 0 0 auto; display: block; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.mc-book-body { flex: 1 1 auto; }
+.mc-book .tag {
+  display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--mc-ink); border-radius: 4px;
+  padding: 0.12rem 0.55rem; white-space: nowrap; margin-bottom: 0.4rem;
+}
+.mc-book .tag.req { background: #eeb4c8; }  /* nadeshiko */
+.mc-book .tag.sup { background: #f7e3a1; }  /* yamabuki  */
+
+/* ---- Readings rows ---- */
+.mc-readings { list-style: none; padding: 0; margin: 1rem 0 0; }
+.mc-readings li {
+  padding: 0.55rem 0; border-bottom: 1px solid var(--global-divider-color);
+}
+.mc-readings li .tag {
+  display: inline-block; font-size: 0.74rem; font-weight: 700; color: var(--mc-ink); border-radius: 4px;
+  padding: 0.1rem 0.5rem; white-space: nowrap; margin-right: 0.5rem;
+}
+.mc-readings li .tag.req { background: #eeb4c8; }  /* nadeshiko */
+.mc-readings li .tag.sup { background: #f7e3a1; }  /* yamabuki  */
+.mc-readings li .tag.ref { background: #a9d8de; }  /* asagi     */
+
+/* ---- Policy accordions ---- */
+.macro-outline details.mc-acc {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px; padding: 0.4rem 1rem; margin-top: 0.8rem;
+}
+.macro-outline details.mc-acc > summary {
+  cursor: pointer; font-weight: 600; color: var(--mc-blue); padding: 0.4rem 0;
+}
+
+/* ---- Lecture-slide list ---- */
+.macro-outline .modules { list-style: none; padding: 0; margin: 1rem 0 0; }
+.macro-outline .modules li {
+  display: flex; align-items: baseline; gap: 0.75rem;
+  padding: 0.7rem 0; border-bottom: 1px solid var(--global-divider-color);
+}
+.macro-outline .modules li:first-child { border-top: 1px solid var(--global-divider-color); }
+.macro-outline .modules .mod-no {
+  flex: 0 0 auto; font-weight: 700; color: var(--mc-blue); min-width: 2.4rem;
+}
+.macro-outline .modules .mod-body { flex: 1 1 auto; }
+.macro-outline .modules .mod-title { font-weight: 500; }
+.macro-outline .modules .mod-links { margin-top: 0.15rem; font-size: 0.9rem; }
+.macro-outline .modules .mod-links a { margin-right: 0.9rem; }
+.macro-outline .modules .mod-soon { color: var(--global-text-color-light); font-size: 0.9rem; }
+.macro-outline .modules .mod-disabled {
+  color: var(--global-text-color-light); pointer-events: none;
+  opacity: 0.55; text-decoration: none; cursor: default;
+}
+.macro-outline .modules .mod-tag {
+  font-size: 0.72rem; font-weight: 700; color: var(--mc-ink);
+  border-radius: 4px; padding: 0.05rem 0.45rem; margin-left: 0.5rem; white-space: nowrap;
+}
+.macro-outline .modules .mod-tag.graded { background: #eeb4c8; }
+.macro-outline .modules .mod-tag.practice { background: #cde0c9; }
+
+/* ---- PDF download button ---- */
+.mc-pdf-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: #cbb8e0; color: var(--mc-ink) !important; text-decoration: none;
+  padding: 0.55rem 1.1rem; border-radius: 6px; font-weight: 700;
+  box-shadow: 0 2px 8px rgba(95,116,160,0.25); margin-top: 0.5rem;
+}
+.mc-pdf-btn:hover { filter: brightness(0.94); }
+
+/* ---- Course title pinned to the top of the right "On this page" ToC ---- */
+.toc-course-title {
+  position: sticky; top: 5rem; z-index: 6;
+  font-weight: 700; color: var(--mc-blue, #5f74a0);
+  font-size: 0.95rem; line-height: 1.25;
+  padding: 0.5rem 0.2rem 0.55rem; margin-bottom: 0.3rem;
+  border-bottom: 2px solid var(--mc-blue, #5f74a0);
+  background: var(--global-bg-color);
+}
+
+/* ---- Dark-mode toning: mute the pastels so they don't glow ---- */
+html[data-theme="dark"] .macro-outline {
+  --mc-blue:   #9fb0d6;                 /* lighter for legible headers */
+  --mc-orange: #d6a985;
+  --mc-soft:   rgba(159, 176, 214, 0.14);
+}
+html[data-theme="dark"] .mc-nav a,
+html[data-theme="dark"] .mc-badge,
+html[data-theme="dark"] .mc-book .tag,
+html[data-theme="dark"] .mc-readings li .tag,
+html[data-theme="dark"] .mc-legend .sw,
+html[data-theme="dark"] .mc-donut,
+html[data-theme="dark"] .gs-fill,
+html[data-theme="dark"] .mc-sched th,
+html[data-theme="dark"] .mc-sched td.mod-cell,
+html[data-theme="dark"] .mc-pdf-btn {
+  filter: brightness(0.82) saturate(0.85);
+}
+html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
+
+/* ---- Blinking "Book your slot" link ---- */
+.mc-blink { font-weight: 700; animation: mc-blink 2.4s steps(1) infinite; }
+@keyframes mc-blink { 50% { opacity: 0; } }
+.mc-blink-slow { font-weight: 700; animation: mc-blink 4.5s steps(1) infinite; }
+@media (prefers-reduced-motion: reduce) { .mc-blink, .mc-blink-slow { animation: none; } }
+</style>
+
+
+
 <div class="post">
   
     <a class="back-link" href="/teaching/">← Back to Teaching</a>
@@ -417,504 +728,523 @@
         </aside>
         <div class="col-lg-9 course-main">
           <article>
-            <h2 id="course-overview">Course Overview</h2>
+            <div class="macro-outline">
 
-<p>This undergraduate course provides a comprehensive introduction to labor economics, examining how labor markets function, how wages are determined, and how institutions shape employment outcomes. The course draws on both theoretical frameworks and empirical evidence, with particular attention to labor market issues in developing economies.</p>
+  <nav class="mc-nav">
+  <a href="#course-overview">Overview</a>
+  <a href="#chapter-1-introduction-to-labor-economics">Ch 1</a>
+  <a href="#chapter-2-labor-supply">Ch 2</a>
+  <a href="#chapter-3-labor-demand">Ch 3</a>
+  <a href="#chapter-4-labor-market-equilibrium">Ch 4</a>
+  <a href="#chapter-5-compensating-wage-differentials">Ch 5</a>
+  <a href="#chapter-6-human-capital">Ch 6</a>
+  <a href="#chapter-7-wage-inequality-and-discrimination">Ch 7</a>
+  <a href="#chapter-8-labor-market-institutions">Ch 8</a>
+  <a href="#chapter-9-informality-platform-work-and-the-future-of-work">Ch 9</a>
+  <a href="#chapter-10-unemployment">Ch 10</a>
+  <a href="#job-jungle-labour-market-simulation-game">Game</a>
+</nav>
 
-<p><strong>Textbook:</strong> Borjas, G. J. <em>Labor Economics</em> (8th edition), McGraw-Hill.</p>
+  <h2 id="course-overview">Course Overview</h2>
 
-<hr>
+  <p>This undergraduate course provides a comprehensive introduction to labor economics, examining how labor markets function, how wages are determined, and how institutions shape employment outcomes. The course draws on both theoretical frameworks and empirical evidence, with particular attention to labor market issues in developing economies.</p>
 
-<h2 id="chapter-1-introduction-to-labor-economics">Chapter 1: Introduction to Labor Economics</h2>
+  <p><strong>Textbook:</strong> Borjas, G. J. <em>Labor Economics</em> (8th edition), McGraw-Hill.</p>
 
-<p>Overview of the labor market, key facts, and the economist’s approach to understanding labor market outcomes.</p>
+  <hr>
 
-<p><a href="/assets/pdf/teaching/labor-economics/ch1-slides.pdf" target="_blank" rel="noopener noreferrer">Ch.1 Slides (PDF)</a></p>
+  <h2 id="chapter-1-introduction-to-labor-economics">Chapter 1: Introduction to Labor Economics</h2>
 
-<hr>
+  <p>Overview of the labor market, key facts, and the economist’s approach to understanding labor market outcomes.</p>
 
-<h2 id="chapter-2-labor-supply">Chapter 2: Labor Supply</h2>
+  <p><a href="/assets/pdf/teaching/labor-economics/ch1-slides.pdf" target="_blank" rel="noopener noreferrer">Ch.1 Slides (PDF)</a></p>
 
-<p>The income-leisure tradeoff, reservation wages, labour force participation, and the backward-bending supply curve.</p>
+  <hr>
 
-<h5 id="key-topics">Key Topics</h5>
-<ul>
-  <li>Utility maximization and the budget constraint</li>
-  <li>Income and substitution effects</li>
-  <li>Labour force participation decisions</li>
-  <li>Empirical evidence on labour supply elasticities</li>
-</ul>
+  <h2 id="chapter-2-labor-supply">Chapter 2: Labor Supply</h2>
 
-<embed src="/assets/pdf/teaching/labor-economics/ch2-supply-v1-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
+  <p>The income-leisure tradeoff, reservation wages, labour force participation, and the backward-bending supply curve.</p>
 
-<hr>
+  <h5 id="key-topics">Key Topics</h5>
+  <ul>
+    <li>Utility maximization and the budget constraint</li>
+    <li>Income and substitution effects</li>
+    <li>Labour force participation decisions</li>
+    <li>Empirical evidence on labour supply elasticities</li>
+  </ul>
 
-<h2 id="chapter-3-labor-demand">Chapter 3: Labor Demand</h2>
+  <embed src="/assets/pdf/teaching/labor-economics/ch2-supply-v1-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
 
-<p>The firm’s hiring decision, marginal productivity, and labor demand under perfect competition and monopsony.</p>
+  <hr>
 
-<h5 id="key-topics-1">Key Topics</h5>
-<ul>
-  <li>Short-run and long-run labor demand</li>
-  <li>Marginal revenue product</li>
-  <li>Elasticity of labor demand (Marshall’s rules)</li>
-  <li>Monopsony and wage-setting power</li>
-</ul>
+  <h2 id="chapter-3-labor-demand">Chapter 3: Labor Demand</h2>
 
-<p><a href="/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (PDF)</a></p>
+  <p>The firm’s hiring decision, marginal productivity, and labor demand under perfect competition and monopsony.</p>
 
-<hr>
+  <h5 id="key-topics-1">Key Topics</h5>
+  <ul>
+    <li>Short-run and long-run labor demand</li>
+    <li>Marginal revenue product</li>
+    <li>Elasticity of labor demand (Marshall’s rules)</li>
+    <li>Monopsony and wage-setting power</li>
+  </ul>
 
-<h2 id="chapter-4-labor-market-equilibrium">Chapter 4: Labor Market Equilibrium</h2>
+  <p><a href="/assets/pdf/teaching/labor-economics/ch3-demand-3-1-handouts.pdf" target="_blank" rel="noopener noreferrer">Ch.3 Demand Handouts (PDF)</a></p>
 
-<p>Competitive equilibrium, the cobweb model, efficiency wages, and compensating differentials.</p>
+  <hr>
 
-<h5 id="key-topics-2">Key Topics</h5>
-<ul>
-  <li>Equilibrium in a single labor market</li>
-  <li>The cobweb model and dynamic adjustment</li>
-  <li>Compensating wage differentials</li>
-  <li>Efficiency wages</li>
-</ul>
+  <h2 id="chapter-4-labor-market-equilibrium">Chapter 4: Labor Market Equilibrium</h2>
 
-<hr>
+  <p>Competitive equilibrium, the cobweb model, efficiency wages, and compensating differentials.</p>
 
-<h2 id="chapter-5-compensating-wage-differentials">Chapter 5: Compensating Wage Differentials</h2>
+  <h5 id="key-topics-2">Key Topics</h5>
+  <ul>
+    <li>Equilibrium in a single labor market</li>
+    <li>The cobweb model and dynamic adjustment</li>
+    <li>Compensating wage differentials</li>
+    <li>Efficiency wages</li>
+  </ul>
 
-<p>Theory and evidence on compensating differentials, hedonic wage models, and the value of non-wage job attributes.</p>
+  <hr>
 
-<h5 id="key-topics-3">Key Topics</h5>
-<ul>
-  <li>The theory of compensating differentials</li>
-  <li>Hedonic wage functions</li>
-  <li>Value of a statistical life</li>
-  <li>Empirical evidence</li>
-</ul>
+  <h2 id="chapter-5-compensating-wage-differentials">Chapter 5: Compensating Wage Differentials</h2>
 
-<embed src="/assets/pdf/teaching/labor-economics/ch5-cwd-v8-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
+  <p>Theory and evidence on compensating differentials, hedonic wage models, and the value of non-wage job attributes.</p>
 
-<hr>
+  <h5 id="key-topics-3">Key Topics</h5>
+  <ul>
+    <li>The theory of compensating differentials</li>
+    <li>Hedonic wage functions</li>
+    <li>Value of a statistical life</li>
+    <li>Empirical evidence</li>
+  </ul>
 
-<h2 id="chapter-6-human-capital">Chapter 6: Human Capital</h2>
+  <embed src="/assets/pdf/teaching/labor-economics/ch5-cwd-v8-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
 
-<p>Schooling decisions, returns to education, the Mincer equation, on-the-job training, and signalling.</p>
+  <hr>
 
-<h5 id="key-topics-4">Key Topics</h5>
-<ul>
-  <li>The schooling model (costs vs. benefits)</li>
-  <li>Returns to education: Mincer equation</li>
-  <li>On-the-job training: general vs. specific</li>
-  <li>Signalling and screening</li>
-</ul>
+  <h2 id="chapter-6-human-capital">Chapter 6: Human Capital</h2>
 
-<embed src="/assets/pdf/teaching/labor-economics/ch6-education-v1-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
+  <p>Schooling decisions, returns to education, the Mincer equation, on-the-job training, and signalling.</p>
 
-<hr>
+  <h5 id="key-topics-4">Key Topics</h5>
+  <ul>
+    <li>The schooling model (costs vs. benefits)</li>
+    <li>Returns to education: Mincer equation</li>
+    <li>On-the-job training: general vs. specific</li>
+    <li>Signalling and screening</li>
+  </ul>
 
-<h2 id="chapter-7-wage-inequality-and-discrimination">Chapter 7: Wage Inequality and Discrimination</h2>
+  <embed src="/assets/pdf/teaching/labor-economics/ch6-education-v1-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
 
-<p>The wage structure, skill premium, discrimination models (Becker, statistical), and decomposition methods.</p>
+  <hr>
 
-<h5 id="key-topics-5">Key Topics</h5>
-<ul>
-  <li>Trends in wage inequality</li>
-  <li>College wage premium</li>
-  <li>Taste-based and statistical discrimination</li>
-  <li>Oaxaca-Blinder decomposition</li>
-</ul>
+  <h2 id="chapter-7-wage-inequality-and-discrimination">Chapter 7: Wage Inequality and Discrimination</h2>
 
-<embed src="/assets/pdf/teaching/labor-economics/ch9-discrimination-v1-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
+  <p>The wage structure, skill premium, discrimination models (Becker, statistical), and decomposition methods.</p>
 
-<hr>
+  <h5 id="key-topics-5">Key Topics</h5>
+  <ul>
+    <li>Trends in wage inequality</li>
+    <li>College wage premium</li>
+    <li>Taste-based and statistical discrimination</li>
+    <li>Oaxaca-Blinder decomposition</li>
+  </ul>
 
-<h2 id="chapter-8-labor-market-institutions">Chapter 8: Labor Market Institutions</h2>
+  <embed src="/assets/pdf/teaching/labor-economics/ch9-discrimination-v1-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
 
-<p>Unions, minimum wages, labor regulations, and their effects on employment and wages.</p>
+  <hr>
 
-<h5 id="key-topics-6">Key Topics</h5>
-<ul>
-  <li>Union models: monopoly union, efficient bargaining</li>
-  <li>Minimum wage: theory and evidence</li>
-  <li>Employment protection legislation</li>
-  <li>Labour market institutions in India</li>
-</ul>
-
-<hr>
-
-<h2 id="chapter-9-informality-platform-work-and-the-future-of-work">Chapter 9: Informality, Platform Work, and the Future of Work</h2>
-
-<p>Informal employment in developing economies, gig/platform work, AI and automation, and the future of labor markets.</p>
-
-<h5 id="key-topics-7">Key Topics</h5>
-<ul>
-  <li>Defining and measuring informality</li>
-  <li>Dual labor markets</li>
-  <li>Platform/gig economy</li>
-  <li>AI, automation, and task displacement</li>
-</ul>
-
-<hr>
-
-<h2 id="chapter-10-unemployment">Chapter 10: Unemployment</h2>
-
-<p>Types of unemployment, search and matching models, unemployment duration, and policy responses.</p>
-
-<h5 id="key-topics-8">Key Topics</h5>
-<ul>
-  <li>Frictional, structural, and cyclical unemployment</li>
-  <li>Job search models and reservation wages</li>
-  <li>Unemployment insurance and moral hazard</li>
-  <li>The Phillips curve and the natural rate</li>
-</ul>
-
-<embed src="/assets/pdf/teaching/labor-economics/ch12-unemployment-v1-short-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
-
-<hr>
-
-<h2 id="job-jungle-labour-market-simulation-game">Job Jungle: Labour Market Simulation Game</h2>
-
-<p>An interactive classroom game where students experience labour markets first-hand — negotiating wages as workers and making hiring decisions as employers. Six rounds, real-time wage negotiation, and a leaderboard with prizes.</p>
-
-<p><strong>Concepts covered:</strong> Labour supply (Ch. 2), labour demand (Ch. 3), market equilibrium and wage determination (Ch. 4).</p>
-
-<p><a href="https://job-jungle-app.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch Job Jungle</a></p>
-
-<hr>
-
-<h3 id="getting-started">Getting Started</h3>
-
-<ol>
-  <li>Go to the game link above and click <strong>Join Game</strong>.</li>
-  <li>Enter the <strong>room code</strong> provided by the instructor.</li>
-  <li>Enter your <strong>Student ID</strong> and select your <strong>Section</strong> (A or B).</li>
-  <li>You will be assigned a starting balance (your endowment) and start as a <strong>Pink (unskilled)</strong> worker.</li>
-  <li>Wait in the lobby until the instructor starts Round 1.</li>
-</ol>
-
-<h3 id="the-setting">The Setting</h3>
-
-<p>You are in the town of <strong>Job Jungle</strong>. Firms produce <strong>kites</strong> and sell them at $15 each. Firms need workers to produce kites. Workers want wages. The market decides who gets hired and at what wage.</p>
-
-<p><strong>Your goal as a worker:</strong> Maximise your total earnings across 6 rounds.</p>
-
-<p><strong>Your goal as an employer:</strong> Maximise your total profit across 6 rounds.</p>
-
-<h3 id="production-schedule">Production Schedule</h3>
-
-<p>Employers use these schedules to decide how much a worker is worth. The <strong>P x MP</strong> column is the maximum a firm should pay — any wage below this number is profitable.</p>
-
-<h5 id="blue-skilled-workers">Blue (Skilled) Workers</h5>
-
-<table>
-  <thead>
-    <tr>
-      <th>Hire #</th>
-      <th>Kites Produced</th>
-      <th>Marginal Product</th>
-      <th>P x MP ($)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1st</td>
-      <td>8</td>
-      <td>8</td>
-      <td>$120</td>
-    </tr>
-    <tr>
-      <td>2nd</td>
-      <td>14</td>
-      <td>6</td>
-      <td>$90</td>
-    </tr>
-    <tr>
-      <td>3rd</td>
-      <td>19</td>
-      <td>5</td>
-      <td>$75</td>
-    </tr>
-    <tr>
-      <td>4th</td>
-      <td>22</td>
-      <td>3</td>
-      <td>$45</td>
-    </tr>
-    <tr>
-      <td>5th</td>
-      <td>24</td>
-      <td>2</td>
-      <td>$30</td>
-    </tr>
-    <tr>
-      <td>6th</td>
-      <td>25</td>
-      <td>1</td>
-      <td>$15</td>
-    </tr>
-  </tbody>
-</table>
-
-<h5 id="pink-unskilled-workers">Pink (Unskilled) Workers</h5>
-
-<table>
-  <thead>
-    <tr>
-      <th>Hire #</th>
-      <th>Kites Produced</th>
-      <th>Marginal Product</th>
-      <th>P x MP ($)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1st</td>
-      <td>5</td>
-      <td>5</td>
-      <td>$75</td>
-    </tr>
-    <tr>
-      <td>2nd</td>
-      <td>8</td>
-      <td>3</td>
-      <td>$45</td>
-    </tr>
-    <tr>
-      <td>3rd</td>
-      <td>10</td>
-      <td>2</td>
-      <td>$30</td>
-    </tr>
-    <tr>
-      <td>4th</td>
-      <td>11</td>
-      <td>1</td>
-      <td>$15</td>
-    </tr>
-    <tr>
-      <td>5th</td>
-      <td>12</td>
-      <td>1</td>
-      <td>$15</td>
-    </tr>
-    <tr>
-      <td>6th</td>
-      <td>12</td>
-      <td>0</td>
-      <td>$0</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Key insight:</strong> Blue workers produce more kites and are worth higher wages. The skill premium is real.</p>
-
-<h3 id="round-by-round-guide">Round-by-Round Guide</h3>
-
-<p>Each round lasts <strong>7 minutes</strong>. There are 6 rounds in total.</p>
-
-<h5 id="round-1-learning-the-market">Round 1: Learning the Market</h5>
-
-<p>This is your first time. Expect some chaos.</p>
-
-<p><strong>If you are a Worker:</strong></p>
-<ol>
-  <li>Look at the list of firms on your screen.</li>
-  <li>Pick a firm you want to work for.</li>
-  <li>Enter a <strong>wage demand</strong> (the dollar amount you want to be paid).</li>
-  <li>Click <strong>Send Offer</strong>. Your offer goes to the employer’s queue.</li>
-  <li>Wait for the employer to <strong>Accept</strong> or <strong>Reject</strong> your offer.</li>
-  <li>If accepted — you are hired. Your balance increases by the wage amount. You are done for this round.</li>
-  <li>If rejected — you can withdraw and send a new offer to a different firm.</li>
-  <li>If no one hires you by the end of the round — you receive <strong>Public Assistance</strong> (PA): $10 for Pink workers, $25 for Blue workers.</li>
-</ol>
-
-<p><strong>If you are an Employer:</strong></p>
-<ol>
-  <li>You will see incoming wage offers from workers on your screen.</li>
-  <li>Each offer shows: worker ID, their skill (Pink or Blue badge), and the wage they are asking.</li>
-  <li>The screen highlights offers in <strong>green</strong> (profitable) or <strong>red</strong> (loss-making) based on the production schedule.</li>
-  <li>Click <strong>Accept</strong> to hire a worker, or <strong>Reject</strong> to pass.</li>
-  <li>You can hire multiple workers per round.</li>
-  <li>Your profit = Revenue from kites produced minus total wages paid.</li>
-</ol>
-
-<p><strong>Rules:</strong></p>
-<ul>
-  <li>You can only have <strong>one pending offer</strong> at a time (withdraw first to send another).</li>
-  <li>Employers can hold <strong>max 5 pending offers</strong> in their queue. If full, wait or try another firm.</li>
-  <li>Once a deal is accepted, it is <strong>final</strong> — no take-backs.</li>
-</ul>
-
-<h5 id="round-2-finding-your-price">Round 2: Finding Your Price</h5>
-
-<p>By now you have a sense of the market. Wages should start converging toward the production schedule values.</p>
-
-<p><strong>Workers — think about:</strong></p>
-<ul>
-  <li>What is the highest wage an employer will accept? (Hint: look at the P x MP schedule above.)</li>
-  <li>If you ask too much, you get rejected and end up on PA.</li>
-  <li>If you ask too little, you leave money on the table.</li>
-  <li>The sweet spot is just below the employer’s P x MP for their next hire.</li>
-</ul>
-
-<p><strong>Employers — think about:</strong></p>
-<ul>
-  <li>Hire workers whose wage demand is <strong>below</strong> your next P x MP.</li>
-  <li>The difference (P x MP minus wage) is your profit per worker.</li>
-  <li>Hiring too many workers at high wages destroys your profit margin.</li>
-</ul>
-
-<p><strong>Between Rounds 2 and 3 — Upgrade available — Education ($25):</strong></p>
-<ul>
-  <li>Pink workers with balance of $25 or more can <strong>buy education</strong> to become a Blue (skilled) worker.</li>
-  <li>This is permanent. Blue workers can demand higher wages from Round 3 onward.</li>
-  <li>Cost: $25. Should you invest? Compare the cost to the wage difference between Pink and Blue schedules.</li>
-</ul>
-
-<h5 id="round-3-the-skill-premium-emerges">Round 3: The Skill Premium Emerges</h5>
-
-<p>Some workers are now Blue. The market splits into two segments.</p>
-
-<p><strong>Blue workers:</strong> You can now demand higher wages. The first Blue hire is worth $120 to a firm. Use this leverage.</p>
-
-<p><strong>Pink workers still Pink:</strong> Your maximum value to a firm is $75 (first hire) and drops fast. Consider upgrading between rounds if you can afford it.</p>
-
-<p><strong>Employers:</strong> You now face a choice — hire one expensive Blue worker or two cheaper Pink workers? Compare the total kites produced.</p>
-
-<p><strong>Between Rounds 3 and 4 — New upgrade — Become an Employer ($100 threshold):</strong></p>
-<ul>
-  <li>Workers with a cumulative balance of $100 or more can <strong>convert to an employer</strong>.</li>
-  <li>You start your own firm and begin hiring workers from Round 4.</li>
-  <li>This is permanent — you cannot go back to being a worker.</li>
-  <li>You keep your balance but now earn from profits, not wages.</li>
-  <li>This is <strong>free entry</strong> — a key concept from Ch. 4 (market equilibrium).</li>
-</ul>
-
-<h5 id="round-4-competition-intensifies">Round 4: Competition Intensifies</h5>
-
-<p>New firms may have entered. More employers means more competition for workers.</p>
-
-<p><strong>Workers:</strong> More firms competing for you means stronger bargaining power. Wages may rise.</p>
-
-<p><strong>New employers:</strong> You are now hiring for the first time. Study the production schedule carefully. Do not overpay.</p>
-
-<p><strong>Existing employers:</strong> New competitors are bidding for your workers. You may need to offer better wages to keep hiring.</p>
-
-<h5 id="round-5-profits-compress">Round 5: Profits Compress</h5>
-
-<p>With more employers in the market, profit margins shrink. This is the <strong>zero-profit equilibrium</strong> from Chapter 4 in action.</p>
-
-<p><strong>Workers:</strong> The market may be near its equilibrium wage. Large gains are harder to find.</p>
-
-<p><strong>Employers:</strong> Margins are thin. Every dollar of overpayment matters. Be selective.</p>
-
-<h5 id="round-6-final-round">Round 6: Final Round</h5>
-
-<p>Last chance to earn. All cards collected at the end.</p>
-
-<p><strong>Workers:</strong> Maximise your final-round wage. No reason to hold back — there is no Round 7.</p>
-
-<p><strong>Employers:</strong> Same logic — hire profitably one last time.</p>
-
-<p><strong>After Round 6:</strong> The game ends. The instructor will display:</p>
-<ul>
-  <li>Leaderboard (top-earning workers and top-profit firms)</li>
-  <li>Wage convergence charts</li>
-  <li>Skill premium over time</li>
-  <li>Whether your starting endowment predicted your final income (spoiler: it often does)</li>
-</ul>
-
-<h3 id="key-concepts-you-will-experience">Key Concepts You Will Experience</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Concept</th>
-      <th>How You Experience It</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Diminishing marginal product</strong></td>
-      <td>Each additional worker produces fewer kites</td>
-    </tr>
-    <tr>
-      <td><strong>Wage = P x MP</strong></td>
-      <td>Employers will not pay more than a worker’s marginal revenue product</td>
-    </tr>
-    <tr>
-      <td><strong>Skill premium</strong></td>
-      <td>Blue workers earn more because they produce more</td>
-    </tr>
-    <tr>
-      <td><strong>Free entry</strong></td>
-      <td>New firms enter when profits are high, driving profits down</td>
-    </tr>
-    <tr>
-      <td><strong>Market equilibrium</strong></td>
-      <td>Wages converge across rounds as both sides learn</td>
-    </tr>
-    <tr>
-      <td><strong>Human capital investment</strong></td>
-      <td>Paying $25 for education raises your future earnings</td>
-    </tr>
-    <tr>
-      <td><strong>Unemployment and public assistance</strong></td>
-      <td>Unhired workers receive PA — the outside option</td>
-    </tr>
-    <tr>
-      <td><strong>Endowment inequality</strong></td>
-      <td>Starting balances differ — does initial advantage persist?</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="rules-summary">Rules Summary</h3>
-
-<ol>
-  <li>
+  <h2 id="chapter-8-labor-market-institutions">Chapter 8: Labor Market Institutions</h2>
+
+  <p>Unions, minimum wages, labor regulations, and their effects on employment and wages.</p>
+
+  <h5 id="key-topics-6">Key Topics</h5>
+  <ul>
+    <li>Union models: monopoly union, efficient bargaining</li>
+    <li>Minimum wage: theory and evidence</li>
+    <li>Employment protection legislation</li>
+    <li>Labour market institutions in India</li>
+  </ul>
+
+  <hr>
+
+  <h2 id="chapter-9-informality-platform-work-and-the-future-of-work">Chapter 9: Informality, Platform Work, and the Future of Work</h2>
+
+  <p>Informal employment in developing economies, gig/platform work, AI and automation, and the future of labor markets.</p>
+
+  <h5 id="key-topics-7">Key Topics</h5>
+  <ul>
+    <li>Defining and measuring informality</li>
+    <li>Dual labor markets</li>
+    <li>Platform/gig economy</li>
+    <li>AI, automation, and task displacement</li>
+  </ul>
+
+  <hr>
+
+  <h2 id="chapter-10-unemployment">Chapter 10: Unemployment</h2>
+
+  <p>Types of unemployment, search and matching models, unemployment duration, and policy responses.</p>
+
+  <h5 id="key-topics-8">Key Topics</h5>
+  <ul>
+    <li>Frictional, structural, and cyclical unemployment</li>
+    <li>Job search models and reservation wages</li>
+    <li>Unemployment insurance and moral hazard</li>
+    <li>The Phillips curve and the natural rate</li>
+  </ul>
+
+  <embed src="/assets/pdf/teaching/labor-economics/ch12-unemployment-v1-short-4up.pdf" type="application/pdf" width="100%" height="600px"></embed>
+
+  <hr>
+
+  <h2 id="job-jungle-labour-market-simulation-game">Job Jungle: Labour Market Simulation Game</h2>
+
+  <p>An interactive classroom game where students experience labour markets first-hand — negotiating wages as workers and making hiring decisions as employers. Six rounds, real-time wage negotiation, and a leaderboard with prizes.</p>
+
+  <p><strong>Concepts covered:</strong> Labour supply (Ch. 2), labour demand (Ch. 3), market equilibrium and wage determination (Ch. 4).</p>
+
+  <p><a href="https://job-jungle-app.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch Job Jungle</a></p>
+
+  <hr>
+
+  <h3 id="getting-started">Getting Started</h3>
+
+  <ol>
+    <li>Go to the game link above and click <strong>Join Game</strong>.</li>
+    <li>Enter the <strong>room code</strong> provided by the instructor.</li>
+    <li>Enter your <strong>Student ID</strong> and select your <strong>Section</strong> (A or B).</li>
+    <li>You will be assigned a starting balance (your endowment) and start as a <strong>Pink (unskilled)</strong> worker.</li>
+    <li>Wait in the lobby until the instructor starts Round 1.</li>
+  </ol>
+
+  <h3 id="the-setting">The Setting</h3>
+
+  <p>You are in the town of <strong>Job Jungle</strong>. Firms produce <strong>kites</strong> and sell them at $15 each. Firms need workers to produce kites. Workers want wages. The market decides who gets hired and at what wage.</p>
+
+  <p><strong>Your goal as a worker:</strong> Maximise your total earnings across 6 rounds.</p>
+
+  <p><strong>Your goal as an employer:</strong> Maximise your total profit across 6 rounds.</p>
+
+  <h3 id="production-schedule">Production Schedule</h3>
+
+  <p>Employers use these schedules to decide how much a worker is worth. The <strong>P x MP</strong> column is the maximum a firm should pay — any wage below this number is profitable.</p>
+
+  <h5 id="blue-skilled-workers">Blue (Skilled) Workers</h5>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hire #</th>
+        <th>Kites Produced</th>
+        <th>Marginal Product</th>
+        <th>P x MP ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1st</td>
+        <td>8</td>
+        <td>8</td>
+        <td>$120</td>
+      </tr>
+      <tr>
+        <td>2nd</td>
+        <td>14</td>
+        <td>6</td>
+        <td>$90</td>
+      </tr>
+      <tr>
+        <td>3rd</td>
+        <td>19</td>
+        <td>5</td>
+        <td>$75</td>
+      </tr>
+      <tr>
+        <td>4th</td>
+        <td>22</td>
+        <td>3</td>
+        <td>$45</td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td>24</td>
+        <td>2</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>6th</td>
+        <td>25</td>
+        <td>1</td>
+        <td>$15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h5 id="pink-unskilled-workers">Pink (Unskilled) Workers</h5>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hire #</th>
+        <th>Kites Produced</th>
+        <th>Marginal Product</th>
+        <th>P x MP ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1st</td>
+        <td>5</td>
+        <td>5</td>
+        <td>$75</td>
+      </tr>
+      <tr>
+        <td>2nd</td>
+        <td>8</td>
+        <td>3</td>
+        <td>$45</td>
+      </tr>
+      <tr>
+        <td>3rd</td>
+        <td>10</td>
+        <td>2</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>4th</td>
+        <td>11</td>
+        <td>1</td>
+        <td>$15</td>
+      </tr>
+      <tr>
+        <td>5th</td>
+        <td>12</td>
+        <td>1</td>
+        <td>$15</td>
+      </tr>
+      <tr>
+        <td>6th</td>
+        <td>12</td>
+        <td>0</td>
+        <td>$0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Key insight:</strong> Blue workers produce more kites and are worth higher wages. The skill premium is real.</p>
+
+  <h3 id="round-by-round-guide">Round-by-Round Guide</h3>
+
+  <p>Each round lasts <strong>7 minutes</strong>. There are 6 rounds in total.</p>
+
+  <h5 id="round-1-learning-the-market">Round 1: Learning the Market</h5>
+
+  <p>This is your first time. Expect some chaos.</p>
+
+  <p><strong>If you are a Worker:</strong></p>
+  <ol>
+    <li>Look at the list of firms on your screen.</li>
+    <li>Pick a firm you want to work for.</li>
+    <li>Enter a <strong>wage demand</strong> (the dollar amount you want to be paid).</li>
+    <li>Click <strong>Send Offer</strong>. Your offer goes to the employer’s queue.</li>
+    <li>Wait for the employer to <strong>Accept</strong> or <strong>Reject</strong> your offer.</li>
+    <li>If accepted — you are hired. Your balance increases by the wage amount. You are done for this round.</li>
+    <li>If rejected — you can withdraw and send a new offer to a different firm.</li>
+    <li>If no one hires you by the end of the round — you receive <strong>Public Assistance</strong> (PA): $10 for Pink workers, $25 for Blue workers.</li>
+  </ol>
+
+  <p><strong>If you are an Employer:</strong></p>
+  <ol>
+    <li>You will see incoming wage offers from workers on your screen.</li>
+    <li>Each offer shows: worker ID, their skill (Pink or Blue badge), and the wage they are asking.</li>
+    <li>The screen highlights offers in <strong>green</strong> (profitable) or <strong>red</strong> (loss-making) based on the production schedule.</li>
+    <li>Click <strong>Accept</strong> to hire a worker, or <strong>Reject</strong> to pass.</li>
+    <li>You can hire multiple workers per round.</li>
+    <li>Your profit = Revenue from kites produced minus total wages paid.</li>
+  </ol>
+
+  <p><strong>Rules:</strong></p>
+  <ul>
+    <li>You can only have <strong>one pending offer</strong> at a time (withdraw first to send another).</li>
+    <li>Employers can hold <strong>max 5 pending offers</strong> in their queue. If full, wait or try another firm.</li>
+    <li>Once a deal is accepted, it is <strong>final</strong> — no take-backs.</li>
+  </ul>
+
+  <h5 id="round-2-finding-your-price">Round 2: Finding Your Price</h5>
+
+  <p>By now you have a sense of the market. Wages should start converging toward the production schedule values.</p>
+
+  <p><strong>Workers — think about:</strong></p>
+  <ul>
+    <li>What is the highest wage an employer will accept? (Hint: look at the P x MP schedule above.)</li>
+    <li>If you ask too much, you get rejected and end up on PA.</li>
+    <li>If you ask too little, you leave money on the table.</li>
+    <li>The sweet spot is just below the employer’s P x MP for their next hire.</li>
+  </ul>
+
+  <p><strong>Employers — think about:</strong></p>
+  <ul>
+    <li>Hire workers whose wage demand is <strong>below</strong> your next P x MP.</li>
+    <li>The difference (P x MP minus wage) is your profit per worker.</li>
+    <li>Hiring too many workers at high wages destroys your profit margin.</li>
+  </ul>
+
+  <p><strong>Between Rounds 2 and 3 — Upgrade available — Education ($25):</strong></p>
+  <ul>
+    <li>Pink workers with balance of $25 or more can <strong>buy education</strong> to become a Blue (skilled) worker.</li>
+    <li>This is permanent. Blue workers can demand higher wages from Round 3 onward.</li>
+    <li>Cost: $25. Should you invest? Compare the cost to the wage difference between Pink and Blue schedules.</li>
+  </ul>
+
+  <h5 id="round-3-the-skill-premium-emerges">Round 3: The Skill Premium Emerges</h5>
+
+  <p>Some workers are now Blue. The market splits into two segments.</p>
+
+  <p><strong>Blue workers:</strong> You can now demand higher wages. The first Blue hire is worth $120 to a firm. Use this leverage.</p>
+
+  <p><strong>Pink workers still Pink:</strong> Your maximum value to a firm is $75 (first hire) and drops fast. Consider upgrading between rounds if you can afford it.</p>
+
+  <p><strong>Employers:</strong> You now face a choice — hire one expensive Blue worker or two cheaper Pink workers? Compare the total kites produced.</p>
+
+  <p><strong>Between Rounds 3 and 4 — New upgrade — Become an Employer ($100 threshold):</strong></p>
+  <ul>
+    <li>Workers with a cumulative balance of $100 or more can <strong>convert to an employer</strong>.</li>
+    <li>You start your own firm and begin hiring workers from Round 4.</li>
+    <li>This is permanent — you cannot go back to being a worker.</li>
+    <li>You keep your balance but now earn from profits, not wages.</li>
+    <li>This is <strong>free entry</strong> — a key concept from Ch. 4 (market equilibrium).</li>
+  </ul>
+
+  <h5 id="round-4-competition-intensifies">Round 4: Competition Intensifies</h5>
+
+  <p>New firms may have entered. More employers means more competition for workers.</p>
+
+  <p><strong>Workers:</strong> More firms competing for you means stronger bargaining power. Wages may rise.</p>
+
+  <p><strong>New employers:</strong> You are now hiring for the first time. Study the production schedule carefully. Do not overpay.</p>
+
+  <p><strong>Existing employers:</strong> New competitors are bidding for your workers. You may need to offer better wages to keep hiring.</p>
+
+  <h5 id="round-5-profits-compress">Round 5: Profits Compress</h5>
+
+  <p>With more employers in the market, profit margins shrink. This is the <strong>zero-profit equilibrium</strong> from Chapter 4 in action.</p>
+
+  <p><strong>Workers:</strong> The market may be near its equilibrium wage. Large gains are harder to find.</p>
+
+  <p><strong>Employers:</strong> Margins are thin. Every dollar of overpayment matters. Be selective.</p>
+
+  <h5 id="round-6-final-round">Round 6: Final Round</h5>
+
+  <p>Last chance to earn. All cards collected at the end.</p>
+
+  <p><strong>Workers:</strong> Maximise your final-round wage. No reason to hold back — there is no Round 7.</p>
+
+  <p><strong>Employers:</strong> Same logic — hire profitably one last time.</p>
+
+  <p><strong>After Round 6:</strong> The game ends. The instructor will display:</p>
+  <ul>
+    <li>Leaderboard (top-earning workers and top-profit firms)</li>
+    <li>Wage convergence charts</li>
+    <li>Skill premium over time</li>
+    <li>Whether your starting endowment predicted your final income (spoiler: it often does)</li>
+  </ul>
+
+  <h3 id="key-concepts-you-will-experience">Key Concepts You Will Experience</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Concept</th>
+        <th>How You Experience It</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Diminishing marginal product</strong></td>
+        <td>Each additional worker produces fewer kites</td>
+      </tr>
+      <tr>
+        <td><strong>Wage = P x MP</strong></td>
+        <td>Employers will not pay more than a worker’s marginal revenue product</td>
+      </tr>
+      <tr>
+        <td><strong>Skill premium</strong></td>
+        <td>Blue workers earn more because they produce more</td>
+      </tr>
+      <tr>
+        <td><strong>Free entry</strong></td>
+        <td>New firms enter when profits are high, driving profits down</td>
+      </tr>
+      <tr>
+        <td><strong>Market equilibrium</strong></td>
+        <td>Wages converge across rounds as both sides learn</td>
+      </tr>
+      <tr>
+        <td><strong>Human capital investment</strong></td>
+        <td>Paying $25 for education raises your future earnings</td>
+      </tr>
+      <tr>
+        <td><strong>Unemployment and public assistance</strong></td>
+        <td>Unhired workers receive PA — the outside option</td>
+      </tr>
+      <tr>
+        <td><strong>Endowment inequality</strong></td>
+        <td>Starting balances differ — does initial advantage persist?</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 id="rules-summary">Rules Summary</h3>
+
+  <ol>
+    <li>
 <strong>One offer at a time.</strong> Withdraw before sending to another firm.</li>
-  <li>
+    <li>
 <strong>Deals are final.</strong> No renegotiation after acceptance.</li>
-  <li>
+    <li>
 <strong>Record everything</strong> on your worker card (employer name + wage each round).</li>
-  <li>
+    <li>
 <strong>No back-to-back rehiring</strong> — you cannot work for the same employer in consecutive rounds.</li>
-  <li>
+    <li>
 <strong>Role changes are permanent</strong> — once you become Blue or an employer, you stay that way.</li>
-  <li>
+    <li>
 <strong>Falsified records = automatic zero</strong> on rule compliance.</li>
-</ol>
+  </ol>
 
-<h3 id="grading">Grading</h3>
+  <h3 id="grading">Grading</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Weight</th>
-      <th>Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Performance</strong></td>
-      <td>50%</td>
-      <td>Top 25%: 40–50 pts. Middle 50%: 25–39 pts. Bottom 25%: 10–24 pts.</td>
-    </tr>
-    <tr>
-      <td><strong>Participation</strong></td>
-      <td>30%</td>
-      <td>Active all 6 rounds: 25–30 pts. Mostly active: 15–24 pts. Passive: 0–14 pts.</td>
-    </tr>
-    <tr>
-      <td><strong>Rule Compliance</strong></td>
-      <td>20%</td>
-      <td>Default 20 pts. Deduct 5 per infraction. Cheating = automatic 0.</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Weight</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Performance</strong></td>
+        <td>50%</td>
+        <td>Top 25%: 40–50 pts. Middle 50%: 25–39 pts. Bottom 25%: 10–24 pts.</td>
+      </tr>
+      <tr>
+        <td><strong>Participation</strong></td>
+        <td>30%</td>
+        <td>Active all 6 rounds: 25–30 pts. Mostly active: 15–24 pts. Passive: 0–14 pts.</td>
+      </tr>
+      <tr>
+        <td><strong>Rule Compliance</strong></td>
+        <td>20%</td>
+        <td>Default 20 pts. Deduct 5 per infraction. Cheating = automatic 0.</td>
+      </tr>
+    </tbody>
+  </table>
 
-<p><strong>Prize:</strong> Gift card to the top-earning worker and top-profit employer pair.</p>
+  <p><strong>Prize:</strong> Gift card to the top-earning worker and top-profit employer pair.</p>
+
+</div>
 
           </article>
           
@@ -994,7 +1324,7 @@
 
   
   
-    Last updated: November 02, 2026.
+    Last updated: November 04, 2026.
   
 
     </div>
