@@ -99,6 +99,11 @@ nav: false
 <span class="attribution">&mdash; Robert Solow, quoted in Arjo Klamer, <em>Conversations with Economists</em> (1983), p. 146</span>
 </blockquote>
 
+<blockquote>
+<p>When I see equations, I see the letters in colors&mdash;I don&rsquo;t know why. As I&rsquo;m talking, I see vague pictures of Bessel functions from Jahnke and Emde&rsquo;s book, with light-tan j&rsquo;s, slightly violet-bluish n&rsquo;s, and dark brown x&rsquo;s flying around. And I wonder what the hell it must look like to the students.</p>
+<span class="attribution">&mdash; Richard Feynman, <em>What Do You Care What Other People Think?</em> (1988)</span>
+</blockquote>
+
 </div>
 
 </div>

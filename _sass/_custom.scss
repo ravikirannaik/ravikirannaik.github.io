@@ -25,10 +25,11 @@ body {
 
 /* --- Headings: tighter tracking, balanced wrapping, confident weight ---- */
 $serif-stack: "Source Serif Pro", Georgia, Cambria, "Times New Roman", serif;
+$display-stack: "Fraunces", "Source Serif Pro", Georgia, "Times New Roman", serif;
 
 h1, h2, h3, h4, h5, h6,
 .post-title, .card-title {
-  font-family: $serif-stack;
+  font-family: $display-stack;
   letter-spacing: -0.021em;
   text-wrap: balance;
   line-height: 1.25;
