@@ -296,7 +296,7 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
     </tr>
     <tr>
       <td class="mod-cell" style="--mc-c:#f5c9a6;"><span class="mod-no">M4</span><span class="mod-name">Asset Market, Money &amp; Prices</span></td>
-      <td><span class="na">&times;</span></td>
+      <td><a class="yes" href="/assets/pdf/teaching/macroeconomics-i/ch7-asset-market-money-prices-handout.pdf" title="Handout (PDF)">&#10003;</a></td>
       <td><a class="yes" href="{{ '/teachings/macroeconomics-i/notes-viewer/' | relative_url }}?f=/assets/pdf/teaching/macroeconomics-i/notes/m4-asset-market-money-prices-notes.pdf&amp;t=M4%20%E2%80%94%20Asset%20Market,%20Money%20%26%20Prices%20Notes" title="View notes">&#10003;</a></td>
       <td><span class="na">&times;</span></td>
       <td><span class="na">&times;</span></td>
