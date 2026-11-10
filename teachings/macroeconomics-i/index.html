@@ -105,7 +105,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/css/main.css?v=1794325426">
+<link rel="stylesheet" href="/assets/css/main.css?v=1794326638">
 <link rel="canonical" href="https://ravikirannaik.com/teachings/macroeconomics-i/">
 
 
@@ -655,6 +655,7 @@ html[data-theme="dark"] .mc-nav a { border-color: rgba(255,255,255,0.14); }
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
   <a href="#materials">Materials</a>
+  <a href="/teachings/macroeconomics-i/islm-lab/" title="Step-by-step IS–LM simulator with FE line">IS–LM Lab ▸</a>
 </nav>
 
   <h2 id="basic-information">Basic Information</h2>
@@ -1164,7 +1165,9 @@ upwards to standardise the median score; marks will never be adjusted down for t
   var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
   var map = {};
   var targets = links.map(function (a) {
-    var el = document.getElementById(a.getAttribute('href').slice(1));
+    var href = a.getAttribute('href') || '';
+    if (href.charAt(0) !== '#') return null;
+    var el = document.getElementById(href.slice(1));
     if (el) map[el.id] = a;
     return el;
   }).filter(Boolean);
