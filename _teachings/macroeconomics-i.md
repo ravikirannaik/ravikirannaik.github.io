@@ -181,6 +181,8 @@ upwards to standardise the median score; marks will never be adjusted down for t
 
 <p><a href="{{ '/teachings/macroeconomics-i/islm-simulator/' | relative_url }}"><strong>▸ IS–LM Interactive Simulator</strong></a> — a browser-based tool for Module 5: drag the fiscal- and monetary-policy sliders and watch the IS and LM curves and the general equilibrium adjust in real time (based on the TU Berlin Chair of Macroeconomics toolkit).</p>
 
+<p><a href="{{ '/teachings/macroeconomics-i/islm-lab/' | relative_url }}"><strong>▸ IS–LM Lab — Three Markets, One Equilibrium</strong></a> — a step-by-step companion to the simulator: three linked panels (income–expenditure, money market, IS–LM), ghost lines for the old curves, and a disequilibrium walk-through — change a lever, then let the money market and goods market adjust one at a time. Rebuilt from the Seville teaching experiment (Pablo-Romero et al., 2012).</p>
+
 <p><a href="{{ '/teachings/macroeconomics-i/nobel-2026-hall-woodford/' | relative_url }}"><strong>▸ The 2026 Economics Nobel &mdash; Hall, Woodford, and where it sits in ECON 202</strong></a> &mdash; student notes on the Nobel awarded to Robert Hall and Michael Woodford: what they won for, and how it maps onto Modules 2&ndash;5 (the consumption function, unemployment, money, forward guidance, and IS&ndash;LM).</p>
 
 ## Course Policies
