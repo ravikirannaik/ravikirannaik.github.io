@@ -2,7 +2,7 @@
 layout: page
 permalink: /teachings/macroeconomics-i/islm-lab/
 title: "IS–LM Lab: Three Markets, One Equilibrium"
-description: "A step-by-step IS–LM simulator for ECON 202 (Module 5), rebuilt from the Seville teaching experiment: three linked panels — income–expenditure, money market, IS–LM — with ghost lines for the old curves and a disequilibrium walk-through, so you see why the economy moves, not just where it ends up."
+description: "A step-by-step IS–LM simulator for ECON 202 (Module 5), rebuilt from the Seville teaching experiment: three linked panels — income–expenditure, money market, IS–LM with the FE line — with ghost lines for the old curves and a disequilibrium walk-through, so you see why the economy moves, not just where it ends up."
 nav: false
 ---
 
@@ -119,6 +119,7 @@ Most IS–LM tools jump straight to the new intersection. This one doesn't. Chan
   <li>Move a <em>policy lever</em> (G, t, TR, M, P). Watch which curve shifts and which panel is now out of balance.</li>
   <li>Press <em>Step</em> to let one market adjust at a time (money market sets r, then goods market sets Y, and so on). Press <em>Finish</em> to go straight to the new equilibrium. Switch to <em>instant</em> mode if you just want comparative statics.</li>
   <li>Change the <em>structure</em> (c, b, k, h) to see special cases: h → 1 makes LM vertical; b → small makes IS steep so monetary policy loses its bite.</li>
+  <li>The vertical <em>FE</em> line is full-employment output Ȳ (Abel–Bernanke–Croushore, Ch. 9). Where IS–LM crosses away from FE the status card shows the output gap; press <em>Long run: let P adjust</em> to watch the price level move LM back to the FE–IS intersection — the classical closure.</li>
   <li><em>Clear ghosts</em> wipes the old curves; <em>Set baseline</em> makes the current state the new reference.</li>
 </ul>
 </div>
@@ -149,6 +150,7 @@ Most IS–LM tools jump straight to the new intersection. This one doesn't. Chan
         <button class="lab-chip primary" data-a="step" type="button">Step ▸</button>
         <button class="lab-chip" data-a="finish" type="button">Finish ▸▸</button>
         <button class="lab-chip" data-a="mode" id="lab-mode" type="button" aria-pressed="false">Mode: step-by-step</button>
+        <button class="lab-chip warm" data-a="lr" type="button" title="Let the price level adjust until LM passes through the FE–IS intersection">Long run: let P adjust</button>
       </div>
       <div class="lab-chips">
         <button class="lab-chip" data-a="ghost" type="button">Clear ghosts</button>
@@ -190,13 +192,14 @@ For a comparative-statics-only tool see the <a href="{{ '/teachings/macroeconomi
   if (!root) return;
 
   // ---------- model ----------
-  var DEF = { C0:50, I0:60, G:60, TR:20, t:0.25, M:100, P:1, c:0.8, b:15, k:0.7, h:30 };
+  var DEF = { C0:50, I0:60, G:60, TR:20, t:0.25, M:100, P:1, c:0.8, b:15, k:0.7, h:30, Yf:315 };
   var LEVERS = [
     ['G',  'Government purchases G', 0, 160, 1],
     ['t',  'Tax rate t',             0, 0.5, 0.01],
     ['TR', 'Transfers TR',           0, 80,  1],
     ['M',  'Money supply M',         40, 220, 1],
-    ['P',  'Price level P',          0.5, 2, 0.05]
+    ['P',  'Price level P',          0.5, 4, 0.05],
+    ['Yf', 'Full-employment output Ȳ (FE)', 150, 500, 5]
   ];
   var PARAMS = [
     ['c', 'Marginal propensity to consume c', 0.5, 0.95, 0.01],
@@ -322,6 +325,7 @@ For a comparative-statics-only tool see the <a href="{{ '/teachings/macroeconomi
     var wIS = hiIS?3.4:2.4, wLM = hiLM?3.4:2.4;
 
     var E=eq(S);
+    var gap = E.Y - S.Yf;
     var Yg=Ygoods(S,cur.r), rm=rMoney(S,cur.Y);
     var goodsGap = expend(S,cur.r,cur.Y) - cur.Y;        // E - Y  (>0 excess demand)
     var moneyGap = (S.k*cur.Y - S.h*cur.r) - m(S);        // L - M/P (>0 excess demand)
@@ -355,6 +359,9 @@ For a comparative-statics-only tool see the <a href="{{ '/teachings/macroeconomi
     // ---- IS-LM ----
     var sIS=root.querySelector('#lab-is'), h=frame(sIS,YM,RM,'Y','r (%)',[0,200,400,600],[4,8,12]);
     ghosts.is.forEach(function(gh){ lineFn(sIS,h,function(x){return isR(gh.s,x);},cG,1.4,'5 4'); lineFn(sIS,h,function(x){return lmR(gh.s,x);},cG,1.4,'5 4'); });
+    var hiFE = (lastTouched==='Yf');
+    vline(sIS,h,S.Yf,cMD,hiFE?3.2:2.2);
+    label(sIS,h,Math.min(S.Yf+6,YM-24),RM-0.5,'FE',cMD);
     var isSeg=lineFn(sIS,h,function(x){return isR(S,x);},cIS,wIS);
     var lmSeg=lineFn(sIS,h,function(x){return lmR(S,x);},cLM,wLM);
     if (isSeg) label(sIS,h,Math.max(isSeg.a[0],8),Math.min(isSeg.a[1],RM-0.4)-0.3,'IS',cIS);
@@ -378,7 +385,7 @@ For a comparative-statics-only tool see the <a href="{{ '/teachings/macroeconomi
       '<div>Now: <span class="big">Y = '+cur.Y.toFixed(0)+'</span> &nbsp; <span class="big">r = '+cur.r.toFixed(2)+'%</span></div>'+
       '<div>Goods market: '+gs+'</div><div>Money market: '+ms+'</div>'+
       '<div style="margin-top:6px">Equilibrium: <span class="d">Y* = '+E.Y.toFixed(0)+', r* = '+E.r.toFixed(2)+'%</span> &nbsp;·&nbsp; vs baseline: <span class="d">ΔY = '+(dY>=0?'+':'')+dY.toFixed(0)+', Δr = '+(dr>=0?'+':'')+dr.toFixed(2)+' pp</span></div>'+
-      '<div>Multiplier 1/[1−c(1−t)] = <span class="d">'+(1/sv(S)).toFixed(2)+'</span></div>'+zlb+
+      '<div>Multiplier 1/[1−c(1−t)] = <span class="d">'+(1/sv(S)).toFixed(2)+'</span> &nbsp;·&nbsp; Output gap Y*−Ȳ = <span class="'+(Math.abs(gap)<0.5?'ok':'no')+'">'+(gap>=0?'+':'')+gap.toFixed(0)+'</span>'+(Math.abs(gap)<0.5?'':(gap>0?' → P will rise':' → P will fall'))+'</div>'+zlb+
       (inEq?'<small>Both markets clear. Change a lever to start a new experiment.</small>':'<small>Press <strong>Step</strong> to let the next market adjust, or <strong>Finish</strong> to jump to equilibrium.</small>');
   }
 
@@ -400,6 +407,7 @@ For a comparative-statics-only tool see the <a href="{{ '/teachings/macroeconomi
       var a=btn.getAttribute('data-a');
       if (a==='step') step();
       if (a==='finish') finish();
+      if (a==='lr'){ var rFE=isR(S,S.Yf), L=S.k*S.Yf - S.h*rFE; if (L>0){ snapshotGhost(); S.P=Math.min(4,Math.max(0.5,+(S.M/L).toFixed(4))); lastTouched='P'; finish(); } }
       if (a==='mode'){ instant=!instant; btn.textContent= instant?'Mode: instant':'Mode: step-by-step'; btn.setAttribute('aria-pressed',instant?'true':'false'); if (instant) finish(); }
       if (a==='ghost'){ ghosts={ie:[],mm:[],is:[]}; lastTouched=null; draw(); }
       if (a==='base'){ base=clone(S); ghosts={ie:[],mm:[],is:[]}; lastTouched=null; draw(); }
