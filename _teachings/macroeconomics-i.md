@@ -19,6 +19,7 @@ importance: 1
   <a href="#textbooks">Textbooks</a>
   <a href="#course-policies">Policies</a>
   <a href="#materials">Materials</a>
+  <a href="{{ '/teachings/macroeconomics-i/islm-lab/' | relative_url }}" title="Step-by-step IS–LM simulator with FE line">IS–LM Lab ▸</a>
 </nav>
 
 ## Basic Information
@@ -329,7 +330,9 @@ Slides go up on MOODLE right after each module; the same files (plus notes and p
   var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
   var map = {};
   var targets = links.map(function (a) {
-    var el = document.getElementById(a.getAttribute('href').slice(1));
+    var href = a.getAttribute('href') || '';
+    if (href.charAt(0) !== '#') return null;
+    var el = document.getElementById(href.slice(1));
     if (el) map[el.id] = a;
     return el;
   }).filter(Boolean);
