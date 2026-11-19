@@ -34,7 +34,7 @@ horizontal: true
   <!-- Working Papers -->
   <div class="tab-pane fade" id="working-papers-pane" role="tabpanel" aria-labelledby="working-papers-tab" tabindex="0">
     <div class="publications">
-      {% bibliography --query @unpublished --group_by none %}
+      {% bibliography --query @unpublished --group_by none --sort_by status, year --order ascending, descending %}
     </div>
   </div>
 
