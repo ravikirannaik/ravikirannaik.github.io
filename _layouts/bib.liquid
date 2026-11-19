@@ -187,9 +187,20 @@
       </div>
     {% endif %}
     {% assign note_text = entry.note | strip %}
+    {% assign status_class = '' %}
     {% if note_text contains 'Under review' %}
-      <div class="periodical">
-        <span class="status-review">{{ note_text }}</span>
+      {% assign status_class = 'status-review' %}
+    {% elsif note_text contains 'Accepted' %}
+      {% assign status_class = 'status-accepted' %}
+    {% elsif note_text contains 'Forthcoming' %}
+      {% assign status_class = 'status-forthcoming' %}
+    {% endif %}
+    {% if status_class != '' %}
+      <div class="periodical status-line">
+        <span class="{{ status_class }}">{{ note_text }}</span>
+        {% if entry.doi %}
+          <a href="https://doi.org/{{ entry.doi }}" class="doi-inline">DOI: {{ entry.doi }}</a>
+        {% endif %}
       </div>
     {% elsif entry.note != 'Working paper' and note_text != "" %}
       <div class="periodical">
@@ -204,7 +215,7 @@
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
-      {% if entry.doi %}
+      {% if entry.doi and status_class == '' %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.arxiv %}

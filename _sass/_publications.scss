@@ -80,16 +80,43 @@
         }
       }
 
-      .status-review {
+      .status-review,
+      .status-accepted,
+      .status-forthcoming {
         display: inline-block;
         margin-top: 0.2rem;
         padding: 0.15em 0.6em;
         border-radius: 0.25rem;
-        background-color: #28a745;
         color: #fff;
         font-size: 0.72rem;
         font-weight: 600;
         letter-spacing: 0.02em;
+      }
+
+      .status-review {
+        background-color: #6c757d; // grey — in review
+      }
+
+      .status-accepted {
+        background-color: #28a745; // green — accepted
+      }
+
+      .status-forthcoming {
+        background-color: #d97706; // amber — forthcoming
+      }
+
+      .status-line {
+        .doi-inline {
+          margin-left: 0.5rem;
+          color: #dc3545; // red
+          font-size: 0.8rem;
+          font-weight: 600;
+
+          &:hover {
+            color: #a71d2a;
+            text-decoration: underline;
+          }
+        }
       }
 
       .author {
